@@ -68,15 +68,26 @@
 		
 		
 		<nav>
+			
 			<?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'main_menu' ) ); ?>
-			
-			
-			
-			
+		
 		</nav>
 		
 		
-		<a class="tel" href="tel.18778001700">1 (877) 800-1700</a><!-- tel -->
+		<div class="tel_tablet_wrapper">
+		
+			<a class="tel" href="tel.18778001700">1 (877) 800-1700</a><!-- tel -->
+		
+		</div><!-- tel_tablet_wrapper -->
+		
+		<div class="mobile_menu">
+			
+			<div class="menu_bar"></div><!-- menu_bar -->
+			<div class="menu_bar"></div><!-- menu_bar -->
+			<div class="menu_bar"></div><!-- menu_bar -->
+			<span class="menu_title">Menu</span>
+			
+		</div><!-- mobile_menu -->
 		
 		</div><!-- inner_header -->
 		
