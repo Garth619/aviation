@@ -3500,7 +3500,8 @@ a.tel {
 		 
 	 }
 	 span.large_header {
-		 
+		 padding-left:2%;
+		 font-size:28px;
 	 }
 	 .white_line_wrapper {
 		 
@@ -3517,7 +3518,7 @@ a.tel {
 			 
 		 }
 		 .single_news_post {
-			 
+			 padding-left:2%;
 			a {
 				
 			 }
@@ -4107,6 +4108,219 @@ a.tel {
 	 
 	 
  } /* Media Query */
+ 
+ 
+ 
+ 
+ @media screen and (max-width: 1225px) {
+	 
+	 
+	 
+	 
+	 
+	 
+	/* Footer */
+ 
+ 
+ footer {
+ 	
+	 .inner_footer {
+	 
+	 }
+ }
+ 
+ .locations_wrapper {
+	  width:100%;
+	  max-width: 800px;
+	  margin-left:auto;
+	  margin-right:auto;
+	  float:none;
+	}
+ 
+ 
+.single_location_wrapper {
+ padding-left:0;
+ 	span.large_header {
+		padding-left:0px;
+		sup {
+			
+		}
+	}
+ .single_location {
+	 
+	 
+	 &:first-of-type {
+		 
+	 }
+	 &:last-of-type {
+		 padding-left: 15%;
+	 }
+	 .white_square {
+		 
+		 span {
+			 
+		 }
+	 }
+	 span.office {
+		 
+	 }
+	 .address {
+		 
+	 }
+	 a.get_directions {
+		 
+		 &:before {
+			 
+		 }
+		 &:hover {
+			 
+			 &:before {
+				 
+			 }
+		 }
+	 }
+ }
+}
+ 
+ 
+ .call_us_wrapper {
+		width:100%;
+	 .call_us_gradient {
+		 
+		 .call_us_inner_gradient {
+			 
+			 span.large_header {
+				 
+			 }
+			 span.call_us_content {
+				 
+				 a {
+					 
+				 }
+			 }
+		 }
+	 }
+ }
+ 
+ 
+ 
+ .latest_news_wrapper {
+	 display: none;
+	.latest_news_inner {
+		 
+	 }
+	 span.large_header {
+		 
+	 }
+	 .white_line_wrapper {
+		 
+		 .white_line {
+			
+			}
+			.news_square {
+				
+			}
+	 }
+	 .post_wrapper {
+		 
+		 .single_news_post:not(:first-of-type) {
+			 
+		 }
+		 .single_news_post {
+			 
+			a {
+				
+			 }
+			 span.post_title {
+			 	
+			 }
+			 span.news_content {
+				 
+			 }
+			 span.read_more {
+				 
+				 &:hover {
+					
+					 &:before {
+						 
+					}
+				 }
+				 &:before {
+					 
+				 }
+			 }
+		 }
+	 }
+ }
+ 
+ 
+
+
+ .lower_footer {
+	 	
+	 	ul.copyright {
+		 	
+		 	li {
+			 	
+			 	&:after {
+				 	
+			 	}
+			 	&:last-of-type {
+				 
+				 	&:after {
+					 	
+				 	}
+			 	}
+			 	a {
+				 	
+				 	&:hover {
+					 	
+				 	}
+			 	}
+		 	}
+	 	}
+	 	.social_wrapper {
+		 	
+		 	ul {
+			 	
+			 	li {
+				 	
+				 	&:after {
+					 		
+			 			}
+			 			&:last-of-type {
+			 				
+			 				&:after {
+			 					
+				 			}
+			 			}
+				 	a {
+					 	
+					 	&:hover {
+						 
+					 	}
+					 	
+				 	}
+			 	}
+		 	}
+		 	svg {
+			 
+		 	}
+	 	}
+ }
+ 
+
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+ } /* Media Query */
+ 
  
  
  
