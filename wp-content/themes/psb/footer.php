@@ -171,7 +171,11 @@ to our clients</span><!-- large_header -->
 			
 		</div><!-- latest_news_wrapper -->
 		
+		<div style="clear:both"></div>
+		
 	</div><!-- inner_footer -->
+	
+	
 	
 	<div class="lower_footer">
 		
@@ -200,6 +204,8 @@ to our clients</span><!-- large_header -->
 		</div><!-- social_wrapper -->
 		
 	</div><!-- lower_footer -->
+	
+
 	
 </footer>
 
