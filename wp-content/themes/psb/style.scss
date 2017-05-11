@@ -1934,7 +1934,7 @@ svg#global_gradient {
  .locations_wrapper {
 	 width: 805px;
 	 overflow: hidden;
-	
+	padding-left: 2px;
 	 float:left;
 	}
  
@@ -2210,9 +2210,10 @@ svg#global_gradient {
 
 
  .lower_footer {
-	 	max-width:1750px;
+	 	max-width:1810px;
 	 	margin:0 auto;
 	 	width:100%;
+	 	padding:0 30px;
 	 	overflow: hidden;
 	 	ul.copyright {
 		 	float:left;
