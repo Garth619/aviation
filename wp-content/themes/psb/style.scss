@@ -1630,7 +1630,7 @@ svg#global_gradient {
 	margin:154px auto 0;
 	width:100%;
 	position: relative;
-	display: flex;
+	overflow: hidden;
 	span.large_header {
 		font-family: $proximabold;
 		font-size:20px;
@@ -1640,14 +1640,15 @@ svg#global_gradient {
 		width: 455px;
 		padding-left:2%;
 		height:50px;
+		float:left;
 		
 	}
 	.greyline_wrapper {
-		width:75%;
+		width:calc(100% - 455px);
 		height:1px;
 		position: relative;
 		top:14px;
-		flex-grow: 1;
+		float:left;
 		.grey_line {
 			background:#e3e3e4;
 			width:100%;
@@ -2360,6 +2361,46 @@ svg#global_gradient {
 			}
 		}
 		
+		
+		
+		
+		
+		
+.awards_slider_wrapper {
+//  	float:none;
+	.awards_slider {
+		
+		.awards_single_slide {
+			
+			img {
+				
+			}
+		}
+	}
+	.slider_button {
+		
+	}
+	.back_button {
+		
+		img {
+			
+		}
+	}
+	.next_button {
+		
+		img {
+			
+		}
+	}
+}
+
+		
+		
+		
+		
+		
+		
+		
 
 	 
 	 
@@ -2663,6 +2704,46 @@ a.request_button {
 			}
 		}
 
+	 
+	 
+	 
+	 
+	 
+	 .awards_slider_wrapper {
+  	float:none;
+  	width:98%;
+  	background: red;
+  	margin:0 auto;
+  	max-width:100%;
+	.awards_slider {
+		width:90%;
+		.awards_single_slide {
+			
+			img {
+				
+			}
+		}
+	}
+	.slider_button {
+		
+	}
+	.back_button {
+		
+		img {
+			
+		}
+	}
+	.next_button {
+		
+		img {
+			
+		}
+	}
+}
+
+		
+		
+	 
 	 
 	 
 	 
@@ -3495,11 +3576,13 @@ a.tel {
 						&:last-of-type {
 							&:after {
 							content:"";
-							width:50px;
-							height:50px;
-							background: red;
+							width:37px;
+							height:27px;
+							background: url(images/pa-arrow-tab.png) top left no-repeat;
 							display: block;
 							margin:0 auto;
+							position: relative;
+							top:50px;
 							}
 						}
 					}

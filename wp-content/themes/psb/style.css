@@ -1176,7 +1176,7 @@ ul.slick-dots {
   margin: 154px auto 0;
   width: 100%;
   position: relative;
-  display: flex; }
+  overflow: hidden; }
   .awards_wrapper span.large_header {
     font-family: "Proxima N W01 Bold";
     font-size: 20px;
@@ -1185,13 +1185,14 @@ ul.slick-dots {
     letter-spacing: 8px;
     width: 455px;
     padding-left: 2%;
-    height: 50px; }
+    height: 50px;
+    float: left; }
   .awards_wrapper .greyline_wrapper {
-    width: 75%;
+    width: calc(100% - 455px);
     height: 1px;
     position: relative;
     top: 14px;
-    flex-grow: 1; }
+    float: left; }
     .awards_wrapper .greyline_wrapper .grey_line {
       background: #e3e3e4;
       width: 100%;
@@ -1785,7 +1786,15 @@ footer {
       line-height: 39px; }
   .about_image_wrapper {
     width: calc(100% - 750px);
-    /* 	height: 386px; */ } }
+    /* 	height: 386px; */ }
+  .awards_slider_wrapper {
+    float: none;
+    width: 98%;
+    background: red;
+    margin: 0 auto;
+    max-width: 100%; }
+    .awards_slider_wrapper .awards_slider {
+      width: 90%; } }
 
 /* Media Query */
 @media screen and (max-width: 1500px) {
@@ -1881,11 +1890,13 @@ footer {
     float: none; }
   .types_of_accidents_wrapper .accidents_gradient .accidents_inner_gradient .accident_title span.accident_title_reg:last-of-type:after {
     content: "";
-    width: 50px;
-    height: 50px;
-    background: red;
+    width: 37px;
+    height: 27px;
+    background: url(images/pa-arrow-tab.png) top left no-repeat;
     display: block;
-    margin: 0 auto; }
+    margin: 0 auto;
+    position: relative;
+    top: 50px; }
   .types_of_accidents_wrapper .accidents_gradient .accidents_inner_gradient .accident_title span.accident_title_gradient {
     font-size: 80px; } }
 
