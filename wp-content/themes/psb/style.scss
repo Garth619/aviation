@@ -1152,8 +1152,8 @@ svg#global_gradient {
 	 width:100%;
 	 background: linear-gradient(rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0.18)), url(images/test_bgimage.jpg) top left no-repeat;
 	 background-size:cover;
-	 
-	 height:1606px;
+	 padding-bottom:420px;
+	 overflow: hidden;
  }
  
  
@@ -1304,13 +1304,15 @@ svg#global_gradient {
 	
 .case_results {
 	width:100%;
-	height:2212px;
+// 	height:2212px;
 	background: url(images/results_bg.png) top center no-repeat;
 	margin-top:-290px;
+	
 	.case_results_inner {
-		max-width:1475px;
+		max-width:1535px;
 		margin:0 auto;
-		padding-top:532px;
+		padding:532px 30px 400px;
+		
 		span.large_header {
 			font-size:200px;
 			font-family: $proximabold;
@@ -1404,7 +1406,7 @@ svg#global_gradient {
 				position: absolute;
 				top:0;
 				right:80px;
-				width: 870px;
+				width: 100%;
 				height:100%;
 				z-index: 1;
 			}
@@ -1443,7 +1445,9 @@ svg#global_gradient {
 			.inner_single_case {
 					background: #fff;
 					box-shadow: 0px 1px 5px 0px rgba(24, 31, 51, 0.3);
+					height: 217px;
 				}
+				
 		}
 		
 		.small_single_case {
@@ -1494,12 +1498,13 @@ svg#global_gradient {
 		width:100%;
 		background: url(images/pa_bg.jpg) top left no-repeat;
 		background-size:cover;
-		height:1205px;
+		padding-bottom:140px;
+// 		height:1205px;
 		
 		.inner_accidents {
-
+			overflow: hidden;
 			margin:0 auto;
-			padding:0 3%;
+			padding:0 3% 10px;
 			
 		}
 	}
@@ -1622,7 +1627,7 @@ svg#global_gradient {
 
 .awards_wrapper {
 	padding:0 0 0 3%;
-	margin:162px auto 0;
+	margin:154px auto 0;
 	width:100%;
 	position: relative;
 	display: flex;
@@ -2443,7 +2448,144 @@ a.request_button {
 }
 
 
-	 
+
+
+
+
+/* Aviation Accidents */
+	
+	.aviation_accidents {
+		
+		
+		.inner_accidents {
+
+			padding-left: 30px;
+			padding-right: 30px;
+			
+		}
+	}
+	
+	
+	.accidents_grid {
+		padding-left:0;
+		width: 56%;
+		ul {
+		
+			li {
+				
+				&:nth-of-type(1n + 1) {
+					
+				}
+				&:nth-of-type(2n + 2) {
+					
+				}
+				&:nth-last-child(2) {
+					a {
+						
+					}
+				}
+				&:last-of-type {
+					a {
+						
+					}
+				}
+				&:hover {
+					
+					a {
+						
+					}
+				}
+				a {
+					
+					
+				}
+			}
+		}
+	}
+	
+	.accidents_right_content {
+		padding-right:0px;
+		width: 42%;
+		padding-left:0px;
+	}
+	
+	
+	.types_of_accidents_wrapper {
+		margin-top: 120px;
+		.accidents_gradient {
+			
+			.accidents_inner_gradient {
+				
+				.accident_title {
+					
+					span.accident_title_reg {
+						
+						&:last-of-type {
+							
+						}
+					
+					}
+					span.accident_title_gradient {
+						font-size: 60px;
+					}
+				}
+			}
+		}
+	}
+
+
+
+.awards_wrapper {
+	
+	span.large_header {
+		
+		
+	}
+	.greyline_wrapper {
+		
+		.grey_line {
+			
+		}
+		.grey_square {
+			
+		}
+	}
+}
+
+.awards_slider_wrapper {
+ 	
+	.awards_slider {
+		
+		.awards_single_slide {
+			
+			img {
+				
+			}
+		}
+	}
+	.slider_button {
+		
+	}
+	.back_button {
+		
+		img {
+			
+		}
+	}
+	.next_button {
+		
+		img {
+			
+		}
+	}
+}
+
+
+
+
+
+
+
 	 
 	 
 	 
@@ -2660,7 +2802,98 @@ a.request_button {
 	 
 	 
 	 
-	 
+/* Case Results */
+	
+	
+	
+.case_results {
+	
+	.case_results_inner {
+		padding: 462px 30px 300px;
+		span.large_header {
+			
+		}
+		span.sub_header {
+			
+			svg {
+				
+			}
+		}
+	}
+	
+}
+
+
+
+.case_results_slider_wrapper {
+	
+	
+}
+
+
+
+	.large_case_slider {
+		
+		.case_inner_content {
+			
+			span.number_header {
+				
+			}
+			span.case_sub_header {
+				
+			}
+			.case_content {
+				
+				p,ul {
+					
+				}
+			}
+			#mysquare {
+				 left: -73px;
+			}
+			.case_category_wrapper {
+				
+				
+				.case_category_title {
+					
+				}
+			}
+		}
+	}
+	
+	
+
+	.small_case_thumbnails {
+				
+		.small_single_case.myhover {
+			.inner_single_case {
+					
+				}
+		}
+		
+		.small_single_case {
+			
+			&:last-of-type {
+				
+			}
+			&:hover {
+				.inner_single_case {
+					
+				}
+			}
+			.inner_single_case {
+				
+				span.single_case_numbers {
+					font-size:40px;
+				}
+				span.case_description {
+					 margin-top: 21px;
+				}
+			}
+		}
+	}
+ 	 
+ 
 	 
 	 
 	 
@@ -2733,6 +2966,26 @@ a.tel {
 	margin-top: 27px;
 }
 
+
+
+
+
+
+/* About */
+
+
+.about {
+	
+	.about_inner {
+		height:auto;
+		padding:400px 4% 300px;
+		overflow: hidden;
+		
+	}
+}
+
+
+
 	 
 	 
 	 
@@ -2750,7 +3003,7 @@ a.tel {
  
  
  
- @media screen and (max-width: 1350px) {
+ @media screen and (max-width: 1400px) {
 	 
 	 
 	 
@@ -2844,11 +3097,87 @@ a.tel {
  
  @media screen and (max-width: 1300px) {
 	 
+	
+	
+	
+	
+	
+	/* About */
+
+
+.about {
+	.about_inner {
+		
+	}
+}
+
+
+
+	.about_content {
+			
+			.large_header_wrapper {
+					
+					span.large_header {
+						
+					}
+					svg {
+						
+					}
+			}
+			h1 {
+				
+			}
+			.about_inner_content {
+				
+				svg {
+					
+				}
+			}
+		}
+		
+		
+		.about_image_wrapper {
+			height: 300px;
+			 margin-top: 140px;
+			 
+			span.caption {
+				
+				span.purple {
+					
+				}
+			}
+			img {
+				margin-left: -26px;
+			}
+		}
+		
+		
+		
+		a.meet_attorneys {
+			position: relative;
+			margin-top:0;
+			top:-60px;
+			.gradient_bg {
+				.inner_button {
+					padding: 15px 13px;
+					span {
+						
+					}
+				}
+			}
+		}
+	 
+
+	
+	
+	/* Eight Reasons */
+	
+	
 	 
 	 
 	 
 	 .eight_reasons {
-		 background: #F4F3F8 url(images/sp_bgimage-w.jpg) no-repeat scroll bottom center;
+		 
 		 height:auto;
 		 
 	 }
@@ -2969,9 +3298,114 @@ a.tel {
 		
 
 	 
-	 
-	 
-	 
+
+/* Testimonials */
+
+
+
+
+
+.testi_slider_wrapper {
+    
+    margin-top: 273px;
+   
+}
+
+
+
+
+
+/* Case Results */
+	
+	
+	
+.case_results {
+	
+	.case_results_inner {
+		
+		span.large_header {
+			font-size:200px;
+		}
+		span.sub_header {
+			
+			svg {
+				
+			}
+		}
+	}
+	
+}
+
+
+
+.case_results_slider_wrapper {
+	
+	
+}
+
+
+
+	.large_case_slider {
+		
+		.case_inner_content {
+			
+			span.number_header {
+				
+			}
+			span.case_sub_header {
+				
+			}
+			.case_content {
+				
+				p,ul {
+					
+				}
+			}
+			#mysquare {
+				
+			}
+			.case_category_wrapper {
+				
+				
+				.case_category_title {
+					
+				}
+			}
+		}
+	}
+	
+	
+
+	.small_case_thumbnails {
+				
+		.small_single_case.myhover {
+			.inner_single_case {
+					
+				}
+		}
+		
+		.small_single_case {
+			
+			&:last-of-type {
+				
+			}
+			&:hover {
+				.inner_single_case {
+					
+				}
+			}
+			.inner_single_case {
+				
+				span.single_case_numbers {
+					
+				}
+				span.case_description {
+					
+				}
+			}
+		}
+	}
+ 	 
 	 
 	 
 	 
@@ -2987,7 +3421,164 @@ a.tel {
  
  
  
+@media screen and (max-width: 1285px) {
+	 
+
+
+/* Aviation Accidents */
+	
+	.aviation_accidents {
+		
+		
+		.inner_accidents {
+
+			
+			
+		}
+	}
+	
+	
+	.accidents_grid {
+		display: none;
+		ul {
+		
+			li {
+				
+				&:nth-of-type(1n + 1) {
+					
+				}
+				&:nth-of-type(2n + 2) {
+					
+				}
+				&:nth-last-child(2) {
+					a {
+						
+					}
+				}
+				&:last-of-type {
+					a {
+						
+					}
+				}
+				&:hover {
+					
+					a {
+						
+					}
+				}
+				a {
+					
+					
+				}
+			}
+		}
+	}
+	
+	.accidents_right_content {
+		width:100%;
+		max-width: 900px;
+		margin-left: auto;
+		margin-right: auto;
+		float:none;
+	}
+	
+	
+	.types_of_accidents_wrapper {
+		
+		.accidents_gradient {
+			
+			.accidents_inner_gradient {
+				
+				.accident_title {
+					
+					span.accident_title_reg {
+						&:last-of-type {
+							&:after {
+							content:"";
+							width:50px;
+							height:50px;
+							background: red;
+							display: block;
+							margin:0 auto;
+							}
+						}
+					}
+					span.accident_title_gradient {
+						font-size:80px;
+					}
+				}
+			}
+		}
+	}
+
+
+
+.awards_wrapper {
+	
+	span.large_header {
+		
+		
+	}
+	.greyline_wrapper {
+		
+		.grey_line {
+			
+		}
+		.grey_square {
+			
+		}
+	}
+}
+
+.awards_slider_wrapper {
+ 	
+	.awards_slider {
+		
+		.awards_single_slide {
+			
+			img {
+				
+			}
+		}
+	}
+	.slider_button {
+		
+	}
+	.back_button {
+		
+		img {
+			
+		}
+	}
+	.next_button {
+		
+		img {
+			
+		}
+	}
+}
+
+
+
+
+
+
+	 
+	 
+ } /* Media Query */
  
+ 
+ 
+ 
+ 
+ 
+ 
+ @media screen and (max-width: 1145px) {
+	 
+
+	 
+	 
+ } /* Media Query */
  
  
  

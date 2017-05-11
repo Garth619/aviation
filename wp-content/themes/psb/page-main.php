@@ -892,18 +892,7 @@ for our family.”</span>
 						
 					</div><!-- case_inner_content -->
 				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
+
 				
 			</div><!-- large_case_slider -->
 			
@@ -914,6 +903,7 @@ for our family.”</span>
 					
 					<div class="inner_single_case">
 					
+						
 						<span class="single_case_numbers">$17,800,000</span>
 						
 						<span class="case_description">government airplane<br/> accident wrongful death</span>
@@ -1001,7 +991,8 @@ for our family.”</span>
 		<div class="accidents_right_content">
 			
 			
-		
+		<a href="" style="text-decoration: none;color:#060606">
+			
 			<div class="types_of_accidents_wrapper">
 				
 				<div class="accidents_gradient">
@@ -1011,9 +1002,12 @@ for our family.”</span>
 						<div class="accident_title">
 							
 							
-							<span class="accident_title_reg">Types of</span>
-							<span class="accident_title_gradient">Aviation</span>
-							<span class="accident_title_reg">Accidents</span>
+							
+								<span class="accident_title_reg">Types of</span>
+								<span class="accident_title_gradient">Aviation</span>
+								<span class="accident_title_reg">Accidents</span>
+							
+						
 							
 						
 						</div><!-- accident_title -->
@@ -1024,6 +1018,8 @@ for our family.”</span>
 				
 				
 			</div><!-- types_of_accidents_wrapper -->
+			
+		</a>
 		
 		
 		</div><!-- accidents_right_content -->
@@ -1114,6 +1110,8 @@ for our family.”</span>
 			</div><!-- next_button -->
 	
 	</div><!-- awards_slider_wrapper -->
+	
+	<div style="clear:both"></div>
 	
 	
 </section><!-- aviation_accidents -->
