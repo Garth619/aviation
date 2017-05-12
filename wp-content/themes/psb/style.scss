@@ -4645,6 +4645,37 @@ a.tel {
 
 /* Mobile Menu */
 
+
+.mobile_menu.open {
+	.menu_bar {
+		&:first-of-type {
+			transform: rotate(45deg);
+			transform-origin: 8px 9px 0;
+			transition: all 0.2s ease 0s;
+		}
+		&:nth-of-type(2) {
+			 opacity: 0;
+			 transition: all 0.2s ease 0s;
+		}
+		&:last-of-type {
+			transform: rotate(-45deg);
+			transform-origin: 9px -2px 0;
+			
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .mobile_menu {
 	display: block;
 	cursor: pointer;
@@ -4670,6 +4701,7 @@ a.tel {
 		height:5px;
 		background:#fff;
 		margin-bottom:5px;
+		transition: all 0.2s ease 0s;
 		&:last-of-type {
 			margin-bottom: 6px;
 		}

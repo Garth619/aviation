@@ -99,6 +99,8 @@ function checkWidth() {
 			jQuery('.mobile_menu').click(function(){
 	
 				jQuery('nav').slideToggle();
+				
+				jQuery(this).toggleClass('open');
 			
 			});
 			

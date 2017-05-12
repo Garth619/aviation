@@ -2120,6 +2120,16 @@ footer {
     width: auto;
     margin-right: 15px; }
   /* Mobile Menu */
+  .mobile_menu.open .menu_bar:first-of-type {
+    transform: rotate(45deg);
+    transform-origin: 8px 9px 0;
+    transition: all 0.2s ease 0s; }
+  .mobile_menu.open .menu_bar:nth-of-type(2) {
+    opacity: 0;
+    transition: all 0.2s ease 0s; }
+  .mobile_menu.open .menu_bar:last-of-type {
+    transform: rotate(-45deg);
+    transform-origin: 9px -2px 0; }
   .mobile_menu {
     display: block;
     cursor: pointer;
@@ -2143,7 +2153,8 @@ footer {
       width: 100%;
       height: 5px;
       background: #fff;
-      margin-bottom: 5px; }
+      margin-bottom: 5px;
+      transition: all 0.2s ease 0s; }
       .mobile_menu .menu_bar:last-of-type {
         margin-bottom: 6px; }
     .mobile_menu span.menu_title {
