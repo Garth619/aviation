@@ -167,6 +167,38 @@ jQuery('.test_slider_two').slick({
 });
 
 
+
+
+
+
+// Eight Reasons
+
+
+jQuery('.reasons_grid').slick({
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  dots:false,
+  arrows:false,
+  mobileFirst:true,
+  responsive: [
+    {
+      breakpoint: 760,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 1160,
+      settings: "unslick"
+     }
+    ]
+ });
+
+
 // Case Results
 
 

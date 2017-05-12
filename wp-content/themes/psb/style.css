@@ -1940,6 +1940,10 @@ footer {
     height: auto; }
   .reasons_grid .single_reason {
     width: 50%; }
+  .single_reason_04 .grey_line_right_wrapper, .single_reason_08 .grey_line_right_wrapper {
+    display: block; }
+  .single_reason_05 .grey_line_bottom_wrapper, .single_reason_06 .grey_line_bottom_wrapper, .single_reason_07 .grey_line_bottom_wrapper, .single_reason_08 .grey_line_bottom_wrapper {
+    display: block; }
   .single_reason_hov .single_reason_hov_gradient .single_reason_hov_inner .reason_content {
     line-height: 23px; }
   /* Testimonials */
@@ -2194,8 +2198,7 @@ footer {
     margin-top: 55px; }
   /* About */
   .about .about_inner {
-    padding: 340px 30px 215px;
-    background: #193cc9; }
+    padding: 340px 30px 215px; }
   .about_content {
     width: 100%;
     padding-right: 0;
@@ -2246,7 +2249,13 @@ footer {
   /* Eight Reasons */
   .eight_reasons .reasons_title_wrapper {
     top: -55px;
-    width: 96%; } }
+    width: 96%;
+    padding: 35px; }
+  .eight_reasons .reasons_title_wrapper .gradient_bg .inner_bg span.large_header {
+    font-size: 40px;
+    letter-spacing: 3.5px; }
+  .reasons_grid {
+    margin: -31px auto; } }
 
 /* Media Query */
 
