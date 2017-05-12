@@ -526,6 +526,8 @@ header {
 nav {
 	flex-grow:1;
 	padding:50px 3% 0 0%;
+	display: block;
+	display:block;
 	.menu-header {
 		position: relative;
 	}
@@ -4390,7 +4392,15 @@ a.tel {
  
  
  
- 
+ @media screen and (min-width: 1160px) {
+	 
+	 
+	 nav {
+		 display: block !important;
+	 }
+	 
+	 
+ } /* Media Query */
  
  
  
@@ -4411,7 +4421,7 @@ header {
 	top:0;
 	left:0;
 	width:100%;
-	z-index:0;
+	z-index:20;
 	
 	&:after {
 		content:"";
@@ -4451,16 +4461,22 @@ header {
 /* Nav */
 
 
+nav.open {
+	
+}
+
+
+
 nav {
 
 	position: fixed;
-	display: block;
-	top: 96px;
+	display: none;
+	top: 101px;
 	left:0;
 	background: #fff;
 	width:100%;
 	height:100%;
-	z-index:20;
+	
 	padding:0;
 	.menu-header {
 		
@@ -4525,11 +4541,18 @@ nav {
 					color:#fff;
 				}
 			}
+			> ul.sub-menu.open {
+				max-height:3000px;
+			}
 			> ul.sub-menu {
 				position: static;
+				margin-top:-1px;
 				opacity: 1;
 				visibility: visible;
 				border-bottom: 1px solid #d1d1d1;
+				max-height:0px;
+				transition: all 1s ease-in-out;
+				
 				> li {
 					> a:after {
 						background: transparent;
@@ -4597,8 +4620,9 @@ a.tel {
 
 .mobile_menu {
 	display: block;
+	cursor: pointer;
 	width:85px;
-	padding:27px 21px 35px 23px;
+	padding:27px 21px 0px 23px;
 	text-align: center;
 	position: relative;
 	height: 101px;

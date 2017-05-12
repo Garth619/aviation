@@ -76,6 +76,57 @@ jQuery('img.svg').each(function(){
 
 
 
+// Mobile Menu
+
+
+
+
+
+
+
+
+
+
+
+
+function checkWidth() {
+    
+    if (jQuery(window).width() < 1160) {
+        
+       
+     
+			
+			jQuery('.mobile_menu').click(function(){
+	
+				jQuery('nav').slideToggle();
+			
+			});
+			
+			jQuery('ul.menu li.menu-item-has-children').click(function(){
+	
+				jQuery(this).find('ul.sub-menu').toggleClass('open');
+	
+	
+			});
+
+    		
+    	   		
+    		
+    } else {
+
+    }
+};
+
+
+checkWidth();
+
+
+
+
+
+
+
+
 
 // Testimonials
 
