@@ -3806,16 +3806,25 @@ a.tel {
 		}
 		
 		
-		.single_reason_04, .single_reason_08 {
-			.grey_line_right_wrapper {
+		
+		.single_reason_02,  .single_reason_06 {
+			.grey_line_right {
+				display: none;
+			}
+		}
+		
+		
+		.single_reason_05, .single_reason_06 {
+			.grey_line_bottom_wrapper {
 				display: block;
 			}
 		}
 		
 		
+		
 		.single_reason_05, .single_reason_06, .single_reason_07, .single_reason_08 {
 			.grey_line_bottom_wrapper {
-				display: block;
+				
 			}
 		}
 		
@@ -5007,11 +5016,7 @@ a.request_button {
 		}
 		
 		
-		.single_reason_05, .single_reason_06, .single_reason_07, .single_reason_08 {
-			.grey_line_bottom_wrapper {
-				
-			}
-		}
+		
 		
 		
 		
@@ -5047,7 +5052,14 @@ a.request_button {
 
 		
 		
-		
+		.single_reason_01,.single_reason_02,.single_reason_03,.single_reason_04, .single_reason_05, .single_reason_06, .single_reason_07, .single_reason_08 {
+			.grey_line_right_wrapper {
+				
+			}
+			.grey_line_bottom_wrapper {
+				display: none;
+			}
+		}
 		
 		
 		
