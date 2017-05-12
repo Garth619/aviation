@@ -14,7 +14,7 @@ get_header(); ?>
 	
 	<div class="inner_content">
 		
-		<span class="large_header">Helping you with<br/> a <span class="extra">f</span>light to recovery</span><!-- large_header -->
+		<span class="large_header">Helping you with<br class="desktop_break"/> a <span class="extra">f</span>light to recovery</span><!-- large_header -->
 		
 		<div class="sub_header_wrapper">
 			
@@ -72,6 +72,32 @@ get_header(); ?>
 			
 			
 			<h1>aviation disaster attorneys</h1>
+			
+			
+			<div class="about_image_wrapper mobile">
+			
+			
+			<span class="caption">From Left: <span class="purple">Kevin Boyle, Brian Panish, Adam Shea and Honorable Peter J. Polos (Ret.)</span></span><!-- caption -->
+			
+			<img src="<?php bloginfo('template_directory');?>/images/content_image_attorneys.jpg"/>
+			
+			
+			<a class="button_wrapper meet_attorneys" href="">
+			
+			<div class="gradient_bg">
+				
+				<div class="inner_button">
+					
+					<span>Meet Our Attorneys</span>
+				
+				</div><!-- inner_button -->
+				
+			</div><!-- request_wrapper -->
+			
+		</a><!-- request_wrapper -->
+			
+		</div><!-- about_image_wrapper -->
+			
 		
 			<div class="about_inner_content">
 				
@@ -84,7 +110,7 @@ get_header(); ?>
 		</div><!-- about_inner_content -->
 		
 		
-		<div class="about_image_wrapper">
+		<div class="about_image_wrapper desktop">
 			
 			
 			<span class="caption">From Left: <span class="purple">Kevin Boyle, Brian Panish, Adam Shea and Honorable Peter J. Polos (Ret.)</span></span><!-- caption -->

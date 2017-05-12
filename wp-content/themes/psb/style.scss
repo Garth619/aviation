@@ -685,9 +685,7 @@ a.tel {
 	background: url(images/header_mainimage.jpg) top left no-repeat;
 	background-size: cover;
 	.inner_content {
-		
 		max-width:1855px;
-		
 		margin:0 auto;
 		padding:260px 3% 0;
 		span.large_header {
@@ -697,7 +695,6 @@ a.tel {
 			line-height: 130px;
 			font-size: 115px;
 			letter-spacing: 0.8px;
-		
 			display: block;
 			padding-left:90px;
 			span.extra {
@@ -723,6 +720,7 @@ a.tel {
 				max-width: 850px;
 				line-height: 27px;
 				margin-top:5px;
+				text-align: left;
 
 			}
 		}
@@ -744,13 +742,11 @@ a.button_wrapper {
 		
 		
 		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#193cc9+0,ba19c9+100 */
-background: #193cc9; /* Old browsers */
-background: -moz-linear-gradient(left, #193cc9 0%, #ba19c9 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(left, #193cc9 0%,#ba19c9 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to right, #193cc9 0%,#ba19c9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#193cc9', endColorstr='#ba19c9',GradientType=1 ); /* IE6-9 */
-		
-		
+		background: #193cc9; /* Old browsers */
+		background: -moz-linear-gradient(left, #193cc9 0%, #ba19c9 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(left, #193cc9 0%,#ba19c9 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to right, #193cc9 0%,#ba19c9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#193cc9', endColorstr='#ba19c9',GradientType=1 ); /* IE6-9 */
 		.inner_button {
 			background: #fff;
 			padding:18px 30px;
@@ -862,6 +858,10 @@ a.request_button {
 					margin-left:-65px;
 				}
 			}
+		}
+		
+		.about_image_wrapper.mobile {
+			display:none;
 		}
 		
 		
@@ -1174,7 +1174,7 @@ svg#global_gradient {
 	 background-size:cover;
 	 padding-bottom:420px;
 	 overflow: hidden;
- }
+	}
  
  
  .testi_slider_wrapper {
@@ -3247,7 +3247,7 @@ header {
 	}
 	.inner_header {
 		display: block;
-		padding:0 11.5%;
+		padding:0 4.5%;
 		height: 110px;
 	}
 }
@@ -3281,7 +3281,7 @@ nav {
 a.tel {
 	position: absolute;
 	top:0;
-	right:11.5%;
+	right:4.5%;
 	font-size:37px;
 	width: 310px;
 	margin-top: 27px;
@@ -4410,6 +4410,7 @@ a.tel {
 	 }
 	 
 	 
+	 
  } /* Media Query */
  
  
@@ -4716,6 +4717,194 @@ a.tel {
 }
 
 
+
+/* Main Banner */
+
+.main_banner {
+	background: url(images/header-mainimage-tab.jpg) top center no-repeat;
+	background-size: cover;
+	.inner_content {
+		text-align: center;
+		 padding: 194px 3% 0;
+		span.large_header {
+			font-size:90px;
+			line-height: 102px;
+			max-width:700px;
+			margin:0 auto;
+			.desktop_break {
+				display: none;
+			}
+			span.extra {
+				
+			}
+		}
+		.sub_header_wrapper {
+			margin-left:  auto;
+			margin-right:  auto;
+			max-width: 640px;
+			.cloud1 {
+				
+			}
+			span.subheader {
+				max-width: 455px;
+				text-align: left;
+				margin-top:17px;
+
+			}
+		}
+	}
+
+}
+
+a.request_button {
+	margin-right:0;
+	margin-top:55px;
+}
+
+
+
+/* About */
+
+
+.about {
+	.about_inner {
+		 padding: 340px 30px 215px;
+		 background: $blue;
+		 
+	}
+}
+
+
+
+	.about_content {
+			width:100%;
+			padding-right:0;
+			float:none;
+		
+			.large_header_wrapper {
+					text-align: center;
+					span.large_header {
+						font-size:250px;
+					}
+					svg {
+						
+					}
+			}
+			h1 {
+				font-size:26px;
+				text-align: center;
+				margin-top:7px;
+				&:before {
+					content:"";
+					width:23px;
+					height:3px;
+					background:#fff;
+					display: inline-block;
+					margin-right:12px;
+					position: relative;
+					top:-7px;
+				}
+			}
+			.about_inner_content {
+				max-width:100%;
+				padding-top: 176px;
+				svg {
+					
+				}
+			}
+		}
+		
+		
+		.about_image_wrapper.mobile {
+			display:block;
+		}
+		
+		.about_image_wrapper.desktop {
+			display:none;
+		}
+		
+		
+		
+		.about_image_wrapper {
+			float:none;
+			
+			margin:64px auto 0;
+			width:100%;
+			height: 448px;
+			span.caption {
+				margin-top:0;
+				padding-top:27px;
+				margin-bottom: 23px;
+				span.purple {
+					
+				}
+			}
+			img {
+				 margin-left: -55px;
+			}
+		}
+		
+		
+		
+		a.meet_attorneys {
+			top: -42px;
+			margin-left: 20px;
+			.gradient_bg {
+				.inner_button {
+					padding: 17px 38px;
+					span {
+						letter-spacing: 4.5px;
+						font-size:18px;
+					}
+				}
+			}
+		}
+		
+		
+		
+		
+		
+		
+.awards_slider_wrapper {
+//  	float:none;
+	.awards_slider {
+		
+		.awards_single_slide {
+			
+			img {
+				
+			}
+		}
+	}
+	.slider_button {
+		
+	}
+	.back_button {
+		
+		img {
+			
+		}
+	}
+	.next_button {
+		
+		img {
+			
+		}
+	}
+}
+
+		
+		
+		
+		/* Eight Reasons */
+		
+		
+		.eight_reasons {
+			.reasons_title_wrapper {
+				top:-55px;
+				width:96%;
+			}
+		}
 
 
 
