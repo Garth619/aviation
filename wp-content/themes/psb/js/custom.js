@@ -105,9 +105,20 @@ function checkWidth() {
 			jQuery('ul.menu li.menu-item-has-children').click(function(){
 	
 				jQuery(this).find('ul.sub-menu').toggleClass('open');
+				
+			});
+			
+			
+			jQuery('ul.menu li.menu-item-has-children a').click(function(){
+	
+				
+				
+				jQuery(this).toggleClass('active');
 	
 	
 			});
+			
+			
 
     		
     	   		
