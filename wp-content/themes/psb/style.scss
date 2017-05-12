@@ -4452,6 +4452,7 @@ header {
 
 
 nav {
+
 	position: fixed;
 	display: block;
 	top: 96px;
@@ -4469,10 +4470,17 @@ nav {
  		line-height: 1;
  		
 		li {
-			border-bottom: 1px solid #d1d1d1;
+			
 			a {
 				display: inline-block;
 				width:100%;
+				background: #fff;
+				transition: all .3s ease-in-out;
+				border-bottom: 1px solid #d1d1d1;
+				&:hover {
+					background: $purple;
+					color:#fff;
+				}
 				
 			}
 		}
@@ -4481,19 +4489,23 @@ nav {
 		display: block;
 		text-align: center;
 		> li.menu-item-has-children {
-				a {
-					&:after {
-					content:'';
-					width:10px;
-					height: 8px;
-					display: inline-block;
-					background: url(images/header_nav_arrow_purple.svg) top left no-repeat;
-					position: relative;
-					background-size: 10px;
-					top:1px;
-					left:7px;
-				}
-			}
+				> a:hover:after {
+						background: url(images/header_nav_arrow.svg) top left no-repeat;
+					}
+				
+				> a:after {
+						content:'';
+						width:10px;
+						height: 8px;
+						display: inline-block;
+						background: url(images/header_nav_arrow_purple.svg) top left no-repeat;
+						position: relative;
+						background-size: 10px;
+						top:1px;
+						left:7px;
+						transition: all .3s ease-in-out;
+					}
+		
 		}
 		
 		> li:hover {
@@ -4509,20 +4521,36 @@ nav {
 			> a {
 				color:#000;
 				padding:15px 5px;
+				&:hover {
+					color:#fff;
+				}
 			}
 			> ul.sub-menu {
-					display: none;
+				position: static;
+				opacity: 1;
+				visibility: visible;
+				border-bottom: 1px solid #d1d1d1;
+				> li {
+					> a:after {
+						background: transparent;
+					}
+					
+				> a:hover:after {
+						background: transparent;
+					}
+					}
+
 			> li:last-of-type {
 				> a {
 					
 				}
 			}		
 			> li {
-					
+					width:auto;
 					
 					> a {
-						
-						
+						display: block;
+						width:100%;
 						&:hover {
 							
 						}
