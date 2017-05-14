@@ -679,6 +679,23 @@ $800 million in verdicts and settlements in the past 5 years.</span>
 	</div><!-- reasons_grid -->
 	
 	
+	<div class="reasons_button_wrapper">
+		
+		<div class="reasons_button_left reasons_button">
+			
+			<img src="<?php bloginfo('template_directory');?>/images/blue-left.png"/>
+			
+		</div><!-- reasons_button_left -->
+		
+		<div class="reasons_button_right reasons_button">
+			
+			<img src="<?php bloginfo('template_directory');?>/images/blue-right.png"/>
+			
+		</div><!-- reasons_button_left -->
+		
+	</div><!-- reasons_button_wrapper -->
+	
+	
 	
 </section><!-- eight_reasons -->
 
@@ -700,7 +717,12 @@ $800 million in verdicts and settlements in the past 5 years.</span>
 				
 				<span class="slide_content">“PSB really worked tirelessly to insure 
 we get the best settlement outcome 
-for our family.”</span>
+for our family.”
+
+				<span class="slider_one_name">Jennifer K.</span><!-- slider_one_name -->
+				</span>
+
+			
 				
 			</div><!-- test_single_slide -->
 			

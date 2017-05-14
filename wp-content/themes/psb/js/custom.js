@@ -179,7 +179,9 @@ jQuery('.reasons_grid').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   dots:false,
-  arrows:false,
+  arrows:true,
+  prevArrow:".reasons_button_left",
+  nextArrow:".reasons_button_right",
   mobileFirst:true,
   responsive: [
     {
