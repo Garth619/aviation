@@ -2235,22 +2235,30 @@ footer {
       text-align: center; }
       .about_content .large_header_wrapper span.large_header {
         font-size: 250px; }
+    .about_content .h1_wrapper {
+      overflow: hidden;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 740px; }
+    .about_content .tablet_line {
+      margin-top: 25px;
+      width: 23px;
+      height: 3px;
+      background: #fff;
+      float: left;
+      margin-right: 12px; }
     .about_content h1 {
       font-size: 26px;
       text-align: center;
-      margin-top: 7px; }
-      .about_content h1:before {
-        content: "";
-        width: 23px;
-        height: 3px;
-        background: #fff;
-        display: inline-block;
-        margin-right: 12px;
-        position: relative;
-        top: -7px; }
+      margin-top: 7px;
+      float: left;
+      display: inline-block; }
     .about_content .about_inner_content {
       max-width: 100%;
-      padding-top: 176px; }
+      padding-top: 168px;
+      font-size: 22px;
+      line-height: 43px;
+      letter-spacing: 1px; }
   .about_image_wrapper.mobile {
     display: block; }
   .about_image_wrapper.desktop {
@@ -2285,7 +2293,7 @@ footer {
       font-size: 40px;
       letter-spacing: 3.5px; }
   .reasons_grid {
-    margin: -30px auto; }
+    margin: -30px auto 0; }
     .reasons_grid .single_reason {
       margin-bottom: 8px; }
     .reasons_grid .single_reason_reg {
@@ -2306,8 +2314,8 @@ footer {
       text-align: center;
       cursor: pointer; }
       .reasons_button_wrapper .reasons_button img {
-        padding-top: 23px;
-        padding-bottom: 30px; }
+        padding-top: 28px;
+        padding-bottom: 22px; }
   .slick-dotted.slick-slider {
     margin-bottom: 0px; }
   /* Testimonials */
@@ -2507,7 +2515,7 @@ footer {
       .main_banner .inner_content span.large_header span.extra {
         margin-right: 6px; }
     .main_banner .inner_content .sub_header_wrapper {
-      margin-top: 26px; }
+      margin-top: 30px; }
       .main_banner .inner_content .sub_header_wrapper .cloud1 {
         display: none; }
       .main_banner .inner_content .sub_header_wrapper span.subheader {
@@ -2515,12 +2523,123 @@ footer {
         margin-left: 0;
         font-size: 17px;
         line-height: 24px;
-        letter-spacing: 3px; } }
+        letter-spacing: 3px; }
+  /* About */
+  .about .about_inner {
+    padding: 340px 13px 70px 13px; }
+  .about_content .large_header_wrapper span.large_header {
+    font-size: 150px;
+    display: block;
+    margin-bottom: 10px; }
+  .about_content .large_header_wrapper svg {
+    width: 189px; }
+  .about_content .h1_wrapper {
+    max-width: 290px; }
+  .about_content h1 {
+    text-align: left;
+    width: calc(100% - 35px);
+    line-height: 30px; }
+  .about_content .about_inner_content {
+    font-size: 18px;
+    line-height: 27px;
+    padding: 25px 0 0 0; }
+    .about_content .about_inner_content svg {
+      display: none; }
+  .about_image_wrapper {
+    margin: 40px auto 0; }
+  .about_image_wrapper {
+    background: transparent;
+    max-width: 619px;
+    height: auto; }
+    .about_image_wrapper span.caption {
+      background: #fff;
+      padding: 27px 30px 15px 30px;
+      margin: 0 auto;
+      width: 90%; }
+    .about_image_wrapper img {
+      max-width: none;
+      margin-left: 0px;
+      /*
+				width:100vw;
+				margin-left:-30px;
+*/ }
+  a.meet_attorneys {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: block !important;
+    width: 100%;
+    max-width: 350px; }
+    a.meet_attorneys .gradient_bg .inner_button {
+      padding: 12px 38px; }
+      a.meet_attorneys .gradient_bg .inner_button span {
+        display: block;
+        margin: 0 auto;
+        max-width: 170px;
+        line-height: 18px; }
+  /* Eight Reasons */
+  .eight_reasons .reasons_title_wrapper {
+    top: -26px; }
+  .eight_reasons .reasons_title_wrapper .gradient_bg .inner_bg {
+    padding: 0 15px 39px; }
+    .eight_reasons .reasons_title_wrapper .gradient_bg .inner_bg span.large_header {
+      font-size: 28px;
+      line-height: 32px;
+      margin-top: 8px; }
+    .eight_reasons .reasons_title_wrapper .gradient_bg .inner_bg span.sub_header {
+      line-height: 25px;
+      margin-top: 11px; }
+  .reasons_grid {
+    padding-bottom: 5px; }
+    .reasons_grid .single_reason {
+      height: 350px;
+      margin-bottom: 0; }
+    .reasons_grid .single_reason_reg {
+      height: 322px;
+      padding-top: 15px; }
+  .grey_line_right_wrapper {
+    display: none; }
+  .grey_line_bottom_wrapper {
+    display: none; }
+  .single_reason_hov {
+    box-shadow: none;
+    padding: 10px; }
+    .single_reason_hov .single_reason_hov_gradient .single_reason_hov_inner {
+      height: 323px;
+      padding: 25px 10px; }
+      .single_reason_hov .single_reason_hov_gradient .single_reason_hov_inner .reason_content {
+        line-height: 19px; }
+  .reasons_button_wrapper .reasons_button_left {
+    border-right: 1px solid #e3e3e4; } }
+
+/* Media Query */
+@media screen and (max-width: 639px) {
+  .about_image_wrapper span.caption {
+    width: 100%; }
+  .about_image_wrapper img {
+    width: 110vw;
+    margin-left: -30px; }
+  a.meet_attorneys {
+    top: -21px; } }
+
+/* Media Query */
+@media screen and (max-width: 500px) {
+  a.request_button {
+    margin-top: 68px; }
+    a.request_button .gradient_bg .inner_button {
+      padding: 11px 33px; }
+      a.request_button .gradient_bg .inner_button span {
+        display: block;
+        max-width: 200px;
+        line-height: 20px; } }
 
 /* Media Query */
 @media screen and (max-width: 430px) {
-  .main_banner .inner_content {
-    max-width: 350px; } }
+  .main_banner {
+    background: url(images/header-mainimage-mob.jpg) top center;
+    background-size: cover; }
+    .main_banner .inner_content {
+      max-width: 350px; } }
 
 /* Media Query */
 

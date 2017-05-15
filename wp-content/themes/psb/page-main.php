@@ -73,7 +73,15 @@ get_header(); ?>
 			</div><!-- large_header_wrapper -->
 			
 			
-			<h1>aviation disaster attorneys</h1>
+			<div class="h1_wrapper">
+				
+				<div class="tablet_line"></div><!-- tablet_line -->
+				
+				<h1>aviation disaster attorneys</h1>
+				
+			</div><!-- h1_wrapper -->
+			
+			
 			
 			
 			<div class="about_image_wrapper mobile">
@@ -157,7 +165,7 @@ get_header(); ?>
 				<span class="large_header">Reasons to Choose Us</span><!-- large_header -->
 				
 				<span class="sub_header">Our success rate is over 99% and we have obtained over 
-$800 million in verdicts and settlements in the past 5 years.</span>
+$800 million in verdicts and settlements in the past 5&nbsp;years.</span>
 				
 				
 			</div><!-- inner_bg -->
