@@ -713,7 +713,7 @@ $800 million in verdicts and settlements in the past 5&nbsp;years.</span>
 <section class="testimonials">
 	
 	
-	<div class="testi_slider_wrapper">
+	<div class="testi_slider_wrapper testi_desktop">
 		
 		
 		<div class="test_slider_one">
@@ -819,7 +819,76 @@ we get the best settlement outcome for our family.”
 
 <section class="case_results">
 	
+	
 	<div class="case_results_inner">
+	
+	<div class="testi_slider_wrapper testi_case_results">
+		
+		
+		<div class="test_slider_one">
+			
+			
+			
+			
+			
+			
+			<div class="test_single_slide">
+				
+				<span class="slide_content">“PSB really worked tirelessly to insure 
+we get the best settlement outcome for our family.”
+
+				<span class="slider_one_name">Jennifer K.</span><!-- slider_one_name -->
+				
+				</span><!-- slide_content -->
+
+			
+				
+			</div><!-- test_single_slide -->
+			
+			
+			
+			<div class="test_single_slide">
+				
+				<span class="slide_content">“Test Test Test Test Test Test Test”
+				
+				<span class="slider_one_name">Name 2</span><!-- slider_one_name -->
+				
+				</span><!-- slide_content -->
+				
+			</div><!-- test_single_slide -->
+			
+			
+			
+			
+			<div class="test_single_slide">
+				
+				<span class="slide_content">“Test Test Test Test Test Test Test Test Test Test Test TTest Test Test Test T”
+				
+				<span class="slider_one_name">Name 3</span><!-- slider_one_name -->
+				
+				</span><!-- slide_content -->
+				
+			</div><!-- test_single_slide -->
+			
+			
+			
+			
+					
+			
+			
+			
+			
+		</div><!-- test_slider_one -->
+		
+		
+	</div><!-- testi_slider_wrapper -->
+	
+	
+	
+	
+	
+	
+	
 	
 		<span class="large_header">We Win</span><!-- large_header -->
 		

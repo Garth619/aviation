@@ -847,6 +847,9 @@ svg#global_gradient {
   float: left;
   margin-top: 390px; }
 
+.testi_case_results {
+  display: none; }
+
 .test_slider_one .test_single_slide {
   margin-left: 150px; }
   .test_slider_one .test_single_slide .slide_content {
@@ -860,17 +863,17 @@ svg#global_gradient {
     .test_slider_one .test_single_slide .slide_content span.slider_one_name {
       display: none; }
 
-.testimonials ul.slick-dots {
+.testimonials ul.slick-dots, .testi_case_results ul.slick-dots {
   width: 100%;
   height: 1px;
   background-color: rgba(255, 255, 255, 0.4);
   text-align: right;
   padding-right: 10px;
   bottom: -42px; }
-  .testimonials ul.slick-dots li.slick-active button:before {
+  .testimonials ul.slick-dots li.slick-active button:before, .testi_case_results ul.slick-dots li.slick-active button:before {
     color: #fff;
     opacity: 1; }
-  .testimonials ul.slick-dots li.slick-active button:after {
+  .testimonials ul.slick-dots li.slick-active button:after, .testi_case_results ul.slick-dots li.slick-active button:after {
     content: "";
     width: 22px;
     height: 4px;
@@ -882,7 +885,7 @@ svg#global_gradient {
     position: absolute;
     opacity: 1;
     visibility: visible; }
-  .testimonials ul.slick-dots li:hover button:after {
+  .testimonials ul.slick-dots li:hover button:after, .testi_case_results ul.slick-dots li:hover button:after {
     content: "";
     width: 22px;
     height: 4px;
@@ -894,14 +897,14 @@ svg#global_gradient {
     position: absolute;
     opacity: 1;
     visibility: visible; }
-  .testimonials ul.slick-dots li {
+  .testimonials ul.slick-dots li, .testi_case_results ul.slick-dots li {
     margin-left: 20px;
     position: relative; }
-    .testimonials ul.slick-dots li button {
+    .testimonials ul.slick-dots li button, .testi_case_results ul.slick-dots li button {
       counter-increment: my-awesome-counter;
       height: 40px;
       padding: 0; }
-      .testimonials ul.slick-dots li button:before {
+      .testimonials ul.slick-dots li button:before, .testi_case_results ul.slick-dots li button:before {
         content: counter(my-awesome-counter);
         color: #fff;
         font-size: 16px;
@@ -909,7 +912,7 @@ svg#global_gradient {
         opacity: 1;
         display: inline-block;
         padding: 10px 0px 0 0; }
-      .testimonials ul.slick-dots li button:after {
+      .testimonials ul.slick-dots li button:after, .testi_case_results ul.slick-dots li button:after {
         content: "";
         width: 22px;
         height: 4px;
@@ -2346,7 +2349,7 @@ footer {
         letter-spacing: 8px;
         text-transform: uppercase;
         margin-top: 35px; }
-  .testimonials ul.slick-dots {
+  .testimonials ul.slick-dots, .testi_case_results ul.slick-dots {
     width: calc(100% - 60px);
     bottom: -11px; }
   .test_slider_two {
@@ -2378,7 +2381,8 @@ footer {
           max-width: 600px;
           line-height: 40px; }
   .case_results_slider_wrapper {
-    padding-left: 0; }
+    padding-left: 15px;
+    padding-right: 15px; }
   .large_case_slider {
     display: none; }
   .small_case_thumbnails {
@@ -2612,6 +2616,8 @@ footer {
   .reasons_button_wrapper .reasons_button_left {
     border-right: 1px solid #e3e3e4; }
   /* Testimonials */
+  .testi_desktop {
+    display: none; }
   .test_slider_one .test_single_slide {
     padding: 0 30px; }
     .test_slider_one .test_single_slide .slide_content {
@@ -2619,7 +2625,7 @@ footer {
       line-height: 45px;
       text-align: center;
       padding-right: 0; }
-  .testimonials ul.slick-dots {
+  .testimonials ul.slick-dots, .testi_case_results ul.slick-dots {
     width: 100%;
     text-align: center; }
   .test_content {
@@ -2629,7 +2635,48 @@ footer {
     padding-left: 13px;
     padding-right: 13px; }
     .test_content p, .test_content ul {
-      margin-bottom: 30px; } }
+      margin-bottom: 30px; }
+  /* Case Results */
+  .testi_case_results {
+    display: block; }
+  .case_results {
+    margin-top: -466px; }
+    .case_results .case_results_inner {
+      padding: 279px 0px 139px; }
+      .case_results .case_results_inner span.large_header {
+        margin: 134px auto 0;
+        text-align: center;
+        font-size: 130px;
+        line-height: 105px;
+        max-width: 395px; }
+      .case_results .case_results_inner .sub_header_wrapper {
+        margin: 39px auto 0; }
+        .case_results .case_results_inner .sub_header_wrapper svg {
+          display: none; }
+        .case_results .case_results_inner .sub_header_wrapper span.sub_header {
+          text-align: center;
+          width: 100%;
+          max-width: 290px;
+          font-size: 26px;
+          line-height: 32px;
+          padding-left: 0;
+          margin: 0 auto;
+          display: block;
+          letter-spacing: 6px; }
+  .case_results_slider_wrapper {
+    max-width: 490px;
+    margin: 37px auto 0; }
+  .small_case_thumbnails {
+    background: transparent;
+    height: auto; }
+    .small_case_thumbnails .small_single_case {
+      background: url(images/results_sidebar-sm.jpg) top center no-repeat;
+      height: 303px;
+      border: none; }
+      .small_case_thumbnails .small_single_case .inner_single_case {
+        height: 261px; }
+        .small_case_thumbnails .small_single_case .inner_single_case span.single_case_numbers {
+          margin-top: 32px; } }
 
 /* Media Query */
 @media screen and (max-width: 639px) {

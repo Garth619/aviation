@@ -263,6 +263,18 @@ jQuery('.small_single_case_four').mouseenter(function(){
 });
 
 
+
+
+jQuery('.small_case_thumbnails').slick({
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  dots:false,
+  arrows:false,
+});
+
+
+
 // Awards 
 
 
