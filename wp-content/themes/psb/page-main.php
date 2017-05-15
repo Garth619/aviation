@@ -14,6 +14,8 @@ get_header(); ?>
 	
 	<div class="inner_content">
 		
+		
+		
 		<span class="large_header">Helping you with<br class="desktop_break"/> a <span class="extra">f</span>light to recovery</span><!-- large_header -->
 		
 		<div class="sub_header_wrapper">
@@ -24,7 +26,7 @@ get_header(); ?>
 				
 			</div><!-- cloud1 -->
 			
-			<span class="subheader">The aviation disaster attorneys at Panish, Shea & Boyle can help you and loved ones move closer to healing.</span><!-- subheader -->
+			<span class="subheader">The aviation disaster attorneys at Panish, Shea & Boyle can help you and loved ones move closer to&nbsp;healing.</span><!-- subheader -->
 			
 		</div><!-- sub_header_wrapper -->
 		

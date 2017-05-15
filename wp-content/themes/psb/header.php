@@ -60,7 +60,8 @@
 			
 			<a class="" href="<?php bloginfo('url');?>">
 				
-				<img class="svg" src="<?php bloginfo('template_directory');?>/images/svgs/logo.svg"/>
+				<img class="svg desktop" src="<?php bloginfo('template_directory');?>/images/svgs/logo.svg"/>
+				<img class="svg mobile" src="<?php bloginfo('template_directory');?>/images/svgs/logo-m.svg"/>
 				
 			</a>
 			
@@ -89,12 +90,18 @@
 			
 		</div><!-- mobile_menu -->
 		
+		
+		
 		</div><!-- inner_header -->
 		
 		
 	</header>
 	
 
+<div class="tel_main_wrapper">
+	
+	<a class="tel_main" href="tel.18778001700">1 (877) 800-1700</a><!-- tel -->
 
+</div><!-- tel_main_wrapper -->
 
 		

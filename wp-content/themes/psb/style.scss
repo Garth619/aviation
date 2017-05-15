@@ -510,7 +510,10 @@ header {
 	height:30px;
 	margin-right:50px;
 	a {
-		img {
+		svg#logo-m {
+			display: none;
+		}
+		svg {
 			max-width:100%;
 			height:auto;
 		}
@@ -677,6 +680,12 @@ a.tel {
 
 
 /* Main Banner */
+
+
+
+.tel_main {
+	display: none;
+}
 
 
 .main_banner {
@@ -913,7 +922,9 @@ a.request_button {
 /* Eight Reasons */
 	
 svg#global_gradient {
-	display: none;
+// 	display: none;
+width:0;
+height:0;
 }
 	
 	
@@ -1029,7 +1040,7 @@ svg#global_gradient {
 					position: relative;
 					top: 45%;
 					transform: translateY(-50%);
-					fill: url(#Gradient1);
+					fill: url(#Gradient2);
 				}
 			}
 			span.reason_number {
@@ -4503,10 +4514,7 @@ header {
 	margin-right:0px;
 	margin-top: 35px;
 	a {
-		img {
-			max-width:100%;
-			height:auto;
-		}
+		
 	}
 }
 
@@ -5855,6 +5863,174 @@ a.request_button {
     
 }
 
+	 
+	 
+	 
+	 
+	 
+ } /* Media Query */
+ 
+ 
+ 
+ 
+@media screen and (max-width: 790px) {
+	 
+	 
+	 
+	 
+/* Header */
+
+
+header {
+	
+	&:after {
+		
+		
+	}
+	.inner_header {
+		padding: 0 0 0 13px;
+		height: 103px;
+	}
+}
+
+
+.logo_wrapper {
+	width:130px;
+	margin-top: 17px;
+	a {
+		svg#logo-m {
+			display: block;
+		}
+		svg#logo {
+			display: none;
+		}
+	}
+}
+
+
+nav {
+
+}
+
+
+.mobile_menu {
+	height: 103px;
+}
+
+
+
+/* Tel */
+
+
+
+a.tel {
+	display: none;
+}
+
+.tel_main_wrapper {
+	width:100%;
+	position: absolute;
+	top:84px;
+	text-align: center;
+	left:0;
+	.tel_main {
+		display: inline-block;
+		font-size:30px;
+		font-family: $proximalight;
+		color:#fff;
+		text-decoration: none;
+		letter-spacing: 2.6px;
+		width:310px;
+		
+		margin-top:30px;
+		text-align: center;
+	}
+}
+
+
+/* Main Banner */
+
+
+
+
+.main_banner {
+	
+	.inner_content {
+		padding: 232px 10px 0;
+		max-width:500px;
+		span.large_header {
+			font-size: 60px;
+			line-height: 63px;
+			max-width:542px;
+			span.extra {
+				margin-right: 6px;
+			}
+		}
+		.sub_header_wrapper {
+			 margin-top: 26px;
+			.cloud1 {
+				display: none;
+			}
+			span.subheader {
+				text-align: center;
+				margin-left:0;
+				font-size:17px;
+				line-height: 24px;
+				letter-spacing: 3px;
+			}
+		}
+	}
+
+}
+
+a.request_button {
+	
+}
+
+
+
+
+
+	 
+	 
+	 
+	 
+ } /* Media Query */
+ 
+ 
+ @media screen and (max-width: 430px) {
+	 
+	 
+	 
+	.main_banner {
+	
+	.inner_content {
+		max-width:350px;
+		span.large_header {
+			
+			span.extra {
+				
+			}
+		}
+		.sub_header_wrapper {
+			 
+			.cloud1 {
+				
+			}
+			span.subheader {
+				
+			}
+		}
+	}
+
+}
+
+a.request_button {
+	
+}
+
+
+	 
 	 
 	 
 	 
