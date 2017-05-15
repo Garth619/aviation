@@ -270,7 +270,9 @@ jQuery('.small_case_thumbnails').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   dots:false,
-  arrows:false,
+  arrows:true,
+  prevArrow:".small_button_left",
+  nextArrow:".small_button_right",
   mobileFirst:true,
   responsive: [
     {

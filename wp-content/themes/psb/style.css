@@ -2692,7 +2692,8 @@ footer {
     .small_case_buttons_wrapper .small_button {
       width: 50%;
       float: left;
-      text-align: center; }
+      text-align: center;
+      cursor: pointer; }
       .small_case_buttons_wrapper .small_button img {
         padding: 20px 0; } }
 
