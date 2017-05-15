@@ -1352,22 +1352,25 @@ svg#global_gradient {
 			letter-spacing: 1.7px;
 			display: block;
 			line-height: 1;
-			margin-left:85px;
+			margin-left:67px;
 		}
-		span.sub_header {
-			color:#fff;
-			font-size:35px;
-			text-transform: uppercase;
-			font-family: $playfairblack;
-			letter-spacing: 9px;
-			display: block;
-			margin-top:-4px;
+		.sub_header_wrapper {
 			svg {
 				width:150px;
 				display: inline-block;
-				margin-right: 9px;
+				vertical-align: top;
 				position: relative;
-				top:-7px;
+				top:-15px;
+			}
+			span.sub_header {
+				color:#fff;
+				font-size:35px;
+				text-transform: uppercase;
+				font-family: $playfairblack;
+				letter-spacing: 9px;
+				display: inline-block;
+				margin-top:-4px;
+				padding-left:20px;
 			}
 		}
 	}
@@ -1477,6 +1480,9 @@ svg#global_gradient {
 					background: #fff;
 					box-shadow: 0px 1px 5px 0px rgba(24, 31, 51, 0.3);
 					height: 217px;
+					span.single_case_numbers {
+						color:$blue;
+					}
 				}
 				
 		}
@@ -1492,6 +1498,9 @@ svg#global_gradient {
 				.inner_single_case {
 					background: #fff;
 					box-shadow: 0px 1px 5px 0px rgba(24, 31, 51, 0.3);
+					span.single_case_numbers {
+						color:$blue;
+					}
 				}
 			}
 			.inner_single_case {
@@ -1502,11 +1511,12 @@ svg#global_gradient {
 				cursor: pointer;
 				span.single_case_numbers {
 					font-family: $playfairregular;
-					color:$blue;
+					color:#060606;
 					font-size: 50px;
 					display: block;
 					line-height: 1;
 					margin-top:15px;
+					transition: all .3s ease-in-out;
 				}
 				span.case_description {
 					text-transform: uppercase;
@@ -1722,8 +1732,15 @@ svg#global_gradient {
 		margin-top:65px;
 		cursor: pointer;
 	}
+	
+	.back_button.show {
+		opacity: 1;
+	}
+
 	.back_button {
 		margin-right:10px;
+		transition: all .2s ease-in-out;
+		opacity: 0;
 		img {
 			
 		}
@@ -3143,11 +3160,20 @@ a.request_button {
 	.case_results_inner {
 		padding: 462px 30px 300px;
 		span.large_header {
-			
+			margin-left: 170px;
+			display: block;
+			letter-spacing: 6px;
 		}
-		span.sub_header {
-			
+		.sub_header_wrapper {
+			padding:0 0px 0 30px;
+// 			max-width: 766px;
+			margin:0 auto;
+			letter-spacing: 
 			svg {
+				
+			}
+			span.sub_header {
+// 				max-width: 535px;
 				
 			}
 		}
@@ -4422,7 +4448,7 @@ a.tel {
  
  
  
- @media screen and (min-width: 1160px) {
+ @media screen and (min-width: 1180px) {
 	 
 	 
 	 nav {
@@ -4436,7 +4462,7 @@ a.tel {
  
  
  
- @media screen and (max-width: 1160px) {
+ @media screen and (max-width: 1180px) {
 	 
 
 
@@ -5129,7 +5155,7 @@ a.request_button {
  		
 		.test_single_slide {
 			margin-left: 0;
-			padding:0 50px;
+			padding:0 60px;
 			.slide_content {
 				max-width:100%;
 				width:100%;
@@ -5153,7 +5179,7 @@ a.request_button {
 	.testimonials {
 	
 	ul.slick-dots {
-		width:calc(100% - 50px);
+		width:calc(100% - 60px);
 		bottom: -11px;
 		li.slick-active {
 			button {
@@ -5208,17 +5234,305 @@ a.request_button {
 		 width:100%;
 		 margin-left:0;
 		 line-height: 33px;
-		 padding:0 50px;
+		 padding:0 60px;
 		p,ul {
 			
 		}
 		
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	/* Case Results */
+	
+	
+	
+.case_results {
+	margin-top: -420px;
+	.case_results_inner {
+		padding: 439px 30px 139px;
+		
+		span.large_header {
+			font-size:150px;
+			margin-left:8%;
+		}
+		.sub_header_wrapper {
+			margin: 45px auto 0;
+			padding:0 7px;
+			svg {
+				top:-20px;
+			}
+			span.sub_header {
+				width:calc(100% - 154px);
+				max-width: 600px;
+				line-height: 40px;
+			}
+		}
+	}
+	
+}
+
+
+
+.case_results_slider_wrapper {
+	padding-left:0;
+	
+}
+
+
+
+	.large_case_slider {
+		display: none;
+		.case_inner_content {
+			
+			span.number_header {
+				
+			}
+			span.case_sub_header {
+				
+			}
+			.case_content {
+				
+				p,ul {
+					
+				}
+			}
+			#mysquare {
+				
+			}
+			.case_category_wrapper {
+				
+				
+				.case_category_title {
+					
+				}
+			}
+		}
+	}
+	
+	
+
+	.small_case_thumbnails {
+		width:100%;
+		background:url(images/results_sidebar-tab.jpg) top center no-repeat;
+		background-size: cover;
+		max-width:800px;
+		margin:0 auto;
+		float:none;
+		.small_single_case.myhover {
+			.inner_single_case {
+					background:transparent;
+					box-shadow: none;
+					span.single_case_numbers {
+						color:#060606;
+					}
+
+				}
+				
+		}
+		
+		.small_single_case.tablet_hover {
+			.inner_single_case {
+					background:#fff;
+					box-shadow: none;
+					
+				}
+		}
+		
+		.small_single_case {
+			
+			&:last-of-type {
+				
+			}
+			&:hover {
+				.inner_single_case {
+					background:transparent;
+					box-shadow: none;
+				}
+			}
+			.inner_single_case {
+				cursor: default;
+				span.single_case_numbers {
+					font-size:50px;
+				}
+				span.case_description {
+					
+					max-width:300px;
+					margin:37px auto 0;
+				}
+			}
+		}
+	}
+
+	
+	
+	
+	/* Aviation Accidents */
+	
+	.aviation_accidents {
+	
+		
+		.inner_accidents {
+			
+			
+		}
+	}
+	
+	
+	.accidents_grid {
+		
+		ul {
+			
+			li {
+				
+				&:nth-of-type(1n + 1) {
+					
+				}
+				&:nth-of-type(2n + 2) {
+					
+				}
+				&:nth-last-child(2) {
+					a {
+						
+					}
+				}
+				&:last-of-type {
+					a {
+						
+					}
+				}
+				&:hover {
+					
+					a {
+						
+					}
+				}
+				a {
+				
+					
+				}
+			}
+		}
+	}
+	
+	.accidents_right_content {
+		
+	}
+	
+	
+	.types_of_accidents_wrapper {
+		margin-top: 74px;
+		.accidents_gradient {
+			
+			.accidents_inner_gradient {
+				
+				.accident_title {
+					padding: 81px 20px 123px;
+					span.accident_title_reg {
+						
+						&:last-of-type {
+							&:after {
+								 top: 63px;
+							}
+						}
+					
+					}
+					span.accident_title_gradient {
+						
+					}
+				}
+			}
+		}
+	}
+
+
+
+.awards_wrapper {
+	margin: 177px auto 75px;
+	
+	span.large_header {
+		
+		
+	}
+	.greyline_wrapper {
+		
+		.grey_line {
+			
+		}
+		.grey_square {
+			
+		}
+	}
+}
+
+.awards_slider_wrapper {
+ 	display: block;
+ 	max-width:900px;
+	margin-left:auto;
+	margin-right:auto;
+	.awards_slider {
+		float:left;
+		width:calc(100% - 94px);
+		
+		.awards_single_slide {
+			
+			img {
+				
+			}
+		}
+	}
+	.slider_button {
+		
+	}
+	.back_button {
+		
+		float:left;
+		img {
+			
+		}
+	}
+	.next_button {
+		
+		float:right;
+		img {
+			
+		}
+	}
+}
+
+	
+	
+	
 
 
 
 
 
+	 
+	 
+ } /* Media Query */
+ 
+ 
+ @media screen and (max-width: 1000px) {
+	 
+	 
+	 
+	 .awards_slider_wrapper {
+	 		max-width:650px;
+	
+	}
+
+	 
+	 
+	 
 	 
 	 
  } /* Media Query */

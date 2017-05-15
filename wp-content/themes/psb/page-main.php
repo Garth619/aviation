@@ -716,11 +716,11 @@ $800 million in verdicts and settlements in the past 5 years.</span>
 			<div class="test_single_slide">
 				
 				<span class="slide_content">“PSB really worked tirelessly to insure 
-we get the best settlement outcome 
-for our family.”
+we get the best settlement outcome for our family.”
 
 				<span class="slider_one_name">Jennifer K.</span><!-- slider_one_name -->
-				</span>
+				
+				</span><!-- slide_content -->
 
 			
 				
@@ -730,7 +730,11 @@ for our family.”
 			
 			<div class="test_single_slide">
 				
-				<span class="slide_content">“Test Test Test Test Test Test Test”</span>
+				<span class="slide_content">“Test Test Test Test Test Test Test”
+				
+				<span class="slider_one_name">Name 2</span><!-- slider_one_name -->
+				
+				</span><!-- slide_content -->
 				
 			</div><!-- test_single_slide -->
 			
@@ -739,20 +743,18 @@ for our family.”
 			
 			<div class="test_single_slide">
 				
-				<span class="slide_content">“Test Test Test Test Test Test Test Test Test Test Test TTest Test Test Test T”</span>
+				<span class="slide_content">“Test Test Test Test Test Test Test Test Test Test Test TTest Test Test Test T”
+				
+				<span class="slider_one_name">Name 3</span><!-- slider_one_name -->
+				
+				</span><!-- slide_content -->
 				
 			</div><!-- test_single_slide -->
 			
 			
 			
 			
-			<div class="test_single_slide">
-				
-				<span class="slide_content">“Test Test Test Test Test Test Test Test Test”</span>
-				
-			</div><!-- test_single_slide -->
-			
-			
+					
 			
 			
 			
@@ -779,11 +781,7 @@ for our family.”
 				
 			</div><!-- test_single_slide_name -->
 			
-			<div class="test_single_slide_name">
-				
-				Name 4
-				
-			</div><!-- test_single_slide_name -->
+		
 			
 		</div><!-- test_slider_two -->
 		
@@ -815,7 +813,15 @@ for our family.”
 	
 		<span class="large_header">We Win</span><!-- large_header -->
 		
-		<span class="sub_header"> <img class="svg" src="<?php bloginfo('template_directory');?>/images/svgs/air2.svg"/> aviation accident case results</span><!-- sub_header -->
+		<div class="sub_header_wrapper">
+			
+			<img class="svg" src="<?php bloginfo('template_directory');?>/images/svgs/air2.svg"/>
+			
+			<span class="sub_header">  aviation accident case results</span><!-- sub_header -->
+			
+		</div><!-- sub_header_wrapper -->
+		
+		
 		
 		
 		<div class="case_results_slider_wrapper">

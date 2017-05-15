@@ -91,7 +91,7 @@ jQuery('img.svg').each(function(){
 
 function checkWidth() {
     
-    if (jQuery(window).width() < 1160) {
+    if (jQuery(window).width() < 1180) {
         
        
      
@@ -194,7 +194,7 @@ jQuery('.reasons_grid').slick({
       }
     },
     {
-      breakpoint: 1160,
+      breakpoint: 1180,
       settings: "unslick"
      }
     ]
@@ -275,15 +275,43 @@ jQuery('.awards_slider').slick({
   slide: '.awards_single_slide',
   prevArrow:".back_button",
   nextArrow:".next_button",
+  responsive: [
+    {
+      breakpoint: 1180,
+      settings: {
+        infinite: true,
+				slidesToShow: 3,
+				slidesToScroll: 1,
+				dots:false,
+				arrows:true,
+				slide: '.awards_single_slide',
+				prevArrow:".back_button",
+				nextArrow:".next_button"
+      }
+    },
+    {
+      breakpoint: 1000,
+      settings: {
+        infinite: true,
+				slidesToShow: 2,
+				slidesToScroll: 2,
+				dots:false,
+				arrows:true,
+				slide: '.awards_single_slide',
+				prevArrow:".back_button",
+				nextArrow:".next_button"
+      }
+    }
+    ]
 });
 
 
-jQuery('.back_button').hide();
+
 
 
 jQuery('.next_button').click(function(){
 	
-	jQuery('.back_button').fadeIn(600);
+	jQuery('.back_button').addClass('show');
 	
 	
 });

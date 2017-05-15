@@ -956,21 +956,22 @@ svg#global_gradient {
       letter-spacing: 1.7px;
       display: block;
       line-height: 1;
-      margin-left: 85px; }
-    .case_results .case_results_inner span.sub_header {
+      margin-left: 67px; }
+    .case_results .case_results_inner .sub_header_wrapper svg {
+      width: 150px;
+      display: inline-block;
+      vertical-align: top;
+      position: relative;
+      top: -15px; }
+    .case_results .case_results_inner .sub_header_wrapper span.sub_header {
       color: #fff;
       font-size: 35px;
       text-transform: uppercase;
       font-family: "PlayfairDisplay-Black";
       letter-spacing: 9px;
-      display: block;
-      margin-top: -4px; }
-      .case_results .case_results_inner span.sub_header svg {
-        width: 150px;
-        display: inline-block;
-        margin-right: 9px;
-        position: relative;
-        top: -7px; }
+      display: inline-block;
+      margin-top: -4px;
+      padding-left: 20px; }
 
 .case_results_slider_wrapper {
   max-width: 1350px;
@@ -1056,6 +1057,8 @@ svg#global_gradient {
     background: #fff;
     box-shadow: 0px 1px 5px 0px rgba(24, 31, 51, 0.3);
     height: 217px; }
+    .small_case_thumbnails .small_single_case.myhover .inner_single_case span.single_case_numbers {
+      color: #193cc9; }
   .small_case_thumbnails .small_single_case {
     height: 25%;
     border-bottom: 1px #fff solid;
@@ -1065,6 +1068,8 @@ svg#global_gradient {
     .small_case_thumbnails .small_single_case:hover .inner_single_case {
       background: #fff;
       box-shadow: 0px 1px 5px 0px rgba(24, 31, 51, 0.3); }
+      .small_case_thumbnails .small_single_case:hover .inner_single_case span.single_case_numbers {
+        color: #193cc9; }
     .small_case_thumbnails .small_single_case .inner_single_case {
       padding: 29px;
       background: transparent;
@@ -1073,11 +1078,12 @@ svg#global_gradient {
       cursor: pointer; }
       .small_case_thumbnails .small_single_case .inner_single_case span.single_case_numbers {
         font-family: "PlayfairDisplay-Regular";
-        color: #193cc9;
+        color: #060606;
         font-size: 50px;
         display: block;
         line-height: 1;
-        margin-top: 15px; }
+        margin-top: 15px;
+        transition: all .3s ease-in-out; }
       .small_case_thumbnails .small_single_case .inner_single_case span.case_description {
         text-transform: uppercase;
         color: #060606;
@@ -1248,8 +1254,12 @@ svg#global_gradient {
     height: 27px;
     margin-top: 65px;
     cursor: pointer; }
+  .awards_slider_wrapper .back_button.show {
+    opacity: 1; }
   .awards_slider_wrapper .back_button {
-    margin-right: 10px; }
+    margin-right: 10px;
+    transition: all .2s ease-in-out;
+    opacity: 0; }
   .awards_slider_wrapper .next_button {
     margin-left: 10px; }
 
@@ -1850,6 +1860,14 @@ footer {
   /* Case Results */
   .case_results .case_results_inner {
     padding: 462px 30px 300px; }
+    .case_results .case_results_inner span.large_header {
+      margin-left: 170px;
+      display: block;
+      letter-spacing: 6px; }
+    .case_results .case_results_inner .sub_header_wrapper {
+      padding: 0 0px 0 30px;
+      margin: 0 auto;
+      letter-spacing: svg; }
   .large_case_slider .case_inner_content #mysquare {
     left: -73px; }
   .small_case_thumbnails .small_single_case .inner_single_case span.single_case_numbers {
@@ -2007,12 +2025,12 @@ footer {
     display: none; } }
 
 /* Media Query */
-@media screen and (min-width: 1160px) {
+@media screen and (min-width: 1180px) {
   nav {
     display: block !important; } }
 
 /* Media Query */
-@media screen and (max-width: 1160px) {
+@media screen and (max-width: 1180px) {
   /* Header */
   header {
     position: fixed;
@@ -2301,7 +2319,7 @@ footer {
     width: 100%; }
   .test_slider_one .test_single_slide {
     margin-left: 0;
-    padding: 0 50px; }
+    padding: 0 60px; }
     .test_slider_one .test_single_slide .slide_content {
       max-width: 100%;
       width: 100%;
@@ -2317,7 +2335,7 @@ footer {
         text-transform: uppercase;
         margin-top: 35px; }
   .testimonials ul.slick-dots {
-    width: calc(100% - 50px);
+    width: calc(100% - 60px);
     bottom: -11px; }
   .test_slider_two {
     display: none; }
@@ -2329,7 +2347,79 @@ footer {
     width: 100%;
     margin-left: 0;
     line-height: 33px;
-    padding: 0 50px; } }
+    padding: 0 60px; }
+  /* Case Results */
+  .case_results {
+    margin-top: -420px; }
+    .case_results .case_results_inner {
+      padding: 439px 30px 139px; }
+      .case_results .case_results_inner span.large_header {
+        font-size: 150px;
+        margin-left: 8%; }
+      .case_results .case_results_inner .sub_header_wrapper {
+        margin: 45px auto 0;
+        padding: 0 7px; }
+        .case_results .case_results_inner .sub_header_wrapper svg {
+          top: -20px; }
+        .case_results .case_results_inner .sub_header_wrapper span.sub_header {
+          width: calc(100% - 154px);
+          max-width: 600px;
+          line-height: 40px; }
+  .case_results_slider_wrapper {
+    padding-left: 0; }
+  .large_case_slider {
+    display: none; }
+  .small_case_thumbnails {
+    width: 100%;
+    background: url(images/results_sidebar-tab.jpg) top center no-repeat;
+    background-size: cover;
+    max-width: 800px;
+    margin: 0 auto;
+    float: none; }
+    .small_case_thumbnails .small_single_case.myhover .inner_single_case {
+      background: transparent;
+      box-shadow: none; }
+      .small_case_thumbnails .small_single_case.myhover .inner_single_case span.single_case_numbers {
+        color: #060606; }
+    .small_case_thumbnails .small_single_case.tablet_hover .inner_single_case {
+      background: #fff;
+      box-shadow: none; }
+    .small_case_thumbnails .small_single_case:hover .inner_single_case {
+      background: transparent;
+      box-shadow: none; }
+    .small_case_thumbnails .small_single_case .inner_single_case {
+      cursor: default; }
+      .small_case_thumbnails .small_single_case .inner_single_case span.single_case_numbers {
+        font-size: 50px; }
+      .small_case_thumbnails .small_single_case .inner_single_case span.case_description {
+        max-width: 300px;
+        margin: 37px auto 0; }
+  /* Aviation Accidents */
+  .types_of_accidents_wrapper {
+    margin-top: 74px; }
+    .types_of_accidents_wrapper .accidents_gradient .accidents_inner_gradient .accident_title {
+      padding: 81px 20px 123px; }
+      .types_of_accidents_wrapper .accidents_gradient .accidents_inner_gradient .accident_title span.accident_title_reg:last-of-type:after {
+        top: 63px; }
+  .awards_wrapper {
+    margin: 177px auto 75px; }
+  .awards_slider_wrapper {
+    display: block;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto; }
+    .awards_slider_wrapper .awards_slider {
+      float: left;
+      width: calc(100% - 94px); }
+    .awards_slider_wrapper .back_button {
+      float: left; }
+    .awards_slider_wrapper .next_button {
+      float: right; } }
+
+/* Media Query */
+@media screen and (max-width: 1000px) {
+  .awards_slider_wrapper {
+    max-width: 650px; } }
 
 /* Media Query */
 
