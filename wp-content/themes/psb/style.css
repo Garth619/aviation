@@ -1103,6 +1103,9 @@ svg#global_gradient {
         display: block;
         margin-top: 32px; }
 
+.small_case_buttons_wrapper {
+  display: none; }
+
 /* Aviation Accidents */
 .aviation_accidents {
   width: 100%;
@@ -2642,7 +2645,7 @@ footer {
   .case_results {
     margin-top: -466px; }
     .case_results .case_results_inner {
-      padding: 279px 0px 139px; }
+      padding: 279px 0 0; }
       .case_results .case_results_inner span.large_header {
         margin: 134px auto 0;
         text-align: center;
@@ -2669,14 +2672,29 @@ footer {
   .small_case_thumbnails {
     background: transparent;
     height: auto; }
+    .small_case_thumbnails .small_single_case.myhover .inner_single_case {
+      height: 152px; }
     .small_case_thumbnails .small_single_case {
       background: url(images/results_sidebar-sm.jpg) top center no-repeat;
       height: 303px;
-      border: none; }
+      border: none;
+      padding: 8px; }
       .small_case_thumbnails .small_single_case .inner_single_case {
-        height: 261px; }
+        height: 152px;
+        padding: 0; }
         .small_case_thumbnails .small_single_case .inner_single_case span.single_case_numbers {
-          margin-top: 32px; } }
+          margin-top: 75px;
+          font-size: 45px; }
+  .small_case_buttons_wrapper {
+    width: 100%;
+    display: block;
+    overflow: hidden; }
+    .small_case_buttons_wrapper .small_button {
+      width: 50%;
+      float: left;
+      text-align: center; }
+      .small_case_buttons_wrapper .small_button img {
+        padding: 20px 0; } }
 
 /* Media Query */
 @media screen and (max-width: 639px) {

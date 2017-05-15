@@ -1547,6 +1547,11 @@ height:0;
 	}
 	
 	
+	.small_case_buttons_wrapper {
+		display: none;
+	}
+	
+	
 	/* Aviation Accidents */
 	
 	.aviation_accidents {
@@ -6142,7 +6147,7 @@ a.request_button {
 
 		
 		
-			/* Eight Reasons */
+/* Eight Reasons */
 		
 		
 		.eight_reasons {
@@ -6151,15 +6156,7 @@ a.request_button {
 			}
 		}
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+
 		
 	.eight_reasons {
 		
@@ -6196,12 +6193,7 @@ a.request_button {
 			margin-bottom:0;
 			&:hover {
 				.single_reason_hov {
-
-
-
-
-
-				}
+}
 			}
 		}
 	
@@ -6450,7 +6442,7 @@ a.request_button {
 .case_results {
 	margin-top: -466px;
 	.case_results_inner {
-		padding: 279px 0px 139px;
+		padding: 279px 0 0;
 		span.large_header {
 			margin:134px auto 0;
 			text-align: center;
@@ -6524,7 +6516,7 @@ a.request_button {
 		height:auto;
 		.small_single_case.myhover {
 			.inner_single_case {
-					
+					height: 152px;
 				}
 		}
 		
@@ -6532,6 +6524,7 @@ a.request_button {
 			background: url(images/results_sidebar-sm.jpg) top center no-repeat;
 			height:303px;
 			border:none;
+			padding: 8px;
 			&:last-of-type {
 				
 			}
@@ -6541,9 +6534,11 @@ a.request_button {
 				}
 			}
 			.inner_single_case {
-				height: 261px;
+				height: 152px;
+				padding:0;
 				span.single_case_numbers {
-					margin-top: 32px;
+					margin-top: 75px;
+					font-size:45px;
 				}
 				span.case_description {
 					 
@@ -6551,8 +6546,22 @@ a.request_button {
 			}
 		}
 	}
+	
+	
+	.small_case_buttons_wrapper {
+		width:100%;
+		display: block;
+		overflow: hidden;
+		.small_button {
+			width:50%;
+			float:left;
+			text-align: center;
+			img {
+				padding:20px 0;
+			}
+		}
+	}
  	 
-
 
 
 

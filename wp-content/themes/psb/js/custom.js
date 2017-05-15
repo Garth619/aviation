@@ -271,6 +271,13 @@ jQuery('.small_case_thumbnails').slick({
   slidesToScroll: 1,
   dots:false,
   arrows:false,
+  mobileFirst:true,
+  responsive: [
+    {
+      breakpoint: 790,
+      settings: "unslick"
+    }
+    ]
 });
 
 

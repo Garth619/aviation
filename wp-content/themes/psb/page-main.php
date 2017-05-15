@@ -1093,6 +1093,24 @@ we get the best settlement outcome for our family.”
 				
 			</div><!-- small_case_thumbnails -->
 			
+			<div class="small_case_buttons_wrapper">
+				
+				
+				<div class="small_button small_button_left">
+					
+					<img src="<?php bloginfo('template_directory');?>/images/results-arrow-tab-l.png"/>
+					
+				</div><!-- small_button_left -->
+				
+				<div class="small_button small_button_right">
+					
+					<img src="<?php bloginfo('template_directory');?>/images/results-arrow-tab-r.png"/>
+					
+				</div><!-- small_button_right -->
+				
+				
+			</div><!-- small_case_thumbnails_buttons -->
+			
 			<div style="clear:both"></div>
 			
 		</div><!-- case_results_slider_wrapper -->
