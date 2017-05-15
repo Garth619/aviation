@@ -6321,6 +6321,113 @@ a.request_button {
 }
 
 
+
+
+
+
+
+
+/* Testimonials */
+ 
+ 
+ .testimonials {
+	 
+	}
+ 
+ 
+ .testi_slider_wrapper {
+	 
+
+	 
+ }
+ 
+ 
+ 
+ .test_slider_one {
+
+		.test_single_slide {
+				padding: 0 30px;
+			.slide_content {
+				font-size:40px;
+				line-height: 45px;
+				text-align: center;
+				padding-right:0;
+				span.slider_one_name {
+					
+				}
+			}
+		}
+	}
+	
+	.testimonials {
+	
+	
+	ul.slick-dots {
+		width:100%;
+		text-align: center;
+		li.slick-active {
+			button {
+				&:before {
+					
+				}
+				&:after {
+					
+				}
+			}
+		}
+		li:hover {
+			button {
+				&:after {
+					
+				}
+			}
+		}
+		li {
+			
+			button {
+			
+				&:before {
+					
+				}
+				&:after {
+					
+					
+				}
+				
+			}
+			
+		}
+	}
+	
+	}
+	
+	
+	
+	.test_slider_two {
+		
+		
+		.test_single_slide_name {
+			
+		}
+	}
+	
+	
+	.test_content {
+		margin-top: 50px;
+		font-size:17px;
+		line-height: 27px;
+		padding-left:13px;
+		padding-right:13px;
+		p,ul {
+			margin-bottom:30px;
+		}
+	}
+
+
+
+
+
+
 	 
 	 
 	 
@@ -6409,6 +6516,7 @@ a.request_button {
 	 
 	 a.request_button {
 		 margin-top:68px;
+		 width: 100%;
 	 		.gradient_bg {
 		 		.inner_button {
 			 		padding: 11px 33px;
@@ -6416,7 +6524,8 @@ a.request_button {
 				 		display: block;
 				 		max-width: 200px;
 				 		line-height: 20px;
-				 		
+				 		margin-left:auto;
+				 		margin-right: auto;
 			 		}
 		 		}
 	 		}  
