@@ -4448,16 +4448,14 @@ a.tel {
  
  
  
- @media screen and (min-width: 1180px) {
+/* Min */  @media screen and (min-width: 1180px) { 
 	 
 	 
 	 nav {
 		 display: block !important;
 	 }
 	 
-	 
-	 
- } /* Media Query */
+} /* Media Query */
  
  
  
@@ -5378,7 +5376,7 @@ a.request_button {
 	/* Aviation Accidents */
 	
 	.aviation_accidents {
-	
+		padding-bottom:118px;
 		
 		.inner_accidents {
 			
@@ -5511,6 +5509,325 @@ a.request_button {
 	
 	
 	
+
+
+/* Request */
+
+
+.request {
+	 padding: 120px 0;
+	.inner_request {
+		
+		span.large_header {
+			margin-bottom:24px;
+		}
+		span.fields_required {
+			
+			span {
+				
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+.form_wrapper {
+	
+	ul {
+		
+		li:nth-of-type(2), li:nth-of-type(4) {
+			margin-right:0;
+		}
+		li:last-of-type {
+			
+		}
+		li {
+			margin-right: 2%;
+			width: 49%;
+			&:after {
+				
+			}
+			label {
+				
+			}
+			textarea {
+				
+				
+			}
+			input, textarea {
+				
+				&:focus {
+					
+				}
+				&:hover {
+					
+				}
+			}
+			input {
+				
+			}
+			
+		}
+	}
+}
+
+
+
+.gform_footer {
+	
+	&:before {
+		
+	}
+	&:after {
+		
+	}
+	input {
+		
+	}
+}
+
+
+.gform_footer:hover {
+	&:after {
+		
+	}
+	input {
+		
+	}
+}
+
+
+.form_wrapper ul li ::-webkit-input-placeholder {
+  
+ }
+.form_wrapper ul li ::-moz-placeholder {
+  
+ }
+.form_wrapper ul li :-moz-placeholder {
+ 
+}
+.form_wrapper ul li :-ms-input-placeholder {
+  
+ }
+ .form_wrapper ul li ::-moz-placeholder {
+  
+ }
+ 
+ .validation_error {
+	 
+ }
+ 
+ .gfield_description, .validation_message {
+	 
+ }
+
+
+
+
+	 
+	 /* Footer */
+ 
+ 
+ footer {
+ 	padding-bottom: 40px;
+	 .inner_footer {
+	 
+	 }
+ }
+ 
+ .locations_wrapper {
+	  
+	}
+ 
+ 
+.single_location_wrapper {
+ 
+ 	span.large_header {
+		
+		sup {
+			
+		}
+	}
+ .single_location {
+	 
+	 
+	 &:first-of-type {
+		 
+	 }
+	 &:last-of-type {
+		 
+	 }
+	 .white_square {
+		 
+		 span {
+			 
+		 }
+	 }
+	 span.office {
+		 
+	 }
+	 .address {
+		 
+	 }
+	 a.get_directions {
+		 
+		 &:before {
+			 
+		 }
+		 &:hover {
+			 
+			 &:before {
+				 
+			 }
+		 }
+	 }
+ }
+}
+ 
+ 
+ .call_us_wrapper {
+	
+	 .call_us_gradient {
+		 
+		 .call_us_inner_gradient {
+			  padding: 34px 32px;
+			 span.large_header {
+				 
+			 }
+			 span.call_us_content {
+				 
+				 a {
+					 
+				 }
+			 }
+		 }
+	 }
+ }
+ 
+ 
+ 
+ .latest_news_wrapper {
+	 
+	.latest_news_inner {
+		 
+	 }
+	 span.large_header {
+		 
+	 }
+	 .white_line_wrapper {
+		 
+		 .white_line {
+			
+			}
+			.news_square {
+				
+			}
+	 }
+	 .post_wrapper {
+		 
+		 .single_news_post:not(:first-of-type) {
+			 
+		 }
+		 .single_news_post {
+			 
+			a {
+				
+			 }
+			 span.post_title {
+			 	
+			 }
+			 span.news_content {
+				 
+			 }
+			 span.read_more {
+				 
+				 &:hover {
+					
+					 &:before {
+						 
+					}
+				 }
+				 &:before {
+					 
+				 }
+			 }
+		 }
+	 }
+ }
+ 
+ 
+
+
+ .lower_footer {
+	 	
+	 	ul.copyright {
+		 	max-width:540px;
+		 	margin:15px auto;
+		 	max-width: 470px;
+		 	
+		 	li:first-of-type {
+			 	padding-right: 0;
+			 	&:after {
+				 	display: none;
+				 	padding-left:0;
+			 	}
+		 	}
+		 	
+		 	li {
+			 	letter-spacing: 2.3px;
+			 	padding-right:12px;
+			 	&:after {
+				 	padding-left:12px;
+			 	}
+			 	&:last-of-type {
+				 
+				 	&:after {
+					 	
+				 	}
+			 	}
+			 	a {
+				 	
+				 	&:hover {
+					 	
+				 	}
+			 	}
+		 	}
+	 	}
+	 	.social_wrapper {
+		 	margin-top: 20px;
+		 	ul {
+			 	 margin: 0 50px 0 0;
+			 	li {
+				 	
+				 	&:after {
+					 		
+			 			}
+			 			&:last-of-type {
+			 				
+			 				&:after {
+			 					
+				 			}
+			 			}
+				 	a {
+					 	
+					 	&:hover {
+						 
+					 	}
+					 	
+				 	}
+			 	}
+		 	}
+		 	svg {
+			 
+		 	}
+	 	}
+ }
 
 
 

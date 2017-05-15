@@ -2025,6 +2025,7 @@ footer {
     display: none; } }
 
 /* Media Query */
+/* Min */
 @media screen and (min-width: 1180px) {
   nav {
     display: block !important; } }
@@ -2395,6 +2396,8 @@ footer {
         max-width: 300px;
         margin: 37px auto 0; }
   /* Aviation Accidents */
+  .aviation_accidents {
+    padding-bottom: 118px; }
   .types_of_accidents_wrapper {
     margin-top: 74px; }
     .types_of_accidents_wrapper .accidents_gradient .accidents_inner_gradient .accident_title {
@@ -2414,7 +2417,40 @@ footer {
     .awards_slider_wrapper .back_button {
       float: left; }
     .awards_slider_wrapper .next_button {
-      float: right; } }
+      float: right; }
+  /* Request */
+  .request {
+    padding: 120px 0; }
+    .request .inner_request span.large_header {
+      margin-bottom: 24px; }
+  .form_wrapper ul li:nth-of-type(2), .form_wrapper ul li:nth-of-type(4) {
+    margin-right: 0; }
+  .form_wrapper ul li {
+    margin-right: 2%;
+    width: 49%; }
+  /* Footer */
+  footer {
+    padding-bottom: 40px; }
+  .call_us_wrapper .call_us_gradient .call_us_inner_gradient {
+    padding: 34px 32px; }
+  .lower_footer ul.copyright {
+    max-width: 540px;
+    margin: 15px auto;
+    max-width: 470px; }
+    .lower_footer ul.copyright li:first-of-type {
+      padding-right: 0; }
+      .lower_footer ul.copyright li:first-of-type:after {
+        display: none;
+        padding-left: 0; }
+    .lower_footer ul.copyright li {
+      letter-spacing: 2.3px;
+      padding-right: 12px; }
+      .lower_footer ul.copyright li:after {
+        padding-left: 12px; }
+  .lower_footer .social_wrapper {
+    margin-top: 20px; }
+    .lower_footer .social_wrapper ul {
+      margin: 0 50px 0 0; } }
 
 /* Media Query */
 @media screen and (max-width: 1000px) {
