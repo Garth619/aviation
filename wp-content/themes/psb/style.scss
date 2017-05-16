@@ -6997,6 +6997,7 @@ a.request_button {
 		height:77px;
 		text-align: center;
 		position: relative;
+		cursor: pointer;
 		span {
 			position: relative;
 			 top: 48%;
@@ -7033,16 +7034,26 @@ a.request_button {
  
  
  .call_us_wrapper {
-	
+		margin-top: 62px;
+		padding: 20px;
 	 .call_us_gradient {
 		 
 		 .call_us_inner_gradient {
-			 
+			  padding: 25px 32px 31px;
 			 span.large_header {
-				 
+				 text-align: center;
+				 font-size:35px;
+				 line-height: 37px;
+				 span.twenty_four {
+					 font-size:50px;
+					 margin-bottom:15px;
+					 display: block;
+				 }
 			 }
 			 span.call_us_content {
-				 
+				 padding:0;
+				 text-align: center;
+				 margin-top: 25px;
 				 a {
 					 
 				 }
