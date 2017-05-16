@@ -3,7 +3,7 @@
 	
 	<div class="inner_request">
 		
-		<span class="large_header">Request Your Free Consultation</span><!-- large_header -->
+		<span class="large_header">Request <br class="mobile"/>Your Free Consultation</span><!-- large_header -->
 		
 		<span class="fields_required">All Fields Are Required <span>*</span></span><!-- fields_required -->
 		
@@ -30,7 +30,9 @@
 			
 			<div class="single_location_wrapper">
 				
-				<span class="large_header">Panish Shea & Boyle LLP - Strength By Your Side <sup>TM</sup></span>
+				<span class="large_header">Panish Shea & Boyle LLP <br class="mobile">- Strength By Your Side <sup>TM</sup></span>
+				
+				<div class="tablet_squares"></div><!-- tablet_squares -->
 			
 				<div class="single_location">
 					

@@ -1182,6 +1182,10 @@ we get the best settlement outcome for our family.”
 	</div><!-- inner_accidents -->
 	
 	
+	<div class="awards_outer_wrapper">
+	
+	
+	
 	<div class="awards_wrapper">
 		
 		
@@ -1262,7 +1266,11 @@ we get the best settlement outcome for our family.”
 	
 	</div><!-- awards_slider_wrapper -->
 	
+	
+	
 	<div style="clear:both"></div>
+	
+	</div><!-- awards_outer_wrapper -->
 	
 	
 </section><!-- aviation_accidents -->

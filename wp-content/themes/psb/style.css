@@ -1109,7 +1109,7 @@ svg#global_gradient {
 /* Aviation Accidents */
 .aviation_accidents {
   width: 100%;
-  background: url(images/pa_bg.jpg) top left no-repeat;
+  background: url(images/pa_bg.jpg) top center no-repeat;
   background-size: cover;
   padding-bottom: 140px; }
   .aviation_accidents .inner_accidents {
@@ -1293,6 +1293,8 @@ svg#global_gradient {
       margin-bottom: 11px;
       line-height: 90px;
       padding: 0 30px; }
+      .request .inner_request span.large_header br.mobile {
+        display: none; }
     .request .inner_request span.fields_required {
       color: #fff;
       font-family: "Proxima N W01 Bold";
@@ -1463,6 +1465,8 @@ footer {
     color: #fff;
     font-family: "PlayfairDisplay-Regular";
     font-size: 28px; }
+    .single_location_wrapper span.large_header br.mobile {
+      display: none; }
     .single_location_wrapper span.large_header sup {
       font-size: 11px;
       position: relative;
@@ -2695,7 +2699,114 @@ footer {
       text-align: center;
       cursor: pointer; }
       .small_case_buttons_wrapper .small_button img {
-        padding: 20px 0; } }
+        padding: 20px 0; }
+  /* Aviation Accidents */
+  .aviation_accidents {
+    padding-bottom: 49px; }
+    .aviation_accidents .inner_accidents {
+      padding-left: 15px;
+      padding-right: 15px; }
+  .accidents_right_content {
+    max-width: 100%; }
+  .types_of_accidents_wrapper {
+    padding: 17px;
+    margin-top: 52px; }
+    .types_of_accidents_wrapper .accidents_gradient .accidents_inner_gradient .accident_title {
+      padding: 67px 20px 72px; }
+      .types_of_accidents_wrapper .accidents_gradient .accidents_inner_gradient .accident_title span.accident_title_reg {
+        font-size: 20px;
+        letter-spacing: 3.8px; }
+        .types_of_accidents_wrapper .accidents_gradient .accidents_inner_gradient .accident_title span.accident_title_reg:last-of-type:after {
+          top: 41px; }
+      .types_of_accidents_wrapper .accidents_gradient .accidents_inner_gradient .accident_title span.accident_title_gradient {
+        font-size: 40px;
+        margin: 10px 0 16px; }
+  .awards_outer_wrapper {
+    background: #fff;
+    padding: 0 30px; }
+  .awards_wrapper {
+    margin: 46px auto 33px;
+    padding-top: 45px;
+    padding-left: 0;
+    overflow: visible; }
+    .awards_wrapper span.large_header {
+      float: none;
+      padding: 0 15px;
+      text-align: center;
+      width: 100%;
+      display: inline-block;
+      line-height: 22px;
+      height: auto; }
+    .awards_wrapper .greyline_wrapper {
+      float: none;
+      width: 100%;
+      background: #fff;
+      top: 0px;
+      margin-top: 24px; }
+      .awards_wrapper .greyline_wrapper .grey_square {
+        left: calc(50% - 24.5px); }
+  .awards_slider_wrapper {
+    position: relative;
+    top: -19px; }
+    .awards_slider_wrapper .awards_slider {
+      width: 100%;
+      float: none; }
+    .awards_slider_wrapper .slider_button {
+      width: 50%;
+      padding-top: 30px;
+      margin: 0;
+      text-align: center; }
+    .awards_slider_wrapper .back_button {
+      opacity: 1;
+      float: none;
+      position: relative;
+      top: 205px;
+      left: 0; }
+    .awards_slider_wrapper .next_button {
+      float: right; }
+  /* Request */
+  .request {
+    padding: 106px 0; }
+    .request .inner_request span.large_header {
+      font-size: 45px;
+      line-height: 48px;
+      max-width: 508px;
+      margin-bottom: 34px; }
+      .request .inner_request span.large_header br.mobile {
+        display: block; }
+    .request .inner_request span.fields_required {
+      line-height: 20px;
+      position: relative; }
+  .form_wrapper {
+    margin: 41px auto 0; }
+    .form_wrapper ul li {
+      width: 100%; }
+  /* Footer */
+  footer .inner_footer {
+    padding: 341px 30px 0; }
+  .single_location_wrapper span.large_header {
+    display: block;
+    font-size: 25px;
+    max-width: 300px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto; }
+    .single_location_wrapper span.large_header br.mobile {
+      display: block; }
+  .single_location_wrapper .single_location {
+    text-align: center; }
+    .single_location_wrapper .single_location:first-of-type {
+      width: 100%;
+      padding-left: 0; }
+    .single_location_wrapper .single_location:last-of-type {
+      display: none; }
+    .single_location_wrapper .single_location .white_square {
+      display: none; }
+    .single_location_wrapper .single_location span.office {
+      display: none; }
+    .single_location_wrapper .single_location .address {
+      margin-left: auto;
+      margin-right: auto; } }
 
 /* Media Query */
 @media screen and (max-width: 639px) {
@@ -2705,7 +2816,14 @@ footer {
     width: 110vw;
     margin-left: -30px; }
   a.meet_attorneys {
-    top: -21px; } }
+    top: -21px; }
+  .request .inner_request span.fields_required {
+    max-width: 300px;
+    display: inline-block; }
+    .request .inner_request span.fields_required span {
+      position: absolute;
+      top: 25px;
+      right: 65px; } }
 
 /* Media Query */
 @media screen and (max-width: 500px) {

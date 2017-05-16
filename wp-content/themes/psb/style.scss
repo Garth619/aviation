@@ -1556,7 +1556,7 @@ height:0;
 	
 	.aviation_accidents {
 		width:100%;
-		background: url(images/pa_bg.jpg) top left no-repeat;
+		background: url(images/pa_bg.jpg) top center no-repeat;
 		background-size:cover;
 		padding-bottom:140px;
 // 		height:1205px;
@@ -1793,6 +1793,9 @@ height:0;
 			margin-bottom: 11px;
 			line-height: 90px;
 			padding:0 30px;
+			br.mobile {
+				display: none;
+			}
 		}
 		span.fields_required {
 			color:#fff;
@@ -1800,6 +1803,7 @@ height:0;
 			font-size:16px;
 			text-transform: uppercase;
 			letter-spacing: 6px;
+			
 			span {
 				font-size:25px;
 				position: relative;
@@ -2013,6 +2017,9 @@ height:0;
 		color:#fff;
 		font-family: $playfairregular;
 		font-size:28px;
+		br.mobile {
+			display: none;
+		}
 		sup {
 			font-size:11px;
 			position: relative;
@@ -6568,6 +6575,502 @@ a.request_button {
 
 
 
+/* Aviation Accidents */
+	
+	.aviation_accidents {
+		padding-bottom: 49px;
+		
+		.inner_accidents {
+			padding-left:15px;
+			padding-right:15px;
+			
+		}
+	}
+	
+	
+	.accidents_grid {
+		
+		ul {
+			
+			li {
+				
+				&:nth-of-type(1n + 1) {
+					
+				}
+				&:nth-of-type(2n + 2) {
+					
+				}
+				&:nth-last-child(2) {
+					a {
+						
+					}
+				}
+				&:last-of-type {
+					a {
+						
+					}
+				}
+				&:hover {
+					
+					a {
+						
+					}
+				}
+				a {
+					
+					
+				}
+			}
+		}
+	}
+	
+	.accidents_right_content {
+		max-width: 100%;
+		
+	}
+	
+	
+	.types_of_accidents_wrapper {
+		 padding: 17px;
+		 margin-top: 52px;
+		.accidents_gradient {
+			
+			.accidents_inner_gradient {
+				
+				.accident_title {
+					padding: 67px 20px 72px;
+					span.accident_title_reg {
+						font-size:20px;
+						letter-spacing: 3.8px;
+						&:last-of-type {
+							&:after {
+								top: 41px;
+							}
+						}
+					
+					}
+					span.accident_title_gradient {
+						font-size:40px;
+						margin: 10px 0 16px;
+					}
+				}
+			}
+		}
+	}
+	
+	.awards_outer_wrapper {
+		background: #fff;
+		padding:0 30px;
+	}
+
+
+
+.awards_wrapper {
+	margin: 46px auto 33px;
+	
+	padding-top: 45px;
+	padding-left:0;
+	overflow: visible;
+	span.large_header {
+		float:none;
+		padding:0 15px;
+		text-align: center;
+		width:100%;
+		display: inline-block;
+		line-height: 22px;
+		height:auto;
+	}
+	.greyline_wrapper {
+		float:none;
+		width:100%;
+		background: #fff;
+		top: 0px;
+		margin-top:24px;
+		.grey_line {
+			
+		}
+		.grey_square {
+			left:calc(50% - 24.5px);
+		}
+	}
+}
+
+.awards_slider_wrapper {
+ 	position: relative;
+ 	top:-19px;
+	.awards_slider {
+		width:100%;
+		float:none;
+		
+		.awards_single_slide {
+			
+			img {
+				
+			}
+		}
+	}
+	.slider_button {
+		width:50%;
+		padding-top:30px;
+		margin:0;
+		text-align: center;
+	}
+	
+	.back_button.show {
+		
+	}
+
+	.back_button {
+		opacity: 1;
+		float:none;
+		position: relative;
+		top:205px;
+		left:0;
+		img {
+			
+		}
+	}
+	.next_button {
+		float:right;
+		
+		img {
+			
+		}
+	}
+}
+
+
+	 
+	 
+	 
+	 
+	 /* Request */
+
+
+.request {
+	padding: 106px 0;
+	.inner_request {
+		
+		span.large_header {
+			font-size:45px;
+			line-height: 48px;
+			max-width: 508px;
+			margin-bottom:34px;
+			br.mobile {
+				display: block;
+			}
+		}
+		span.fields_required {
+			line-height: 20px;
+			
+			position: relative;
+			span {
+				
+			}
+		}
+	}
+}
+	 
+	 
+.form_wrapper {
+	 margin: 41px auto 0;
+	ul {
+		
+		li:nth-of-type(2), li:nth-of-type(4) {
+			
+		}
+		li:last-of-type {
+			
+		}
+		li {
+			width:100%;
+			&:after {
+				
+			}
+			label {
+				
+			}
+			textarea {
+				
+				
+			}
+			input, textarea {
+				
+				&:focus {
+					
+				}
+				&:hover {
+					
+				}
+			}
+			input {
+				
+			}
+			
+		}
+	}
+}
+
+
+
+.gform_footer {
+	
+	&:before {
+		
+	}
+	&:after {
+		
+	}
+	input {
+		
+	}
+}
+
+
+.gform_footer:hover {
+	&:after {
+		
+	}
+	input {
+		
+	}
+}
+
+
+.form_wrapper ul li ::-webkit-input-placeholder {
+  
+ }
+.form_wrapper ul li ::-moz-placeholder {
+  
+ }
+.form_wrapper ul li :-moz-placeholder {
+ 
+}
+.form_wrapper ul li :-ms-input-placeholder {
+  
+ }
+ .form_wrapper ul li ::-moz-placeholder {
+  
+ }
+ 
+ .validation_error {
+	 
+ }
+ 
+ .gfield_description, .validation_message {
+	 
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+  /* Footer */
+ 
+ 
+ footer {
+ 	
+	 .inner_footer {
+	 		padding: 341px 30px 0;
+	 }
+ }
+ 
+ .locations_wrapper {
+	 
+	}
+ 
+ 
+.single_location_wrapper {
+ 
+ 	span.large_header {
+		display: block;
+    font-size: 25px;
+    max-width: 300px;
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+		br.mobile {
+			display: block;
+		}
+		sup {
+			
+		}
+	}
+ .single_location {
+	 
+	 text-align: center;
+	 &:first-of-type {
+		 width:100%;
+		 padding-left:0;
+	 }
+	 &:last-of-type {
+		display: none;
+	 }
+	 .white_square {
+		 display: none;
+		 span {
+			 
+		 }
+	 }
+	 span.office {
+		 display: none;
+	 }
+	 .address {
+		 margin-left:auto;
+		 margin-right:auto;
+	 }
+	 a.get_directions {
+		 
+		 &:before {
+			 
+		 }
+		 &:hover {
+			 
+			 &:before {
+				 
+			 }
+		 }
+	 }
+ }
+}
+ 
+ 
+ .call_us_wrapper {
+	
+	 .call_us_gradient {
+		 
+		 .call_us_inner_gradient {
+			 
+			 span.large_header {
+				 
+			 }
+			 span.call_us_content {
+				 
+				 a {
+					 
+				 }
+			 }
+		 }
+	 }
+ }
+ 
+ 
+ 
+ .latest_news_wrapper {
+	 
+	.latest_news_inner {
+		 
+	 }
+	 span.large_header {
+		 
+	 }
+	 .white_line_wrapper {
+		 
+		 .white_line {
+			
+			}
+			.news_square {
+				
+			}
+	 }
+	 .post_wrapper {
+		 
+		 .single_news_post:not(:first-of-type) {
+			 
+		 }
+		 .single_news_post {
+			 
+			a {
+				
+			 }
+			 span.post_title {
+			 	
+			 }
+			 span.news_content {
+				 
+			 }
+			 span.read_more {
+				 
+				 &:hover {
+					
+					 &:before {
+						 
+					}
+				 }
+				 &:before {
+					 
+				 }
+			 }
+		 }
+	 }
+ }
+ 
+ 
+
+
+ .lower_footer {
+	 	
+	 	ul.copyright {
+		 	
+		 	li {
+			 	
+			 	&:after {
+				 	
+			 	}
+			 	&:last-of-type {
+				 
+				 	&:after {
+					 	
+				 	}
+			 	}
+			 	a {
+				 	
+				 	&:hover {
+					 	
+				 	}
+			 	}
+		 	}
+	 	}
+	 	.social_wrapper {
+		 	
+		 	ul {
+			 	
+			 	li {
+				 	
+				 	&:after {
+					 		
+			 			}
+			 			&:last-of-type {
+			 				
+			 				&:after {
+			 					
+				 			}
+			 			}
+				 	a {
+					 	
+					 	&:hover {
+						 
+					 	}
+					 	
+				 	}
+			 	}
+		 	}
+		 	svg {
+			 
+		 	}
+	 	}
+ }
+ 
+
+	 
+	 
+
+ 
+ 
+ 
+ 
+
 	 
 	 
 	 
@@ -6642,6 +7145,29 @@ a.request_button {
 				}
 			}
 		}
+		
+		
+		
+		
+	.request {
+	
+	.inner_request {
+		
+		span.large_header {
+			
+		}
+		span.fields_required {
+			max-width:300px;
+			display: inline-block;
+			
+			span {
+				position: absolute;
+				top:25px;
+				right:65px;
+			}
+		}
+	}
+}
 
 
 	 
@@ -6710,6 +7236,13 @@ a.request_button {
 a.request_button {
 	
 }
+
+
+
+
+
+
+
 
 
 	 

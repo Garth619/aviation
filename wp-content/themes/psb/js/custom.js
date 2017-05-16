@@ -322,6 +322,19 @@ jQuery('.awards_slider').slick({
 				prevArrow:".back_button",
 				nextArrow:".next_button"
       }
+    },
+    {
+      breakpoint: 790,
+      settings: {
+        infinite: true,
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				dots:false,
+				arrows:true,
+				slide: '.awards_single_slide',
+				prevArrow:".back_button",
+				nextArrow:".next_button"
+      }
     }
     ]
 });
