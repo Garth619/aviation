@@ -32,7 +32,30 @@
 				
 				<span class="large_header">Panish Shea & Boyle LLP <br class="mobile">- Strength By Your Side <sup>TM</sup></span>
 				
-				<div class="tablet_squares"></div><!-- tablet_squares -->
+				<div class="tablet_squares">
+					
+					<div class="tablet_offices">Offices</div><!-- offices -->
+					
+					<div class="tablet_single_square la">
+						
+						<span class="">LA</span>
+						
+						<div class="tri_wrapper">
+							
+							<div class="tri"></div><!-- tri -->
+							
+						</div><!-- tri_wrapper -->
+						
+					</div><!-- tablet_single_square -->
+					
+					<div class="tablet_single_square oc">
+						
+						<span class="">OC</span>
+						
+					</div><!-- tablet_single_square -->
+					
+					
+				</div><!-- tablet_squares -->
 			
 				<div class="single_location">
 					
@@ -45,9 +68,9 @@
 					<span class="office">Office</span><!-- office -->
 					
 					<a class="address" href="" target="_blank">
-						11111 Santa Monica Blvd.<br/>
-						#700<br/>
-						Los Angeles, California<br/>
+						11111 Santa Monica Blvd.<br class="desktop" />
+						#700<br class="desktop" />
+						Los Angeles, California<br class="desktop" />
 						90025
 					</a>
 					

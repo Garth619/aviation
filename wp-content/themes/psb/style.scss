@@ -6890,6 +6890,7 @@ a.request_button {
     text-align: center;
     margin-left:auto;
     margin-right:auto;
+    line-height: 35px;
 		br.mobile {
 			display: block;
 		}
@@ -6898,8 +6899,9 @@ a.request_button {
 		}
 	}
  .single_location {
-	 
+	 width:100%;
 	 text-align: center;
+	  margin-top: 16px;
 	 &:first-of-type {
 		 width:100%;
 		 padding-left:0;
@@ -6919,9 +6921,15 @@ a.request_button {
 	 .address {
 		 margin-left:auto;
 		 margin-right:auto;
+		 font-size:18px;
+		 line-height: 24px;
+		 min-height: 100px;
+		 br.desktop {
+			 display: none;
+		 }
 	 }
 	 a.get_directions {
-		 
+		 margin-top: 22px;
 		 &:before {
 			 
 		 }
@@ -6934,6 +6942,94 @@ a.request_button {
 	 }
  }
 }
+
+
+
+
+
+.tablet_squares {
+	width:100%;
+
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:18px;
+	
+	max-width: 273px;
+	.tablet_offices {
+		color:#fff;
+		text-transform: uppercase;
+		font-size:20px;
+		font-family: $proximareg;
+		letter-spacing: 5px;
+		display: flex;
+		padding:0px;
+		margin: 0 auto 20px;
+		&:before {
+			content:"";
+			flex:1;
+			height:1px;
+			background: #fff;
+			display: inline-block;
+			margin-right:20px;
+			position: relative;
+			top:15px;
+		}
+		&:after {
+			content:"";
+			flex:1;
+			height:1px;
+			background: #fff;
+			display: inline-block;
+			margin-left:20px;
+			position: relative;
+			top:15px;
+		}
+	}
+	.la {
+		float:left;
+	}
+	.oc {
+		float:right;
+	}
+	.tablet_single_square {
+		background: #fff;
+		width:117px;
+		height:77px;
+		text-align: center;
+		position: relative;
+		span {
+			position: relative;
+			 top: 48%;
+			transform: translateY(-50%);
+			display: block;
+			font-size: 30px;
+			font-family: $playfairbold;
+			line-height: 1;
+			background-image: linear-gradient(180deg, $blue 30%, $purple 80%);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+		 }
+		 .tri_wrapper {
+			 position: absolute;
+			 bottom: -20px;
+			 left:0;
+			 width:100%;
+			 height:20px;
+			 
+			 .tri {
+				 width: 0; 
+				 height: 0; 
+				 border-left: 13px solid transparent;
+				 border-right: 13px solid transparent;
+				 border-top: 13px solid #fff;
+				 display: block;
+				 margin:0 auto;
+			 }
+		 }
+	}
+}
+
+
  
  
  .call_us_wrapper {
