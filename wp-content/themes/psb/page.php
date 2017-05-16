@@ -9,6 +9,13 @@ get_header(); ?>
 
 		
 
+			<?php include('banner.php');?>
+			
+			
+			
+			
+			
+			
 			<?php // get_template_part( 'loop', 'page' ); ?>
 
 

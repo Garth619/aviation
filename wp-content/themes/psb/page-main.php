@@ -1238,22 +1238,17 @@ we get the best settlement outcome for our family.”
 			
 			<div class="awards_single_slide">
 				
-				<img src="<?php bloginfo('template_directory');?>/images/award4.png"/>
+				<img src="<?php bloginfo('template_directory');?>/images/award5.png"/>
 				
 			</div><!-- awards_single_slider -->
 			
 			<div class="awards_single_slide">
 				
-				<img src="<?php bloginfo('template_directory');?>/images/award4.png"/>
+				<img src="<?php bloginfo('template_directory');?>/images/award6.png"/>
 				
 			</div><!-- awards_single_slider -->
 			
-			<div class="awards_single_slide">
-				
-				<img src="<?php bloginfo('template_directory');?>/images/award4.png"/>
-				
-			</div><!-- awards_single_slider -->
-			
+						
 			
 			
 		</div><!-- awards_slider -->
