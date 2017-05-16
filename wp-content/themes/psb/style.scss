@@ -120,11 +120,9 @@ header, section, nav, footer {
 .slick-slider
 {
     position: relative;
-
-    display: block;
+		display: block;
     box-sizing: border-box;
-
-    -webkit-user-select: none;
+		-webkit-user-select: none;
        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
@@ -482,7 +480,7 @@ header {
 	top:0;
 	left:0;
 	width:100%;
-	z-index:0;
+	z-index:50;
 	&:after {
 		content:"";
 		width:100%;
@@ -2417,9 +2415,10 @@ height:0;
  }
  
  .container {
-	 width:71.5%;
+	 width:68%;
 	 float:left;
-	 height:1200px;
+	 
+	 padding-right:8%;
 	 h1.title_header {
 		 text-transform: uppercase;
 		 color:$blue;
@@ -2452,10 +2451,98 @@ height:0;
  }
  
  .sidebar_wrapper {
-	 width:28.5%;
-	 background:blue;
+	 width:32%;
 	 float:right;
-	 height:1200px;
+	
+	 .sidebar_inner {
+		 background:#fff;
+		 box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.25);
+		 width:89%;
+		 float:right;
+		 
+		 span.sidebar_title {
+			 margin-top:55px;
+			 display: block;
+			 padding:20px 40px;
+			 color:#fff;
+			 font-size: 20px;
+			 font-family: $playfairbold;
+			 letter-spacing: 1.7px;
+			 display: inline-block;
+			 margin-left:-12%;
+			 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ba19c9+0,193cc9+100 */
+			 background: #ba19c9; /* Old browsers */
+			 background: -moz-linear-gradient(left, #ba19c9 0%, #193cc9 100%); /* FF3.6-15 */
+			 background: -webkit-linear-gradient(left, #ba19c9 0%,#193cc9 100%); /* Chrome10-25,Safari5.1-6 */
+			 background: linear-gradient(to right, #ba19c9 0%,#193cc9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ba19c9', endColorstr='#193cc9',GradientType=1 ); /* IE6-9 */
+		 }
+		 svg {
+			 width:112px;
+			 margin-left:2%;
+			 display: inline-block;
+			 position: relative;
+			 top:24px;
+			}
+			ul {
+				list-style: none;
+				margin:0;
+				li {
+					font-size:18px;
+					text-transform: uppercase;
+					font-family: $proximasemibold;
+					letter-spacing: 2.2px;
+					a {
+						text-decoration: none;
+						color:#000;
+						display: block;
+					}
+				}
+			}
+	 }
+ }
+ 
+
+ 
+ .content {
+	 font-size:16px;
+	 font-family: $playfairregular;
+	 line-height: 28px;
+	 letter-spacing: 1px;
+	 h2 {
+		 font-size: 18px;
+		 font-style: normal;
+		 font-family: $playfairbold;
+		 font-weight:300;
+		 margin-bottom:32px;
+	 }
+	 h3 {
+		 text-transform: uppercase;
+		 font-family: $proximasemibold;
+		 font-size: 17px;
+		 font-style: normal;
+		 font-weight: 300;
+		 margin-bottom: -1px;
+	 }
+	 a {
+		 color:$blue;
+		 text-decoration: none;
+		 transition: all .3s ease-in-out;
+		 &:hover {
+			 text-decoration: underline;
+		 }
+	 }
+	 p,ul {
+		 margin-bottom:28px;
+	 }
+	 ul {
+		 li {
+			 background:url(images/dot.png) no-repeat scroll 0 10px;
+			 list-style: none;
+			 padding: 0 0 0 35px;
+			 margin-bottom:-1px;
+		 }
+	 }
  }
  
 

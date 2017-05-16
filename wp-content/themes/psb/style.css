@@ -340,7 +340,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 0; }
+  z-index: 50; }
   header:after {
     content: "";
     width: 100%;
@@ -1793,9 +1793,9 @@ footer {
   margin: 115px auto; }
 
 .container {
-  width: 71.5%;
+  width: 68%;
   float: left;
-  height: 1200px; }
+  padding-right: 8%; }
   .container h1.title_header {
     text-transform: uppercase;
     color: #193cc9;
@@ -1822,10 +1822,84 @@ footer {
       margin-top: -5px; }
 
 .sidebar_wrapper {
-  width: 28.5%;
-  background: blue;
-  float: right;
-  height: 1200px; }
+  width: 32%;
+  float: right; }
+  .sidebar_wrapper .sidebar_inner {
+    background: #fff;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.25);
+    width: 89%;
+    float: right; }
+    .sidebar_wrapper .sidebar_inner span.sidebar_title {
+      margin-top: 55px;
+      display: block;
+      padding: 20px 40px;
+      color: #fff;
+      font-size: 20px;
+      font-family: "PlayfairDisplay-Bold";
+      letter-spacing: 1.7px;
+      display: inline-block;
+      margin-left: -12%;
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ba19c9+0,193cc9+100 */
+      background: #ba19c9;
+      /* Old browsers */
+      background: -moz-linear-gradient(left, #ba19c9 0%, #193cc9 100%);
+      /* FF3.6-15 */
+      background: -webkit-linear-gradient(left, #ba19c9 0%, #193cc9 100%);
+      /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to right, #ba19c9 0%, #193cc9 100%);
+      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ba19c9', endColorstr='#193cc9',GradientType=1 );
+      /* IE6-9 */ }
+    .sidebar_wrapper .sidebar_inner svg {
+      width: 112px;
+      margin-left: 2%;
+      display: inline-block;
+      position: relative;
+      top: 24px; }
+    .sidebar_wrapper .sidebar_inner ul {
+      list-style: none;
+      margin: 0; }
+      .sidebar_wrapper .sidebar_inner ul li {
+        font-size: 18px;
+        text-transform: uppercase;
+        font-family: "Proxima N W01 Smbd";
+        letter-spacing: 2.2px; }
+        .sidebar_wrapper .sidebar_inner ul li a {
+          text-decoration: none;
+          color: #000;
+          display: block; }
+
+.content {
+  font-size: 16px;
+  font-family: "PlayfairDisplay-Regular";
+  line-height: 28px;
+  letter-spacing: 1px; }
+  .content h2 {
+    font-size: 18px;
+    font-style: normal;
+    font-family: "PlayfairDisplay-Bold";
+    font-weight: 300;
+    margin-bottom: 32px; }
+  .content h3 {
+    text-transform: uppercase;
+    font-family: "Proxima N W01 Smbd";
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 300;
+    margin-bottom: -1px; }
+  .content a {
+    color: #193cc9;
+    text-decoration: none;
+    transition: all .3s ease-in-out; }
+    .content a:hover {
+      text-decoration: underline; }
+  .content p, .content ul {
+    margin-bottom: 28px; }
+  .content ul li {
+    background: url(images/dot.png) no-repeat scroll 0 10px;
+    list-style: none;
+    padding: 0 0 0 35px;
+    margin-bottom: -1px; }
 
 @media screen and (max-width: 1780px) {
   /* About */
