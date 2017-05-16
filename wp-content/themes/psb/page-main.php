@@ -30,7 +30,7 @@ get_header(); ?>
 			
 		</div><!-- sub_header_wrapper -->
 		
-		<a class="button_wrapper request_button" href="">
+		<a class="button_wrapper request_button" href="#free_consulation">
 			
 			<div class="gradient_bg">
 				

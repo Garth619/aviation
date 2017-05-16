@@ -1,5 +1,5 @@
 
-<section class="request">
+<section id="free_consulation" class="request">
 	
 	<div class="inner_request">
 		
@@ -113,7 +113,7 @@
 						<span class="large_header"><span class="twenty_four">24/7</span>  accessibility<br/> 
 to our clients</span><!-- large_header -->
 
-						<span class="call_us_content">Our firm's track record for prosecuting airline accident cases is unmatched. Phone us toll-free at <a href="tel:1-877-800-1700"> 1-877-800-1700</a> to set up a free consultation now.</span><!-- call_us_content -->
+						<span class="call_us_content">Our firm's track record for prosecuting airline accident cases is unmatched. Phone us toll-free at <a href="tel:1-877-800-1700"> 1-877-800-1700</a> to set up a free consultation&nbsp;now.</span><!-- call_us_content -->
 						
 					</div><!-- call_us_inner_gradient -->
 					
@@ -207,7 +207,7 @@ to our clients</span><!-- large_header -->
 		
 		<ul class="copyright">
 			
-			<li>Copyright &copy; Panish Shea & Boyle LLP</li>
+			<li><span>Copyright &copy;2017</span>  Panish Shea & Boyle LLP</li>
 			<li>All Rights Reserved</li>
 			<li><a class="" href="">Disclaimer</a></li>
 			<li><a class="" href="">Blog</a></li>
