@@ -4010,18 +4010,7 @@ a.tel {
  
  
  
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+
  
  
  @media screen and (max-width: 1300px) {
@@ -6224,7 +6213,7 @@ a.request_button {
  .sidebar_wrapper {
  	width:100%;
  	float:none;
- 	
+ 	margin-bottom: 30px;
 	 .sidebar_inner {
 		 width:97%;
 		 
@@ -6330,6 +6319,144 @@ a.request_button {
 	 
 	 
  } /* Media Query */
+ 
+ 
+ 
+ 
+@media screen and (max-width: 890px) {
+	
+	
+	
+	
+	
+	
+	
+	
+	 
+ /* Internal */
+ 
+ 
+ .inner_banner {
+	  
+	 .inner_content {
+		 
+		 span.large_header {
+			 
+			 span.extra {
+				
+			 }
+		 }
+	 }
+	 
+ }
+ 
+ 
+ a.inner_request_wrapper {
+		  
+	 }
+ 
+ 
+ .inner_main {
+	
+ }
+ 
+ .container_wrapper {
+	
+ }
+ 
+ .container {
+	 
+	 h1.title_header {
+		 
+	 }
+	 .purple_line_wrapper {
+		 
+		 .purple_line {
+			
+			 
+		 }
+		 .purple_square {
+				
+			}
+	 }
+ }
+ 
+ .sidebar_wrapper {
+ 
+	 .sidebar_inner {
+		 
+		 
+		 span.sidebar_title {
+			
+		 }
+		 svg {
+			 
+			}
+			ul {
+				max-width: 690px;
+				margin-bottom:45px;
+				li {
+					width:48%;
+					margin-right:4%;
+					&:nth-of-type(3n+3) {
+						margin-right: 4%;
+					}
+					&:nth-of-type(2n+2) {
+						margin-right: 0%;
+					}
+					&:nth-last-of-type(3) {
+						border-bottom: 1px solid #e1e1e4;
+					}
+					&:last-of-type {
+						
+					}
+					a {
+						
+						&:hover {
+							
+						}
+					}
+				}
+			}
+	 }
+ }
+ 
+
+ 
+ .content {
+	 
+	 h2 {
+		 
+	 }
+	 h3 {
+		 
+	 }
+	 a {
+		 
+		 &:hover {
+			 
+		 }
+	 }
+	 p,ul {
+		 
+	 }
+	 ul {
+		 li {
+			 
+			 
+		 }
+	 }
+ }
+
+	
+	
+	
+	
+	
+} /* Media Query */
+ 
+ 
+ 
  
  
  
@@ -7671,15 +7798,29 @@ a.request_button {
 		 
 		 
 		 span.sidebar_title {
-			
+			padding: 20px 22px;
 		 }
 		 svg {
 			 
 			}
 			ul {
-				
+				max-width:550px;
+				padding:0 25px;
 				li {
-					
+					width:100%;
+					margin-right:0;
+					&:nth-of-type(3n+3) {
+						margin-right:0;
+					}
+					&:nth-of-type(2n+2) {
+						margin-right:0;
+					}
+					&:nth-last-of-type(3) {
+						
+					}
+					&:nth-last-of-type(2) {
+						border-bottom: 1px solid #e1e1e4;
+					}
 					&:last-of-type {
 						
 					}
@@ -7830,6 +7971,137 @@ a.request_button {
  
  
  
+ 
+ 
+ @media screen and (max-width: 545px) {
+	 
+	 
+	 
+	 
+ /* Internal */
+ 
+ 
+ .inner_banner {
+	  
+	 .inner_content {
+		
+		 span.large_header {
+			 
+			 span.extra {
+				
+			 }
+		 }
+	 }
+	 
+ }
+ 
+ 
+ a.inner_request_wrapper {
+		 
+	 }
+ 
+ 
+ .inner_main {
+	
+ }
+ 
+ .container_wrapper {
+	
+ }
+ 
+ .container {
+	 
+	 h1.title_header {
+		 
+	 }
+	 .purple_line_wrapper {
+		 
+		 .purple_line {
+			
+			 
+		 }
+		 .purple_square {
+				
+			}
+	 }
+ }
+ 
+ .sidebar_wrapper {
+
+	 .sidebar_inner {
+		 
+		 
+		 span.sidebar_title {
+					 }
+		 svg {
+			 display: none;
+			}
+			ul {
+			
+				li {
+					
+					&:nth-of-type(3n+3) {
+						
+					}
+					&:nth-of-type(2n+2) {
+						
+					}
+					&:nth-last-of-type(3) {
+						
+					}
+					&:nth-last-of-type(2) {
+						
+					}
+					&:last-of-type {
+						
+					}
+					a {
+						
+						&:hover {
+							
+						}
+					}
+				}
+			}
+	 }
+ }
+ 
+
+ 
+ .content {
+	 
+	 h2 {
+		 
+	 }
+	 h3 {
+		 
+	 }
+	 a {
+		 
+		 &:hover {
+			 
+		 }
+	 }
+	 p,ul {
+		 
+	 }
+	 ul {
+		 li {
+			 
+			 
+		 }
+	 }
+ }
+ 
+	 
+	 
+	 
+	 
+	 
+ } /* Media Query */
+ 
+ 
+ 
  @media screen and (max-width: 500px) {
 	 
 	 
@@ -7895,7 +8167,123 @@ a.request_button {
 
 
 
+/* Internal */
+ 
+ 
+ .inner_banner {
+	  
+	 .inner_content {
+		
+		 span.large_header {
+			 
+			 span.extra {
+				
+			 }
+		 }
+	 }
+	 
+ }
+ 
+ 
+ a.inner_request_wrapper {
+		 
+	 }
+ 
+ 
+ .inner_main {
+	
+ }
+ 
+ .container_wrapper {
+	padding: 115px 20px;
+ }
+ 
+ .container {
+	 
+	 h1.title_header {
+		 
+	 }
+	 .purple_line_wrapper {
+		 
+		 .purple_line {
+			
+			 
+		 }
+		 .purple_square {
+				
+			}
+	 }
+ }
+ 
+ .sidebar_wrapper {
 
+	 .sidebar_inner {
+		 
+		 
+		 span.sidebar_title {
+		 	font-size: 18px;
+		 	padding: 20px 14px;
+		 	letter-spacing: 1px;
+		 }
+		 svg {
+			 
+			}
+			ul {
+			
+				li {
+					
+					&:nth-of-type(3n+3) {
+						
+					}
+					&:nth-of-type(2n+2) {
+						
+					}
+					&:nth-last-of-type(3) {
+						
+					}
+					&:nth-last-of-type(2) {
+						
+					}
+					&:last-of-type {
+						
+					}
+					a {
+						
+						&:hover {
+							
+						}
+					}
+				}
+			}
+	 }
+ }
+ 
+
+ 
+ .content {
+	 
+	 h2 {
+		 
+	 }
+	 h3 {
+		 
+	 }
+	 a {
+		 
+		 &:hover {
+			 
+		 }
+	 }
+	 p,ul {
+		 
+	 }
+	 ul {
+		 li {
+			 
+			 
+		 }
+	 }
+ }
 
 
 	 

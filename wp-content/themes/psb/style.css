@@ -2653,7 +2653,8 @@ a.inner_request_wrapper {
     margin-bottom: 75px; }
   .sidebar_wrapper {
     width: 100%;
-    float: none; }
+    float: none;
+    margin-bottom: 30px; }
     .sidebar_wrapper .sidebar_inner {
       width: 97%; }
       .sidebar_wrapper .sidebar_inner span.sidebar_title {
@@ -2687,6 +2688,22 @@ a.inner_request_wrapper {
     max-width: 650px; }
   .small_case_thumbnails {
     max-width: 646px; } }
+
+/* Media Query */
+@media screen and (max-width: 890px) {
+  /* Internal */
+  .sidebar_wrapper .sidebar_inner ul {
+    max-width: 690px;
+    margin-bottom: 45px; }
+    .sidebar_wrapper .sidebar_inner ul li {
+      width: 48%;
+      margin-right: 4%; }
+      .sidebar_wrapper .sidebar_inner ul li:nth-of-type(3n+3) {
+        margin-right: 4%; }
+      .sidebar_wrapper .sidebar_inner ul li:nth-of-type(2n+2) {
+        margin-right: 0%; }
+      .sidebar_wrapper .sidebar_inner ul li:nth-last-of-type(3) {
+        border-bottom: 1px solid #e1e1e4; } }
 
 /* Media Query */
 @media screen and (max-width: 790px) {
@@ -3135,7 +3152,21 @@ a.inner_request_wrapper {
         margin-bottom: 22px; }
   /* Internal */
   .inner_banner {
-    display: none; } }
+    display: none; }
+  .sidebar_wrapper .sidebar_inner span.sidebar_title {
+    padding: 20px 22px; }
+  .sidebar_wrapper .sidebar_inner ul {
+    max-width: 550px;
+    padding: 0 25px; }
+    .sidebar_wrapper .sidebar_inner ul li {
+      width: 100%;
+      margin-right: 0; }
+      .sidebar_wrapper .sidebar_inner ul li:nth-of-type(3n+3) {
+        margin-right: 0; }
+      .sidebar_wrapper .sidebar_inner ul li:nth-of-type(2n+2) {
+        margin-right: 0; }
+      .sidebar_wrapper .sidebar_inner ul li:nth-last-of-type(2) {
+        border-bottom: 1px solid #e1e1e4; } }
 
 /* Media Query */
 @media screen and (max-width: 639px) {
@@ -3153,6 +3184,12 @@ a.inner_request_wrapper {
       position: absolute;
       top: 25px;
       right: 65px; } }
+
+/* Media Query */
+@media screen and (max-width: 545px) {
+  /* Internal */
+  .sidebar_wrapper .sidebar_inner svg {
+    display: none; } }
 
 /* Media Query */
 @media screen and (max-width: 500px) {
@@ -3174,7 +3211,14 @@ a.inner_request_wrapper {
     background: url(images/header-mainimage-mob.jpg) top center;
     background-size: cover; }
     .main_banner .inner_content {
-      max-width: 350px; } }
+      max-width: 350px; }
+  /* Internal */
+  .container_wrapper {
+    padding: 115px 20px; }
+  .sidebar_wrapper .sidebar_inner span.sidebar_title {
+    font-size: 18px;
+    padding: 20px 14px;
+    letter-spacing: 1px; } }
 
 /* Media Query */
 
