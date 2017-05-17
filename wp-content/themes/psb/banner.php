@@ -4,7 +4,7 @@
 		
 		<span class="large_header">Helping you with a <span class="extra">f</span>light to recovery</span><!-- large_header -->
 		
-		<a class="button_wrapper request_button" href="#free_consulation">
+		<a class="button_wrapper inner_request_wrapper" href="#free_consulation">
 			
 			<div class="gradient_bg">
 				

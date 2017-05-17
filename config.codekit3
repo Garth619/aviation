@@ -27,6 +27,12 @@
 		"oAP": "\/index.php",
 		"oF": 0
 		},
+	"\/sheaboyle(1).sql.gz": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/sheaboyle(1).sql.gz",
+		"oF": 0
+		},
 	"\/wp-activate.php": {
 		"ft": 8192,
 		"oA": 2,
