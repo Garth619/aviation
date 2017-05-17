@@ -18753,6 +18753,12 @@
 		"oAP": "\/wp-content\/themes\/psb\/loop.php",
 		"oF": 0
 		},
+	"\/wp-content\/themes\/psb\/page-attorney.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/psb\/page-attorney.php",
+		"oF": 0
+		},
 	"\/wp-content\/themes\/psb\/page-blog.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -18808,6 +18814,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/wp-content\/themes\/psb\/sidebar copy.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/psb\/sidebar-attorney.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/psb\/sidebar-attorney.php",
 		"oF": 0
 		},
 	"\/wp-content\/themes\/psb\/sidebar-blog.php": {

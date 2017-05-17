@@ -2659,6 +2659,89 @@ svg#global_gradient {
 	 float:right;
  }
  
+ 
+ /* Profile */
+ 
+ 
+ .sidebar_inner {
+	 text-align: center;
+	 padding:59px 0;
+	 img.profile_pic {
+		 display: inline-block;
+		 vertical-align: top;
+		 width:100%;
+		 max-width:334px;
+	 }
+ }
+ 
+ 
+ .video_wrapper {
+	  max-width:334px;
+	  width:100%;
+	  margin:27px auto;
+	  overflow: hidden;
+	  cursor: pointer;
+	  &:hover {
+			.play_button {
+				
+					&:before {
+						 transform:rotate(-45deg) translateX(0px) translateY(-70px);
+					}
+				
+			} 
+		}
+	 .video_title {
+		 width:calc(100% - 90px);
+		 float:left;
+		 color:#fff;
+		 font-family: $playfairbold;
+		 font-size:20px;
+		 padding:17px 0 0;
+		  height: 67px;
+		 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ba19c9+2,193cc9+100 */
+		 background: #ba19c9; /* Old browsers */
+		 background: -moz-linear-gradient(left, #ba19c9 2%, #193cc9 100%); /* FF3.6-15 */
+		 background: -webkit-linear-gradient(left, #ba19c9 2%,#193cc9 100%); /* Chrome10-25,Safari5.1-6 */
+		 background: linear-gradient(to right, #ba19c9 2%,#193cc9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ba19c9', endColorstr='#193cc9',GradientType=1 ); /* IE6-9 */
+	 }
+	 .play_button {
+		 
+			 background: #060606;
+			 width:90px;
+			 display: block;
+			 height: 67px;
+			 float:right;
+			 transition: all .5s ease-in-out;
+			 position: relative;
+ 			 overflow: hidden;
+			 &:before {
+				 content:"";
+				 width:200px;
+				 height:200px;
+				 background:$purple;
+				 display: block;
+				 transform: rotate(-45deg) translateX(8px) translateY(-245px);
+				 position: absolute;
+				 top:0;
+				 left:0;
+				 transition: all .4s ease-in-out;
+			 }
+			 span.tri {
+				 width: 0; 
+				 height: 0; 
+				 border-top: 10px solid transparent;
+				 border-bottom: 10px solid transparent;
+				 border-left: 15px solid #fff;
+				 display: block;
+				 margin:23px auto 0;
+				 position: relative;
+				 z-index:20;
+			 }
+		 
+	 }
+ }
+ 
 
  
  @media screen and (max-width: 1780px) {
