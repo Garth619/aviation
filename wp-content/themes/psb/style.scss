@@ -2461,8 +2461,7 @@ svg#global_gradient {
  }
  
  .sidebar_wrapper {
-// 	 width:32%;
-	width:534px;
+ 		width:534px;
 	 float:right;
 	 margin-bottom:160px;
 	 .sidebar_inner {
@@ -2470,7 +2469,10 @@ svg#global_gradient {
 		 box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.25);
 		 width:89%;
 		 float:right;
-		 
+		 margin-bottom:40px;
+		 h3 {
+			 display: none;
+		 }
 		 span.sidebar_title {
 			 margin-top:55px;
 			 display: block;
@@ -2495,6 +2497,12 @@ svg#global_gradient {
 			 position: relative;
 			 top:24px;
 			}
+			
+			.recent_posts_sidebar {
+				
+			}
+			
+			
 			ul {
 				list-style: none;
 				margin:15px 0 0 0;
@@ -2596,7 +2604,14 @@ svg#global_gradient {
 		 padding-top:37px;
 		 h2.myposts_title {
 			 margin-bottom:3px;
-			 
+			 a {
+				 color:#060606;
+				 text-decoration: none;
+				 transition: all .2s ease-in-out;
+				 &:hover {
+					 color:$blue;
+				 }
+			 }
 			 }
 			 span.mypost_content {
 				 
@@ -2615,6 +2630,33 @@ svg#global_gradient {
 			 }
 		 
 	 }
+ }
+ 
+ 
+ #nav-below {
+	 font-family: $proximasemibold;
+	 text-transform: uppercase;
+	 letter-spacing: 1.7px;
+	 margin-top:26px;
+	 transition: all .2s ease-in-out;
+	 text-decoration: none;
+	 a {
+		 color:$blue;
+		 text-decoration: none;
+		 transition: all .2s ease-in-out;
+		 &:hover {
+			 color:$purple;
+		 }
+	 }
+ }
+ 
+ .nav-previous {
+	 float:left;
+ }
+ 
+ 
+ .nav-next {
+	 float:right;
  }
  
 
@@ -6273,6 +6315,27 @@ a.request_button {
 		 }
 		 svg {
 			 
+			}
+			.recent_posts_sidebar {
+				ul {
+					li {
+						width:100%;
+/* 						text-align: left; */
+						height:auto;
+						&:nth-last-of-type(3) {
+							border-bottom: 1px solid #e1e1e4;
+						}
+						&:nth-last-of-type(2) {
+							border-bottom: 1px solid #e1e1e4;
+						}
+						a {
+							position: relative;
+							top: 0;
+							transform:none;
+							
+						}
+					}
+				}
 			}
 			ul {
 				margin: 32px auto 37px;

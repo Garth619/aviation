@@ -1839,7 +1839,10 @@ a.inner_request_wrapper {
     background: #fff;
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.25);
     width: 89%;
-    float: right; }
+    float: right;
+    margin-bottom: 40px; }
+    .sidebar_wrapper .sidebar_inner h3 {
+      display: none; }
     .sidebar_wrapper .sidebar_inner span.sidebar_title {
       margin-top: 55px;
       display: block;
@@ -1941,6 +1944,12 @@ a.inner_request_wrapper {
     padding-top: 37px; }
     .news_wrapper .mypost h2.myposts_title {
       margin-bottom: 3px; }
+      .news_wrapper .mypost h2.myposts_title a {
+        color: #060606;
+        text-decoration: none;
+        transition: all .2s ease-in-out; }
+        .news_wrapper .mypost h2.myposts_title a:hover {
+          color: #193cc9; }
     .news_wrapper .mypost a.my_read_more {
       display: block;
       font-family: "Proxima N W01 Smbd";
@@ -1951,6 +1960,26 @@ a.inner_request_wrapper {
       text-decoration: none; }
       .news_wrapper .mypost a.my_read_more:hover {
         color: #b51ac9; }
+
+#nav-below {
+  font-family: "Proxima N W01 Smbd";
+  text-transform: uppercase;
+  letter-spacing: 1.7px;
+  margin-top: 26px;
+  transition: all .2s ease-in-out;
+  text-decoration: none; }
+  #nav-below a {
+    color: #193cc9;
+    text-decoration: none;
+    transition: all .2s ease-in-out; }
+    #nav-below a:hover {
+      color: #b51ac9; }
+
+.nav-previous {
+  float: left; }
+
+.nav-next {
+  float: right; }
 
 @media screen and (max-width: 1780px) {
   /* About */
@@ -2691,6 +2720,18 @@ a.inner_request_wrapper {
       width: 97%; }
       .sidebar_wrapper .sidebar_inner span.sidebar_title {
         margin-left: -4%; }
+      .sidebar_wrapper .sidebar_inner .recent_posts_sidebar ul li {
+        width: 100%;
+        /* 						text-align: left; */
+        height: auto; }
+        .sidebar_wrapper .sidebar_inner .recent_posts_sidebar ul li:nth-last-of-type(3) {
+          border-bottom: 1px solid #e1e1e4; }
+        .sidebar_wrapper .sidebar_inner .recent_posts_sidebar ul li:nth-last-of-type(2) {
+          border-bottom: 1px solid #e1e1e4; }
+        .sidebar_wrapper .sidebar_inner .recent_posts_sidebar ul li a {
+          position: relative;
+          top: 0;
+          transform: none; }
       .sidebar_wrapper .sidebar_inner ul {
         margin: 32px auto 37px;
         overflow: hidden;
