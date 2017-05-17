@@ -3031,7 +3031,8 @@ a.inner_request_wrapper {
     margin-left: auto;
     margin-right: auto;
     margin-top: 18px;
-    max-width: 273px; }
+    max-width: 273px;
+    display: block; }
     .tablet_squares .tablet_offices {
       color: #fff;
       text-transform: uppercase;
