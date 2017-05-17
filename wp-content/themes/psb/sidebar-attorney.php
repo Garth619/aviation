@@ -24,8 +24,26 @@
 		</div><!-- video_wrapper -->
 		
 		</a>
+		
+		
 	
 	</div><!-- sidebar_inner -->
+	
+	<div class="email_vcard_wrapper">
+			
+			<a class="email_profile profile_link" href="">
+				
+				Email
+				
+			</a><!-- email_profile -->
+			
+			<a class="vcard_profile profile_link" href="">
+				
+				Vcard
+				
+			</a>
+			
+		</div><!-- email_vcard_wrapper -->
 	
 	
 	
