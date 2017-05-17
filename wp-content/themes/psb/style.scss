@@ -2427,7 +2427,7 @@ svg#global_gradient {
  .container {
 	 width:calc(100% - 534px);
 	 float:left;
-	 margin-bottom:235px;
+	 margin-bottom:162px;
 	 padding-right:8%;
 	 h1.title_header {
 		 text-transform: uppercase;
@@ -2464,7 +2464,7 @@ svg#global_gradient {
 // 	 width:32%;
 	width:534px;
 	 float:right;
-	 margin-bottom:200px;
+	 margin-bottom:160px;
 	 .sidebar_inner {
 		 background:#fff;
 		 box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.25);
@@ -2532,6 +2532,14 @@ svg#global_gradient {
 	 font-family: $playfairregular;
 	 line-height: 28px;
 	 letter-spacing: 1px;
+	 h1 {
+		 &:after {
+			 content:"Please Use H2 Headers";
+			 color:red;
+			 display: block;
+			 margin-bottom:10px;
+		 }
+	 }
 	 h2 {
 		 font-size: 18px;
 		 font-style: normal;
@@ -2566,6 +2574,46 @@ svg#global_gradient {
 			 margin-bottom:-1px;
 			 
 		 }
+	 }
+ }
+ 
+ 
+ /* Blog */
+ 
+ 
+ .news_wrapper {
+	 margin-top:5px;
+	 .mypost:first-of-type {
+		 padding-top:0;
+	 }
+	 .mypost:last-of-type {
+		 border-bottom: none;
+		 padding-bottom: 0;
+	 }
+	 .mypost {
+		 border-bottom: 1px solid #b8b8b8;
+		 padding-bottom:42px;
+		 padding-top:37px;
+		 h2.myposts_title {
+			 margin-bottom:3px;
+			 
+			 }
+			 span.mypost_content {
+				 
+			 }
+			 a.my_read_more {
+				 display: block;
+				 font-family: $proximasemibold;
+				 text-transform: uppercase;
+				 letter-spacing: 1.7px;
+				 margin-top:26px;
+				 transition: all .2s ease-in-out;
+				 text-decoration: none;
+				 &:hover {
+					 color: $purple;
+				 }
+			 }
+		 
 	 }
  }
  

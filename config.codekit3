@@ -18483,6 +18483,12 @@
 		"oAP": "\/wp-content\/themes\/psb\/loop.php",
 		"oF": 0
 		},
+	"\/wp-content\/themes\/psb\/page-blog.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/psb\/page-blog.php",
+		"oF": 0
+		},
 	"\/wp-content\/themes\/psb\/page-main.php": {
 		"ft": 8192,
 		"oA": 2,
