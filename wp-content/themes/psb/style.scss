@@ -920,9 +920,12 @@ a.request_button {
 /* Eight Reasons */
 	
 svg#global_gradient {
-// 	display: none;
-width:0;
-height:0;
+	width:0;
+	height:0;
+	position: absolute;
+	top:0;
+	left:0;
+	z-index:-1;
 }
 	
 	
@@ -7762,6 +7765,22 @@ a.request_button {
  }
  
  
+ 
+ 
+ body:not(.page-template-page-main) {
+	  div.tel_main_wrapper {
+			a.tel_main {
+				color:$purple;
+			}
+		}	
+ }
+ 
+
+ 
+ 
+ 
+ 
+ 
  a.inner_request_wrapper {
 		 
 	 }
@@ -7772,7 +7791,7 @@ a.request_button {
  }
  
  .container_wrapper {
-	
+		padding: 190px 30px 30px;
  }
  
  .container {
@@ -8195,7 +8214,7 @@ a.request_button {
  }
  
  .container_wrapper {
-	padding: 115px 20px;
+	padding: 200px 20px;
  }
  
  .container {

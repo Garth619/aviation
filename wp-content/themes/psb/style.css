@@ -649,7 +649,11 @@ a.meet_attorneys {
 /* Eight Reasons */
 svg#global_gradient {
   width: 0;
-  height: 0; }
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; }
 
 .eight_reasons {
   background: url(images/sp_bgimage-w.jpg) top left no-repeat;
@@ -3153,6 +3157,10 @@ a.inner_request_wrapper {
   /* Internal */
   .inner_banner {
     display: none; }
+  body:not(.page-template-page-main) div.tel_main_wrapper a.tel_main {
+    color: #b51ac9; }
+  .container_wrapper {
+    padding: 190px 30px 30px; }
   .sidebar_wrapper .sidebar_inner span.sidebar_title {
     padding: 20px 22px; }
   .sidebar_wrapper .sidebar_inner ul {
@@ -3214,7 +3222,7 @@ a.inner_request_wrapper {
       max-width: 350px; }
   /* Internal */
   .container_wrapper {
-    padding: 115px 20px; }
+    padding: 200px 20px; }
   .sidebar_wrapper .sidebar_inner span.sidebar_title {
     font-size: 18px;
     padding: 20px 14px;
