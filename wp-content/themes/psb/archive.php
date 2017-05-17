@@ -14,8 +14,7 @@
 
 get_header(); ?>
 
-		<div id="container">
-			<div id="content" role="main">
+		
 
 <?php
 	/*
@@ -29,19 +28,43 @@ get_header(); ?>
 		the_post();
 ?>
 
-			<h1 class="page-title">
-<?php if ( is_day() ) : ?>
-				<?php printf( __( 'Daily Archives: <span>%s</span>', 'twentyten' ), get_the_date() ); ?>
-<?php elseif ( is_month() ) : ?>
-				<?php printf( __( 'Monthly Archives: <span>%s</span>', 'twentyten' ), get_the_date( _x( 'F Y', 'monthly archives date format', 'twentyten' ) ) ); ?>
-<?php elseif ( is_year() ) : ?>
-				<?php printf( __( 'Yearly Archives: <span>%s</span>', 'twentyten' ), get_the_date( _x( 'Y', 'yearly archives date format', 'twentyten' ) ) ); ?>
-<?php else : ?>
-				<?php _e( 'Blog Archives', 'twentyten' ); ?>
-<?php endif; ?>
-			</h1>
 
-<?php
+
+
+		<?php include('banner.php');?>
+			
+			<div class="inner_main">
+				
+				
+				<div class="container_wrapper">
+				
+					<div class="container">
+					
+						<h1 class="title_header">
+							<?php if ( is_day() ) : ?>
+											<?php printf( __( '%s', 'twentyten' ), get_the_date() ); ?>
+							<?php elseif ( is_month() ) : ?>
+											<?php printf( __( '%s', 'twentyten' ), get_the_date( _x( 'F Y', 'monthly archives date format', 'twentyten' ) ) ); ?>
+							<?php elseif ( is_year() ) : ?>
+											<?php printf( __( '%s', 'twentyten' ), get_the_date( _x( 'Y', 'yearly archives date format', 'twentyten' ) ) ); ?>
+							<?php else : ?>
+											<?php _e( 'Blog Archives', 'twentyten' ); ?>
+							<?php endif; ?>
+						</h1>
+						
+						<div class="purple_line_wrapper">
+							
+							<div class="purple_line"></div><!-- purple_line -->
+							
+							<div class="purple_square"></div><!-- purple_square -->
+							
+						</div><!-- purple_line_wrapper -->
+						
+						<div class="content">
+							
+							<div class="news_wrapper">
+								
+								<?php
 	/*
 	 * Since we called the_post() above, we need to
 	 * rewind the loop back to the beginning that way
@@ -56,9 +79,27 @@ get_header(); ?>
 	 */
 	get_template_part( 'loop', 'archive' );
 ?>
+								
+								
+								
+							</div><!-- news_wrapper -->
+							
+						</div><!-- content -->
+					
+						
+					
+					</div><!-- container -->
+				
+				
+				
+				<?php include('sidebar-blog.php');?>
+				
+				</div><!-- container_wrapper -->
+				
+				
+			</div><!-- inner_main -->
+			
+			
+			<?php get_footer(); ?>
 
-			</div><!-- #content -->
-		</div><!-- #container -->
-
-<?php get_sidebar(); ?>
-<?php get_footer(); ?>
+	
