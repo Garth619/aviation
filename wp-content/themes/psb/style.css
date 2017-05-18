@@ -2330,6 +2330,21 @@ a.contact_get_directions:hover .contact_gradient .contact_inner_gradient {
       width: 100%;
       height: 212px; }
 
+/* Success Records */
+.success_intro {
+  font-family: "PlayfairDisplay-Bold";
+  font-size: 18px;
+  color: #060606;
+  text-align: center;
+  line-height: 34px;
+  margin-top: 43px;
+  letter-spacing: 1px; }
+
+.featured_case {
+  width: 100%;
+  background: #fff;
+  height: 500px; }
+
 @media screen and (max-width: 1780px) {
   /* About */
   .about .about_inner {
