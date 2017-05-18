@@ -2264,8 +2264,7 @@ a.contact_get_directions {
   display: block;
   max-width: 235px;
   text-decoration: none;
-  margin-top: 37px;
-  color: #b51ac9; }
+  margin-top: 37px; }
   a.contact_get_directions .contact_gradient {
     padding: 1px;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#193cc9+0,ba19c9+98 */
@@ -2281,7 +2280,8 @@ a.contact_get_directions {
     /* IE6-9 */ }
     a.contact_get_directions .contact_gradient .contact_inner_gradient {
       background: #fff;
-      padding: 1px; }
+      padding: 1px;
+      transition: all .2s ease-in-out; }
       a.contact_get_directions .contact_gradient .contact_inner_gradient span {
         font-size: 20px;
         text-transform: uppercase;
@@ -2290,7 +2290,14 @@ a.contact_get_directions {
         text-align: center;
         padding: 2px 23px;
         letter-spacing: 6px;
-        display: block; }
+        display: block;
+        color: #b51ac9;
+        transition: all .2s ease-in-out; }
+
+a.contact_get_directions:hover .contact_gradient .contact_inner_gradient {
+  background: transparent; }
+  a.contact_get_directions:hover .contact_gradient .contact_inner_gradient span {
+    color: #fff; }
 
 .contact_single_location:last-of-type {
   margin-bottom: 0; }
