@@ -2976,26 +2976,141 @@ svg#global_gradient {
  /* Contact */
  
  
+ body.page-template-page-contact {
+ 
+ .container {
+    margin-bottom: 102px;
+  }
+  
+  }
  
  .contact_wrapper {
 	 text-align: center;
-	 span.contact_info {
-		 display: inline-block;
-		 font-size:25px;
-		 font-family: $playfairbold;
-		 letter-spacing: 0.75px;
-		 margin-top:45px;
-		 a.contact_tel {
-			 color:$blue;
-			 text-decoration: none;
-			 transition: all .2s ease-in-out;
-			 &:hover {
-				 color:$purple;
-			 }
-		 }
-	 }
+	 
  }
  
+ 
+ #tablet_black_line {
+	 display: none;
+ }
+ 
+ 
+ span.contact_info {
+	display: inline-block;
+	font-size:25px;
+	font-family: $playfairbold;
+	letter-spacing: 0.75px;
+	margin-top:48px;
+	a.contact_tel {
+		color:$blue;
+		text-decoration: none;
+		transition: all .2s ease-in-out;
+		&:hover {
+			color:$purple;
+		}
+	}
+}
+
+.contact_location_wrapper {
+	margin-top:84px;
+}
+
+
+.contact_single_location {
+	display: flex;
+	max-width:956px;
+	margin:0 auto 20px;
+	.location_left {
+		width:31%;
+		padding-top:38px;
+		.contact_address {
+			text-align: left;
+			display: block;
+			font-size:20px;
+			color:#060606;
+			font-family: $playfairregular;
+			line-height: 26px;
+		}
+	}
+}
+
+a.contact_get_directions {
+	background:#fff;
+	padding:10px;
+	display: block;
+	max-width: 235px;
+	text-decoration: none;
+	margin-top:37px;
+	color:$purple;
+	.contact_gradient {
+		padding:1px;
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#193cc9+0,ba19c9+98 */
+		background: #193cc9; /* Old browsers */
+		background: -moz-linear-gradient(top, #193cc9 0%, #ba19c9 98%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top, #193cc9 0%,#ba19c9 98%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom, #193cc9 0%,#ba19c9 98%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#193cc9', endColorstr='#ba19c9',GradientType=0 ); /* IE6-9 */
+		.contact_inner_gradient {
+			background: #fff;
+			padding:1px;
+			span {
+				font-size: 20px;
+				text-transform: uppercase;
+				font-family: $proximabold;
+				font-size:16px;
+				text-align: center;
+				padding:2px 23px;
+				letter-spacing: 6px;
+				display: block;
+			}
+		}
+	}
+}
+
+.contact_single_location {
+	&:last-of-type {
+		margin-bottom:0;
+		.black_line_wrapper {
+			display: none;
+		}
+	}
+}
+
+
+.black_line_wrapper {
+	width:100%;
+	height:5px;
+	position: relative;
+	margin-top:75px;
+	.black_line {
+		width:100%;
+		height:1px;
+		background: #060606;
+	}
+	.black_square {
+		width:52px;
+		height:4px;
+		background:#060606;
+		margin:-2px auto 0;
+	}
+}
+
+
+.location_map_wrapper {
+	width:69%;
+	padding-left:8%;
+	.inner_map {
+		background:#fff;
+		padding:27px;
+		box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.25);
+		iframe {
+			width:100%;
+			height:212px;
+		}
+	}
+}
+
+
 
  
 
@@ -3016,6 +3131,7 @@ svg#global_gradient {
 
 	.about_content {
 			width: 55%;
+			height:400px;
 			padding-right:80px;
 			.large_header_wrapper {
 					padding-left:0;
@@ -4129,12 +4245,7 @@ a.tel {
  } /* Media Query */
  
  
- 
-  
- 
- 
- 
- 
+
  
  
  @media screen and (max-width: 1400px) {
@@ -7028,6 +7139,109 @@ body.page-template-page-attorney {
 	
 	
 	
+	
+	/* Contact */
+ 
+ 
+ body.page-template-page-contact {
+ 
+ .container {
+   
+  }
+  
+  }
+ 
+ .contact_wrapper {
+	 
+	 
+ }
+ 
+ span.contact_info {
+	
+	a.contact_tel {
+		
+		&:hover {
+			
+		}
+	}
+}
+
+.contact_location_wrapper {
+	margin-top: 35px;
+}
+
+
+.contact_single_location {
+	display: block;
+	.location_left {
+		width:100%;
+		.contact_address {
+			text-align: center;
+		}
+	}
+}
+
+a.contact_get_directions {
+	margin-left:auto;
+	margin-right:auto;
+	.contact_gradient {
+		
+		.contact_inner_gradient {
+			
+			span {
+				
+			}
+		}
+	}
+}
+
+.contact_single_location {
+	&:last-of-type {
+		
+		.black_line_wrapper {
+			
+		}
+	}
+}
+
+
+#tablet_black_line.black_line_wrapper {
+	 display: block;
+	 margin-bottom:25px;
+ }
+
+.black_line_wrapper {
+	display: none;
+	.black_line {
+		
+	}
+	.black_square {
+		
+	}
+}
+
+
+.location_map_wrapper {
+	width:100%;
+	margin-top:65px;
+	padding:0;
+	.inner_map {
+		
+		iframe {
+			height:350px;
+		}
+	}
+}
+
+
+	
+	
+	
+	
+	
+	
+	
+	
 } /* Media Query */
  
  
@@ -8520,6 +8734,111 @@ body.page-template-page-attorney {
  
 
  }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 	
+	
+/* Contact */
+ 
+ 
+ body.page-template-page-contact {
+ 
+ .container {
+   margin-bottom:65px;
+  }
+  
+  }
+ 
+ .contact_wrapper {
+	 
+	 
+ }
+ 
+ span.contact_info {
+	
+	a.contact_tel {
+		
+		&:hover {
+			
+		}
+	}
+}
+
+.contact_location_wrapper {
+	
+}
+
+
+.contact_single_location {
+	
+	.location_left {
+		
+		.contact_address {
+			
+		}
+	}
+}
+
+a.contact_get_directions {
+	margin-top: 29px;
+	.contact_gradient {
+		
+		.contact_inner_gradient {
+			
+			span {
+				
+			}
+		}
+	}
+}
+
+.contact_single_location {
+	&:last-of-type {
+		
+		.black_line_wrapper {
+			
+		}
+	}
+}
+
+
+#tablet_black_line.black_line_wrapper {
+	margin-top: 61px;
+	margin-bottom: 15px;
+ }
+
+.black_line_wrapper {
+	
+	.black_line {
+		
+	}
+	.black_square {
+		
+	}
+}
+
+
+.location_map_wrapper {
+	margin-top: 45px;
+	.inner_map {
+		padding: 16px;
+		iframe {
+			height:250px;
+		}
+	}
+}
+
+ 
+ 
+ 
+ 
+ 
 	 
 	 
 	 
