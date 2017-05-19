@@ -200,7 +200,103 @@ get_header(); ?>
 									
 								</div><!-- left_case_col -->
 								
-								<div class="right_case_col case_col"></div><!-- right_case_col -->
+								<div class="right_case_col case_col">
+									
+									<div class="case_cat_wrapper">
+									
+									<span class="large_case_title">other confidential commerical airplanes crashes</span><!-- large_case_title -->
+									
+									<div class="lower_black_line_wrapper">
+										
+										<div class="lower_black_line"></div><!-- lower_black_line -->
+										
+										<div class="lower_black_square"></div><!-- lower_black_square -->
+										
+										
+										<div class="lower_single_case">
+										
+											<span class="lower_case_title">$13,500,000</span><!-- lower_case_title -->
+											<span class="lower_case_subtitle">Doe vs. Doe Engine Manufacturer</span><!-- lower_case_subtitle -->
+										
+										</div><!-- lower_single_case -->
+										
+										
+										<div class="lower_single_case">
+										
+											<span class="lower_case_title">$10,000,000</span><!-- lower_case_title -->
+											<span class="lower_case_subtitle">Doe vs. Doe Engine Manufacturer</span><!-- lower_case_subtitle -->
+										
+										</div><!-- lower_single_case -->
+										
+										<div class="lower_single_case">
+										
+											<span class="lower_case_title">$10,000,000</span><!-- lower_case_title -->
+											<span class="lower_case_subtitle">Doe vs. Doe Engine Manufacturer</span><!-- lower_case_subtitle -->
+										
+										</div><!-- lower_single_case -->
+										
+										<div class="lower_single_case">
+										
+											<span class="lower_case_title">$10,000,000</span><!-- lower_case_title -->
+											<span class="lower_case_subtitle">Doe vs. Doe Engine Manufacturer</span><!-- lower_case_subtitle -->
+										
+										</div><!-- lower_single_case -->
+										
+										<div class="lower_single_case">
+										
+											<span class="lower_case_title">$10,000,000</span><!-- lower_case_title -->
+											<span class="lower_case_subtitle">Doe vs. Doe Engine Manufacturer</span><!-- lower_case_subtitle -->
+										
+										</div><!-- lower_single_case -->
+										
+										<div class="lower_single_case">
+										
+											<span class="lower_case_title">$10,000,000</span><!-- lower_case_title -->
+											<span class="lower_case_subtitle">Doe vs. Doe Engine Manufacturer</span><!-- lower_case_subtitle -->
+										
+										</div><!-- lower_single_case -->
+										
+										<div class="lower_single_case">
+										
+											<span class="lower_case_title">$10,000,000</span><!-- lower_case_title -->
+											<span class="lower_case_subtitle">Doe vs. Doe Engine Manufacturer</span><!-- lower_case_subtitle -->
+										
+										</div><!-- lower_single_case -->
+										
+										<div class="lower_single_case">
+										
+											<span class="lower_case_title">$10,000,000</span><!-- lower_case_title -->
+											<span class="lower_case_subtitle">Doe vs. Doe Engine Manufacturer</span><!-- lower_case_subtitle -->
+										
+										</div><!-- lower_single_case -->
+										
+										<div class="lower_single_case">
+										
+											<span class="lower_case_title">$10,000,000</span><!-- lower_case_title -->
+											<span class="lower_case_subtitle">Doe vs. Doe Engine Manufacturer</span><!-- lower_case_subtitle -->
+										
+										</div><!-- lower_single_case -->
+										
+										<div class="lower_single_case">
+										
+											<span class="lower_case_title">$10,000,000</span><!-- lower_case_title -->
+											<span class="lower_case_subtitle">Doe vs. Doe Engine Manufacturer</span><!-- lower_case_subtitle -->
+										
+										</div><!-- lower_single_case -->
+										
+										<div class="lower_single_case">
+										
+											<span class="lower_case_title">$10,000,000</span><!-- lower_case_title -->
+											<span class="lower_case_subtitle">Doe vs. Doe Engine Manufacturer</span><!-- lower_case_subtitle -->
+										
+										</div><!-- lower_single_case -->
+										
+																				
+										
+										
+									</div><!-- lower_black_line_wrapper -->
+									
+								</div><!-- right_case_col -->
 								
 							</div><!-- bottom_cases_wrapper -->
 						
