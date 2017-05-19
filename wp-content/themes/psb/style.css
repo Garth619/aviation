@@ -2358,8 +2358,8 @@ a.contact_get_directions:hover .contact_gradient .contact_inner_gradient {
   width: 100%;
   background: #fff;
   max-width: 1080px;
-  margin: 100px auto;
-  padding: 54px;
+  margin: 100px auto 0;
+  padding: 54px 54px 54px 70px;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.25); }
   .featured_case .inner_case {
     border: 1px solid #b51ac9;
@@ -2393,7 +2393,7 @@ a.contact_get_directions:hover .contact_gradient .contact_inner_gradient {
       font-family: "PlayfairDisplay-Bold";
       letter-spacing: 7px;
       display: block;
-      margin-bottom: 15px;
+      margin-bottom: 20px;
       padding-left: 5%; }
     .featured_case .inner_case span.sub_header {
       color: #b51ac9;
@@ -2402,10 +2402,11 @@ a.contact_get_directions:hover .contact_gradient .contact_inner_gradient {
       font-family: "Proxima N W01 Bold";
       letter-spacing: 5.2px;
       display: block;
-      padding-left: 5%; }
+      padding-left: 5%;
+      line-height: 17px; }
     .featured_case .inner_case .success_content {
       padding-left: 5%;
-      margin-top: 28px;
+      margin-top: 32px;
       display: block;
       border-top: 1px solid #c0c0c5;
       padding-top: 25px;
@@ -2473,13 +2474,14 @@ a.contact_get_directions:hover .contact_gradient .contact_inner_gradient {
       font-size: 48px;
       font-family: "PlayfairDisplay-Bold";
       letter-spacing: 1px;
-      margin-bottom: 1px; }
+      margin-bottom: 5px; }
     .bottom_cases_wrapper .lower_single_case span.lower_case_subtitle {
       color: #b51ac9;
       text-transform: uppercase;
       font-family: "Proxima N W01 Bold";
       font-size: 14px;
-      letter-spacing: 3px; }
+      letter-spacing: 3px;
+      line-height: 17px; }
     .bottom_cases_wrapper .lower_single_case .single_case_content {
       font-size: 16px;
       font-family: "PlayfairDisplay-Regular";
@@ -3280,7 +3282,21 @@ a.contact_get_directions:hover .contact_gradient .contact_inner_gradient {
       body.page-template-page-attorney .tablet_profile_wrapper .tablet_profile_inner .video_wrapper {
         margin: 27px auto 2px; }
     body.page-template-page-attorney .tablet_profile_wrapper .email_vcard_wrapper_tablet {
-      width: 100%; } }
+      width: 100%; }
+  /* Success Records */
+  .featured_case {
+    padding: 45px 54px 54px 60px;
+    margin: 70px auto 0; }
+  .bottom_cases_wrapper .case_col {
+    width: 100%; }
+    .bottom_cases_wrapper .case_col:first-of-type {
+      float: none; }
+    .bottom_cases_wrapper .case_col:last-of-type {
+      float: none; }
+  .bottom_cases_wrapper .case_cat_wrapper {
+    margin-bottom: 70px; }
+    .bottom_cases_wrapper .case_cat_wrapper:last-of-type {
+      margin-bottom: 70px; } }
 
 /* Media Query */
 @media screen and (max-width: 1000px) {
@@ -3757,7 +3773,10 @@ a.contact_get_directions:hover .contact_gradient .contact_inner_gradient {
         text-align: center;
         font-size: 35px;
         line-height: 37px;
-        letter-spacing: 1px; }
+        letter-spacing: 1px;
+        background-image: linear-gradient(90deg, #193cc9 35%, #b51ac9 60%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; }
         .call_us_wrapper .call_us_gradient .call_us_inner_gradient span.large_header span.twenty_four {
           font-size: 50px;
           margin-bottom: 15px;
@@ -3821,7 +3840,21 @@ a.contact_get_directions:hover .contact_gradient .contact_inner_gradient {
     .location_map_wrapper .inner_map {
       padding: 16px; }
       .location_map_wrapper .inner_map iframe {
-        height: 250px; } }
+        height: 250px; }
+  /* Success Records */
+  .featured_case {
+    margin-top: 50px;
+    padding: 20px 20px 20px 23px; }
+    .featured_case .inner_case {
+      padding: 58px 7% 45px 6%; }
+      .featured_case .inner_case .featured_cat_title_wrapper span.featured_cat_title {
+        margin-top: 383px;
+        font-size: 15px;
+        letter-spacing: 6.8px; }
+      .featured_case .inner_case span.number_header {
+        font-size: 54px;
+        line-height: 65px;
+        letter-spacing: 3px; } }
 
 /* Media Query */
 @media screen and (max-width: 639px) {
@@ -3852,7 +3885,10 @@ a.contact_get_directions:hover .contact_gradient .contact_inner_gradient {
 @media screen and (max-width: 545px) {
   /* Internal */
   .sidebar_wrapper .sidebar_inner svg {
-    display: none; } }
+    display: none; }
+  /* Success Records */
+  .featured_case {
+    padding: 20px 20px 20px 27px; } }
 
 /* Media Query */
 @media screen and (max-width: 500px) {
