@@ -27,10 +27,10 @@
 		"oAP": "\/index.php",
 		"oF": 0
 		},
-	"\/sheaboyle(2).sql.gz": {
+	"\/sheaboyle-migrate-20170519233431.sql.gz": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/sheaboyle(2).sql.gz",
+		"oAP": "\/sheaboyle-migrate-20170519233431.sql.gz",
 		"oF": 0
 		},
 	"\/wp-activate.php": {
