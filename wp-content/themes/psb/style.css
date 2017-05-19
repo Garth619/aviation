@@ -624,7 +624,7 @@ a.request_button {
   margin-left: 6%;
   max-width: 625px;
   height: 455px;
-  margin-top: 50px; }
+  margin-top: 58px; }
   .about_image_wrapper span.caption {
     font-size: 13px;
     font-family: "PlayfairDisplay-Bold";
@@ -850,7 +850,7 @@ svg#global_gradient {
 .testi_slider_wrapper {
   width: 52%;
   float: left;
-  margin-top: 390px; }
+  margin-top: 394px; }
 
 .testi_case_results {
   display: none; }
@@ -874,7 +874,7 @@ svg#global_gradient {
   background-color: rgba(255, 255, 255, 0.4);
   text-align: right;
   padding-right: 10px;
-  bottom: -42px; }
+  bottom: -28px; }
   .testimonials ul.slick-dots li.slick-active button:before, .testi_case_results ul.slick-dots li.slick-active button:before {
     color: #fff;
     opacity: 1; }
@@ -931,8 +931,8 @@ svg#global_gradient {
         visibility: hidden; }
 
 .test_slider_two {
-  margin-top: 105px;
-  margin-left: 150px; }
+  margin-left: 150px;
+  margin-top: 92px; }
   .test_slider_two .test_single_slide_name {
     color: #fff;
     text-transform: uppercase;
@@ -947,7 +947,7 @@ svg#global_gradient {
   font-size: 18px;
   font-family: "PlayfairDisplay-Regular";
   line-height: 37px;
-  margin-top: 155px;
+  margin-top: 161px;
   margin-left: 5%;
   max-width: 640px; }
   .test_content p, .test_content ul {
@@ -961,7 +961,7 @@ svg#global_gradient {
   .case_results .case_results_inner {
     max-width: 1535px;
     margin: 0 auto;
-    padding: 532px 30px 400px; }
+    padding: 532px 30px 349px; }
     .case_results .case_results_inner span.large_header {
       font-size: 200px;
       font-family: "Proxima N W01 Bold";
@@ -1025,7 +1025,7 @@ svg#global_gradient {
       font-family: "Proxima N W01 Reg";
       line-height: 28px;
       padding-left: 16.35%;
-      padding-top: 36px;
+      padding-top: 34px;
       padding-bottom: 45px;
       position: relative;
       z-index: 10;
@@ -1152,9 +1152,9 @@ svg#global_gradient {
         background: #fff; }
         .accidents_grid ul li:hover a {
           color: #b51ac9;
-          background-image: -moz-linear-gradient(360deg, #193cc9 0%, #b51ac9 100%);
-          background-image: -webkit-linear-gradient(360deg, #193cc9 0%, #b51ac9 100%);
-          background-image: -ms-linear-gradient(360deg, #193cc9 0%, #b51ac9 100%);
+          background-image: -moz-linear-gradient(360deg, #193cc9 0%, #b51ac9 70%);
+          background-image: -webkit-linear-gradient(360deg, #193cc9 0%, #b51ac9 70%);
+          background-image: -ms-linear-gradient(360deg, #193cc9 0%, #b51ac9 70%);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent; }
       .accidents_grid ul li a {
@@ -1177,7 +1177,7 @@ svg#global_gradient {
   text-align: center;
   padding: 10px;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.25);
-  padding: 50px; }
+  padding: 52px; }
   .types_of_accidents_wrapper .accidents_gradient {
     padding: 1px;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#193cc9+0,ba19c9+100 */
@@ -1217,7 +1217,7 @@ svg#global_gradient {
 
 .awards_wrapper {
   padding: 0 0 0 4%;
-  margin: 154px auto 0;
+  margin: 148px auto 0;
   width: 100%;
   position: relative;
   overflow: hidden; }
@@ -1295,7 +1295,7 @@ svg#global_gradient {
       text-shadow: 0px 1px 2px rgba(24, 31, 51, 0.35);
       letter-spacing: 1.75px;
       display: block;
-      margin-bottom: 11px;
+      margin-bottom: 23px;
       line-height: 90px;
       padding: 0 30px; }
       .request .inner_request span.large_header br.mobile {
@@ -1313,7 +1313,7 @@ svg#global_gradient {
 
 .form_wrapper {
   max-width: 1355px;
-  margin: 48px auto 0;
+  margin: 45px auto 0;
   overflow: hidden;
   padding: 0 30px;
   width: 100%; }
@@ -1405,7 +1405,7 @@ svg#global_gradient {
     font-size: 16px;
     text-transform: uppercase;
     letter-spacing: 5px;
-    padding: 25px 53px;
+    padding: 24px 53px;
     cursor: pointer;
     transition: all .2s ease-in-out; }
 
@@ -1455,13 +1455,14 @@ footer {
   footer .inner_footer {
     max-width: 1810px;
     margin: 0 auto;
-    padding: 400px 30px 0; }
+    padding: 352px 30px 0; }
 
 .locations_wrapper {
   width: 805px;
   overflow: hidden;
   padding-left: 2px;
-  float: left; }
+  float: left;
+  margin-top: 45px; }
 
 .single_location_wrapper {
   overflow: hidden;
@@ -1626,12 +1627,12 @@ footer {
     text-transform: uppercase;
     padding-left: 13%;
     width: 100%;
-    margin-bottom: 75px;
+    margin-bottom: 72px;
     display: block; }
   .latest_news_wrapper .white_line_wrapper {
     width: 100vw;
     position: absolute;
-    top: 52px;
+    top: 47px;
     left: 0;
     margin-top: 25px; }
     .latest_news_wrapper .white_line_wrapper .white_line {
