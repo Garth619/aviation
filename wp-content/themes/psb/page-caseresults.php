@@ -46,6 +46,12 @@ get_header(); ?>
 								
 								<div class="inner_case">
 									
+									<div class="featured_cat_title_wrapper">
+									
+										<span class="featured_cat_title">Landmark Case</span><!-- featured_cat_title -->
+									
+									</div><!-- featured_cat_title_wrapper -->
+									
 									<span class="number_header">$17.8 million</span><!-- number_header -->
 									<span class="sub_header">Wrongful Death Airplane Crash Verdict</span><!-- sub_header -->
 									

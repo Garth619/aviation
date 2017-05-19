@@ -3178,11 +3178,35 @@ a.contact_get_directions {
 	padding:54px;
 	.inner_case {
 		border:1px solid $purple;
-		border-image: linear-gradient( 360deg, $purple 0%, $blue 100%);
+		border-image: linear-gradient( 90deg, $purple 4%, $blue 100%);
 		border-image-slice: 1;
-	
 		width:100%;
 		padding:58px 7% 60px 10%;
+		position: relative;
+		.featured_cat_title_wrapper {
+			position: absolute;
+			top:0;
+			left:0;
+			
+			width:29px;
+			height:100%;
+			span.featured_cat_title {
+				display: block;
+				color:$blue;
+				text-transform: uppercase;
+				font-size: 18px;
+				font-family: $proximabold;
+				writing-mode: vertical-lr;
+				float:left;
+				margin-top:168px;
+				transform: rotate(180deg);
+				letter-spacing: 8.8px;
+				background: #fff;
+				margin-left:-13px;
+				padding:20px 0;
+			}
+		}
+		
 		span.number_header {
 			font-size:65px;
 			font-family: $playfairbold;

@@ -2362,10 +2362,31 @@ a.contact_get_directions:hover .contact_gradient .contact_inner_gradient {
   padding: 54px; }
   .featured_case .inner_case {
     border: 1px solid #b51ac9;
-    border-image: linear-gradient(360deg, #b51ac9 0%, #193cc9 100%);
+    border-image: linear-gradient(90deg, #b51ac9 4%, #193cc9 100%);
     border-image-slice: 1;
     width: 100%;
-    padding: 58px 7% 60px 10%; }
+    padding: 58px 7% 60px 10%;
+    position: relative; }
+    .featured_case .inner_case .featured_cat_title_wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 29px;
+      height: 100%; }
+      .featured_case .inner_case .featured_cat_title_wrapper span.featured_cat_title {
+        display: block;
+        color: #193cc9;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-family: "Proxima N W01 Bold";
+        writing-mode: vertical-lr;
+        float: left;
+        margin-top: 168px;
+        transform: rotate(180deg);
+        letter-spacing: 8.8px;
+        background: #fff;
+        margin-left: -13px;
+        padding: 20px 0; }
     .featured_case .inner_case span.number_header {
       font-size: 65px;
       font-family: "PlayfairDisplay-Bold";
