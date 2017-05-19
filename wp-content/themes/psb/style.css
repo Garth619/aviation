@@ -2331,6 +2331,17 @@ a.contact_get_directions:hover .contact_gradient .contact_inner_gradient {
       height: 212px; }
 
 /* Success Records */
+#success_width.nosidebar {
+  max-width: 1395px; }
+  #success_width.nosidebar h1.title_header {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto; }
+  #success_width.nosidebar .purple_line_wrapper {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto; }
+
 .success_intro {
   font-family: "PlayfairDisplay-Bold";
   font-size: 18px;
@@ -2338,12 +2349,48 @@ a.contact_get_directions:hover .contact_gradient .contact_inner_gradient {
   text-align: center;
   line-height: 34px;
   margin-top: 43px;
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto; }
 
 .featured_case {
   width: 100%;
   background: #fff;
-  height: 500px; }
+  max-width: 1080px;
+  margin: 100px auto;
+  padding: 54px; }
+  .featured_case .inner_case {
+    border: 1px solid #b51ac9;
+    border-image: linear-gradient(360deg, #b51ac9 0%, #193cc9 100%);
+    border-image-slice: 1;
+    width: 100%;
+    padding: 58px 7% 60px 10%; }
+    .featured_case .inner_case span.number_header {
+      font-size: 65px;
+      font-family: "PlayfairDisplay-Bold";
+      letter-spacing: 7px;
+      display: block;
+      margin-bottom: 15px;
+      padding-left: 5%; }
+    .featured_case .inner_case span.sub_header {
+      color: #b51ac9;
+      text-transform: uppercase;
+      font-size: 15px;
+      font-family: "Proxima N W01 Bold";
+      letter-spacing: 5.2px;
+      display: block;
+      padding-left: 5%; }
+    .featured_case .inner_case .success_content {
+      padding-left: 5%;
+      margin-top: 28px;
+      display: block;
+      border-top: 1px solid #c0c0c5;
+      padding-top: 25px;
+      font-size: 16px;
+      font-family: "PlayfairDisplay-Regular";
+      line-height: 31px;
+      letter-spacing: 0.8px; }
 
 @media screen and (max-width: 1780px) {
   /* About */

@@ -16,7 +16,7 @@ get_header(); ?>
 				
 				<div class="container_wrapper">
 				
-					<div class="container nosidebar">
+					<div id="success_width" class="container nosidebar">
 					
 						<h1 class="title_header"><?php the_title();?></h1><!-- title_header -->
 						
@@ -44,7 +44,18 @@ get_header(); ?>
 							
 							<div class="featured_case">
 								
-								
+								<div class="inner_case">
+									
+									<span class="number_header">$17.8 million</span><!-- number_header -->
+									<span class="sub_header">Wrongful Death Airplane Crash Verdict</span><!-- sub_header -->
+									
+									<div class="success_content">
+										
+										<p>Yoon v. United States -- Panish Shea & Boyle LLP represented Don Yoon against the United States government and Boeing for negligence after Yoons wife, two daughters and mother-in-law were tragically killed when a Navy/Marine Corps jet’s fuel tanks failed, causing it to crash into the Yoon San Diego, California home in 2008. Previously released recordings of conversations between federal air controllers and the pilot in question, who was in training and survived by parachute injection prior to the crash, show he was repeatedly offered a chance to land the plane at the a near by San Diego Navy base away from civilians avoiding the horror. The United States Government admitted liability for the crash and the family were awarded $17, 845,000 on December 28, 2011. The firm represented the mother-in-law’s husband, children and mother in their wrongful death claims - the highest wrongful death sentence against the United States and 20th highest verdict.</p>
+										
+									</div><!-- success_content -->
+									
+								</div><!-- inner_case -->
 								
 							</div><!-- featured_case -->
 						
