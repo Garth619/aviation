@@ -571,7 +571,7 @@ a.request_button {
     margin: 0 auto; }
 
 .about_content {
-  width: 58%;
+  width: 55%;
   float: left; }
   .about_content .large_header_wrapper {
     line-height: 1;
@@ -595,7 +595,7 @@ a.request_button {
     text-transform: uppercase;
     font-size: 30px;
     letter-spacing: 9.7px;
-    margin-left: 160px;
+    margin-left: 135px;
     margin-top: 30px; }
   .about_content .about_inner_content {
     color: #fff;
@@ -620,7 +620,8 @@ a.request_button {
 .about_image_wrapper {
   background: #fff;
   width: 42%;
-  float: right;
+  float: left;
+  margin-left: 6%;
   max-width: 625px;
   height: 455px;
   margin-top: 50px; }
@@ -947,7 +948,7 @@ svg#global_gradient {
   font-family: "PlayfairDisplay-Regular";
   line-height: 37px;
   margin-top: 155px;
-  margin-left: 6%;
+  margin-left: 5%;
   max-width: 640px; }
   .test_content p, .test_content ul {
     margin-bottom: 35px; }
@@ -984,7 +985,7 @@ svg#global_gradient {
       letter-spacing: 9px;
       display: inline-block;
       margin-top: -4px;
-      padding-left: 20px; }
+      padding-left: 32px; }
 
 .case_results_slider_wrapper {
   max-width: 1350px;
@@ -1125,7 +1126,7 @@ svg#global_gradient {
   width: 52%;
   float: left;
   margin-top: 202px;
-  padding-left: 2%; }
+  padding-left: 2.5%; }
   .accidents_grid ul {
     list-style: none;
     margin: 0; }
@@ -1166,8 +1167,8 @@ svg#global_gradient {
 .accidents_right_content {
   width: 45%;
   float: right;
-  padding-left: 40px;
-  padding-right: 80px; }
+  padding-left: 56px;
+  padding-right: 53px; }
 
 .types_of_accidents_wrapper {
   background: #fff;
@@ -1215,7 +1216,7 @@ svg#global_gradient {
           -webkit-text-fill-color: transparent; }
 
 .awards_wrapper {
-  padding: 0 0 0 3%;
+  padding: 0 0 0 4%;
   margin: 154px auto 0;
   width: 100%;
   position: relative;
@@ -1311,7 +1312,7 @@ svg#global_gradient {
         top: 8px; }
 
 .form_wrapper {
-  max-width: 1345px;
+  max-width: 1355px;
   margin: 48px auto 0;
   overflow: hidden;
   padding: 0 30px;
@@ -1613,10 +1614,10 @@ footer {
   float: right;
   padding-left: 5%; }
   .latest_news_wrapper .latest_news_inner {
-    max-width: 655px;
     width: 100%;
     float: right;
-    position: relative; }
+    position: relative;
+    max-width: 704px; }
   .latest_news_wrapper span.large_header {
     color: #fff;
     font-size: 35px;
@@ -1701,7 +1702,7 @@ footer {
   max-width: 1810px;
   margin: 0 auto;
   width: 100%;
-  padding: 0 30px;
+  padding: 0 20px 0 30px;
   overflow: hidden; }
   .lower_footer ul.copyright {
     float: left;
