@@ -433,7 +433,7 @@ nav {
           width: 265px; }
           nav ul.menu > li > ul.sub-menu > li > a {
             color: #0a0607;
-            letter-spacing: 1.4px;
+            letter-spacing: 0.5px;
             display: block;
             padding: 13px 30px;
             border-bottom: 1px solid #d1d1d1;
