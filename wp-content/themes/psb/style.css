@@ -409,7 +409,7 @@ nav {
         background: transparent !important; }
     nav ul.menu > li {
       font-size: 14px;
-      letter-spacing: 3px;
+      letter-spacing: 2px;
       position: relative; }
       nav ul.menu > li > a {
         color: #fff;
@@ -487,7 +487,7 @@ a.tel {
       font-size: 115px;
       letter-spacing: 0.8px;
       display: block;
-      padding-left: 90px; }
+      padding-left: 80px; }
       .main_banner .inner_content span.large_header span.extra {
         margin-right: 10px;
         display: inline-block; }
@@ -498,7 +498,7 @@ a.tel {
         width: 140px;
         float: left; }
       .main_banner .inner_content .sub_header_wrapper span.subheader {
-        font-size: 20px;
+        font-size: 19px;
         text-transform: uppercase;
         color: #fff;
         font-family: "Proxima N W01 Bold";
@@ -507,7 +507,6 @@ a.tel {
         letter-spacing: 4.2px;
         max-width: 850px;
         line-height: 27px;
-        margin-top: 5px;
         text-align: left; }
 
 a.button_wrapper {
@@ -515,7 +514,8 @@ a.button_wrapper {
   padding: 9px;
   display: inline-block;
   text-decoration: none;
-  color: #193cc9; }
+  color: #193cc9;
+  margin-left: 20px; }
   a.button_wrapper .gradient_bg {
     padding: 1px;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#193cc9+0,ba19c9+100 */
@@ -555,7 +555,7 @@ a.button_wrapper:hover {
       background-image: -ms-linear-gradient(360deg, #fff 0%, #fff 100%) !important; }
 
 a.request_button {
-  margin: 40px 97px 0; }
+  margin: 40px 87px 0; }
 
 /* About */
 .about {
@@ -705,7 +705,7 @@ svg#global_gradient {
           text-transform: uppercase;
           font-family: "PlayfairDisplay-Bold";
           margin-top: 14px;
-          letter-spacing: 4px; }
+          letter-spacing: 3px; }
         .eight_reasons .reasons_title_wrapper .gradient_bg .inner_bg span.sub_header {
           color: #434460;
           font-size: 18px;
@@ -848,7 +848,7 @@ svg#global_gradient {
   overflow: hidden; }
 
 .testi_slider_wrapper {
-  width: 52%;
+  width: 50%;
   float: left;
   margin-top: 394px; }
 
@@ -948,7 +948,7 @@ svg#global_gradient {
   font-family: "PlayfairDisplay-Regular";
   line-height: 37px;
   margin-top: 161px;
-  margin-left: 5%;
+  margin-left: 7%;
   max-width: 640px; }
   .test_content p, .test_content ul {
     margin-bottom: 35px; }
@@ -1167,8 +1167,8 @@ svg#global_gradient {
 .accidents_right_content {
   width: 45%;
   float: right;
-  padding-left: 56px;
-  padding-right: 53px; }
+  padding-left: 46px;
+  padding-right: 74px; }
 
 .types_of_accidents_wrapper {
   background: #fff;
@@ -1283,6 +1283,7 @@ svg#global_gradient {
 /* Request */
 .request {
   background: url(images/form_bgimage.png) top center no-repeat;
+  background-size: cover;
   width: 100%;
   height: 1249px;
   padding: 193px 0; }
@@ -1293,7 +1294,7 @@ svg#global_gradient {
       font-family: "PlayfairDisplay-Bold";
       font-size: 82px;
       text-shadow: 0px 1px 2px rgba(24, 31, 51, 0.35);
-      letter-spacing: 1.75px;
+      letter-spacing: 0.75px;
       display: block;
       margin-bottom: 23px;
       line-height: 90px;
@@ -1305,7 +1306,7 @@ svg#global_gradient {
       font-family: "Proxima N W01 Bold";
       font-size: 16px;
       text-transform: uppercase;
-      letter-spacing: 6px; }
+      letter-spacing: 5.5px; }
       .request .inner_request span.fields_required span {
         font-size: 25px;
         position: relative;
@@ -1453,7 +1454,7 @@ footer {
   margin-top: -340px;
   padding-bottom: 50px; }
   footer .inner_footer {
-    max-width: 1810px;
+    max-width: 1823px;
     margin: 0 auto;
     padding: 352px 30px 0; }
 
@@ -1481,13 +1482,13 @@ footer {
   .single_location_wrapper .single_location {
     width: 50%;
     float: left;
-    margin-top: 37px; }
-    .single_location_wrapper .single_location:first-of-type {
-      float: left;
-      padding-left: 3.5%; }
+    margin-top: 37px;
+    padding-left: 5%; }
+    .single_location_wrapper .single_location:nth-of-type(1) {
+      float: left; }
     .single_location_wrapper .single_location:last-of-type {
       float: right;
-      padding-left: 13%; }
+      padding-left: 12%; }
     .single_location_wrapper .single_location .white_square {
       background: #fff;
       width: 117px;
@@ -1525,7 +1526,7 @@ footer {
       font-family: "Proxima N W01 Reg";
       text-transform: uppercase;
       font-size: 20px;
-      letter-spacing: 3px;
+      letter-spacing: 1px;
       max-width: 333px;
       padding-top: 22px;
       line-height: 24px;
@@ -1536,7 +1537,7 @@ footer {
       text-decoration: none;
       text-transform: lowercase;
       font-size: 16px;
-      letter-spacing: 2px;
+      letter-spacing: 1px;
       border: 1px solid #5d74d3;
       padding: 14px 19px 14px 51px;
       display: inline-block;
@@ -1591,7 +1592,7 @@ footer {
         font-family: "PlayfairDisplay-Bold";
         font-size: 50px;
         line-height: 50px;
-        letter-spacing: 2.7px;
+        letter-spacing: 1.8px;
         display: block;
         color: #b51ac9;
         background-image: linear-gradient(90deg, #193cc9 10%, #b51ac9 50%);
@@ -1618,14 +1619,14 @@ footer {
     width: 100%;
     float: right;
     position: relative;
-    max-width: 704px; }
+    max-width: 725px; }
   .latest_news_wrapper span.large_header {
     color: #fff;
     font-size: 35px;
     font-family: "PlayfairDisplay-Black";
     letter-spacing: 9px;
     text-transform: uppercase;
-    padding-left: 13%;
+    padding-left: 11%;
     width: 100%;
     margin-bottom: 72px;
     display: block; }
@@ -1657,7 +1658,7 @@ footer {
       max-width: 560px;
       border-bottom: 1px solid #5d74d3;
       padding-bottom: 40px;
-      padding-left: 13%; }
+      padding-left: 12%; }
       .latest_news_wrapper .post_wrapper .single_news_post a {
         text-decoration: none;
         color: #fff; }
@@ -1715,7 +1716,7 @@ footer {
       text-transform: uppercase;
       color: #7e7e7e;
       font-size: 13px;
-      letter-spacing: 3.2px;
+      letter-spacing: 2.8px;
       padding-right: 21px; }
       .lower_footer ul.copyright li:after {
         content: "|";
