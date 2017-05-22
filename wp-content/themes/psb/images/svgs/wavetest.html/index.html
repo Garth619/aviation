@@ -25,16 +25,10 @@
   	
   	
   	.static_wave {
-	  	margin-top: -296px;
+	  	margin-top: -221px;
   	}
   	
-  	svg#wavebg {
-	  	fill:#193cc9;
-	  	width:2300px;
-	  	margin-left:-200px;
-  	}
-  	
-  	
+  	  	
   	  	
 	    path.primary{
       fill: #fff;
@@ -44,15 +38,7 @@
       fill: #fff;
       opacity: 0.1;
     }
-    .base{
-      width: 100%;
-      height: 800px;
-      background: #193cc9;
-      margin-top: -8px;
-      position: relative;
-      z-index:100;
-    }
-
+   
 	</style>
 </head>
 <body>
@@ -73,7 +59,7 @@
 
 <div id="wave-container">
   
-  <svg id="wave" height="500">
+  <svg id="wave" height="400">
     <path class="primary" d=""/>
     <path class="secondary" d=""/>
   </svg>
@@ -82,35 +68,21 @@
   
   <div class="static_wave">
 	  
-<svg id="wavebg" data-name="wave1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 612 62.61">
 
-<!--
-<defs>
-
-<linearGradient id="Gradient4" x2="100%" y2="0%" gradientTransform="rotate(9 0 0)">
-						
-				<stop offset="50%" stop-color="#193cc9" />
-				<stop offset="100%" stop-color=" #0b2691" />
-      
-</linearGradient>
-
-</defs>
--->
-
-
-
-<path class="cls-1" d="M0,43.08S18.14,38.9,145.09,51c0,0,99.52,14.65,225.55-24.18S509.22,2.62,612,3.09V62.61H0Z"/>
-
-
-
-</svg>
 	  
 	  
+  
+  <svg id="static_wave_svg" data-name="static_wave_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 612 373.95"><defs><style>.cls-1{fill:#232323;}.cls-2{fill:none;stroke:#f440e8;stroke-miterlimit:10;}</style></defs><title>content_bg</title><path class="cls-1" d="M0,43.08S18.14,38.9,145.09,51c0,0,99.52,14.65,225.55-24.18S509.22,2.62,612,3.09V373.95H0Z"/><line class="cls-2" x1="116.69" y1="48.39" x2="116.69" y2="373.95"/><line class="cls-2" x1="218.67" y1="53.06" x2="218.67" y2="373.95"/><line class="cls-2" x1="464.67" y1="3.55" x2="464.67" y2="373.95"/><line class="cls-2" x1="335.33" y1="36.52" x2="335.33" y2="373.95"/></svg>
+  
+  
+  
+  
+  
   </div><!-- static_wave -->
   
   
   
-  <div class="base"></div>
+  
 
 
 </div><!-- wave-container -->
@@ -152,8 +124,7 @@
  
      }
    
-      //path.setAttribute('d', 'M0 250 Q250,'+up+' 500,250 v250 h-500 Z');
-      //path.setAttribute('d', 'M0,250 C125,'+up+' 375,'+down+' 500,250 v250 h-500 Z');
+
       
        requestAnimationFrame(Animate);
 
