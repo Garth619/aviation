@@ -73,10 +73,10 @@
 
 @font-face {
 	font-family: 'PlayfairDisplay-Italic';
-	src: url('PlayfairDisplay-Italic.eot');
-	src: url('PlayfairDisplay-Italic.eot?#iefix') format('embedded-opentype'),
-		url('PlayfairDisplay-Italic.woff') format('woff'),
-		url('PlayfairDisplay-Italic.ttf') format('truetype');
+	src: url('fonts/playfair/PlayfairDisplay-Italic.eot');
+	src: url('fonts/playfair/PlayfairDisplay-Italic.eot?#iefix') format('embedded-opentype'),
+		url('fonts/playfair/PlayfairDisplay-Italic.woff') format('woff'),
+		url('fonts/playfair/PlayfairDisplay-Italic.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -4413,6 +4413,7 @@ a.tel {
 				margin-left:auto;
 				margin-right:auto;
 				max-width: 740px;
+				
 			}
 			.tablet_line {
 					
@@ -4433,6 +4434,8 @@ margin-top:30px;
 				margin-top: 12px;
 			float:left;
 				display: inline-block;
+				font-weight: 300;
+				font-style: normal;
 				
 			}
 			.about_inner_content {
@@ -7768,7 +7771,7 @@ a.contact_get_directions {
  
  
  
-@media screen and (max-width: 790px) {
+@media screen and (max-width: 760px) {
 	 
 	 
 	 

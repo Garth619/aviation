@@ -283,7 +283,7 @@ jQuery('.small_case_thumbnails').slick({
   mobileFirst:true,
   responsive: [
     {
-      breakpoint: 790,
+      breakpoint: 760,
       settings: "unslick"
     }
     ]
@@ -331,7 +331,7 @@ jQuery('.awards_slider').slick({
       }
     },
     {
-      breakpoint: 790,
+      breakpoint: 760,
       settings: {
         infinite: true,
 				slidesToShow: 1,

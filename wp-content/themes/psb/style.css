@@ -59,8 +59,8 @@
 
 @font-face {
   font-family: 'PlayfairDisplay-Italic';
-  src: url("PlayfairDisplay-Italic.eot");
-  src: url("PlayfairDisplay-Italic.eot?#iefix") format("embedded-opentype"), url("PlayfairDisplay-Italic.woff") format("woff"), url("PlayfairDisplay-Italic.ttf") format("truetype");
+  src: url("fonts/playfair/PlayfairDisplay-Italic.eot");
+  src: url("fonts/playfair/PlayfairDisplay-Italic.eot?#iefix") format("embedded-opentype"), url("fonts/playfair/PlayfairDisplay-Italic.woff") format("woff"), url("fonts/playfair/PlayfairDisplay-Italic.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
@@ -2692,7 +2692,9 @@ a.contact_get_directions:hover .contact_gradient .contact_inner_gradient {
       text-align: center;
       margin-top: 12px;
       float: left;
-      display: inline-block; }
+      display: inline-block;
+      font-weight: 300;
+      font-style: normal; }
     .about_content .about_inner_content {
       max-width: 900px;
       margin-left: auto;
@@ -3491,7 +3493,7 @@ a.contact_get_directions:hover .contact_gradient .contact_inner_gradient {
       height: 350px; } }
 
 /* Media Query */
-@media screen and (max-width: 790px) {
+@media screen and (max-width: 760px) {
   /* Header */
   header .inner_header {
     padding: 0 0 0 13px;

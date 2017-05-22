@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+  	*,html,body {
+  	  margin: 0;
+  	  padding: 0;
+  	}
+    svg{
+      /*border: 1px solid red;*/
+    }
+    path{
+      stroke: rgba(0,0,0,.25);
+      fill: none;
+    }
+    path.primary{
+      fill: blue;
+    }
+    path.secondary{
+      fill: skyblue;
+    }
+    .base{
+      width: 100%;
+      height: 400px;
+      background: skyblue;
+      margin-top: -4px;
+    }
+
+	</style>
+</head>
+<body>
+
+<section id="wave-container">
+  <svg id="wave" height="500">
+    <path class="primary" d=""/>
+    <path class="secondary" d=""/>
+  </svg>
+  <div class="base"></div>
+</section>
+
+
+<script>
+  let angle = 0;
+  let lastTime = null;
+
+  function Animate(time){
+    //if last time is not equal to 0
+    if (lastTime != null){
+      angle += (time - lastTime) * 0.001;
+    }
+      
+    lastTime = time;
+
+     let wave = document.querySelector('#wave');
+     let paths = Array.from( document.querySelectorAll('svg path') );
+     let width = window.innerWidth;
+     let up = 300 + Math.cos(angle) * 300; //0 to 300
+     let down = 300 + Math.sin(angle) * 300;//0 to 300
+
+
+
+      wave.setAttribute('width', width);
+     
+
+     for (let i = 0; i < paths.length; i++) {
+      //primary
+      paths[0].setAttribute('d', 'M0,250 C'+width*.33+','+(300 + Math.cos(angle) * 300)+' '+width*.75+','+(300 + Math.sin(angle) * 300)+' '+width+',250 v250 h'+(-width)+' Z');
+
+      //secondary
+      paths[1].setAttribute('d', 'M0,350 C'+width*.33+','+(300 + Math.cos(angle -i+2) * 300)+' '+width*.75+','+(300 + Math.sin(angle-i+2) * 300)+' '+width+',350 v350 h'+(-width)+' Z');
+ 
+     }
+   
+      //path.setAttribute('d', 'M0 250 Q250,'+up+' 500,250 v250 h-500 Z');
+      //path.setAttribute('d', 'M0,250 C125,'+up+' 375,'+down+' 500,250 v250 h-500 Z');
+      
+       requestAnimationFrame(Animate);
+
+    }
+
+    Animate();
+</script>
+</body>
+</html>
