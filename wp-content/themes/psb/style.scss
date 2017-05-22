@@ -4407,7 +4407,15 @@ a.tel {
 			}
 			.tablet_line {
 					
-					display: none;
+margin-top:30px;
+					width:23px;
+					height:3px;
+					background:#fff;
+					float:left;
+					margin-right:12px;
+					display: block;
+
+					/* display: none; */
 					
 			}
 			h1 {
@@ -6188,7 +6196,7 @@ a.request_button {
 		.eight_reasons {
 			.reasons_title_wrapper {
 				top:-55px;
-				width:96%;
+				width: 92%;
 				padding: 35px;
 			}
 		}
@@ -6491,7 +6499,7 @@ a.request_button {
 	
 	
 	
-	/* Case Results */
+/* Case Results */
 	
 	
 	
@@ -6667,7 +6675,7 @@ a.request_button {
 	}
 	
 	.accidents_right_content {
-		
+		width: 97%;
 	}
 	
 	
@@ -6765,6 +6773,7 @@ a.request_button {
 		
 		span.large_header {
 			margin-bottom:24px;
+			max-width: 758px;
 		}
 		span.fields_required {
 			
@@ -7894,13 +7903,15 @@ a.request_button {
 			max-width: 290px;
 		}
 		.tablet_line {
-			margin-top:25px;
+			/*
+margin-top:25px;
 					width:23px;
 					height:3px;
 					background:#fff;
 					float:left;
 					margin-right:12px;
 					display: block;
+*/
 		}
 			h1 {
 				text-align: left;

@@ -2675,7 +2675,14 @@ a.contact_get_directions:hover .contact_gradient .contact_inner_gradient {
       margin-right: auto;
       max-width: 740px; }
     .about_content .tablet_line {
-      display: none; }
+      margin-top: 30px;
+      width: 23px;
+      height: 3px;
+      background: #fff;
+      float: left;
+      margin-right: 12px;
+      display: block;
+      /* display: none; */ }
     .about_content h1 {
       font-size: 26px;
       text-align: center;
@@ -3152,7 +3159,7 @@ a.contact_get_directions:hover .contact_gradient .contact_inner_gradient {
   /* Eight Reasons */
   .eight_reasons .reasons_title_wrapper {
     top: -55px;
-    width: 96%;
+    width: 92%;
     padding: 35px; }
   .eight_reasons {
     padding-bottom: 0; }
@@ -3278,6 +3285,8 @@ a.contact_get_directions:hover .contact_gradient .contact_inner_gradient {
   /* Aviation Accidents */
   .aviation_accidents {
     padding-bottom: 118px; }
+  .accidents_right_content {
+    width: 97%; }
   .types_of_accidents_wrapper {
     margin-top: 74px; }
     .types_of_accidents_wrapper .accidents_gradient .accidents_inner_gradient .accident_title {
@@ -3302,7 +3311,8 @@ a.contact_get_directions:hover .contact_gradient .contact_inner_gradient {
   .request {
     padding: 120px 0; }
     .request .inner_request span.large_header {
-      margin-bottom: 24px; }
+      margin-bottom: 24px;
+      max-width: 758px; }
   .form_wrapper {
     margin: 52px auto 0; }
     .form_wrapper ul li:nth-of-type(2), .form_wrapper ul li:nth-of-type(4) {
@@ -3538,13 +3548,15 @@ a.contact_get_directions:hover .contact_gradient .contact_inner_gradient {
   .about_content .h1_wrapper {
     max-width: 290px; }
   .about_content .tablet_line {
-    margin-top: 25px;
-    width: 23px;
-    height: 3px;
-    background: #fff;
-    float: left;
-    margin-right: 12px;
-    display: block; }
+    /*
+margin-top:25px;
+					width:23px;
+					height:3px;
+					background:#fff;
+					float:left;
+					margin-right:12px;
+					display: block;
+*/ }
   .about_content h1 {
     text-align: left;
     width: calc(100% - 35px);
