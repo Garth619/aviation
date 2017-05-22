@@ -213,6 +213,7 @@ get_header(); ?>
 										<div class="lower_black_square"></div><!-- lower_black_square -->
 										
 										
+										
 										<div class="lower_single_case">
 										
 											<span class="lower_case_title">$13,500,000</span><!-- lower_case_title -->

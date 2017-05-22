@@ -18,7 +18,7 @@ get_header(); ?>
 				
 					<div class="container">
 					
-						<h1 class="title_header">nationwide aviation disaster attorneys</h1><!-- title_header -->
+						<h1 class="title_header"><?php the_title();?></h1><!-- title_header -->
 						
 						<div class="purple_line_wrapper">
 							
