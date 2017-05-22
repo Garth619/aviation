@@ -242,9 +242,64 @@ to our clients</span><!-- large_header -->
 
 
 
+
+<script type="text/javascript">
+
+jQuery(document).ready(function(){
+
+let angle = 0;
+  let lastTime = null;
+
+  function Animate(time){
+    //if last time is not equal to 0
+    if (lastTime != null){
+      angle += (time - lastTime) * 0.0013;
+    }
+      
+    lastTime = time;
+
+
+
+     let wave = document.querySelector('#wave_set_1');
+     let paths = Array.from( document.querySelectorAll('svg#wave_set_1 path') );
+     let width = window.innerWidth;
+
+
+
+
+      wave.setAttribute('width', width);
+     
+
+     for (let i = 0; i < paths.length; i++) {
+      //primary
+      // paths[0].setAttribute('d', 'M0,250 C'+width*.33+','+(300 + Math.cos(angle) * 250)+' '+width*.75+','+(300 + Math.sin(angle) * 300)+' '+width+',250 v250 h'+(-width)+' Z');
+      
+      
+      paths[0].setAttribute('d', 'M0,250 C'+width*.33+','+(300 + Math.cos(angle) * 250)+' '+width*.75+','+(300 + Math.sin(angle) * 300)+' '+width+',250 v250 h'+(-width)+' Z');
+      
+      
+
+      //secondary
+      paths[1].setAttribute('d', 'M0,350 C'+width*.33+','+(300 + Math.cos(angle -i+2) * 250)+' '+width*.75+','+(300 + Math.sin(angle-i+2) * 300)+' '+width+',350 v350 h'+(-width)+' Z');
+ 
+     }
+   
+
+      
+       requestAnimationFrame(Animate);
+
+    }
+
+    Animate();
+
+}); // Document Ready
+
+</script>
+
+
 <!-- svgs gradient styles -->
 
-<img class="svg" src="<?php bloginfo('template_directory');?>/images/svgs/gradientstyles.svg"/>
+<img class="svg gradient_preload" src="<?php bloginfo('template_directory');?>/images/svgs/gradientstyles.svg"/>
 
 
 </body>

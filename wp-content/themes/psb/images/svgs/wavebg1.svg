@@ -1,0 +1,24 @@
+<svg id="wavebg1" data-name="wavebg1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1924 1434.45">
+	
+	<defs>
+		
+<!-- 		<style>.cls-1{fill:#020202;}</style> -->
+
+
+<defs>
+
+<linearGradient id="wavebg1_gradient" x2="100%" y2="0%" gradientTransform="rotate(9 0 0)">
+						
+				<stop offset="50%" stop-color="#193cc9" />
+				<stop offset="100%" stop-color=" #0b2691" />
+      
+</linearGradient>
+
+</defs>
+
+		
+	</defs>
+	
+	<path class="cls-1" d="M0,186.45s742,124,1224-50,700-132,700-132v1430H0Z"/>
+	
+</svg>

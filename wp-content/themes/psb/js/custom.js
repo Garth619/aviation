@@ -362,7 +362,6 @@ jQuery('.next_button').click(function(){
 
 
 
-
 }); // Document Ready
 
 

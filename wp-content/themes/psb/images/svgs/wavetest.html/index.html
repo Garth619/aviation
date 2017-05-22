@@ -19,13 +19,14 @@
   	
   	
   	.wave_wrapper {
-	  		margin-top: -430px;
+  		margin-top: -500px; 
 	  		overflow: hidden;
   	}
   	
   	
   	.static_wave {
 	  	margin-top: -221px;
+	  	display: none;
   	}
   	
   	  	
@@ -38,6 +39,12 @@
       fill: #fff;
       opacity: 0.1;
     }
+    
+    
+    .cls-1 {
+	    fill:url(#svg_gradient);
+	   }
+    
    
 	</style>
 </head>
@@ -59,7 +66,7 @@
 
 <div id="wave-container">
   
-  <svg id="wave" height="400">
+  <svg id="wave" height="500">
     <path class="primary" d=""/>
     <path class="secondary" d=""/>
   </svg>
@@ -72,7 +79,34 @@
 	  
 	  
   
-  <svg id="static_wave_svg" data-name="static_wave_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 612 373.95"><defs><style>.cls-1{fill:#232323;}.cls-2{fill:none;stroke:#f440e8;stroke-miterlimit:10;}</style></defs><title>content_bg</title><path class="cls-1" d="M0,43.08S18.14,38.9,145.09,51c0,0,99.52,14.65,225.55-24.18S509.22,2.62,612,3.09V373.95H0Z"/><line class="cls-2" x1="116.69" y1="48.39" x2="116.69" y2="373.95"/><line class="cls-2" x1="218.67" y1="53.06" x2="218.67" y2="373.95"/><line class="cls-2" x1="464.67" y1="3.55" x2="464.67" y2="373.95"/><line class="cls-2" x1="335.33" y1="36.52" x2="335.33" y2="373.95"/></svg>
+  <svg id="static_wave_svg" data-name="static_wave_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 612 373.95">
+  
+  
+  
+  <defs>
+  
+  <style>.cls-2{fill:none;stroke:#f440e8;stroke-miterlimit:10;}</style>
+  
+  <linearGradient id="svg_gradient" x2="100%" y2="0%" gradientTransform="rotate(20 0 0)">
+						
+				<stop offset="50%" stop-color="#193cc9" />
+				<stop offset="100%" stop-color=" #0b2691" />
+      
+	</linearGradient>
+
+
+ </defs>
+  
+  <path class="cls-1" d="M0,43.08S18.14,38.9,145.09,51c0,0,99.52,14.65,225.55-24.18S509.22,2.62,612,3.09V373.95H0Z"/>
+  
+  
+  <line class="cls-2" x1="116.69" y1="48.39" x2="116.69" y2="373.95"/>
+  <line class="cls-2" x1="218.67" y1="53.06" x2="218.67" y2="373.95"/>
+  <line class="cls-2" x1="464.67" y1="3.55" x2="464.67" y2="373.95"/>
+  <line class="cls-2" x1="335.33" y1="36.52" x2="335.33" y2="373.95"/>
+  
+  
+  </svg>
   
   
   
@@ -89,7 +123,10 @@
 
 
 </div><!-- wave_wrapper -->
-
+<svg width="190px" height="160px" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  
+  <path d="M10 80  C 40 10, 65 10, 95 80 S 150 150, 180 80 Z" stroke="black" fill="transparent"/>
+</svg>
 
 
 <script>
@@ -99,16 +136,17 @@
   function Animate(time){
     //if last time is not equal to 0
     if (lastTime != null){
-      angle += (time - lastTime) * 0.001;
+      angle += (time - lastTime) * 0.0013;
     }
       
     lastTime = time;
 
+
+
      let wave = document.querySelector('#wave');
      let paths = Array.from( document.querySelectorAll('svg#wave path') );
      let width = window.innerWidth;
-     let up = 300 + Math.cos(angle) * 300; //0 to 300
-     let down = 300 + Math.sin(angle) * 300;//0 to 300
+
 
 
 
@@ -117,10 +155,15 @@
 
      for (let i = 0; i < paths.length; i++) {
       //primary
-      paths[0].setAttribute('d', 'M0,250 C'+width*.33+','+(300 + Math.cos(angle) * 300)+' '+width*.75+','+(300 + Math.sin(angle) * 300)+' '+width+',250 v250 h'+(-width)+' Z');
+      // paths[0].setAttribute('d', 'M0,250 C'+width*.33+','+(300 + Math.cos(angle) * 250)+' '+width*.75+','+(300 + Math.sin(angle) * 300)+' '+width+',250 v250 h'+(-width)+' Z');
+      
+      
+      paths[0].setAttribute('d', 'M0,250 C'+width*.33+','+(300 + Math.cos(angle) * 250)+' '+width*.75+','+(300 + Math.sin(angle) * 300)+' '+width+',250 v250 h'+(-width)+' Z');
+      
+      
 
       //secondary
-      paths[1].setAttribute('d', 'M0,350 C'+width*.33+','+(300 + Math.cos(angle -i+2) * 300)+' '+width*.75+','+(300 + Math.sin(angle-i+2) * 300)+' '+width+',350 v350 h'+(-width)+' Z');
+      paths[1].setAttribute('d', 'M0,350 C'+width*.33+','+(300 + Math.cos(angle -i+2) * 250)+' '+width*.75+','+(300 + Math.sin(angle-i+2) * 300)+' '+width+',350 v350 h'+(-width)+' Z');
  
      }
    
