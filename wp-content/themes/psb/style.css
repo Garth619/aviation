@@ -739,10 +739,14 @@ svg#global_gradient {
     .reasons_grid .single_reason_reg .reasons_icon_wrapper {
       width: 150px;
       height: 100px;
-      margin: 0 auto; }
+      margin: 0 auto;
+      display: block; }
       .reasons_grid .single_reason_reg .reasons_icon_wrapper svg {
         width: 118px;
         height: 76px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
         max-width: 100%;
         position: relative;
         top: 45%;
@@ -3949,6 +3953,13 @@ margin-top:25px;
         display: block;
         margin-right: 0;
         margin-bottom: 22px; }
+        .lower_footer .social_wrapper ul li {
+          padding-right: 10px; }
+          .lower_footer .social_wrapper ul li:after {
+            padding-left: 11px;
+            /* 	padding-right: 10px; */ }
+      .lower_footer .social_wrapper svg {
+        margin-bottom: 20px; }
   /* Internal */
   .inner_banner {
     display: none; }

@@ -1035,9 +1035,13 @@ svg#global_gradient {
 				width:150px;
 				height:100px;
 				margin:0 auto;
+				display: block;
 				svg {
  					width:118px;
  					height:76px;
+ 					display: block;
+ 					margin-left: auto;
+ 					margin-right:auto;
  					max-width:100%;
 					position: relative;
 					top: 45%;
@@ -8030,6 +8034,7 @@ margin-top:25px;
 		.eight_reasons {
 			.reasons_title_wrapper {
 				top:-26px;
+				
 			}
 		}
 		
@@ -9038,9 +9043,10 @@ margin-top:25px;
 			 	margin-right:0;
 			 	margin-bottom: 22px;
 			 	li {
-				 	
+				 	padding-right:10px;
 				 	&:after {
-					 		
+					 	padding-left:11px;
+					 /* 	padding-right: 10px; */
 			 			}
 			 			&:last-of-type {
 			 				
@@ -9058,7 +9064,7 @@ margin-top:25px;
 			 	}
 		 	}
 		 	svg {
-			 
+			 margin-bottom: 20px;
 		 	}
 	 	}
  }
