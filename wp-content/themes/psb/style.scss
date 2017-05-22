@@ -6091,7 +6091,7 @@ a.tel {
 
 a.request_button {
 	margin-right:0;
-	margin-top:55px;
+	margin-top:69px;
 }
 
 
@@ -7882,7 +7882,7 @@ a.request_button {
 .about {
 	.about_inner {
 		
-		padding:340px 13px 70px 13px;
+		padding:315px 13px 70px 13px;
 	}
 }
 
@@ -7896,7 +7896,7 @@ a.request_button {
 				margin-bottom:10px;
 			}
 			svg {
-				width:189px;
+				width:175px;
 			}
 		}
 		.h1_wrapper {
@@ -7921,7 +7921,7 @@ margin-top:25px;
 			.about_inner_content {
 				font-size:18px;
 				line-height: 27px;
-				padding:25px 0 0 0;
+				padding:45px 0 0 0;
 				svg {
 					display: none;
 				}
@@ -7930,8 +7930,10 @@ margin-top:25px;
 		
 		
 			.about_image_wrapper {
-				margin: 40px auto 0;
-				
+				margin: 34px auto 0;
+				span.caption {
+					padding: 27px 30px 20px;
+				}
 			}	
 		
 		
@@ -7979,7 +7981,7 @@ margin-top:25px;
 			height: auto;
 			span.caption {
 				background: #fff;
-				padding:27px 30px 15px 30px;
+				// padding:27px 30px 15px 30px;
 				margin:0 auto;
 				width: 90%;
 				span.purple {
@@ -8004,7 +8006,8 @@ margin-top:25px;
 			display: block !important;
 			width:100%;
 			max-width: 350px;
-			 
+			position: relative;
+			top:0;
 			.gradient_bg {
 				.inner_button {
 					padding: 12px 38px;
@@ -8035,7 +8038,7 @@ margin-top:25px;
 	.eight_reasons {
 		
 		.reasons_title_wrapper {
-			
+			 padding: 31px;
 			.gradient_bg {
 				
 				
@@ -8048,6 +8051,7 @@ margin-top:25px;
 						font-size:28px;
 						line-height: 32px;
 						margin-top: 8px;
+						letter-spacing: 1.5px;
 					}
 					span.sub_header {
 						line-height: 25px;
@@ -9006,6 +9010,12 @@ margin-top:25px;
 			 	&:after {
 				 	
 			 	}
+			 	&:first-of-type {
+				 &:after {
+					 display: inline-block;
+					 padding-left: 12px;
+				 }
+			 	}
 			 	&:last-of-type {
 				 
 				 	&:after {
@@ -9564,7 +9574,7 @@ a.contact_get_directions {
 		
 		
 		a.meet_attorneys {
-			top: -21px;
+			margin-top: -20px;
 			.gradient_bg {
 				.inner_button {
 					
