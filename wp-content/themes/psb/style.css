@@ -583,8 +583,10 @@ a.request_button {
   opacity: 0.1; }
 
 .waves_wrapper_1 svg#wave_bg_one {
-  width: 100%;
-  height: 951px;
+  /*
+		width:100%;
+		height:951px;
+*/
   margin-top: -300px; }
   .waves_wrapper_1 svg#wave_bg_one path.wavebg_path {
     width: 100%;
