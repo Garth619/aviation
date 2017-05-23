@@ -70,10 +70,16 @@ get_header(); ?>
 		
 
 		
-<svg id="wave_bg_one" viewBox="0 0 1924 1434.45">
+<svg id="wave_bg_one" viewBox="0 0 1924 1434.45" preserveAspectRatio="none" >
 
 	<defs>
 	
+	<linearGradient id="wavebg1_gradient" x2="100%" y2="0%" gradientTransform="rotate(35 0 0)">
+						
+				<stop offset="50%" stop-color="#193cc9" />
+				<stop offset="100%" stop-color=" #0b2691" />
+      
+	</linearGradient>
 	
 	</defs>
 	

@@ -27,18 +27,6 @@
 		"oAP": "\/index.php",
 		"oF": 0
 		},
-	"\/license.txt": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/license.txt",
-		"oF": 0
-		},
-	"\/readme.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/readme.html",
-		"oF": 0
-		},
 	"\/sheaboyle-migrate-20170519233431.sql.gz": {
 		"ft": 8192,
 		"oA": 2,
@@ -18943,6 +18931,12 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/wp-content\/themes\/psb\/images\/svgs\/wavebg.ai": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/psb\/images\/svgs\/wavebg.ai",
+		"oF": 0
+		},
 	"\/wp-content\/themes\/psb\/images\/svgs\/wavebg1.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -19466,18 +19460,6 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/wp-content\/themes\/psb\/tag.php",
-		"oF": 0
-		},
-	"\/wp-content\/uploads\/wp-migrate-db\/.htaccess": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/wp-content\/uploads\/wp-migrate-db\/.htaccess",
-		"oF": 0
-		},
-	"\/wp-content\/uploads\/wp-migrate-db\/index.php": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/wp-content\/uploads\/wp-migrate-db\/index.php",
 		"oF": 0
 		},
 	"\/wp-cron.php": {
