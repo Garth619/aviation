@@ -963,7 +963,8 @@ svg#global_gradient {
   background-color: rgba(255, 255, 255, 0.4);
   text-align: right;
   padding-right: 10px;
-  bottom: -28px; }
+  bottom: -28px;
+  z-index: 10; }
   .testimonials ul.slick-dots li.slick-active button:before, .testi_case_results ul.slick-dots li.slick-active button:before {
     color: #fff;
     opacity: 1; }
@@ -1045,12 +1046,14 @@ svg#global_gradient {
 /* Case Results */
 .case_results {
   width: 100%;
-  margin-top: 0px;
-  position: relative; }
+  overflow: hidden;
+  margin-top: -500px;
+  position: relative;
+  z-index: 1; }
   .case_results .case_results_inner {
     max-width: 1535px;
     margin: 0 auto;
-    padding: 185px 30px 349px;
+    padding: 672px 30px 349px;
     position: relative;
     z-index: 10; }
     .case_results .case_results_inner span.large_header {
@@ -1061,7 +1064,8 @@ svg#global_gradient {
       letter-spacing: 1.7px;
       display: block;
       line-height: 1;
-      margin-left: 67px; }
+      margin-left: 67px;
+      margin-bottom: 4px; }
     .case_results .case_results_inner .sub_header_wrapper svg {
       width: 150px;
       display: inline-block;
@@ -1080,7 +1084,7 @@ svg#global_gradient {
 
 .case_results_wave_wrapper {
   position: absolute;
-  top: -500px;
+  top: 0px;
   width: 100%; }
   .case_results_wave_wrapper svg#wave_set_case_results path.primary {
     fill: #fff;
@@ -2755,7 +2759,7 @@ a.contact_get_directions:hover .contact_gradient .contact_inner_gradient {
     transform: translateY(-50%); }
   /* Case Results */
   .case_results .case_results_inner {
-    padding: 462px 30px 300px; }
+    padding: 650px 30px 300px; }
     .case_results .case_results_inner span.large_header {
       margin-left: 170px;
       display: block;
@@ -2882,6 +2886,13 @@ a.contact_get_directions:hover .contact_gradient .contact_inner_gradient {
       a.meet_attorneys .gradient_bg .inner_button span {
         letter-spacing: 4.5px;
         font-size: 18px; }
+  /* case Results */
+  .case_results_wave_wrapper svg#wave_bg_case_results {
+    width: 2000px; }
+    .case_results_wave_wrapper svg#wave_bg_case_results line.runways {
+      display: none; }
+    .case_results_wave_wrapper svg#wave_bg_case_results rect.runway_blink {
+      display: none; }
   /* Internal */
   .inner_banner .inner_content {
     padding-top: 181px; }
@@ -3401,9 +3412,9 @@ a.contact_get_directions:hover .contact_gradient .contact_inner_gradient {
     padding: 0 60px; }
   /* Case Results */
   .case_results {
-    margin-top: -420px; }
+    margin-top: -660px; }
     .case_results .case_results_inner {
-      padding: 439px 30px 139px; }
+      padding: 602px 30px 135px; }
       .case_results .case_results_inner span.large_header {
         font-size: 150px;
         margin-left: 8%; }
@@ -3416,6 +3427,9 @@ a.contact_get_directions:hover .contact_gradient .contact_inner_gradient {
           width: calc(100% - 154px);
           max-width: 600px;
           line-height: 40px; }
+  .case_results_wave_wrapper svg#wave_bg_case_results {
+    margin-left: -600px;
+    height: 1908px; }
   .case_results_slider_wrapper {
     padding-left: 15px;
     padding-right: 15px;
@@ -3840,9 +3854,9 @@ margin-top:25px;
   .testi_case_results {
     display: block; }
   .case_results {
-    margin-top: -466px; }
+    margin-top: -634px; }
     .case_results .case_results_inner {
-      padding: 279px 0 0; }
+      padding: 376px 0 0; }
       .case_results .case_results_inner span.large_header {
         margin: 134px auto 0;
         text-align: center;
@@ -3866,6 +3880,8 @@ margin-top:25px;
   .case_results_slider_wrapper {
     max-width: 490px;
     margin: 37px auto 0; }
+  .test_slider_one .test_single_slide .slide_content span.slider_one_name {
+    margin-top: 28px; }
   .small_case_thumbnails {
     background: transparent;
     height: auto; }
@@ -3891,6 +3907,9 @@ margin-top:25px;
       float: left;
       text-align: center;
       cursor: pointer; }
+      .small_case_buttons_wrapper .small_button:first-of-type {
+        border-right: 1px solid #fff;
+        opacity: 0.4; }
       .small_case_buttons_wrapper .small_button img {
         padding: 20px 0; }
   /* Aviation Accidents */
