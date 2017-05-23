@@ -80,7 +80,7 @@ get_header(); ?>
 	
 	<path class="wavebg_path" d="M0,186.45s742,124,1224-50,700-132,700-132v1430H0Z"/>
 	
-	<line class="runways" vector-effect="non-scaling-stroke" x1="382.98" y1="224.58" x2="382.98" y2="1434.45"/>
+	<line class="runways" vector-effect="non-scaling-stroke" x1="382.5" y1="224.58" x2="382.98" y2="1434.45"/>
 	<line class="runways" vector-effect="non-scaling-stroke" x1="766.98" y1="222.7" x2="766.98" y2="1434.45"/>
 	<line class="runways" vector-effect="non-scaling-stroke" x1="1153.58" y1="159.3" x2="1153.58" y2="1434.45"/>
 	<line class="runways" vector-effect="non-scaling-stroke" x1="1537.07" y1="42.34" x2="1537.07" y2="1434.45"/>
@@ -98,43 +98,6 @@ get_header(); ?>
 </svg>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1924 1434.45"><defs><style>.cls-1{fill:#020202;}.cls-2{fill:none;stroke:#bf14dd;stroke-miterlimit:10;}.cls-3{fill:#f20000;}</style></defs><title>wavebg</title><path class="cls-1" d="M0,186.45s742,124,1224-50,700-132,700-132v1430H0Z" transform="translate(0 0)"/>
-
-<line class="cls-2" x1="435.98" y1="226.87" x2="435.98" y2="1434.45"/>
-<line class="cls-2" x1="721.98" y1="226.87" x2="721.98" y2="1434.45"/>
-<line class="cls-2" x1="1094.58" y1="174.98" x2="1094.58" y2="1434.45"/>
-<line class="cls-2" x1="1396.07" y1="77.98" x2="1396.07" y2="1434.45"/>
-
-
-</svg>
-
-
-
-
-
-
-
-
-		
 		
 	</div><!-- waves_wrapper_1 -->
 	
@@ -909,6 +872,60 @@ we get the best settlement outcome for our family.”
 
 <section class="case_results">
 	
+	
+	<div class="case_results_wave_wrapper">
+		
+		<svg id="wave_set_case_results" height="500">
+    
+    	<path class="primary" d=""/>
+			<path class="secondary" d=""/>
+  
+		</svg>
+		
+		
+		
+		
+		
+	<svg id="wave_bg_case_results" viewBox="0 0 1924 2165.36" preserveAspectRatio="none">
+		
+		<defs>
+		
+		
+		
+		
+		<linearGradient id="wavebg_case_results_gradient" x2="100%" y2="0%" gradientTransform="rotate(35 0 0)">
+						
+				<stop offset="50%" stop-color="#193cc9" />
+				<stop offset="100%" stop-color=" #0b2691" />
+      
+		</linearGradient>
+		
+		</defs>
+		
+		
+		<path class="wavebg_path" d="M0,0S256.13-1.5,634.11,117s592.47,117,744,114S1909,193.49,1924,186V2165.36H0Z"/>
+		
+		
+		<line class="runways" vector-effect="non-scaling-stroke" x1="376.12" y1="48.84" x2="376.12" y2="2165.36"/>
+		<line class="runways" vector-effect="non-scaling-stroke" x1="758.6" y1="153.41" x2="758.6" y2="2165.36"/>
+		<line class="runways" vector-effect="non-scaling-stroke" x1="1144.58" y1="224.97" x2="1144.58" y2="2165.36"/>
+		<line class="runways" vector-effect="non-scaling-stroke" x1="1528.44" y1="223.53" x2="1528.44" y2="2165.36"/>
+		
+		
+		<rect class="runway_blink" x="375.17" y="220.35" width="1.9" height="9.98"/>
+		<rect class="runway_blink" x="375.17" y="1966.62" width="1.9" height="9.98"/>
+		<rect class="runway_blink" x="757.65" y="1429.62" width="1.9" height="9.98"/>
+		<rect class="runway_blink" x="757.65" y="362.38" width="1.9" height="9.98"/>
+		<rect class="runway_blink" x="1143.63" y="1888.59" width="1.9" height="9.98"/>
+		<rect class="runway_blink" x="1527.6" y="2062.37" width="1.9" height="9.98"/>
+		<rect class="runway_blink" x="1527.55" y="531.38" width="1.9" height="9.98"/>
+		
+		
+	</svg>
+
+		
+		
+	</div><!-- case_results_wave_wrapper -->
 	
 	<div class="case_results_inner">
 	

@@ -247,7 +247,7 @@ to our clients</span><!-- large_header -->
 
 jQuery(document).ready(function(){
 
-let angle = 0;
+	let angle = 0;
   let lastTime = null;
 
   function Animate(time){
@@ -258,23 +258,21 @@ let angle = 0;
       
     lastTime = time;
 
-
+			// about wave
 
      let wave = document.querySelector('#wave_set_1');
      let paths = Array.from( document.querySelectorAll('svg#wave_set_1 path') );
      let width = window.innerWidth;
-
-
-
-
-      wave.setAttribute('width', width);
      
-
-     for (let i = 0; i < paths.length; i++) {
+     
+     
+     wave.setAttribute('width', width);
+     
+     
+		 for (let i = 0; i < paths.length; i++) {
+      
+      
       //primary
-      // paths[0].setAttribute('d', 'M0,250 C'+width*.33+','+(300 + Math.cos(angle) * 250)+' '+width*.75+','+(300 + Math.sin(angle) * 300)+' '+width+',250 v250 h'+(-width)+' Z');
-      
-      
       paths[0].setAttribute('d', 'M0,300 C'+width*.33+','+(300 + Math.cos(angle) * 250)+' '+width*.75+','+(300 + Math.sin(angle) * 300)+' '+width+',250 v250 h'+(-width)+' Z');
       
       
@@ -283,6 +281,39 @@ let angle = 0;
       paths[1].setAttribute('d', 'M0,350 C'+width*.33+','+(300 + Math.cos(angle -i+2) * 250)+' '+width*.75+','+(300 + Math.sin(angle-i+2) * 300)+' '+width+',350 v350 h'+(-width)+' Z');
  
      }
+     
+     
+     
+     // case results
+     
+     
+     
+     
+     
+     let wavecaseresults = document.querySelector('svg#wave_set_case_results');
+     let pathscaseresults = Array.from( document.querySelectorAll('svg#wave_set_case_results path') );
+     let widthcaseresults = window.innerWidth;
+     
+     
+     
+     wavecaseresults.setAttribute('width', widthcaseresults);
+     
+     
+		 for (let i = 0; i < pathscaseresults.length; i++) {
+      
+      
+      //primary
+      pathscaseresults[0].setAttribute('d', 'M0,300 C'+width*.33+','+(300 + Math.cos(angle) * 250)+' '+width*.75+','+(300 + Math.sin(angle) * 300)+' '+width+',250 v250 h'+(-width)+' Z');
+      
+      
+
+      //secondary
+      pathscaseresults[1].setAttribute('d', 'M0,350 C'+width*.33+','+(300 + Math.cos(angle -i+2) * 250)+' '+width*.75+','+(300 + Math.sin(angle-i+2) * 300)+' '+width+',350 v350 h'+(-width)+' Z');
+ 
+     }
+     
+     
+     
    
 
       
