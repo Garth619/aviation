@@ -80,13 +80,35 @@ get_header(); ?>
 	
 	<path class="wavebg_path" d="M0,186.45s742,124,1224-50,700-132,700-132v1430H0Z"/>
 	
-	<line class="runways" x1="435.98" y1="226.87" x2="435.98" y2="1434.45"/>
-	<line class="runways" x1="721.98" y1="226.87" x2="721.98" y2="1434.45"/>
-	<line class="runways" x1="1094.58" y1="174.98" x2="1094.58" y2="1434.45"/>
-	<line class="runways" x1="1396.07" y1="77.98" x2="1396.07" y2="1434.45"/>
+	<line vector-effect="non-scaling-stroke" class="runways" x1="435.98" y1="226.87" x2="435.98" y2="1434.45"/>
+	<line vector-effect="non-scaling-stroke" class="runways" x1="721.98" y1="226.87" x2="721.98" y2="1434.45"/>
+	<line vector-effect="non-scaling-stroke" class="runways" x1="1094.58" y1="174.98" x2="1094.58" y2="1434.45"/>
+	<line vector-effect="non-scaling-stroke" class="runways" x1="1396.07" y1="77.98" x2="1396.07" y2="1434.45"/>
+	
+	
+	
+	<rect class="runway_blink" x="433" y="403.95" width="6.5" height="15"/>
 	
 	
 </svg>
+
+
+
+
+
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1924 1434.45"><defs><style>.cls-1{fill:#020202;}.cls-2{fill:none;stroke:#bf14dd;stroke-miterlimit:10;}.cls-3{fill:#f20000;}</style></defs><title>wavebg</title><path class="cls-1" d="M0,186.45s742,124,1224-50,700-132,700-132v1430H0Z" transform="translate(0 0)"/>
+
+<line class="cls-2" x1="435.98" y1="226.87" x2="435.98" y2="1434.45"/>
+<line class="cls-2" x1="721.98" y1="226.87" x2="721.98" y2="1434.45"/>
+<line class="cls-2" x1="1094.58" y1="174.98" x2="1094.58" y2="1434.45"/>
+<line class="cls-2" x1="1396.07" y1="77.98" x2="1396.07" y2="1434.45"/>
+
+
+</svg>
+
+
+
+
 
 
 

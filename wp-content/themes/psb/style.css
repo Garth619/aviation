@@ -601,7 +601,39 @@ a.request_button {
       stroke: #fff;
       opacity: 0.1;
       stroke-miterlimit: 10;
-      stroke-width: 1px; }
+      stroke-width: 1px;
+      stroke-dasharray: 2000;
+      stroke-dashoffset: 2000;
+      animation-name: linegrow;
+      animation-timing-function: ease;
+      animation-fill-mode: forwards; }
+      .waves_wrapper_1 svg#wave_bg_one line.runways:first-of-type {
+        animation-duration: 5s; }
+      .waves_wrapper_1 svg#wave_bg_one line.runways:nth-of-type(2) {
+        animation-duration: 6s; }
+      .waves_wrapper_1 svg#wave_bg_one line.runways:nth-of-type(3) {
+        animation-duration: 5.5s; }
+      .waves_wrapper_1 svg#wave_bg_one line.runways:nth-of-type(4) {
+        animation-duration: 5.5s; }
+    .waves_wrapper_1 svg#wave_bg_one rect.runway_blink {
+      opacity: 0;
+      fill: #fff;
+      animation-name: blink;
+      animation-duration: 2.5s;
+      animation-iteration-count: infinite;
+      animation-delay: 3s; }
+
+@keyframes linegrow {
+  to {
+    stroke-dashoffset: 0; } }
+
+@keyframes blink {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
 
 .about_content {
   width: 55%;
