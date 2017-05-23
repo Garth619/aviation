@@ -2312,7 +2312,7 @@ svg#global_gradient {
 		 font-size:16px;
 		 letter-spacing: 1px;
 		 border:1px solid #5d74d3;
-		 padding:14px 19px 14px 51px;
+		 padding:14px 35px 14px 51px;
 		 display: inline-block;
 		 position: relative;
 		 margin-top:28px;
@@ -2617,7 +2617,7 @@ svg#global_gradient {
 	svg#wave_bg_footer {
 		width:100%;
 		height:1125px;
-		margin-top:-300px;
+		margin-top:-320px;
 		path.wavebg_path_footer {
 			width:100%;
 			fill: url(#wavebg_footer_gradient);
@@ -2628,8 +2628,8 @@ svg#global_gradient {
 			opacity: 0.1;
 			stroke-miterlimit:10;
 			stroke-width: 1px;
-			stroke-dasharray: 3000;
-			stroke-dashoffset: 3000;
+			stroke-dasharray: 2000;
+			stroke-dashoffset: 2000;
 			animation-name:linegrow_footer;
 			animation-timing-function: ease;
 			animation-fill-mode:forwards;
@@ -5040,6 +5040,51 @@ margin-top:30px;
 		 padding-right:2%;
 	 }
  }
+ 
+ 
+ 
+ 
+ /* Footer */
+ 
+ 
+ .wave_footer_wrapper {
+	
+	
+	svg#wave_set_footer {
+		
+		path.primary{
+     
+    }
+    path.secondary{
+      
+    }
+	}
+	svg#wave_bg_footer {
+		
+		path.wavebg_path_footer {
+			
+		}
+		line.runways {
+			display: none;
+			&:first-of-type {
+				
+			}
+			&:nth-of-type(2) {
+				
+			}
+			&:nth-of-type(3) {
+				
+			}
+			&:nth-of-type(4) {
+				
+			}
+		}
+		rect.runway_blink {
+			display: none;
+		}
+	}
+}
+
 
 
 

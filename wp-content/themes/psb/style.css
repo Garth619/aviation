@@ -1686,7 +1686,7 @@ footer {
       font-size: 16px;
       letter-spacing: 1px;
       border: 1px solid #5d74d3;
-      padding: 14px 19px 14px 51px;
+      padding: 14px 35px 14px 51px;
       display: inline-block;
       position: relative;
       margin-top: 28px;
@@ -1929,7 +1929,7 @@ footer {
   .wave_footer_wrapper svg#wave_bg_footer {
     width: 100%;
     height: 1125px;
-    margin-top: -300px; }
+    margin-top: -320px; }
     .wave_footer_wrapper svg#wave_bg_footer path.wavebg_path_footer {
       width: 100%;
       fill: url(#wavebg_footer_gradient); }
@@ -1939,8 +1939,8 @@ footer {
       opacity: 0.1;
       stroke-miterlimit: 10;
       stroke-width: 1px;
-      stroke-dasharray: 3000;
-      stroke-dashoffset: 3000;
+      stroke-dasharray: 2000;
+      stroke-dashoffset: 2000;
       animation-name: linegrow_footer;
       animation-timing-function: ease;
       animation-fill-mode: forwards; }
@@ -2947,7 +2947,12 @@ a.contact_get_directions:hover .contact_gradient .contact_inner_gradient {
   a.inner_request_wrapper {
     margin-top: 28px; }
   body.page-template-page-attorney .container {
-    padding-right: 2%; } }
+    padding-right: 2%; }
+  /* Footer */
+  .wave_footer_wrapper svg#wave_bg_footer line.runways {
+    display: none; }
+  .wave_footer_wrapper svg#wave_bg_footer rect.runway_blink {
+    display: none; } }
 
 /* Media Query */
 @media screen and (max-width: 1400px) {
