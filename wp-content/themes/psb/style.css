@@ -732,6 +732,21 @@ svg#global_gradient {
   left: 0;
   z-index: -1; }
 
+@keyframes clouds-move {
+  0% {
+    background-position-x: -2000px; }
+  50% {
+    background-position-x: 0; }
+  100% {
+    background-position-x: -2000px; } }
+
+.clouds {
+  animation-name: clouds-move;
+  animation-duration: 120s;
+  animation-timing-function: linear;
+  background-position-x: -2000px;
+  animation-iteration-count: infinite; }
+
 .eight_reasons {
   background: url(images/sp_bgimage-w.jpg) top left no-repeat;
   background-size: cover;

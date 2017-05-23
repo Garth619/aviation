@@ -205,7 +205,7 @@ get_header(); ?>
 	
 </section><!-- about -->
 
-<section class="eight_reasons">
+<section class="eight_reasons clouds">
 	
 	<div class="reasons_title_wrapper">
 		
