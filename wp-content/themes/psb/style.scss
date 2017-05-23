@@ -1041,16 +1041,16 @@ svg#global_gradient {
 	z-index:-1;
 }
 	
-	
-	
-	
-	
-	
+
+
 	
 	.clouds {
-			
-	 }
-	
+		animation-name: clouds-move;
+	  animation-duration: 100s;
+	  animation-timing-function: linear;
+	  background-position-x: -2000px;
+	  animation-iteration-count: infinite;
+	}
 	
 	
 	
@@ -1071,17 +1071,7 @@ svg#global_gradient {
 	    
 	  }
 	}
-	
-	
-	
-	.clouds {
-		
-		animation-name: clouds-move;
-	  animation-duration: 100s;
-	  animation-timing-function: linear;
-	  background-position-x: -2000px;
-	  animation-iteration-count: infinite;
-	}
+
 	
 	
 	
@@ -1825,36 +1815,7 @@ svg#global_gradient {
 	
 	
 	
-	.clouds_two {
 		
-		animation-name: clouds-movetwo;
-	  animation-duration: 100s;
-	  animation-timing-function: linear;
-	  background-position-x: -2000px;
-	  animation-iteration-count: infinite;
-	  
-	 
-	}
-	
-	
-	
-		@keyframes clouds-movetwo {
-	  0% {
-	    background-position-x: -1000px;
-	 		
-	  }
-	
-	  50% {
-	    
-	    background-position-x: 0;
-	  }
-	  
-	  100% {
-	    background-position-x: -1000px;
-	    
-	  }
-	}
-	
 	
 	
 	
@@ -6773,8 +6734,19 @@ margin-left: -320px;
 		
 		
 		
-		
-		
+		.clouds {
+			animation-name:none;
+	  	
+	}
+	
+	
+	
+	
+			
+	
+	
+	
+	
 		
 		
 		
@@ -6782,6 +6754,11 @@ margin-left: -320px;
 		
 	.eight_reasons {
 		padding-bottom: 0;
+		
+		
+		background: url(images/sp_bgimage.jpg) top center no-repeat;
+		
+		
 		.reasons_title_wrapper {
 			
 			.gradient_bg {
@@ -7250,12 +7227,27 @@ margin-left: -320px;
 	
 	.aviation_accidents {
 		padding-bottom:118px;
-		
+		background: url(images/pa_bg.jpg) top center no-repeat;
 		.inner_accidents {
 			
 			
 		}
 	}
+	
+	
+	
+	
+	
+	.clouds_two {
+		animation-name: none;
+	 }
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	.accidents_grid {

@@ -732,6 +732,13 @@ svg#global_gradient {
   left: 0;
   z-index: -1; }
 
+.clouds {
+  animation-name: clouds-move;
+  animation-duration: 100s;
+  animation-timing-function: linear;
+  background-position-x: -2000px;
+  animation-iteration-count: infinite; }
+
 @keyframes clouds-move {
   0% {
     background-position-x: -2000px; }
@@ -739,13 +746,6 @@ svg#global_gradient {
     background-position-x: 0; }
   100% {
     background-position-x: -2000px; } }
-
-.clouds {
-  animation-name: clouds-move;
-  animation-duration: 100s;
-  animation-timing-function: linear;
-  background-position-x: -2000px;
-  animation-iteration-count: infinite; }
 
 .eight_reasons {
   background: url(images/sp_bgimage-w.jpg) top left no-repeat;
@@ -1270,21 +1270,6 @@ svg#global_gradient {
   display: none; }
 
 /* Aviation Accidents */
-.clouds_two {
-  animation-name: clouds-movetwo;
-  animation-duration: 100s;
-  animation-timing-function: linear;
-  background-position-x: -2000px;
-  animation-iteration-count: infinite; }
-
-@keyframes clouds-movetwo {
-  0% {
-    background-position-x: -1000px; }
-  50% {
-    background-position-x: 0; }
-  100% {
-    background-position-x: -1000px; } }
-
 .aviation_accidents {
   width: 100%;
   background: url(images/sp_bgimage-w.jpg) top left no-repeat;
@@ -3414,8 +3399,11 @@ a.contact_get_directions:hover .contact_gradient .contact_inner_gradient {
     top: -55px;
     width: 92%;
     padding: 35px; }
+  .clouds {
+    animation-name: none; }
   .eight_reasons {
-    padding-bottom: 0; }
+    padding-bottom: 0;
+    background: url(images/sp_bgimage.jpg) top center no-repeat; }
     .eight_reasons .reasons_title_wrapper .gradient_bg .inner_bg span.large_header {
       font-size: 40px;
       letter-spacing: 3.5px; }
@@ -3540,7 +3528,10 @@ a.contact_get_directions:hover .contact_gradient .contact_inner_gradient {
         margin: 37px auto 0; }
   /* Aviation Accidents */
   .aviation_accidents {
-    padding-bottom: 118px; }
+    padding-bottom: 118px;
+    background: url(images/pa_bg.jpg) top center no-repeat; }
+  .clouds_two {
+    animation-name: none; }
   .accidents_right_content {
     width: 97%; }
   .types_of_accidents_wrapper {
