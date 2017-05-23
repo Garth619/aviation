@@ -64,7 +64,7 @@ get_header(); ?>
 		
 
 		
-<svg id="wave_bg_one" viewBox="0 0 1924 1434.45" preserveAspectRatio="none" >
+<svg id="wave_bg_one" viewBox="0 0 1924 1434.45" preserveAspectRatio="none">
 
 	<defs>
 	

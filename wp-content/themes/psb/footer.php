@@ -22,6 +22,54 @@
 
 <footer>
 	
+	<div class="wave_footer_wrapper">
+		
+		
+		<svg id="wave_set_footer" height="500">
+    
+    	<path class="primary" d=""/>
+			<path class="secondary" d=""/>
+  
+		</svg>
+		
+		
+		
+		<svg id="wave_bg_footer" viewBox="0 0 1924 1122.85" preserveAspectRatio="none">
+		
+			<defs>
+			
+			
+				
+				<linearGradient id="wavebg_footer_gradient" x2="100%" y2="0%" gradientTransform="rotate(35 0 0)">
+						
+					<stop offset="50%" stop-color="#193cc9" />
+					<stop offset="100%" stop-color=" #0b2691" />
+      
+				</linearGradient>
+				
+			</defs>
+		
+		
+		
+			<path class="wavebg_path_footer" d="M1924,.85s-214-18-610,112-756,142-1314,76v934H1924Z"/>
+		
+			<line class="runways" vector-effect="non-scaling-stroke" x1="373" y1="222.46" x2="373" y2="1122.85"/>
+			<line class="runways" vector-effect="non-scaling-stroke" x1="758" y1="221.91" x2="758" y2="1122.85"/>
+			<line class="runways" vector-effect="non-scaling-stroke" x1="1143" y1="162.15" x2="1143" y2="1122.85"/>
+			<line class="runways" vector-effect="non-scaling-stroke" x1="1528" y1="51.64" x2="1528" y2="1122.85"/>
+		
+		
+			<rect class="runway_blink" x="372" y="701.85" width="2" height="9.92"/>
+			<rect class="runway_blink" x="757.16" y="728" width="2" height="9.92"/>
+			<rect class="runway_blink" x="1142" y="674.15" width="2" height="9.92"/>
+			<rect class="runway_blink" x="1527" y="221.89" width="2" height="9.92"/>
+		
+		</svg>
+		
+		
+		
+	</div><!-- wave_footer_wrapper -->
+	
 	<div class="inner_footer">
 		
 		<div class="locations_wrapper">
@@ -303,14 +351,53 @@ jQuery(document).ready(function(){
       
       
       //primary
-      pathscaseresults[0].setAttribute('d', 'M0,200 C'+width*.33+','+(300 + Math.cos(angle) * 250)+' '+width*.75+','+(300 + Math.sin(angle) * 300)+' '+width+',250 v250 h'+(-width)+' Z');
+      pathscaseresults[0].setAttribute('d', 'M0,200 C'+widthcaseresults*.33+','+(300 + Math.cos(angle) * 250)+' '+widthcaseresults*.75+','+(300 + Math.sin(angle) * 300)+' '+widthcaseresults+',250 v250 h'+(-widthcaseresults)+' Z');
       
       
 
       //secondary
-      pathscaseresults[1].setAttribute('d', 'M0,200 C'+width*.33+','+(300 + Math.cos(angle -i+2) * 250)+' '+width*.75+','+(300 + Math.sin(angle-i+2) * 300)+' '+width+',350 v350 h'+(-width)+' Z');
+      pathscaseresults[1].setAttribute('d', 'M0,200 C'+widthcaseresults*.33+','+(300 + Math.cos(angle -i+2) * 250)+' '+widthcaseresults*.75+','+(300 + Math.sin(angle-i+2) * 300)+' '+widthcaseresults+',350 v350 h'+(-widthcaseresults)+' Z');
  
      }
+     
+     
+     
+     
+     
+     
+     
+     
+     // footer
+     
+     
+     
+     
+     
+     let wavefooter = document.querySelector('svg#wave_set_footer');
+     let pathsfooter = Array.from( document.querySelectorAll('svg#wave_set_footer path') );
+     let widthfooter = window.innerWidth;
+     
+     
+     
+     wavefooter.setAttribute('width', widthfooter);
+     
+     
+		 for (let i = 0; i < pathsfooter.length; i++) {
+      
+      
+      //primary
+      pathsfooter[0].setAttribute('d', 'M0,320 C'+widthfooter*.33+','+(300 + Math.cos(angle) * 250)+' '+widthfooter*.75+','+(300 + Math.sin(angle) * 300)+' '+widthfooter+',175 v250 h'+(-widthfooter)+' Z');
+      
+      
+
+      //secondary
+      pathsfooter[1].setAttribute('d', 'M0,260 C'+widthfooter*.33+','+(300 + Math.cos(angle -i+2) * 250)+' '+widthfooter*.75+','+(300 + Math.sin(angle-i+2) * 300)+' '+widthfooter+',200 v350 h'+(-widthfooter)+' Z');
+ 
+     }
+     
+     
+     
+     
      
      
      
