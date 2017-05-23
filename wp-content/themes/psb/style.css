@@ -560,7 +560,9 @@ a.button_wrapper:hover {
       background-image: -ms-linear-gradient(360deg, #fff 0%, #fff 100%) !important; }
 
 a.request_button {
-  margin: 40px 87px 0; }
+  margin: 40px 87px 0;
+  position: relative;
+  z-index: 10; }
 
 /* About */
 .about {
@@ -575,7 +577,7 @@ a.request_button {
     padding: 675px 4% 372px;
     margin: 0 auto;
     position: relative;
-    z-index: 100; }
+    z-index: 5; }
 
 .waves_wrapper_1 {
   position: absolute;
@@ -610,7 +612,7 @@ a.request_button {
     .about_content .large_header_wrapper svg {
       display: inline-block;
       width: 200px;
-      margin-left: 50px;
+      margin-left: 30px;
       position: relative;
       top: -20px; }
   .about_content h1 {
@@ -2535,7 +2537,8 @@ a.contact_get_directions:hover .contact_gradient .contact_inner_gradient {
     .about_content h1 {
       margin-left: 0;
       margin-top: 3px;
-      font-size: 26px; }
+      font-size: 26px;
+      letter-spacing: 7.5px; }
     .about_content .about_inner_content {
       padding-left: 35px; }
       .about_content .about_inner_content svg {
@@ -2689,7 +2692,19 @@ a.contact_get_directions:hover .contact_gradient .contact_inner_gradient {
 */
   /* About */
   .about .about_inner {
-    padding: 340px 20px 215px; }
+    padding: 640px 20px 215px; }
+  /* About */
+  .about .about_inner {
+    padding: 590px 20px 215px; }
+  .waves_wrapper_1 {
+    position: absolute; }
+    .waves_wrapper_1 svg#wave_bg_one {
+      margin-top: -380px;
+      width: 2000px;
+      height: 1990px; }
+      .waves_wrapper_1 svg#wave_bg_one path.wavebg_path {
+        width: 100%;
+        fill: url(#wavebg1_gradient); }
   .about_content {
     width: 100%;
     padding-right: 0;
@@ -3184,7 +3199,11 @@ a.contact_get_directions:hover .contact_gradient .contact_inner_gradient {
     margin-top: 69px; }
   /* About */
   .about .about_inner {
-    padding: 360px 20px 215px; }
+    padding: 530px 20px 215px; }
+  .waves_wrapper_1 svg#wave_bg_one {
+    margin-left: -320px; }
+  .about_content .about_inner_content {
+    padding-right: 35px; }
   .about_image_wrapper.mobile {
     margin: 67px auto 0; }
   /* Eight Reasons */
@@ -3574,10 +3593,17 @@ a.contact_get_directions:hover .contact_gradient .contact_inner_gradient {
   /* About */
   .about .about_inner {
     padding: 315px 13px 70px 13px; }
+  /* About */
+  .about .about_inner {
+    padding: 489px 16px 70px; }
+  .waves_wrapper_1 svg#wave_bg_one {
+    margin-left: -520px;
+    margin-top: -401px; }
   .about_content .large_header_wrapper span.large_header {
     font-size: 150px;
     display: block;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    letter-spacing: 5px; }
   .about_content .large_header_wrapper svg {
     width: 175px; }
   .about_content .h1_wrapper {
@@ -3602,10 +3628,10 @@ margin-top:25px;
     padding: 45px 0 0 0; }
     .about_content .about_inner_content svg {
       display: none; }
-  .about_image_wrapper {
-    margin: 34px auto 0; }
-    .about_image_wrapper span.caption {
-      padding: 27px 30px 20px; }
+  .about_image_wrapper span.caption {
+    padding: 27px 30px 20px; }
+  .about_image_wrapper.mobile {
+    margin-top: 31px; }
   .about_image_wrapper {
     background: transparent;
     max-width: 619px;

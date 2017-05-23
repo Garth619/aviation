@@ -22,7 +22,7 @@ get_header(); ?>
 			
 			<div class="cloud1">
 				
-<!-- 				<img class="svg" src="<?php bloginfo('template_directory');?>/images/svgs/air2.svg"/> -->
+			<img class="svg" src="<?php bloginfo('template_directory');?>/images/svgs/air2.svg"/> 
 				
 			</div><!-- cloud1 -->
 			
@@ -114,7 +114,7 @@ get_header(); ?>
 			
 			
 			
-<!-- 	<img class="svg" src="<?php bloginfo('template_directory');?>/images/svgs/air1.svg"/> -->
+<img class="svg" src="<?php bloginfo('template_directory');?>/images/svgs/air1.svg"/>
 			
 			
 			</div><!-- large_header_wrapper -->
@@ -159,7 +159,7 @@ get_header(); ?>
 			<div class="about_inner_content">
 				
 				
-				<p><!-- <img class="svg" src="<?php bloginfo('template_directory');?>/images/svgs/air2.svg"/> --> Air travel is statistically safer than automotive travel, when you 	measure on a "per mile traveled" basis. However, when airplane accidents do occur, they tend to involve more people, cause more fatalities and injuries, and lead to wide scale wrangling over insurance issues. Moreover, assigning liability in aviation accidents cases can often be far more complicated than it may appear upon first inspection of the facts.</p>
+				<p> <img class="svg" src="<?php bloginfo('template_directory');?>/images/svgs/air2.svg"/> Air travel is statistically safer than automotive travel, when you 	measure on a "per mile traveled" basis. However, when airplane accidents do occur, they tend to involve more people, cause more fatalities and injuries, and lead to wide scale wrangling over insurance issues. Moreover, assigning liability in aviation accidents cases can often be far more complicated than it may appear upon first inspection of the facts.</p>
 				
 				
 			</div>
@@ -240,7 +240,7 @@ $800 million in verdicts and settlements in the past 5&nbsp;years.</span>
 				
 				<div class="reasons_icon_wrapper">
 					
-<!-- 					<img class="svg" src="<?php bloginfo('template_directory');?>/images/svgs/reason1.svg"/> -->
+					<img class="svg" src="<?php bloginfo('template_directory');?>/images/svgs/reason1.svg"/> 
 				
 				</div><!-- reasons_icon_wrapper -->
 				
@@ -301,7 +301,7 @@ $800 million in verdicts and settlements in the past 5&nbsp;years.</span>
 				
 				<div class="reasons_icon_wrapper">
 					
-<!-- 					<img class="svg" src="<?php bloginfo('template_directory');?>/images/svgs/reason2.svg"/> -->
+					<img class="svg" src="<?php bloginfo('template_directory');?>/images/svgs/reason2.svg"/>
 				
 				</div><!-- reasons_icon_wrapper -->
 				
@@ -364,7 +364,7 @@ $800 million in verdicts and settlements in the past 5&nbsp;years.</span>
 				
 				<div class="reasons_icon_wrapper">
 					
-<!-- 					<img class="svg" src="<?php bloginfo('template_directory');?>/images/svgs/reason3.svg"/> -->
+					<img class="svg" src="<?php bloginfo('template_directory');?>/images/svgs/reason3.svg"/>
 				
 				</div><!-- reasons_icon_wrapper -->
 				
@@ -428,7 +428,7 @@ $800 million in verdicts and settlements in the past 5&nbsp;years.</span>
 				
 				<div class="reasons_icon_wrapper">
 					
-<!-- 					<img class="svg" src="<?php bloginfo('template_directory');?>/images/svgs/reason4.svg"/> -->
+					<img class="svg" src="<?php bloginfo('template_directory');?>/images/svgs/reason4.svg"/>
 				
 				</div><!-- reasons_icon_wrapper -->
 				
@@ -490,7 +490,7 @@ $800 million in verdicts and settlements in the past 5&nbsp;years.</span>
 				
 				<div class="reasons_icon_wrapper">
 					
-<!-- 					<img class="svg" src="<?php bloginfo('template_directory');?>/images/svgs/reason5.svg"/> -->
+					<img class="svg" src="<?php bloginfo('template_directory');?>/images/svgs/reason5.svg"/>
 				
 				</div><!-- reasons_icon_wrapper -->
 				
@@ -553,7 +553,7 @@ $800 million in verdicts and settlements in the past 5&nbsp;years.</span>
 				
 				<div class="reasons_icon_wrapper">
 					
-<!-- 					<img class="svg" src="<?php bloginfo('template_directory');?>/images/svgs/reason6.svg"/> -->
+					<img class="svg" src="<?php bloginfo('template_directory');?>/images/svgs/reason6.svg"/>
 				
 				</div><!-- reasons_icon_wrapper -->
 				
@@ -615,7 +615,7 @@ $800 million in verdicts and settlements in the past 5&nbsp;years.</span>
 				
 				<div class="reasons_icon_wrapper">
 					
-<!-- 					<img class="svg" src="<?php bloginfo('template_directory');?>/images/svgs/reason7.svg"/> -->
+					<img class="svg" src="<?php bloginfo('template_directory');?>/images/svgs/reason7.svg"/>
 				
 				</div><!-- reasons_icon_wrapper -->
 				
@@ -679,7 +679,7 @@ $800 million in verdicts and settlements in the past 5&nbsp;years.</span>
 				
 				<div class="reasons_icon_wrapper">
 					
-<!-- 					<img class="svg" src="<?php bloginfo('template_directory');?>/images/svgs/reason8.svg"/> -->
+					<img class="svg" src="<?php bloginfo('template_directory');?>/images/svgs/reason8.svg"/>
 				
 				</div><!-- reasons_icon_wrapper -->
 				
@@ -941,7 +941,7 @@ we get the best settlement outcome for our family.”
 		
 		<div class="sub_header_wrapper">
 			
-<!-- 			<img class="svg" src="<?php bloginfo('template_directory');?>/images/svgs/air2.svg"/> -->
+<img class="svg" src="<?php bloginfo('template_directory');?>/images/svgs/air2.svg"/>
 			
 			<span class="sub_header">  aviation accident case results</span><!-- sub_header -->
 			
@@ -1067,7 +1067,7 @@ we get the best settlement outcome for our family.”
 						
 						</div><!-- large_single_case -->
 						
-<!-- 						<img class="svg" src="<?php bloginfo('template_directory');?>/images/svgs/square.svg"/> -->
+<img class="svg" src="<?php bloginfo('template_directory');?>/images/svgs/square.svg"/>
 					
 						
 					</div><!-- case_inner_content -->

@@ -797,6 +797,8 @@ a.button_wrapper:hover {
 
 a.request_button {
 	margin: 40px 87px 0;
+	position: relative;
+	z-index:10;
 }
 
 
@@ -817,7 +819,7 @@ a.request_button {
 		padding: 675px 4% 372px;
 		margin:0 auto;
 		position: relative;
-		z-index:100;
+		z-index:5;
 	}
 }
 
@@ -875,7 +877,7 @@ height:1500px;
 					svg {
 						display: inline-block;
 						width:200px;
-						margin-left:50px;
+						margin-left:30px;
 						position: relative;
 						top:-20px;
 					}
@@ -3450,6 +3452,7 @@ a.contact_get_directions {
 				margin-left:0;
 				margin-top: 3px;
 				font-size: 26px;
+				letter-spacing: 7.5px;
 			}
 			.about_inner_content {
 				padding-left: 35px;
@@ -4429,9 +4432,53 @@ a.tel {
 
 .about {
 	.about_inner {
-		 padding: 340px 20px 215px;
+		 padding: 640px 20px 215px;
 		 
 		 
+	}
+}
+
+
+
+/* About */
+
+
+
+.about {
+	.about_inner {
+		 padding: 590px 20px 215px;
+		 
+		 
+	}
+}
+
+
+
+
+.waves_wrapper_1 {
+	position: absolute;
+
+
+	svg#wave_set_1 {
+		
+		path.primary{
+      
+    }
+    path.secondary{
+      
+    }
+	}
+	svg#wave_bg_one {
+		
+		margin-top: -380px;
+		width:2000px;
+		height:1990px;
+	
+		path.wavebg_path {
+			width:100%;
+			
+			fill: url(#wavebg1_gradient);
+		}
 	}
 }
 
@@ -6158,11 +6205,45 @@ a.request_button {
 
 .about {
 	.about_inner {
-		 padding: 360px 20px 215px;
+		 padding: 530px 20px 215px;
 		 
 		 
 	}
 }
+
+
+
+
+
+.waves_wrapper_1 {
+
+
+
+	svg#wave_set_1 {
+		
+		path.primary{
+      
+    }
+    path.secondary{
+      
+    }
+	}
+	svg#wave_bg_one {
+		
+margin-left: -320px;
+
+	
+		path.wavebg_path {
+			
+		}
+	}
+}
+
+
+
+
+
+
 
 
 
@@ -6193,7 +6274,7 @@ a.request_button {
 				
 			}
 			.about_inner_content {
-				
+				padding-right: 35px;
 				svg {
 					
 				}
@@ -7944,12 +8025,59 @@ a.request_button {
 
 
 
+
+/* About */
+
+
+
+.about {
+	.about_inner {
+		 
+		padding: 489px 16px 70px;
+		 
+	}
+}
+
+
+
+
+
+.waves_wrapper_1 {
+
+
+
+	svg#wave_set_1 {
+		
+		path.primary{
+      
+    }
+    path.secondary{
+      
+    }
+	}
+	svg#wave_bg_one {
+		 margin-left: -520px;
+
+margin-top: -401px;
+	
+		path.wavebg_path {
+			
+		}
+	}
+}
+
+
+
+
+
+
 	.about_content {
 		.large_header_wrapper {
 			span.large_header {
 				font-size:150px;
 				display: block;
 				margin-bottom:10px;
+				letter-spacing: 5px;
 			}
 			svg {
 				width:175px;
@@ -7986,14 +8114,16 @@ margin-top:25px;
 		
 		
 			.about_image_wrapper {
-				margin: 34px auto 0;
+				
 				span.caption {
 					padding: 27px 30px 20px;
 				}
 			}	
 		
 		
-	
+	.about_image_wrapper.mobile {
+		margin-top:31px;
+	}
 		
 		
 		
