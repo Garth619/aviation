@@ -1228,7 +1228,7 @@ we get the best settlement outcome for our family.”
 </section><!-- case_results -->
 
 
-<section class="aviation_accidents">
+<section class="aviation_accidents clouds_two">
 	
 	<div class="inner_accidents">
 	

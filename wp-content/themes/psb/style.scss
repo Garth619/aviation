@@ -1077,7 +1077,7 @@ svg#global_gradient {
 	.clouds {
 		
 		animation-name: clouds-move;
-	  animation-duration: 120s;
+	  animation-duration: 100s;
 	  animation-timing-function: linear;
 	  background-position-x: -2000px;
 	  animation-iteration-count: infinite;
@@ -1817,9 +1817,53 @@ svg#global_gradient {
 	
 	/* Aviation Accidents */
 	
+	
+	
+	
+	
+
+	
+	
+	
+	.clouds_two {
+		
+		animation-name: clouds-movetwo;
+	  animation-duration: 100s;
+	  animation-timing-function: linear;
+	  background-position-x: -2000px;
+	  animation-iteration-count: infinite;
+	  
+	 
+	}
+	
+	
+	
+		@keyframes clouds-movetwo {
+	  0% {
+	    background-position-x: -1000px;
+	 		
+	  }
+	
+	  50% {
+	    
+	    background-position-x: 0;
+	  }
+	  
+	  100% {
+	    background-position-x: -1000px;
+	    
+	  }
+	}
+	
+	
+	
+	
+	
+	
+	
 	.aviation_accidents {
 		width:100%;
-		background: url(images/pa_bg.jpg) top center no-repeat;
+		background: url(images/sp_bgimage-w.jpg) top left no-repeat;
 		background-size:cover;
 		padding-bottom:140px;
 		.inner_accidents {
