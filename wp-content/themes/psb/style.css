@@ -581,7 +581,8 @@ a.request_button {
 
 .waves_wrapper_1 {
   position: absolute;
-  top: 0px; }
+  top: 0px;
+  width: 100%; }
   .waves_wrapper_1 svg#wave_set_1 path.primary {
     fill: #fff;
     opacity: 0.1; }
@@ -595,6 +596,12 @@ a.request_button {
     .waves_wrapper_1 svg#wave_bg_one path.wavebg_path {
       width: 100%;
       fill: url(#wavebg1_gradient); }
+    .waves_wrapper_1 svg#wave_bg_one line.runways {
+      fill: none;
+      stroke: #fff;
+      opacity: 0.1;
+      stroke-miterlimit: 10;
+      stroke-width: 1px; }
 
 .about_content {
   width: 55%;
@@ -672,6 +679,25 @@ a.meet_attorneys {
   margin-left: -11px; }
   a.meet_attorneys .gradient_bg .inner_button {
     padding: 15px 43px; }
+
+.runway_line_wrapper {
+  width: 100%;
+  height: 1460px;
+  border: 1px solid red;
+  margin: 0 auto;
+  position: absolute;
+  z-index: 5;
+  top: 200px; }
+  .runway_line_wrapper .single_line_wrapper {
+    width: 1px;
+    height: 1500px;
+    position: absolute;
+    top: 45px;
+    left: 45px; }
+    .runway_line_wrapper .single_line_wrapper .single_line {
+      width: 100%;
+      height: 100%;
+      background: #fff; }
 
 /* Eight Reasons */
 svg#global_gradient {

@@ -52,7 +52,6 @@ get_header(); ?>
 
 <section class="about">
 	
-	
 	<div class="waves_wrapper_1">
 		
 		
@@ -62,11 +61,6 @@ get_header(); ?>
 			<path class="secondary" d=""/>
   
 		</svg>
-		
-		
-		
-		
-		
 		
 
 		
@@ -86,8 +80,14 @@ get_header(); ?>
 	
 	<path class="wavebg_path" d="M0,186.45s742,124,1224-50,700-132,700-132v1430H0Z"/>
 	
+	<line class="runways" x1="435.98" y1="226.87" x2="435.98" y2="1434.45"/>
+	<line class="runways" x1="721.98" y1="226.87" x2="721.98" y2="1434.45"/>
+	<line class="runways" x1="1094.58" y1="174.98" x2="1094.58" y2="1434.45"/>
+	<line class="runways" x1="1396.07" y1="77.98" x2="1396.07" y2="1434.45"/>
+	
 	
 </svg>
+
 
 
 
