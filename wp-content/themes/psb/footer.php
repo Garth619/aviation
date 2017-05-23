@@ -303,12 +303,12 @@ jQuery(document).ready(function(){
       
       
       //primary
-      pathscaseresults[0].setAttribute('d', 'M0,300 C'+width*.33+','+(300 + Math.cos(angle) * 250)+' '+width*.75+','+(300 + Math.sin(angle) * 300)+' '+width+',250 v250 h'+(-width)+' Z');
+      pathscaseresults[0].setAttribute('d', 'M0,200 C'+width*.33+','+(300 + Math.cos(angle) * 250)+' '+width*.75+','+(300 + Math.sin(angle) * 300)+' '+width+',250 v250 h'+(-width)+' Z');
       
       
 
       //secondary
-      pathscaseresults[1].setAttribute('d', 'M0,350 C'+width*.33+','+(300 + Math.cos(angle -i+2) * 250)+' '+width*.75+','+(300 + Math.sin(angle-i+2) * 300)+' '+width+',350 v350 h'+(-width)+' Z');
+      pathscaseresults[1].setAttribute('d', 'M0,200 C'+width*.33+','+(300 + Math.cos(angle -i+2) * 250)+' '+width*.75+','+(300 + Math.sin(angle-i+2) * 300)+' '+width+',350 v350 h'+(-width)+' Z');
  
      }
      
