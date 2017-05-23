@@ -80,17 +80,38 @@ get_header(); ?>
 	
 	<path class="wavebg_path" d="M0,186.45s742,124,1224-50,700-132,700-132v1430H0Z"/>
 	
-	<line vector-effect="non-scaling-stroke" class="runways" x1="435.98" y1="226.87" x2="435.98" y2="1434.45"/>
-	<line vector-effect="non-scaling-stroke" class="runways" x1="721.98" y1="226.87" x2="721.98" y2="1434.45"/>
-	<line vector-effect="non-scaling-stroke" class="runways" x1="1094.58" y1="174.98" x2="1094.58" y2="1434.45"/>
-	<line vector-effect="non-scaling-stroke" class="runways" x1="1396.07" y1="77.98" x2="1396.07" y2="1434.45"/>
+	<line class="runways" vector-effect="non-scaling-stroke" x1="382.98" y1="224.58" x2="382.98" y2="1434.45"/>
+	<line class="runways" vector-effect="non-scaling-stroke" x1="766.98" y1="222.7" x2="766.98" y2="1434.45"/>
+	<line class="runways" vector-effect="non-scaling-stroke" x1="1153.58" y1="159.3" x2="1153.58" y2="1434.45"/>
+	<line class="runways" vector-effect="non-scaling-stroke" x1="1537.07" y1="42.34" x2="1537.07" y2="1434.45"/>
 	
 	
 	
-	<rect class="runway_blink" x="433" y="403.95" width="6.5" height="15"/>
+	<rect class="runway_blink" x="381.52" y="361.22" width="1.97" height="9.98"/>
+	<rect class="runway_blink" x="766" y="693.22" width="1.97" height="9.98"/>
+	<rect class="runway_blink" x="766" y="1237.22" width="1.97" height="9.98"/>
+	<rect class="runway_blink" x="1152.5" y="825.22" width="1.97" height="9.98"/>
+	<rect class="runway_blink" x="1536.09" y="337.22" width="1.97" height="9.98"/>
+	<rect class="runway_blink" x="1536.09" y="1325.22" width="1.97" height="9.98"/>
 	
 	
 </svg>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
