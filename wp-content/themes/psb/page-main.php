@@ -1164,7 +1164,7 @@ we get the best settlement outcome for our family.”
 	
 	
 	
-		<span class="large_header">We Win</span><!-- large_header -->
+		<span id="case_results_animate_two" class="large_header">We Win</span><!-- large_header -->
 		
 		<div class="sub_header_wrapper">
 			

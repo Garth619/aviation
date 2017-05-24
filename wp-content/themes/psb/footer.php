@@ -561,7 +561,8 @@ jQuery(document).ready(function(){
     	
     	
     	
-  	}
+  	},
+  	offset: -300
 	})
 	
 	
@@ -575,11 +576,34 @@ jQuery(document).ready(function(){
     	
     	
     	jQuery('#case_results_animate').addClass('myanimate');
-    	jQuery('.large_case_slider').addClass('myanimate');
+    	jQuery('.case_results_wave_wrapper').addClass('myanimate');
     	
     	
-  	}
+    	
+    	
+  	},
+  	offset: -300
 	})
+	
+	
+	
+	// Case Results two
+	
+	
+	var waypointcaseresultstwo = new Waypoint({
+  
+		element: document.getElementById('case_results_animate_two'),
+		handler: function(direction) {
+    	
+    	jQuery('.large_case_slider').addClass('myanimate');
+    
+//     	
+    	
+    	
+  	},
+  	offset: 70
+	})
+
 	
 	
 	

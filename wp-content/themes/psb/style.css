@@ -782,7 +782,7 @@ a.request_button {
     animation-name: img_move;
     animation-duration: 1750ms;
     animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(0, 0.32, 0.1, 0.97); }
+    animation-timing-function: cubic-bezier(0.26, 0.85, 0.58, 0.98); }
 
 .about_image_wrapper.desktop {
   opacity: 0; }
@@ -1270,6 +1270,34 @@ svg#global_gradient {
   to {
     stroke-dashoffset: 1000; } }
 
+.case_results_wave_wrapper.myanimate svg#wave_bg_case_results line.runways {
+  fill: none;
+  stroke: #fff;
+  opacity: 0.1;
+  stroke-miterlimit: 10;
+  stroke-width: 1px;
+  stroke-dasharray: 3000;
+  stroke-dashoffset: 3000;
+  animation-name: linegrow_case_results;
+  animation-timing-function: all 700ms cubic-bezier(0.23, 1, 0.32, 1);
+  animation-fill-mode: forwards; }
+  .case_results_wave_wrapper.myanimate svg#wave_bg_case_results line.runways:first-of-type {
+    animation-duration: 5s; }
+  .case_results_wave_wrapper.myanimate svg#wave_bg_case_results line.runways:nth-of-type(2) {
+    animation-duration: 6s; }
+  .case_results_wave_wrapper.myanimate svg#wave_bg_case_results line.runways:nth-of-type(3) {
+    animation-duration: 5.5s; }
+  .case_results_wave_wrapper.myanimate svg#wave_bg_case_results line.runways:nth-of-type(4) {
+    animation-duration: 5.5s; }
+
+.case_results_wave_wrapper.myanimate svg#wave_bg_case_results rect.runway_blink {
+  opacity: 0;
+  fill: #fff;
+  animation-name: blink;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-delay: 3s; }
+
 .case_results_wave_wrapper {
   position: absolute;
   top: 0px;
@@ -1292,31 +1320,9 @@ svg#global_gradient {
       width: 100%;
       fill: url(#wavebg_case_results_gradient); }
     .case_results_wave_wrapper svg#wave_bg_case_results line.runways {
-      fill: none;
-      stroke: #fff;
-      opacity: 0.1;
-      stroke-miterlimit: 10;
-      stroke-width: 1px;
-      stroke-dasharray: 3000;
-      stroke-dashoffset: 3000;
-      animation-name: linegrow_case_results;
-      animation-timing-function: ease;
-      animation-fill-mode: forwards; }
-      .case_results_wave_wrapper svg#wave_bg_case_results line.runways:first-of-type {
-        animation-duration: 5s; }
-      .case_results_wave_wrapper svg#wave_bg_case_results line.runways:nth-of-type(2) {
-        animation-duration: 6s; }
-      .case_results_wave_wrapper svg#wave_bg_case_results line.runways:nth-of-type(3) {
-        animation-duration: 5.5s; }
-      .case_results_wave_wrapper svg#wave_bg_case_results line.runways:nth-of-type(4) {
-        animation-duration: 5.5s; }
+      opacity: 0; }
     .case_results_wave_wrapper svg#wave_bg_case_results rect.runway_blink {
-      opacity: 0;
-      fill: #fff;
-      animation-name: blink;
-      animation-duration: 2.5s;
-      animation-iteration-count: infinite;
-      animation-delay: 3s; }
+      opacity: 0; }
 
 @keyframes linegrow_case_results {
   to {
