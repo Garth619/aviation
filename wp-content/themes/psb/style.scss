@@ -830,21 +830,29 @@ a.request_button {
 	position: absolute;
 	top: 0px;
 	width:100%;
+	.wave_set_inner_wrapper {
+		
+		svg#mobile_waves_about {
+			display: none;
+		}
+		}
 	svg#wave_set_1 {
 		
 		path.primary{
       fill: #fff;
-      opacity: 0.1;
+      opacity: 0.15;
     }
     path.secondary{
       fill: #fff;
-      opacity: 0.1;
+      opacity: 0.15;
     }
 	}
 	svg#wave_bg_one {
 		width:100%;
 		height:1515px;
 		margin-top:-300px;
+		position: relative;
+		z-index:5;
 		path.wavebg_path {
 			width:100%;
 			fill: url(#wavebg1_gradient);
@@ -1813,7 +1821,34 @@ svg#global_gradient {
 	
 
 	
+	.clouds_two {
+		animation-name: clouds-movetwo;
+	  animation-duration: 50s;
+	  animation-timing-function: linear;
+	  background-position-x: -2000px;
+	  animation-iteration-count: infinite;
+	}
 	
+	
+	
+	
+	@keyframes clouds-movetwo {
+	  0% {
+	    background-position-x: -1000px;
+	 		
+	  }
+	
+	  50% {
+	    
+	    background-position-x: 0;
+	  }
+	  
+	  100% {
+	    background-position-x: -1000px;
+	    
+	  }
+	}
+
 	
 		
 	
@@ -4755,11 +4790,25 @@ a.tel {
 
 
 .waves_wrapper_1 {
-// 	position: absolute;
 
 
+	.wave_set_inner_wrapper {
+		height:500px;
+		svg#mobile_waves_about {
+			width:2090px;
+			display: block;
+			position: relative;
+			top:170px;
+			left:-650px;
+			z-index:1;
+			path.mobile_path {
+				fill:#fff;
+				opacity: 0.15;
+			}
+		}
+	}
 	svg#wave_set_1 {
-		
+		display: none;
 		path.primary{
       
     }
@@ -8568,7 +8617,15 @@ a.request_button {
 
 .waves_wrapper_1 {
 
-
+.wave_set_inner_wrapper {
+		
+		svg#mobile_waves_about {
+			left:-900px;
+			path.mobile_path {
+				
+			}
+		}
+	}
 
 	svg#wave_set_1 {
 		

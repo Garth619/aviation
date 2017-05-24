@@ -583,16 +583,20 @@ a.request_button {
   position: absolute;
   top: 0px;
   width: 100%; }
+  .waves_wrapper_1 .wave_set_inner_wrapper svg#mobile_waves_about {
+    display: none; }
   .waves_wrapper_1 svg#wave_set_1 path.primary {
     fill: #fff;
-    opacity: 0.1; }
+    opacity: 0.15; }
   .waves_wrapper_1 svg#wave_set_1 path.secondary {
     fill: #fff;
-    opacity: 0.1; }
+    opacity: 0.15; }
   .waves_wrapper_1 svg#wave_bg_one {
     width: 100%;
     height: 1515px;
-    margin-top: -300px; }
+    margin-top: -300px;
+    position: relative;
+    z-index: 5; }
     .waves_wrapper_1 svg#wave_bg_one path.wavebg_path {
       width: 100%;
       fill: url(#wavebg1_gradient); }
@@ -1270,6 +1274,21 @@ svg#global_gradient {
   display: none; }
 
 /* Aviation Accidents */
+.clouds_two {
+  animation-name: clouds-movetwo;
+  animation-duration: 50s;
+  animation-timing-function: linear;
+  background-position-x: -2000px;
+  animation-iteration-count: infinite; }
+
+@keyframes clouds-movetwo {
+  0% {
+    background-position-x: -1000px; }
+  50% {
+    background-position-x: 0; }
+  100% {
+    background-position-x: -1000px; } }
+
 .aviation_accidents {
   width: 100%;
   background: url(images/sp_bgimage-w.jpg) top left no-repeat;
@@ -2873,6 +2892,20 @@ a.contact_get_directions:hover .contact_gradient .contact_inner_gradient {
   /* About */
   .about .about_inner {
     padding: 590px 20px 215px; }
+  .waves_wrapper_1 .wave_set_inner_wrapper {
+    height: 500px; }
+    .waves_wrapper_1 .wave_set_inner_wrapper svg#mobile_waves_about {
+      width: 2090px;
+      display: block;
+      position: relative;
+      top: 170px;
+      left: -650px;
+      z-index: 1; }
+      .waves_wrapper_1 .wave_set_inner_wrapper svg#mobile_waves_about path.mobile_path {
+        fill: #fff;
+        opacity: 0.15; }
+  .waves_wrapper_1 svg#wave_set_1 {
+    display: none; }
   .waves_wrapper_1 svg#wave_bg_one {
     margin-top: -380px;
     width: 2000px;
@@ -3799,6 +3832,8 @@ a.contact_get_directions:hover .contact_gradient .contact_inner_gradient {
   /* About */
   .about .about_inner {
     padding: 489px 16px 70px; }
+  .waves_wrapper_1 .wave_set_inner_wrapper svg#mobile_waves_about {
+    left: -900px; }
   .waves_wrapper_1 svg#wave_bg_one {
     margin-left: -520px;
     margin-top: -401px; }

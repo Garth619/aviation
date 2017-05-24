@@ -55,12 +55,29 @@ get_header(); ?>
 	<div class="waves_wrapper_1">
 		
 		
+		<div class="wave_set_inner_wrapper">
+		
 		<svg id="wave_set_1" height="500">
     
     	<path class="primary" d=""/>
 			<path class="secondary" d=""/>
   
 		</svg>
+		
+		
+		<svg id="mobile_waves_about" viewBox="0 0 1924 377.97" preserveAspectRatio="none">
+		
+			<defs></defs>
+			
+			
+			
+			<path class="mobile_path" d="M0,96S277.33.64,818.67,107.31,1924,134.06,1924,134.06V378H0Z"/>
+			<path class="mobile_path" d="M0,176.06s321.88,12,720.91-69,624.82-168,1203.09-48V378H0Z"/>
+			
+		</svg>
+		
+		
+		</div><!-- wave_set_inner_wrapper -->
 		
 
 		
