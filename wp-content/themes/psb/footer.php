@@ -555,6 +555,12 @@ jQuery(document).ready(function(){
     	
     	jQuery('.about_content').addClass('myanimate');
     	
+    	jQuery('.about_image_wrapper').addClass('myanimate');
+    	
+    	jQuery('a.meet_attorneys').addClass('myanimate');
+    	
+    	
+    	
   	}
 	})
 	
