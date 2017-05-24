@@ -50,7 +50,7 @@ get_header(); ?>
 </section><!-- main_banner -->
 
 
-<section class="about">
+<section id="about_runway" class="about">
 	
 	<div class="waves_wrapper_1">
 		

@@ -430,6 +430,29 @@ jQuery(document).ready(function(){
     }
 
     Animate();
+    
+    
+    
+    
+    // Waypoints
+    
+    
+    // Runway
+    
+    
+    
+    var waypoint = new Waypoint({
+  
+		element: document.getElementById('about_runway'),
+		handler: function(direction) {
+    	
+    	
+    	jQuery('#about_runway').addClass('myanimate');
+    	
+  	}
+	})
+    
+    
 
 }); // Document Ready
 
