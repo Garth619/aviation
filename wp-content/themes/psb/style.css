@@ -680,8 +680,11 @@ a.request_button {
         stroke-linecap: round;
         stroke-linejoin: round;
         stroke-width: 2;
-        stroke-dasharray: 400;
-        stroke-dashoffset: 400;
+        /*
+							
+							stroke-dasharray: 400;
+							stroke-dashoffset: 400;
+*/
         animation-name: airone;
         animation-timing-function: linear;
         animation-iteration-count: infinite;
