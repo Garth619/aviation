@@ -645,16 +645,12 @@ a.request_button {
   100% {
     opacity: 0; } }
 
-/*
 @keyframes airone {
   from {
-    stroke-dashoffset: 400;
-  }
+    stroke-dashoffset: 400; }
   to {
-    stroke-dashoffset: 0;
-  }
-}
-*/
+    stroke-dashoffset: 0; } }
+
 .about_content {
   width: 55%;
   float: left; }
@@ -680,11 +676,8 @@ a.request_button {
         stroke-linecap: round;
         stroke-linejoin: round;
         stroke-width: 2;
-        /*
-							
-							stroke-dasharray: 400;
-							stroke-dashoffset: 400;
-*/
+        stroke-dasharray: 400;
+        stroke-dashoffset: 400;
         animation-name: airone;
         animation-timing-function: linear;
         animation-iteration-count: infinite;
