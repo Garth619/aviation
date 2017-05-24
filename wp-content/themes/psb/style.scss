@@ -1556,7 +1556,7 @@ svg#global_gradient {
 				letter-spacing: 9px;
 				display: inline-block;
 				margin-top:-4px;
-				padding-left:32px;
+				padding-left:27px;
 			}
 		}
 	}
@@ -2698,22 +2698,31 @@ svg#global_gradient {
 	position: absolute;
 	top: 0px;
 	width:100%;
-	
+	.wave_set_inner_wrapper {
+		svg#mobile_waves_footer {
+			display: none;
+			path.mobile_path {
+				
+			}
+		}
+	}
 	svg#wave_set_footer {
 		
 		path.primary{
       fill: #fff;
-      opacity: 0.1;
+      opacity: 0.08;
     }
     path.secondary{
       fill: #fff;
-      opacity: 0.1;
+      opacity: 0.08;
     }
 	}
 	svg#wave_bg_footer {
 		width:100%;
 		height:1125px;
 		margin-top:-320px;
+		position: relative;
+		z-index:8;
 		path.wavebg_path_footer {
 			width:100%;
 			fill: url(#wavebg_footer_gradient);
@@ -5172,11 +5181,30 @@ margin-top:30px;
  /* Footer */
  
  
+ footer {
+	 margin-top: -303px;
+	 .inner_footer {
+		 padding: 392px 30px 0;
+	 }
+ }
+ 
  .wave_footer_wrapper {
+	
+	.wave_set_inner_wrapper {
+		height:500px;
+		svg#mobile_waves_footer {
+			display: block;
+			width:2000px;
+			path.mobile_path {
+				fill:#fff;
+				opacity: 0.08;
+			}	
+		}
+	}
 	
 	
 	svg#wave_set_footer {
-		
+		display: none;
 		path.primary{
      
     }
@@ -5185,6 +5213,9 @@ margin-top:30px;
     }
 	}
 	svg#wave_bg_footer {
+		margin-top: -482px;
+		height:1239px;
+		width:2000px;
 		
 		path.wavebg_path_footer {
 			
@@ -7573,9 +7604,9 @@ margin-left: -320px;
  
  footer {
  	padding-bottom: 40px;
- 	margin-top: -427px;
+ 	margin-top: -280px;
 	 .inner_footer {
-	 		padding: 460px 30px 0;
+	 		padding: 312px 30px 0;
 	 }
  }
  
@@ -7772,7 +7803,16 @@ margin-left: -320px;
  
  
  .wave_footer_wrapper {
-	
+	.wave_set_inner_wrapper {
+		svg#mobile_waves_footer {
+			left:-585px;
+			position: relative;
+			z-index:8;
+			path.mobile_path {
+				
+			}
+		}
+	}
 	
 	svg#wave_set_footer {
 		
@@ -7785,7 +7825,8 @@ margin-left: -320px;
 	}
 	svg#wave_bg_footer {
 		width:2000px;
-		margin-left: -300px;
+		margin-left: -500px;
+		height: 1140px;
 		path.wavebg_path_footer {
 			
 		}
@@ -9607,9 +9648,9 @@ margin-top:25px;
  
  footer {
  	padding-bottom: 8px;
- 	margin-top: -415px;
+ 	margin-top: -315px;
 	 .inner_footer {
-	 		padding: 416px 10px 0;
+	 		padding: 311px 10px 0;
 	 }
  }
  
@@ -9938,7 +9979,14 @@ margin-top:25px;
 
 
 .wave_footer_wrapper {
-	
+	.wave_set_inner_wrapper {
+		svg#mobile_waves_footer {
+			left:-825px;
+			path.mobile_path {
+				
+			}
+		}
+	}
 	
 	svg#wave_set_footer {
 		
@@ -9950,7 +9998,8 @@ margin-top:25px;
     }
 	}
 	svg#wave_bg_footer {
-		margin-left:-700px;
+		margin-top: -423px;
+		margin-left: -640px;
 		path.wavebg_path_footer {
 			
 		}

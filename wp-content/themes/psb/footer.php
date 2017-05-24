@@ -25,12 +25,33 @@
 	<div class="wave_footer_wrapper">
 		
 		
-		<svg id="wave_set_footer" height="500">
+		<div class="wave_set_inner_wrapper">
+		
+		
+			<svg id="wave_set_footer" height="500">
     
-    	<path class="primary" d=""/>
-			<path class="secondary" d=""/>
+    		<path class="primary" d=""/>
+				<path class="secondary" d=""/>
   
-		</svg>
+			</svg>
+
+			
+			<svg id="mobile_waves_footer" viewBox="0 0 1924 319.36" preserveAspectRatio="none">
+			
+				<defs>
+			
+			
+			
+				</defs>
+			
+				<path class="mobile_path" d="M0,93.36s226-70,672,0,1252,94,1252,94v132H0Z"/>
+				<path class="mobile_path" d="M1924,43.36s-376-112-1028,24-896,114-896,114v138H1924Z"/>
+			
+			</svg>
+	
+			
+		
+		</div><!-- wave_set_inner_wrapper -->
 		
 		
 		
