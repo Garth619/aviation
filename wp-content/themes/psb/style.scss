@@ -1694,7 +1694,7 @@ svg#global_gradient {
 			animation-name: list_width, list_fade;
 			animation-direction: forward;
 			animation-duration: 3s, 1s;
-			animation-timing-function:cubic-bezier(.04,.87,.58,1);
+			animation-timing-function:cubic-bezier(.01,.87,.58,1);
 			opacity: 1;
 			li {
 				animation-name: bullets_width;
