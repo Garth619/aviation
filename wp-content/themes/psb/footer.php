@@ -310,7 +310,7 @@ to our clients</span><!-- large_header -->
 <?php wp_footer();?>
 
 
-
+<?php if(is_front_page()):?>
 
 <script type="text/javascript">
 
@@ -434,6 +434,80 @@ jQuery(document).ready(function(){
 }); // Document Ready
 
 </script>
+
+
+<?php endif;?>
+
+
+<?php if(!is_front_page()):?>
+
+
+<script type="text/javascript">
+
+jQuery(document).ready(function(){
+
+	let angle = 0;
+  let lastTime = null;
+
+  function Animate(time){
+    //if last time is not equal to 0
+    if (lastTime != null){
+      angle += (time - lastTime) * 0.0013;
+    }
+      
+    lastTime = time;
+
+			     
+     // footer
+     
+     
+     
+     
+     
+     let wavefooter = document.querySelector('svg#wave_set_footer');
+     let pathsfooter = Array.from( document.querySelectorAll('svg#wave_set_footer path') );
+     let widthfooter = window.innerWidth;
+     
+     
+     
+     wavefooter.setAttribute('width', widthfooter);
+     
+     
+		 for (let i = 0; i < pathsfooter.length; i++) {
+      
+      
+      //primary
+      pathsfooter[0].setAttribute('d', 'M0,320 C'+widthfooter*.33+','+(300 + Math.cos(angle) * 250)+' '+widthfooter*.75+','+(300 + Math.sin(angle) * 300)+' '+widthfooter+',175 v250 h'+(-widthfooter)+' Z');
+      
+      
+
+      //secondary
+      pathsfooter[1].setAttribute('d', 'M0,260 C'+widthfooter*.33+','+(300 + Math.cos(angle -i+2) * 250)+' '+widthfooter*.75+','+(300 + Math.sin(angle-i+2) * 300)+' '+widthfooter+',200 v350 h'+(-widthfooter)+' Z');
+ 
+     }
+     
+     
+     
+     
+     
+     
+     
+   
+
+      
+       requestAnimationFrame(Animate);
+
+    }
+
+    Animate();
+
+}); // Document Ready
+
+</script>
+
+
+
+<?php endif;?>
 
 
 <!-- svgs gradient styles -->
