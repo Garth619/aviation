@@ -22,7 +22,14 @@ get_header(); ?>
 			
 			<div class="cloud1">
 				
-			<img class="svg" src="<?php bloginfo('template_directory');?>/images/svgs/air2.svg"/> 
+			<svg id="air2" viewBox="0 0 148.62 37.52">
+			
+			<defs></defs>
+			
+				<line class="cloud1_animate_1" x1="120.42" y1="36.52" x2="147.62" y2="36.52"/>
+				<path class="cloud1_animate_2" d="M32.82,7.6S23.12-4.3,9.32,3.8C-6,13.9,1.42,36.5,18.52,36.5h88" transform="translate(0 0.02)"/>
+			
+			</svg> 
 				
 			</div><!-- cloud1 -->
 			

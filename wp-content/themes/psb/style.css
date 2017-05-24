@@ -502,6 +502,14 @@ a.tel {
       .main_banner .inner_content .sub_header_wrapper .cloud1 {
         width: 140px;
         float: left; }
+        .main_banner .inner_content .sub_header_wrapper .cloud1 svg#air2 {
+          fill: none;
+          stroke: #fcfcfc;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+          stroke-width: 2px;
+          stroke-dasharray: 500;
+          stroke-dashoffset: 500; }
       .main_banner .inner_content .sub_header_wrapper span.subheader {
         font-size: 19px;
         text-transform: uppercase;
@@ -513,6 +521,27 @@ a.tel {
         max-width: 850px;
         line-height: 27px;
         text-align: left; }
+
+.main_banner.myanimate .inner_content .sub_header_wrapper .cloud1 svg#air2 .cloud1_animate_1 {
+  animation-name: cloud1_animate_1;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-duration: 1750ms; }
+
+.main_banner.myanimate .inner_content .sub_header_wrapper .cloud1 svg#air2 .cloud1_animate_2 {
+  animation-name: cloud1_animate_2;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  animation-duration: 3200ms;
+  animation-delay: 580ms; }
+
+@keyframes cloud1_animate_1 {
+  to {
+    stroke-dashoffset: 1000; } }
+
+@keyframes cloud1_animate_2 {
+  to {
+    stroke-dashoffset: 1000; } }
 
 a.button_wrapper {
   background: #fff;
@@ -645,6 +674,16 @@ a.request_button {
   100% {
     opacity: 0; } }
 
+.about_content.myanimate .large_header_wrapper svg#air {
+  stroke-dasharray: 400;
+  stroke-dashoffset: 400;
+  animation-name: airone;
+  animation-timing-function: linear;
+  animation-duration: 3s;
+  animation-fill-mode: both;
+  animation-delay: 1s;
+  opacity: 1; }
+
 @keyframes airone {
   from {
     stroke-dashoffset: 400; }
@@ -669,19 +708,14 @@ a.request_button {
       width: 200px;
       margin-left: 30px;
       position: relative;
-      top: -20px; }
+      top: -20px;
+      opacity: 0; }
       .about_content .large_header_wrapper svg#air path, .about_content .large_header_wrapper svg#air line {
         stroke: #fff;
         fill: none;
         stroke-linecap: round;
         stroke-linejoin: round;
-        stroke-width: 2;
-        stroke-dasharray: 400;
-        stroke-dashoffset: 400;
-        animation-name: airone;
-        animation-timing-function: linear;
-        animation-iteration-count: infinite;
-        animation-duration: 4s; }
+        stroke-width: 2; }
   .about_content h1 {
     color: #fff;
     font-family: "PlayfairDisplay-Black";

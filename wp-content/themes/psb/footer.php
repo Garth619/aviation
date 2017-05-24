@@ -437,6 +437,14 @@ jQuery(document).ready(function(){
     // Waypoints
     
     
+    // Load top section once doc is ready
+    
+    
+    jQuery('.main_banner').addClass('myanimate');
+    
+    
+    
+    
     // Runway
     
     
@@ -445,6 +453,11 @@ jQuery(document).ready(function(){
   
 		element: document.getElementById('about_runway'),
 		handler: function(direction) {
+    	
+    	
+    	
+    	
+    	
     	
     	
     	jQuery('#about_runway').addClass('myanimate');
