@@ -204,7 +204,7 @@ get_header(); ?>
 				
 				<p>
 					
-					<svg id="air2" viewBox="0 0 148.62 37.52">
+					<svg id="air3" viewBox="0 0 148.62 37.52">
 			
 			<defs></defs>
 			
@@ -1010,7 +1010,7 @@ we get the best settlement outcome for our family.”
 </section><!-- testimonials -->
 
 
-<section class="case_results">
+<section id="case_results_animate" class="case_results">
 	
 	
 	<div class="case_results_wave_wrapper">
@@ -1168,7 +1168,7 @@ we get the best settlement outcome for our family.”
 		
 		<div class="sub_header_wrapper">
 			
-		<svg id="air2" viewBox="0 0 148.62 37.52">
+		<svg id="air4" viewBox="0 0 148.62 37.52">
 			
 			<defs></defs>
 			

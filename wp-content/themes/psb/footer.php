@@ -545,15 +545,10 @@ jQuery(document).ready(function(){
     
     
     
-    var waypoint = new Waypoint({
+   var waypoint = new Waypoint({
   
 		element: document.getElementById('about_runway'),
 		handler: function(direction) {
-    	
-    	
-    	
-    	
-    	
     	
     	
     	jQuery('#about_runway').addClass('myanimate');
@@ -562,6 +557,26 @@ jQuery(document).ready(function(){
     	
   	}
 	})
+	
+	
+	// Case Results
+	
+	
+	var waypointcaseresults = new Waypoint({
+  
+		element: document.getElementById('case_results_animate'),
+		handler: function(direction) {
+    	
+    	
+    	jQuery('#case_results_animate').addClass('myanimate');
+    	jQuery('.large_case_slider').addClass('myanimate');
+    	
+    	
+  	}
+	})
+	
+	
+	
     
     
 

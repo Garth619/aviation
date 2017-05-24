@@ -1008,6 +1008,7 @@ a.request_button {
 
 
 
+
 @keyframes airone {
   from {
     stroke-dashoffset: 400;
@@ -1016,6 +1017,47 @@ a.request_button {
     stroke-dashoffset: 0;
   }
 }
+
+
+
+
+
+.about_content.myanimate {
+	.about_inner_content {
+		svg#air3 {
+			.cloud1_animate_1 {
+						animation-name:air_3_cloud1_animate_1;
+						animation-timing-function: linear;
+						animation-fill-mode:forwards;
+						animation-duration: 1750ms;
+
+					}
+					.cloud1_animate_2 {
+						animation-name:air_3_cloud1_animate_1;
+						animation-timing-function: ease;
+						animation-fill-mode:forwards;
+						animation-duration: 3200ms;
+						animation-delay: 580ms;
+					}
+		}
+	}
+}  
+
+
+
+
+@keyframes air_3_cloud1_animate_1 {
+  to {
+    stroke-dashoffset: 1000;
+  }
+}
+
+@keyframes air_3_cloud1_animate_1 {
+  to {
+    stroke-dashoffset: 1000;
+  }
+}
+
 
 
 
@@ -1075,12 +1117,22 @@ a.request_button {
 				padding-left: 75px;
 				max-width:300px;
 				max-width: 910px;
-				svg {
+				svg#air3 {
 					width:160px;
 					position: relative;
 					top:-6px;
 					margin-right:15px;
 					margin-left:-65px;
+					
+					
+					fill: none;
+					stroke: #fcfcfc;
+					stroke-dasharray: 500;
+					stroke-dashoffset: 500;
+					stroke-linecap: round;
+					stroke-linejoin: round;
+					stroke-width: 2px;
+					
 				}
 			}
 		}
@@ -1639,7 +1691,7 @@ svg#global_gradient {
 	
 	/* Case Results */
 	
-	
+
 	
 .case_results {
 	width:100%;
@@ -1665,12 +1717,19 @@ svg#global_gradient {
 			margin-bottom: 4px;
 		}
 		.sub_header_wrapper {
-			svg {
+			svg#air4 {
 				width:150px;
 				display: inline-block;
 				vertical-align: top;
 				position: relative;
 				top:-15px;
+				fill: none;
+				stroke: #fcfcfc;
+				stroke-dasharray: 500;
+				stroke-dashoffset: 500;
+				stroke-linecap: round;
+				stroke-linejoin: round;
+				stroke-width: 2px;
 			}
 			span.sub_header {
 				color:#fff;
@@ -1686,6 +1745,49 @@ svg#global_gradient {
 	}
 	
 }
+
+
+
+.case_results.myanimate {
+	.case_results_inner {
+		.sub_header_wrapper {
+			svg#air4 {
+				.cloud1_animate_1 {
+						animation-name:air4_cloud1_animate_1;
+						animation-timing-function: linear;
+						animation-fill-mode:forwards;
+						animation-duration: 1750ms;
+
+					}
+					.cloud1_animate_2 {
+						animation-name:air4_cloud1_animate_2;
+						animation-timing-function: ease;
+						animation-fill-mode:forwards;
+						animation-duration: 3200ms;
+						animation-delay: 580ms;
+					}
+			}
+		}
+	}
+}
+
+
+@keyframes air4_cloud1_animate_1 {
+  to {
+    stroke-dashoffset: 1000;
+  }
+}
+
+@keyframes air4_cloud1_animate_2 {
+  to {
+    stroke-dashoffset: 1000;
+  }
+}
+
+
+
+
+
 
 
 
@@ -1783,6 +1885,34 @@ svg#global_gradient {
 
 
 
+
+
+
+.large_case_slider.myanimate {
+	.case_inner_content {
+		 svg#mysquare {
+			 animation-name:mysquare;
+			 animation-timing-function: linear;
+			 animation-fill-mode:forwards;
+			 animation-duration: 2.5s;
+			}
+		}
+	} 
+
+
+
+
+@keyframes mysquare {
+  to {
+    stroke-dashoffset: 1000;
+  }
+}
+
+
+
+
+
+
 	.large_case_slider {
 		background: #fff;
 		width:68.5%;
@@ -1828,16 +1958,22 @@ svg#global_gradient {
 					margin-bottom: 28px;
 				}
 			}
-			#mysquare {
+			svg#mysquare {
 				fill:none;
 				stroke:url(#Gradient3);
-				stroke-width:2px;
+				
 				position: absolute;
 				top:0;
 				right:80px;
 				width: 100%;
 				height:100%;
 				z-index: 1;
+				
+				
+				stroke-width:2px;
+				stroke-dasharray: 5000;
+				stroke-dashoffset: 5000;
+				
 			}
 			.case_category_wrapper {
 				position: absolute;
