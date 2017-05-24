@@ -1107,6 +1107,7 @@ svg#global_gradient {
 			position: relative;
 			top:-58px;
 			padding:32px;
+			z-index:8;
 			.gradient_bg {
 				padding:1px;
 				
@@ -1519,7 +1520,7 @@ svg#global_gradient {
 .case_results {
 	width:100%;
 	overflow: hidden;
-	margin-top: -500px;
+	margin-top: -515px;
 	position: relative;
 	z-index: 1;
 	.case_results_inner {
@@ -1573,7 +1574,11 @@ svg#global_gradient {
 	position: absolute;
 	top: 0px;
 	width:100%;
-	
+	.wave_set_inner_wrapper {
+		svg#mobile_waves_case_results {
+			display: none;
+		}
+	}
 	svg#wave_set_case_results {
 		
 		path.primary{
@@ -1589,6 +1594,8 @@ svg#global_gradient {
 		width:100%;
 		height:2290px;
 		margin-top:-300px;
+		position: relative;
+		z-index:8;
 		path.wavebg_path {
 			width:100%;
 			fill: url(#wavebg_case_results_gradient);
@@ -4984,8 +4991,23 @@ margin-top:30px;
 .case_results_wave_wrapper {
 	
 	
+	.wave_set_inner_wrapper {
+		svg#mobile_waves_case_results {
+			display: block;
+			width:2090px;
+			position: relative;
+			top:200px;
+			left:-650px;
+			z-index:1;
+			path.mobile_path {
+				fill:#fff;
+				opacity: 0.15;
+			}
+		}
+	}
+	
 	svg#wave_set_case_results {
-		
+		display: none;
 		path.primary{
      
     }
@@ -9086,9 +9108,9 @@ margin-top:25px;
 	
 	
 .case_results {
-	margin-top: -634px;
+	margin-top: -773px;
 	.case_results_inner {
-		padding: 476px 0 0;
+		padding: 534px 0 0;
 		span.large_header {
 			margin:134px auto 0;
 			text-align: center;
@@ -9227,6 +9249,63 @@ margin-top:25px;
 		}
 	}
  	 
+
+
+
+
+
+.case_results_wave_wrapper {
+	
+	
+	.wave_set_inner_wrapper {
+		svg#mobile_waves_case_results {
+			left:-700px;
+			top:230px;
+			path.mobile_path {
+				
+			}
+		}
+	}
+	
+	svg#wave_set_case_results {
+		
+		path.primary{
+     
+    }
+    path.secondary{
+      
+    }
+	}
+	svg#wave_bg_case_results {
+		margin-left:-800px;
+		path.wavebg_path {
+			
+		}
+		line.runways {
+			
+			&:first-of-type {
+				
+			}
+			&:nth-of-type(2) {
+				
+			}
+			&:nth-of-type(3) {
+				
+			}
+			&:nth-of-type(4) {
+				
+			}
+		}
+		rect.runway_blink {
+			
+		}
+	}
+}
+
+
+
+
+
 
 
 
@@ -10746,7 +10825,7 @@ a.contact_get_directions {
 .case_results {
 
 	.case_results_inner {
-		padding: 442px 0 0;
+// 		padding: 442px 0 0;
 	}
 }
 
@@ -11030,7 +11109,7 @@ a.request_button {
 	 .case_results {
 
 	.case_results_inner {
-		padding: 420px 0 0;
+		/* 	padding: 460px 0 0; */
 	}
 }
 	 

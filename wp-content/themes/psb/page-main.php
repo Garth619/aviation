@@ -892,12 +892,39 @@ we get the best settlement outcome for our family.”
 	
 	<div class="case_results_wave_wrapper">
 		
+		
+		<div class="wave_set_inner_wrapper">
+		
 		<svg id="wave_set_case_results" height="500">
     
     	<path class="primary" d=""/>
 			<path class="secondary" d=""/>
   
 		</svg>
+		
+		
+		
+		
+		<svg id="mobile_waves_case_results" viewBox="0 0 1924 520.26" preserveAspectRatio="none">
+		
+			<defs></defs>
+		
+			<title>Untitled-8</title>
+		
+			<path class="mobile_path" d="M1924,96.26s-198-84-746,0-1178,84-1178,84v340H1924Z"/>
+			<path class="mobile_path" d="M0,52.26s410-124,1046,10,846,118,878,112v346H0Z"/>
+		
+		</svg>
+		
+		
+	
+
+		
+		
+		
+		
+		
+		</div><!--- wave_set_inner_wrapper -->
 		
 		
 		

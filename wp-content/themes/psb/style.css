@@ -765,7 +765,8 @@ svg#global_gradient {
     margin: 0px auto 0;
     position: relative;
     top: -58px;
-    padding: 32px; }
+    padding: 32px;
+    z-index: 8; }
     .eight_reasons .reasons_title_wrapper .gradient_bg {
       padding: 1px;
       /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#193cc9+0,ba19c9+100 */
@@ -1058,7 +1059,7 @@ svg#global_gradient {
 .case_results {
   width: 100%;
   overflow: hidden;
-  margin-top: -500px;
+  margin-top: -515px;
   position: relative;
   z-index: 1; }
   .case_results .case_results_inner {
@@ -1097,6 +1098,8 @@ svg#global_gradient {
   position: absolute;
   top: 0px;
   width: 100%; }
+  .case_results_wave_wrapper .wave_set_inner_wrapper svg#mobile_waves_case_results {
+    display: none; }
   .case_results_wave_wrapper svg#wave_set_case_results path.primary {
     fill: #fff;
     opacity: 0.1; }
@@ -1106,7 +1109,9 @@ svg#global_gradient {
   .case_results_wave_wrapper svg#wave_bg_case_results {
     width: 100%;
     height: 2290px;
-    margin-top: -300px; }
+    margin-top: -300px;
+    position: relative;
+    z-index: 8; }
     .case_results_wave_wrapper svg#wave_bg_case_results path.wavebg_path {
       width: 100%;
       fill: url(#wavebg_case_results_gradient); }
@@ -2977,6 +2982,18 @@ a.contact_get_directions:hover .contact_gradient .contact_inner_gradient {
         letter-spacing: 4.5px;
         font-size: 18px; }
   /* case Results */
+  .case_results_wave_wrapper .wave_set_inner_wrapper svg#mobile_waves_case_results {
+    display: block;
+    width: 2090px;
+    position: relative;
+    top: 200px;
+    left: -650px;
+    z-index: 1; }
+    .case_results_wave_wrapper .wave_set_inner_wrapper svg#mobile_waves_case_results path.mobile_path {
+      fill: #fff;
+      opacity: 0.15; }
+  .case_results_wave_wrapper svg#wave_set_case_results {
+    display: none; }
   .case_results_wave_wrapper svg#wave_bg_case_results {
     width: 2000px; }
     .case_results_wave_wrapper svg#wave_bg_case_results line.runways {
@@ -3963,9 +3980,9 @@ margin-top:25px;
   .testi_case_results {
     display: block; }
   .case_results {
-    margin-top: -634px; }
+    margin-top: -773px; }
     .case_results .case_results_inner {
-      padding: 476px 0 0; }
+      padding: 534px 0 0; }
       .case_results .case_results_inner span.large_header {
         margin: 134px auto 0;
         text-align: center;
@@ -4028,6 +4045,11 @@ margin-top:25px;
           background-color: rgba(255, 255, 255, 0.5); }
       .small_case_buttons_wrapper .small_button img {
         padding: 20px 0; }
+  .case_results_wave_wrapper .wave_set_inner_wrapper svg#mobile_waves_case_results {
+    left: -700px;
+    top: 230px; }
+  .case_results_wave_wrapper svg#wave_bg_case_results {
+    margin-left: -800px; }
   /* Aviation Accidents */
   .aviation_accidents {
     padding-bottom: 49px; }
@@ -4358,8 +4380,6 @@ margin-top:25px;
   /* Success Records */
   .featured_case {
     padding: 20px 20px 20px 27px; }
-  .case_results .case_results_inner {
-    padding: 442px 0 0; }
   .case_results_wave_wrapper svg#wave_bg_case_results {
     height: 2708px; } }
 
@@ -4407,7 +4427,7 @@ margin-top:25px;
     padding: 20px 14px;
     letter-spacing: 1px; }
   .case_results .case_results_inner {
-    padding: 420px 0 0; } }
+    /* 	padding: 460px 0 0; */ } }
 
 /* Media Query */
 
