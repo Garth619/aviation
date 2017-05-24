@@ -645,6 +645,10 @@ a.request_button {
   100% {
     opacity: 0; } }
 
+@keyframes airone {
+  to {
+    stroke-dashoffset: 0; } }
+
 .about_content {
   width: 55%;
   float: left; }
@@ -658,12 +662,25 @@ a.request_button {
       font-size: 250px;
       letter-spacing: 19px;
       display: inline-block; }
-    .about_content .large_header_wrapper svg {
+    .about_content .large_header_wrapper svg#air {
       display: inline-block;
       width: 200px;
       margin-left: 30px;
       position: relative;
       top: -20px; }
+      .about_content .large_header_wrapper svg#air path, .about_content .large_header_wrapper svg#air line {
+        stroke: #fff;
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2;
+        stroke-dasharray: 400;
+        stroke-dashoffset: 400;
+        animation-name: airone;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-duration: 4s;
+        animation-direction: both; }
   .about_content h1 {
     color: #fff;
     font-family: "PlayfairDisplay-Black";
@@ -2743,7 +2760,7 @@ a.contact_get_directions:hover .contact_gradient .contact_inner_gradient {
     padding-right: 3%; }
     .about_content .large_header_wrapper {
       padding-left: 0; }
-      .about_content .large_header_wrapper svg {
+      .about_content .large_header_wrapper svg#air {
         margin-left: 0; }
     .about_content h1 {
       margin-left: 0;
@@ -2822,7 +2839,7 @@ a.contact_get_directions:hover .contact_gradient .contact_inner_gradient {
   /* About */
   .about_content .large_header_wrapper span.large_header {
     font-size: 200px; }
-  .about_content .large_header_wrapper svg {
+  .about_content .large_header_wrapper svg#air {
     top: -8px; }
   .about_content h1 {
     font-size: 23px;
@@ -3049,69 +3066,6 @@ a.contact_get_directions:hover .contact_gradient .contact_inner_gradient {
 
 /* Media Query */
 @media screen and (max-width: 1400px) {
-  /* About */
-  /*
-.about {
-	.about_inner {
-		
-	}
-}
-
-
-
-	.about_content {
-			
-			.large_header_wrapper {
-					
-					span.large_header {
-						
-					}
-					svg {
-						
-					}
-			}
-			h1 {
-				
-			}
-			.about_inner_content {
-				
-				svg {
-					
-				}
-			}
-		}
-		
-		
-		.about_image_wrapper {
-			height: 380px;
-			margin-top:90px;
-			span.caption {
-				
-				span.purple {
-					
-				}
-			}
-			img {
-				
-			}
-		}
-		
-		
-		
-		a.meet_attorneys {
-			
-			.gradient_bg {
-				.inner_button {
-					
-					span {
-						
-					}
-				}
-			}
-		}
-		
-		
-*/
   /* Request */
   .request .inner_request span.large_header {
     max-width: 778px;
@@ -3148,61 +3102,6 @@ a.contact_get_directions:hover .contact_gradient .contact_inner_gradient {
 /* Media Query */
 @media screen and (max-width: 1300px) {
   /* About */
-  /*
-.about_content {
-			
-			.large_header_wrapper {
-					
-					span.large_header {
-						
-					}
-					svg {
-						
-					}
-			}
-			h1 {
-				
-			}
-			.about_inner_content {
-				
-				svg {
-					
-				}
-			}
-		}
-		
-		
-		.about_image_wrapper {
-			height: 300px;
-			 margin-top: 140px;
-			 
-			span.caption {
-				
-				span.purple {
-					
-				}
-			}
-			img {
-				margin-left: -26px;
-			}
-		}
-		
-		
-		
-		a.meet_attorneys {
-			position: relative;
-			margin-top:0;
-			top:-60px;
-			.gradient_bg {
-				.inner_button {
-					padding: 15px 13px;
-					span {
-						
-					}
-				}
-			}
-		}
-*/
   /* Eight Reasons */
   .eight_reasons {
     height: auto; }
@@ -3892,7 +3791,7 @@ a.contact_get_directions:hover .contact_gradient .contact_inner_gradient {
     display: block;
     margin-bottom: 10px;
     letter-spacing: 5px; }
-  .about_content .large_header_wrapper svg {
+  .about_content .large_header_wrapper svg#air {
     width: 175px; }
   .about_content .h1_wrapper {
     max-width: 290px; }

@@ -449,6 +449,8 @@ jQuery(document).ready(function(){
     	
     	jQuery('#about_runway').addClass('myanimate');
     	
+    	jQuery('.about_content').addClass('myanimate');
+    	
   	}
 	})
     

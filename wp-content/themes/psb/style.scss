@@ -934,11 +934,20 @@ a.request_button {
 
 
 
+	.about_content.myanimate {
+		.large_header_wrapper {
+			svg#air {
+				
+			}
+		}
+	}
 
 
-
-
-// https://css-tricks.com/scale-svg      https://tympanus.net/codrops/2014/08/19/making-svgs-responsive-with-css/
+@keyframes airone {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
 
 
 	.about_content {
@@ -955,12 +964,30 @@ a.request_button {
 						letter-spacing: 19px;
 						display: inline-block;
 					}
-					svg {
+					svg#air {
 						display: inline-block;
 						width:200px;
 						margin-left:30px;
 						position: relative;
 						top:-20px;
+						path, line {
+							stroke:#fff;
+							fill:none;
+							stroke-linecap:round;
+							stroke-linejoin:round;
+							stroke-width:2;
+							
+							
+							
+							stroke-dasharray: 400;
+							stroke-dashoffset: 400;
+							animation-name:airone;
+							animation-timing-function: linear;
+							animation-iteration-count: infinite;
+							animation-duration: 4s;
+							animation-direction: both;
+							
+						}
 					}
 			}
 			h1 {
@@ -3813,7 +3840,7 @@ a.contact_get_directions {
 					span.large_header {
 						
 					}
-					svg {
+					svg#air {
 						margin-left:0;
 					}
 			}
@@ -4373,7 +4400,7 @@ a.request_button {
 					span.large_header {
 						font-size:200px;
 					}
-					svg {
+					svg#air {
 						top: -8px;
 					}
 			}
@@ -4883,7 +4910,7 @@ a.tel {
 					span.large_header {
 						font-size:250px;
 					}
-					svg {
+					svg#air {
 						
 					}
 			}
@@ -5280,74 +5307,7 @@ margin-top:30px;
 	 
 	 
 	 
-	/* About */
-
-
-/*
-.about {
-	.about_inner {
-		
-	}
-}
-
-
-
-	.about_content {
 			
-			.large_header_wrapper {
-					
-					span.large_header {
-						
-					}
-					svg {
-						
-					}
-			}
-			h1 {
-				
-			}
-			.about_inner_content {
-				
-				svg {
-					
-				}
-			}
-		}
-		
-		
-		.about_image_wrapper {
-			height: 380px;
-			margin-top:90px;
-			span.caption {
-				
-				span.purple {
-					
-				}
-			}
-			img {
-				
-			}
-		}
-		
-		
-		
-		a.meet_attorneys {
-			
-			.gradient_bg {
-				.inner_button {
-					
-					span {
-						
-					}
-				}
-			}
-		}
-		
-		
-*/
-		
-		
-		
 		
 /* Request */
 
@@ -5620,62 +5580,7 @@ margin-top:30px;
 
 
 
-	/*
-.about_content {
-			
-			.large_header_wrapper {
-					
-					span.large_header {
-						
-					}
-					svg {
-						
-					}
-			}
-			h1 {
-				
-			}
-			.about_inner_content {
-				
-				svg {
-					
-				}
-			}
-		}
-		
-		
-		.about_image_wrapper {
-			height: 300px;
-			 margin-top: 140px;
-			 
-			span.caption {
-				
-				span.purple {
-					
-				}
-			}
-			img {
-				margin-left: -26px;
-			}
-		}
-		
-		
-		
-		a.meet_attorneys {
-			position: relative;
-			margin-top:0;
-			top:-60px;
-			.gradient_bg {
-				.inner_button {
-					padding: 15px 13px;
-					span {
-						
-					}
-				}
-			}
-		}
-*/
-	 
+	
 
 	
 	
@@ -6772,7 +6677,7 @@ margin-left: -320px;
 					span.large_header {
 						
 					}
-					svg {
+					svg#air {
 						
 					}
 			}
@@ -8743,7 +8648,7 @@ margin-top: -401px;
 				margin-bottom:10px;
 				letter-spacing: 5px;
 			}
-			svg {
+			svg#air {
 				width:175px;
 			}
 		}
@@ -10515,7 +10420,7 @@ a.contact_get_directions {
 			span.large_header {
 				
 			}
-			svg {
+			svg#air {
 				
 			}
 		}
