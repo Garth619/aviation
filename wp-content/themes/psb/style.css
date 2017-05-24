@@ -645,10 +645,16 @@ a.request_button {
   100% {
     opacity: 0; } }
 
+/*
 @keyframes airone {
+  from {
+    stroke-dashoffset: 400;
+  }
   to {
-    stroke-dashoffset: 0; } }
-
+    stroke-dashoffset: 0;
+  }
+}
+*/
 .about_content {
   width: 55%;
   float: left; }
@@ -679,8 +685,7 @@ a.request_button {
         animation-name: airone;
         animation-timing-function: linear;
         animation-iteration-count: infinite;
-        animation-duration: 4s;
-        animation-direction: both; }
+        animation-duration: 4s; }
   .about_content h1 {
     color: #fff;
     font-family: "PlayfairDisplay-Black";
