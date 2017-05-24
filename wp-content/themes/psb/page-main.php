@@ -903,7 +903,7 @@ $800 million in verdicts and settlements in the past 5&nbsp;years.</span>
 </section><!-- eight_reasons -->
 
 
-<section class="testimonials">
+<section id="testmonial_animate" class="testimonials">
 	
 	
 	<div class="testi_slider_wrapper testi_desktop">

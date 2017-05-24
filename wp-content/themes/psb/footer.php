@@ -595,13 +595,29 @@ jQuery(document).ready(function(){
 		element: document.getElementById('case_results_animate_two'),
 		handler: function(direction) {
     	
-    	jQuery('.large_case_slider').addClass('myanimate');
-    
-//     	
+    	jQuery('.large_case_slider').addClass('myanimate');    	
     	
     	
   	},
   	offset: 70
+	})
+	
+	
+	
+	
+	// Testimonials
+	
+	
+	var waypointtestimonial = new Waypoint({
+  
+		element: document.getElementById('testmonial_animate'),
+		handler: function(direction) {
+    	
+    	jQuery('.testimonials ul.slick-dots').addClass('myanimate');    	
+    	
+    	
+  	},
+  	offset:-150
 	})
 
 	

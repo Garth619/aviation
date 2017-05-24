@@ -1117,7 +1117,49 @@ svg#global_gradient {
     .test_slider_one .test_single_slide .slide_content span.slider_one_name {
       display: none; }
 
+.testimonials ul.slick-dots.myanimate {
+  animation-name: list_width, list_fade;
+  animation-direction: forward;
+  animation-duration: 3s, 1s;
+  animation-timing-function: cubic-bezier(0.04, 0.87, 0.58, 1);
+  opacity: 1; }
+  .testimonials ul.slick-dots.myanimate li {
+    animation-name: bullets_width;
+    animation-direction: forward;
+    animation-timing-function: cubic-bezier(0.04, 0.87, 0.58, 1); }
+    .testimonials ul.slick-dots.myanimate li:first-of-type {
+      animation-duration: 3s; }
+    .testimonials ul.slick-dots.myanimate li:nth-of-type(2) {
+      animation-duration: 2s; }
+    .testimonials ul.slick-dots.myanimate li:nth-of-type(3) {
+      animation-duration: 1s; }
+
+@keyframes list_width {
+  from {
+    width: 34%; }
+  to {
+    width: 100%; } }
+
+@keyframes list_fade {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes bullets_width {
+  from {
+    width: 70px; }
+  to {
+    width: 20px; } }
+
+@keyframes active_fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
 .testimonials ul.slick-dots, .testi_case_results ul.slick-dots {
+  opacity: 0;
   width: 100%;
   height: 1px;
   background-color: rgba(255, 255, 255, 0.4);
