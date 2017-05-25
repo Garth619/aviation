@@ -27,18 +27,6 @@
 		"oAP": "\/index.php",
 		"oF": 0
 		},
-	"\/license.txt": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/license.txt",
-		"oF": 0
-		},
-	"\/readme.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/readme.html",
-		"oF": 0
-		},
 	"\/wp-activate.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -19986,18 +19974,6 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/wp-content\/themes\/psb\/tag.php",
-		"oF": 0
-		},
-	"\/wp-content\/uploads\/wp-migrate-db\/.htaccess": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/wp-content\/uploads\/wp-migrate-db\/.htaccess",
-		"oF": 0
-		},
-	"\/wp-content\/uploads\/wp-migrate-db\/index.php": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/wp-content\/uploads\/wp-migrate-db\/index.php",
 		"oF": 0
 		},
 	"\/wp-cron.php": {

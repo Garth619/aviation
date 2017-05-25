@@ -20,7 +20,7 @@
 </section><!-- request -->
 
 
-<footer>
+<footer id="footer_animations">
 	
 	<div class="wave_footer_wrapper">
 		
@@ -699,6 +699,10 @@ jQuery(document).ready(function(){
 }); // Document Ready
 
 </script>
+
+
+
+
 
 
 

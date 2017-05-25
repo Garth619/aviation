@@ -2183,6 +2183,26 @@ footer {
       position: relative;
       top: 3px; }
 
+.wave_footer_wrapper.myanimate svg#wave_bg_footer line.runways {
+  fill: none;
+  stroke: #fff;
+  opacity: 0.1;
+  stroke-miterlimit: 10;
+  stroke-width: 1px;
+  stroke-dasharray: 2000;
+  stroke-dashoffset: 2000;
+  animation-name: linegrow_footer;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards; }
+
+.wave_footer_wrapper.myanimate svg#wave_bg_footer rect.runway_blink {
+  opacity: 0;
+  fill: #fff;
+  animation-name: blink;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-delay: 3s; }
+
 .wave_footer_wrapper {
   position: absolute;
   top: 0px;
@@ -2204,32 +2224,16 @@ footer {
     .wave_footer_wrapper svg#wave_bg_footer path.wavebg_path_footer {
       width: 100%;
       fill: url(#wavebg_footer_gradient); }
-    .wave_footer_wrapper svg#wave_bg_footer line.runways {
-      fill: none;
-      stroke: #fff;
-      opacity: 0.1;
-      stroke-miterlimit: 10;
-      stroke-width: 1px;
-      stroke-dasharray: 2000;
-      stroke-dashoffset: 2000;
-      animation-name: linegrow_footer;
-      animation-timing-function: ease;
-      animation-fill-mode: forwards; }
-      .wave_footer_wrapper svg#wave_bg_footer line.runways:first-of-type {
-        animation-duration: 5s; }
-      .wave_footer_wrapper svg#wave_bg_footer line.runways:nth-of-type(2) {
-        animation-duration: 6s; }
-      .wave_footer_wrapper svg#wave_bg_footer line.runways:nth-of-type(3) {
-        animation-duration: 5.5s; }
-      .wave_footer_wrapper svg#wave_bg_footer line.runways:nth-of-type(4) {
-        animation-duration: 5.5s; }
+    .wave_footer_wrapper svg#wave_bg_footer line.runways:first-of-type {
+      animation-duration: 5s; }
+    .wave_footer_wrapper svg#wave_bg_footer line.runways:nth-of-type(2) {
+      animation-duration: 6s; }
+    .wave_footer_wrapper svg#wave_bg_footer line.runways:nth-of-type(3) {
+      animation-duration: 5.5s; }
+    .wave_footer_wrapper svg#wave_bg_footer line.runways:nth-of-type(4) {
+      animation-duration: 5.5s; }
     .wave_footer_wrapper svg#wave_bg_footer rect.runway_blink {
-      opacity: 0;
-      fill: #fff;
-      animation-name: blink;
-      animation-duration: 2.5s;
-      animation-iteration-count: infinite;
-      animation-delay: 3s; }
+      opacity: 0; }
 
 @keyframes linegrow_footer {
   to {

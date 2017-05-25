@@ -3160,7 +3160,32 @@ svg#global_gradient {
  
  
  
+ .wave_footer_wrapper.myanimate {
+	 svg#wave_bg_footer {
+		 line.runways {
+			 fill:none;
+			 stroke:#fff;
+			 opacity: 0.1;
+			 stroke-miterlimit:10;
+			 stroke-width: 1px;
+			 stroke-dasharray: 2000;
+			 stroke-dashoffset: 2000;
+			 animation-name:linegrow_footer;
+			 animation-timing-function: ease;
+			 animation-fill-mode:forwards;
+		 }
+		 rect.runway_blink {
+			opacity: 0;
+			fill:#fff;
+			animation-name:blink;
+			animation-duration: 2.5s;
+			animation-iteration-count: infinite;
+			animation-delay: 3s;
+		}
+	 }
+ } 
  
+
 .wave_footer_wrapper {
 	position: absolute;
 	top: 0px;
@@ -3195,16 +3220,7 @@ svg#global_gradient {
 			fill: url(#wavebg_footer_gradient);
 		}
 		line.runways {
-			fill:none;
-			stroke:#fff;
-			opacity: 0.1;
-			stroke-miterlimit:10;
-			stroke-width: 1px;
-			stroke-dasharray: 2000;
-			stroke-dashoffset: 2000;
-			animation-name:linegrow_footer;
-			animation-timing-function: ease;
-			animation-fill-mode:forwards;
+			
 			&:first-of-type {
 				animation-duration:5s;
 			}
@@ -3220,11 +3236,6 @@ svg#global_gradient {
 		}
 		rect.runway_blink {
 			opacity: 0;
-			fill:#fff;
-			animation-name:blink;
-			animation-duration: 2.5s;
-			animation-iteration-count: infinite;
-			animation-delay: 3s;
 		}
 	}
 }
