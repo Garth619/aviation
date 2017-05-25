@@ -4205,8 +4205,8 @@ margin-top:25px;
     margin-top: 50px;
     font-size: 17px;
     line-height: 27px;
-    padding-left: 13px;
-    padding-right: 13px; }
+    padding-left: 17px;
+    padding-right: 17px; }
     .test_content p, .test_content ul {
       margin-bottom: 30px; }
   /* Case Results */
@@ -4224,7 +4224,7 @@ margin-top:25px;
         max-width: 395px; }
       .case_results .case_results_inner .sub_header_wrapper {
         margin: 39px auto 0; }
-        .case_results .case_results_inner .sub_header_wrapper svg {
+        .case_results .case_results_inner .sub_header_wrapper svg#air4 {
           display: none; }
         .case_results .case_results_inner .sub_header_wrapper span.sub_header {
           text-align: center;
@@ -4354,7 +4354,8 @@ margin-top:25px;
       font-size: 45px;
       line-height: 48px;
       max-width: 508px;
-      margin-bottom: 34px; }
+      margin-bottom: 34px;
+      padding: 0 17px; }
       .request .inner_request span.large_header br.mobile {
         display: block; }
     .request .inner_request span.fields_required {

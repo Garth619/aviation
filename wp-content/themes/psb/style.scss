@@ -9735,8 +9735,8 @@ margin-top:25px;
 		margin-top: 50px;
 		font-size:17px;
 		line-height: 27px;
-		padding-left:13px;
-		padding-right:13px;
+		padding-left:17px;
+		padding-right:17px;
 		p,ul {
 			margin-bottom:30px;
 		}
@@ -9765,7 +9765,7 @@ margin-top:25px;
 		}
 		.sub_header_wrapper {
 			margin: 39px auto 0;
-			svg {
+			svg#air4 {
 				display: none;
 			}
 			span.sub_header {
@@ -10137,6 +10137,7 @@ margin-top:25px;
 			line-height: 48px;
 			max-width: 508px;
 			margin-bottom:34px;
+			padding:0 17px;
 			br.mobile {
 				display: block;
 			}
