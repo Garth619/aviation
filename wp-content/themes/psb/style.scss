@@ -5438,6 +5438,27 @@ a.tel {
 
 
 
+
+
+.about_content.myanimate {
+		.large_header_wrapper {
+			svg#air {
+				stroke-dasharray: 0;
+				stroke-dashoffset: 0;
+ 				animation-name:none;
+			
+				opacity: 1;
+			}
+		}
+	}
+
+
+
+
+
+
+
+
 	.about_content {
 			width:100%;
 			padding-right:0;
@@ -5450,7 +5471,7 @@ a.tel {
 						font-size:250px;
 					}
 					svg#air {
-						
+						opacity: 1;
 					}
 			}
 			.h1_wrapper {
@@ -5462,7 +5483,7 @@ a.tel {
 			}
 			.tablet_line {
 					
-margin-top:30px;
+					margin-top:30px;
 					width:23px;
 					height:3px;
 					background:#fff;
@@ -5491,11 +5512,35 @@ margin-top:30px;
 				font-size:22px;
 				line-height: 43px;
 				letter-spacing: 1px;
-				svg {
-					
+				svg#air3 {
+					stroke-dasharray: 0;
+					stroke-dashoffset: 0;
 				}
 			}
 		}
+		
+		
+		
+		
+		.about_content.myanimate {
+	.about_inner_content {
+		svg#air3 {
+			.cloud1_animate_1 {
+						animation-name:none;
+						
+
+					}
+					.cloud1_animate_2 {
+						animation-name:none;
+						
+					}
+		}
+	}
+}  
+		
+		
+		
+		
 		
 		
 		.about_image_wrapper.mobile {
@@ -5530,7 +5575,7 @@ margin-top:30px;
 		
 		
 		a.meet_attorneys {
-			top: -42px;
+			top: -12px;
 			margin-left: 20px;
 			.gradient_bg {
 				.inner_button {
@@ -5541,6 +5586,21 @@ margin-top:30px;
 					}
 				}
 			}
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		a.meet_attorneys.myanimate {
+			
+			animation-name: none;
+		
+			
+			
 		}
 		
 		
@@ -7114,6 +7174,31 @@ a.tel {
 
 /* Main Banner */
 
+
+
+
+.main_banner.myanimate {
+	.inner_content {
+		.sub_header_wrapper {
+			.cloud1 {
+				svg#air2 {
+					.cloud1_animate_1 {
+						animation-name:none;
+						
+
+					}
+					.cloud1_animate_2 {
+						animation-name:none;
+						
+					}
+				}
+			}
+		}
+	}
+} 
+
+
+
 .main_banner {
 	background: url(images/header-mainimage-tab.jpg) top center no-repeat;
 	background-size: cover;
@@ -7138,7 +7223,10 @@ a.tel {
 			margin-top: 30px;
 			max-width: 640px;
 			.cloud1 {
-				
+				svg#air2 {
+					stroke-dasharray: 0;
+					stroke-dashoffset: 0;
+				}
 			}
 			span.subheader {
 				max-width: 455px;
@@ -7536,11 +7624,42 @@ margin-left: -320px;
 	}
 	
 	
+	
+	
+	
+	
+	
+	
+	.testimonials {
+		ul.slick-dots.myanimate {
+			animation-name: none;
+			opacity: 1;
+			li {
+				animation-name: none;
+				
+				&:first-of-type {
+					
+				}
+				&:nth-of-type(2) {
+					
+				}
+				&:nth-of-type(3) {
+					
+				}
+			}
+		}
+	}
+	
+	
+	
+	
+	
 	.testimonials, .testi_case_results {
 	
 	ul.slick-dots {
 		width:calc(100% - 60px);
 		bottom: -11px;
+		opacity: 1;
 		li.slick-active {
 			button {
 				&:before {
@@ -7627,8 +7746,10 @@ margin-left: -320px;
 		.sub_header_wrapper {
 			margin: 47px auto 0;
 			padding:0 7px;
-			svg {
+			svg#air4 {
 				top:-20px;
+				stroke-dasharray: 0;
+				stroke-dashoffset: 0;
 			}
 			span.sub_header {
 				width:calc(100% - 154px);
@@ -7642,7 +7763,23 @@ margin-left: -320px;
 
 
 
+.case_results.myanimate {
+	.case_results_inner {
+		.sub_header_wrapper {
+			svg#air4 {
+				.cloud1_animate_1 {
+						animation-name:none;
+						
 
+					}
+					.cloud1_animate_2 {
+						animation-name:none;
+						
+					}
+			}
+		}
+	}
+}
 
 
 
