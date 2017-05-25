@@ -789,7 +789,7 @@ a.request_button {
 
 @keyframes img_move {
   from {
-    transform: translateX(-188px) translateY(-200px); }
+    transform: translateX(-88px) translateY(-200px); }
   to {
     transform: translateX(0px) translateY(0px); } }
 
@@ -1381,9 +1381,23 @@ svg#global_gradient {
   animation-fill-mode: forwards;
   animation-duration: 2.5s; }
 
+.large_case_slider.myanimate .case_purple_line {
+  animation-name: case_purple_line;
+  animation-timing-function: all 700ms cubic-bezier(0.23, 1, 0.32, 1);
+  animation-fill-mode: forwards;
+  animation-duration: 1.5s;
+  animation-delay: 1.8s;
+  opacity: 1; }
+
 @keyframes mysquare {
   to {
     stroke-dashoffset: 1000; } }
+
+@keyframes case_purple_line {
+  from {
+    width: 0%; }
+  to {
+    width: 100%; } }
 
 .large_case_slider {
   background: #fff;
@@ -1402,13 +1416,19 @@ svg#global_gradient {
       padding-left: 80px;
       position: relative;
       z-index: 10; }
+    .large_case_slider .case_inner_content .case_purple_line {
+      width: 0%;
+      height: 1px;
+      background: #b51ac9;
+      position: absolute;
+      bottom: 0;
+      left: 0; }
     .large_case_slider .case_inner_content span.case_sub_header {
       display: inline-block;
       text-transform: uppercase;
       font-family: "Proxima N W01 Black";
       letter-spacing: 6.5px;
       color: #b51ac9;
-      border-bottom: 1px solid #b51ac9;
       padding: 27px 60px 20px 83px;
       font-size: 20px;
       position: relative;
@@ -2037,7 +2057,7 @@ footer {
   animation-duration: 1s;
   animation-fill-mode: forwards;
   animation-timing-function: ease;
-  animation-delay: 1.8s;
+  animation-delay: 1.2s;
   opacity: 0; }
 
 @keyframes whiteline_animation {

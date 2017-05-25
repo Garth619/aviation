@@ -1196,7 +1196,14 @@ we get the best settlement outcome for our family.”
 						<div class="large_single_case large_single_case_one">
 						
 						<span class="number_header">$17.8 M</span><!-- large_header -->
-						<span class="case_sub_header">Yoon V. United States</span>
+						
+						
+						
+							<span class="case_sub_header">Yoon V. United States<div class="case_purple_line"></div><!-- case_purple_line --></span>
+							
+							
+						
+					
 						
 						<div class="case_content">
 						
@@ -1222,7 +1229,7 @@ we get the best settlement outcome for our family.”
 						<div class="large_single_case large_single_case_two">
 						
 						<span class="number_header">$15 M</span><!-- large_header -->
-						<span class="case_sub_header">Person V. United States</span>
+						<span class="case_sub_header">Person V. United States<div class="case_purple_line"></div><!-- case_purple_line --></span>
 						
 						<div class="case_content">
 						
@@ -1251,7 +1258,7 @@ we get the best settlement outcome for our family.”
 						<div class="large_single_case large_single_case_three">
 						
 						<span class="number_header">$13.5 M</span><!-- large_header -->
-						<span class="case_sub_header">Person V. United States</span>
+						<span class="case_sub_header">Person V. United States<div class="case_purple_line"></div><!-- case_purple_line --></span>
 						
 						<div class="case_content">
 						
@@ -1278,7 +1285,7 @@ we get the best settlement outcome for our family.”
 						<div class="large_single_case large_single_case_four">
 						
 						<span class="number_header">$11 M</span><!-- large_header -->
-						<span class="case_sub_header">Yoon V. United States</span>
+						<span class="case_sub_header">Yoon V. United States<div class="case_purple_line"></div><!-- case_purple_line --></span>
 						
 						<div class="case_content">
 						
