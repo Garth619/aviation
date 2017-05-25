@@ -3254,7 +3254,8 @@ a.contact_get_directions:hover .contact_gradient .contact_inner_gradient {
       padding-top: 180px;
       font-size: 22px;
       line-height: 43px;
-      letter-spacing: 1px; }
+      letter-spacing: 1px;
+      padding-left: 75px; }
       .about_content .about_inner_content svg#air3 {
         stroke-dasharray: 0;
         stroke-dashoffset: 0; }
@@ -3748,7 +3749,7 @@ a.contact_get_directions:hover .contact_gradient .contact_inner_gradient {
   .case_results {
     margin-top: -660px; }
     .case_results .case_results_inner {
-      padding: 602px 30px 135px; }
+      padding: 602px 20px 135px; }
       .case_results .case_results_inner span.large_header {
         font-size: 150px;
         margin-left: 8%; }
@@ -3758,11 +3759,13 @@ a.contact_get_directions:hover .contact_gradient .contact_inner_gradient {
         .case_results .case_results_inner .sub_header_wrapper svg#air4 {
           top: -20px;
           stroke-dasharray: 0;
-          stroke-dashoffset: 0; }
+          stroke-dashoffset: 0;
+          width: 142px; }
         .case_results .case_results_inner .sub_header_wrapper span.sub_header {
           width: calc(100% - 154px);
           max-width: 600px;
-          line-height: 40px; }
+          line-height: 40px;
+          letter-spacing: 8.5px; }
   .case_results.myanimate .case_results_inner .sub_header_wrapper svg#air4 .cloud1_animate_1 {
     animation-name: none; }
   .case_results.myanimate .case_results_inner .sub_header_wrapper svg#air4 .cloud1_animate_2 {

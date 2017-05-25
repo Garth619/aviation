@@ -5512,6 +5512,7 @@ a.tel {
 				font-size:22px;
 				line-height: 43px;
 				letter-spacing: 1px;
+				padding-left:75px;
 				svg#air3 {
 					stroke-dasharray: 0;
 					stroke-dashoffset: 0;
@@ -7737,7 +7738,7 @@ margin-left: -320px;
 .case_results {
 	margin-top: -660px;
 	.case_results_inner {
-		padding: 602px 30px 135px;
+		padding: 602px 20px 135px;
 		
 		span.large_header {
 			font-size:150px;
@@ -7750,11 +7751,13 @@ margin-left: -320px;
 				top:-20px;
 				stroke-dasharray: 0;
 				stroke-dashoffset: 0;
+				width:142px;
 			}
 			span.sub_header {
 				width:calc(100% - 154px);
 				max-width: 600px;
 				line-height: 40px;
+				letter-spacing: 8.5px;
 			}
 		}
 	}
