@@ -2389,7 +2389,7 @@ a.inner_request_wrapper {
       animation-duration: 1.5s;
       animation-fill-mode: forwards;
       animation-timing-function: cubic-bezier(0, 0.32, 0.1, 0.97);
-      animation-delay: 1s; }
+      animation-delay: 1.8s; }
     .container .purple_line_wrapper .purple_square {
       width: 45px;
       height: 4px;
@@ -2397,11 +2397,23 @@ a.inner_request_wrapper {
       float: left;
       margin-top: -4px;
       animation-name: purple_square_fadein;
-      animation-duration: 700ms;
+      animation-duration: 900ms;
       animation-fill-mode: forwards;
       animation-timing-function: ease;
-      animation-delay: 2.5s;
+      animation-delay: 3.3s;
       opacity: 0; }
+
+@keyframes sidebar_title {
+  from {
+    transform: translateX(600px); }
+  to {
+    transform: translateX(0px); } }
+
+@keyframes sidebar_air_svg {
+  from {
+    stroke-dashoffset: 400; }
+  to {
+    stroke-dashoffset: 0; } }
 
 .sidebar_wrapper {
   width: 534px;
@@ -2415,6 +2427,14 @@ a.inner_request_wrapper {
     margin-bottom: 40px; }
     .sidebar_wrapper .sidebar_inner h3 {
       display: none; }
+    .sidebar_wrapper .sidebar_inner .sidebar_title_wrapper {
+      position: relative;
+      animation-name: sidebar_title;
+      animation-duration: 1.5s;
+      animation-fill-mode: forwards;
+      animation-timing-function: cubic-bezier(0, 0.32, 0.1, 0.97);
+      animation-delay: 2s;
+      transform: translateX(600px); }
     .sidebar_wrapper .sidebar_inner span.sidebar_title {
       margin-top: 55px;
       display: block;
@@ -2436,12 +2456,19 @@ a.inner_request_wrapper {
       /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ba19c9', endColorstr='#193cc9',GradientType=1 );
       /* IE6-9 */ }
-    .sidebar_wrapper .sidebar_inner svg {
+    .sidebar_wrapper .sidebar_inner svg#air_sidebar {
       width: 112px;
       margin-left: 2%;
       display: inline-block;
       position: relative;
-      top: 24px; }
+      top: 24px;
+      stroke-dasharray: 400;
+      stroke-dashoffset: 400;
+      animation-name: sidebar_air_svg;
+      animation-timing-function: linear;
+      animation-duration: 2.5s;
+      animation-fill-mode: both;
+      animation-delay: 2.5s; }
     .sidebar_wrapper .sidebar_inner ul {
       list-style: none;
       margin: 15px 0 0 0;

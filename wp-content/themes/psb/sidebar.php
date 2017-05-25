@@ -6,7 +6,7 @@
 			
 			<span class="sidebar_title">Types of Aviation Accidents</span>
 			
-			<svg id="air3" viewBox="0 -5 200.72 117.06">
+			<svg id="air_sidebar" viewBox="0 -5 200.72 117.06">
 			
 			
 				<defs>
