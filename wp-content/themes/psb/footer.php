@@ -476,7 +476,7 @@ jQuery(document).ready(function(){
      
      
      
-     
+    
      
      
      
@@ -534,14 +534,13 @@ jQuery(document).ready(function(){
     
     jQuery('.main_banner').addClass('myanimate');
     
-   
+ 
+
+
     
     
     
-    
-    
-    
-    // Runway
+    // About
     
     
     
@@ -562,7 +561,7 @@ jQuery(document).ready(function(){
     	
     	
   	},
-  	offset: -300
+  	offset: -200
 	})
 	
 	
@@ -582,7 +581,7 @@ jQuery(document).ready(function(){
     	
     	
   	},
-  	offset: -300
+  	offset: -200
 	})
 	
 	

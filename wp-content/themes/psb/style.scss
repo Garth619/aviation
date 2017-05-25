@@ -479,12 +479,22 @@ $bodycolor: #0a0607;
 /* Header */
 
 
+
+
+header.show_bg {
+	background: $blue;
+}
+
+
+
 header {
 	position: fixed;
 	top:0;
 	left:0;
 	width:100%;
 	z-index:50;
+	background: transparent;
+	transition: all .2s ease-in-out;
 	&:after {
 		content:"";
 		width:100%;
@@ -3745,7 +3755,7 @@ svg#global_gradient {
 				 display: block;
 				 margin:23px auto 0;
 				 position: relative;
-				 z-index:20;
+				 z-index:9;
 			 }
 		 
 	 }
@@ -6819,7 +6829,7 @@ header {
 	top:0;
 	left:0;
 	width:100%;
-	z-index:20;
+	
 	
 	&:after {
 		content:"";

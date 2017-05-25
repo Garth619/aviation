@@ -340,12 +340,17 @@ header, section, nav, footer {
 /* Fonts */
 /* Colors */
 /* Header */
+header.show_bg {
+  background: #193cc9; }
+
 header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 50; }
+  z-index: 50;
+  background: transparent;
+  transition: all .2s ease-in-out; }
   header:after {
     content: "";
     width: 100%;
@@ -2589,7 +2594,7 @@ body.page-template-page-attorney .sidebar_inner {
         display: block;
         margin: 23px auto 0;
         position: relative;
-        z-index: 20; }
+        z-index: 9; }
 
 body.page-template-page-attorney .email_vcard_wrapper {
   width: 89%;
@@ -3439,8 +3444,7 @@ a.contact_get_directions:hover .contact_gradient .contact_inner_gradient {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    z-index: 20; }
+    width: 100%; }
     header:after {
       content: "";
       width: 100%;
