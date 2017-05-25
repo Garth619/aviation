@@ -188,6 +188,36 @@ jQuery('.reasons_grid').slick({
      }
     ]
  });
+ 
+ 
+ 
+ 
+ function checkWidth() {
+     
+     if (jQuery(window).width() < 1180) {
+         
+        jQuery('.single_reason').click(function(){
+ 	        
+	 	      jQuery(this).find('.single_reason_hov').addClass('myclick');
+	 				
+	 				jQuery('.single_reason').not(this).find('.single_reason_hov').removeClass('myclick');
+      
+     	});
+     		
+     	   		
+     		
+     } else {
+ 
+     }
+ };
+ 
+ 
+ checkWidth();
+ 
+ 
+ 
+ 
+ 
 
 
 // Case Results

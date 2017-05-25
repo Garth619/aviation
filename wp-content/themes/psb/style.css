@@ -2529,7 +2529,7 @@ svg#air_sidebar {
     background: url(images/dot.png) no-repeat scroll 0 10px;
     list-style: none;
     padding: 0 0 0 35px;
-    margin-bottom: -1px; }
+    margin-bottom: 9px; }
 
 /* Blog */
 .news_wrapper {
@@ -3729,8 +3729,17 @@ a.contact_get_directions:hover .contact_gradient .contact_inner_gradient {
     margin: -30px auto 0; }
     .reasons_grid .single_reason {
       margin-bottom: 8px; }
+      .reasons_grid .single_reason:hover .single_reason_hov {
+        opacity: 0;
+        visibility: hidden; }
+      .reasons_grid .single_reason:hover .single_reason_hov.myclick {
+        opacity: 1;
+        visibility: visible; }
     .reasons_grid .single_reason_reg {
       padding-top: 40px; }
+  .single_reason_hov.myclick {
+    opacity: 1;
+    visibility: visible; }
   .single_reason_01 .grey_line_bottom_wrapper, .single_reason_02 .grey_line_bottom_wrapper, .single_reason_03 .grey_line_bottom_wrapper, .single_reason_04 .grey_line_bottom_wrapper, .single_reason_05 .grey_line_bottom_wrapper, .single_reason_06 .grey_line_bottom_wrapper, .single_reason_07 .grey_line_bottom_wrapper, .single_reason_08 .grey_line_bottom_wrapper {
     display: none; }
   .reasons_button_wrapper {
@@ -4627,6 +4636,8 @@ margin-top:25px;
         margin-right: 0; }
       .sidebar_wrapper .sidebar_inner ul li:nth-last-of-type(2) {
         border-bottom: 1px solid #e1e1e4; }
+  .content {
+    line-height: 25px; }
   /* Profile */
   body.page-template-page-attorney .tablet_profile_wrapper {
     float: none;
@@ -4646,6 +4657,8 @@ margin-top:25px;
       .location_map_wrapper .inner_map iframe {
         height: 250px; }
   /* Success Records */
+  .success_intro {
+    line-height: 28px; }
   .featured_case {
     margin-top: 50px;
     padding: 20px 20px 20px 23px; }
@@ -4658,7 +4671,9 @@ margin-top:25px;
       .featured_case .inner_case span.number_header {
         font-size: 54px;
         line-height: 65px;
-        letter-spacing: 3px; } }
+        letter-spacing: 3px; }
+  .bottom_cases_wrapper {
+    margin-top: 80px; } }
 
 /* Media Query */
 @media screen and (max-width: 639px) {

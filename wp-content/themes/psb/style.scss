@@ -3722,7 +3722,7 @@ svg#global_gradient {
 			 background:url(images/dot.png) no-repeat scroll 0 10px;
 			 list-style: none;
 			 padding: 0 0 0 35px;
-			 margin-bottom:-1px;
+			 margin-bottom:9px;
 			 
 		 }
 	 }
@@ -7563,12 +7563,21 @@ margin-left: -320px;
 	
 	.reasons_grid {
 		margin: -30px auto 0;
+		
+					
 		.single_reason {
 			margin-bottom: 8px;
 			&:hover {
 				.single_reason_hov {
+					opacity: 0;
+					visibility: hidden;
 
 
+
+				}
+				.single_reason_hov.myclick {
+					opacity: 1;
+					visibility: visible;
 
 
 
@@ -7638,7 +7647,11 @@ margin-left: -320px;
 			}
 		}
 	
-	
+
+.single_reason_hov.myclick {
+	opacity: 1;
+	visibility: visible;
+}
 	
 		
 		
@@ -10910,7 +10923,7 @@ margin-top:25px;
 
  
  .content {
-	 
+	 line-height: 25px;
 	 h2 {
 		 
 	 }
@@ -11121,7 +11134,7 @@ a.contact_get_directions {
 
 
 .success_intro {
-	
+	line-height: 28px;
 }
 
 
@@ -11170,7 +11183,7 @@ a.contact_get_directions {
 
 
 .bottom_cases_wrapper {
-	
+	margin-top: 80px;
 
 
 .case_col {
