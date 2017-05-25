@@ -337,7 +337,6 @@ jQuery('.next_button').click(function(){
 // Global Footer Animations
 
 
-// Testimonials
 	
 	
 	var waypointfooter = new Waypoint({
@@ -345,8 +344,10 @@ jQuery('.next_button').click(function(){
 		element: document.getElementById('footer_animations'),
 		handler: function(direction) {
     	
-    	jQuery('.wave_footer_wrapper ').addClass('myanimate');    	
+    	jQuery('.wave_footer_wrapper').addClass('myanimate');
     	
+    	jQuery('.latest_news_wrapper').addClass('myanimate');   	
+
     	
   	},
   	offset:100
