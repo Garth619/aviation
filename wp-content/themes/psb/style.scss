@@ -9290,6 +9290,18 @@ a.contact_get_directions {
 /* Header */
 
 
+
+header.show_bg {
+// 	background: $blue;
+}
+
+
+body:not(.page-template-page-main) {
+	header {
+		background: $blue;
+	}
+}
+
 header {
 	
 	&:after {
@@ -9342,6 +9354,7 @@ a.tel {
 	top:84px;
 	text-align: center;
 	left:0;
+	
 	.tel_main {
 		display: inline-block;
 		font-size:30px;
@@ -10804,8 +10817,13 @@ margin-top:25px;
  
  body:not(.page-template-page-main) {
 	  div.tel_main_wrapper {
+		  background:url(images/mobile-banner.jpg) top left no-repeat;
+		  top:90px;
+		 
 			a.tel_main {
-				color:$purple;
+				color:#fff;
+				margin-top: 22px;
+				margin-bottom: 13px;
 			}
 		}	
  }
@@ -10826,7 +10844,7 @@ margin-top:25px;
  }
  
  .container_wrapper {
-		padding: 190px 30px 30px;
+		padding: 210px 30px 30px;
  }
  
  .container {

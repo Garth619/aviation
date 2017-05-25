@@ -4092,6 +4092,8 @@ a.contact_get_directions:hover .contact_gradient .contact_inner_gradient {
 /* Media Query */
 @media screen and (max-width: 760px) {
   /* Header */
+  body:not(.page-template-page-main) header {
+    background: #193cc9; }
   header .inner_header {
     padding: 0 0 0 13px;
     height: 103px; }
@@ -4600,10 +4602,15 @@ margin-top:25px;
   /* Internal */
   .inner_banner {
     display: none; }
-  body:not(.page-template-page-main) div.tel_main_wrapper a.tel_main {
-    color: #b51ac9; }
+  body:not(.page-template-page-main) div.tel_main_wrapper {
+    background: url(images/mobile-banner.jpg) top left no-repeat;
+    top: 90px; }
+    body:not(.page-template-page-main) div.tel_main_wrapper a.tel_main {
+      color: #fff;
+      margin-top: 22px;
+      margin-bottom: 13px; }
   .container_wrapper {
-    padding: 190px 30px 30px; }
+    padding: 210px 30px 30px; }
   .sidebar_wrapper .sidebar_inner span.sidebar_title {
     padding: 20px 22px; }
   .sidebar_wrapper .sidebar_inner svg#air_sidebar {
