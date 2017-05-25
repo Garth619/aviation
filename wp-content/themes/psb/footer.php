@@ -109,7 +109,7 @@
 						
 						<span class="">LA</span>
 						
-						<div class="tri_wrapper">
+						<div class="tri_wrapper tri_wrapper_one">
 							
 							<div class="tri"></div><!-- tri -->
 							
@@ -121,53 +121,74 @@
 						
 						<span class="">OC</span>
 						
+						<div class="tri_wrapper tri_wrapper_two">
+							
+							<div class="tri"></div><!-- tri -->
+							
+						</div><!-- tri_wrapper -->
+						
 					</div><!-- tablet_single_square -->
 					
 					
 				</div><!-- tablet_squares -->
 			
-				<div class="single_location">
+				<div class="mobile_single_location_wrapper">
+				
+					<div class="single_location single_location_one">
 					
-					<div class="white_square">
+						<div class="white_square">
 						
-						<span class="city_abbr">LA</span><!-- city_abbr -->
+							<span class="city_abbr">LA</span><!-- city_abbr -->
 						
-					</div><!-- white_square -->
+						</div><!-- white_square -->
 					
-					<span class="office">Office</span><!-- office -->
+						<span class="office">Office</span><!-- office -->
 					
-					<a class="address" href="" target="_blank">
-						11111 Santa Monica Blvd.<br class="desktop" />
-						#700<br class="desktop" />
-						Los Angeles, California<br class="desktop" />
-						90025
-					</a>
 					
-					<a class="get_directions" href="" target="_blank">Get Directions</a><!-- get_directions -->
+					
+							<a class="address address_one" href="" target="_blank">
+								11111 Santa Monica Blvd.<br class="desktop" />
+								#700<br class="desktop" />
+								Los Angeles, California<br class="desktop" />
+								90025
+							</a>
+					
+					
+					
+							<a class="get_directions" href="" target="_blank">Get Directions</a><!-- get_directions -->
+					
+					</div><!-- single_location -->
+				
+				
+				
+			
+				
+					<div class="single_location single_location_two">
+					
+						<div class="white_square">
+						
+							<span class="city_abbr">OC</span><!-- city_abbr -->
+						
+						</div><!-- white_square -->
+					
+						<span class="office">Office</span><!-- office -->
+					
+					
+					
+						<a class="address address_two" href="" target="_blank">
+							17500 Red Hill Ave.<br/>
+							#100<br/>
+							Irvine, California<br/>
+							92614
+						</a>
+					
+					
+					
+						<a class="get_directions" href="" target="_blank">Get Directions</a><!-- get_directions -->
 					
 				</div><!-- single_location -->
 				
-				
-				<div class="single_location">
-					
-					<div class="white_square">
-						
-						<span class="city_abbr">OC</span><!-- city_abbr -->
-						
-					</div><!-- white_square -->
-					
-					<span class="office">Office</span><!-- office -->
-					
-					<a class="address" href="" target="_blank">
-						17500 Red Hill Ave.<br/>
-						#100<br/>
-						Irvine, California<br/>
-						92614
-					</a>
-					
-					<a class="get_directions" href="" target="_blank">Get Directions</a><!-- get_directions -->
-					
-				</div><!-- single_location -->
+				</div><!-- mobile_single_location_wrapper -->
 			
 			</div><!-- single_location_wrapper -->
 			

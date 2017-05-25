@@ -420,6 +420,69 @@ jQuery(window).scroll(function () {
 
 
 
+function checkWidth() {
+    
+    if (jQuery(window).width() < 760) {
+        
+       
+    		jQuery('.single_location_two').hide();
+    		
+    		jQuery('.tri_wrapper_two').hide();
+
+
+					jQuery('.la').click(function(){
+	
+						jQuery('.single_location_two').fadeOut();
+	
+						jQuery('.single_location_one').fadeIn(300);
+						
+						
+						jQuery('.tri_wrapper_two').fadeOut();
+						
+						jQuery('.tri_wrapper_one').fadeIn();
+	
+	
+					});
+					
+					
+					jQuery('.oc').click(function(){
+	
+						jQuery('.single_location_one').fadeOut();
+	
+						jQuery('.single_location_two').fadeIn(300);
+						
+						jQuery('.tri_wrapper_one').fadeOut();
+						
+						jQuery('.tri_wrapper_two').fadeIn();
+	
+	
+					});
+
+
+					
+
+    	   		
+    		
+    } else {
+
+    }
+};
+
+
+checkWidth();
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }); // Document Ready
 

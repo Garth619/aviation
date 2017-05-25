@@ -3121,6 +3121,14 @@ svg#global_gradient {
 			 border-bottom:1px solid #5d74d3;
 			 padding-bottom: 40px;
 			 padding-left: 12%;
+			 &:hover {
+				 span.read_more {
+					 color:$purple;
+					 &:before {
+						 background: $purple;
+					}
+				 }
+			 }
 			a {
 				 text-decoration: none;
 				 color:#fff;
@@ -3147,12 +3155,6 @@ svg#global_gradient {
 				 letter-spacing: 1.5px;
 				 margin-top:13px;
 				 transition: all .2s ease-in-out;
-				 &:hover {
-					 color:$purple;
-					 &:before {
-						 background: $purple;
-					}
-				 }
 				 &:before {
 					 content: "";
 					 display: inline-block;
@@ -10421,6 +10423,11 @@ margin-top:25px;
  
  
   /* Footer */
+  
+  
+  
+  
+  
  
  
  footer {
@@ -10453,17 +10460,25 @@ margin-top:25px;
 			
 		}
 	}
+	.mobile_single_location_wrapper {
+	  position: relative;
+	  height: 208px;
+	  float:none;
+  }
  .single_location {
 	 width:100%;
 	 text-align: center;
-	  margin-top: 16px;
+	  margin-top: 10px;
 	  padding-left:0;
+	  position: absolute;
 	 &:first-of-type {
 		 width:100%;
 		 padding-left:0;
+		 float:none;
 	 }
 	 &:last-of-type {
-		display: none;
+			padding:0;
+			float:none;
 	 }
 	 .white_square {
 		 display: none;
@@ -10474,18 +10489,20 @@ margin-top:25px;
 	 span.office {
 		 display: none;
 	 }
+	 
 	 .address {
 		 margin-left:auto;
 		 margin-right:auto;
 		 font-size:18px;
 		 line-height: 24px;
-		 min-height: 100px;
-		 br.desktop {
+		min-height:0;
+		 padding-top:0;
+		 br {
 			 display: none;
 		 }
 	 }
 	 a.get_directions {
-		 margin-top: 22px;
+		 margin-top: 32px;
 		 &:before {
 			 
 		 }
@@ -10510,6 +10527,8 @@ margin-top:25px;
 	margin-top:18px;
 	max-width: 273px;
 	display: block;
+	overflow: hidden;
+   padding-bottom: 25px;
 	.tablet_offices {
 		color:#fff;
 		text-transform: uppercase;
@@ -10589,7 +10608,7 @@ margin-top:25px;
  
  
  .call_us_wrapper {
-		margin-top: 62px;
+		margin-top: 18px;
 		padding: 20px;
 		position: relative;
 		z-index:10px;
@@ -11845,7 +11864,7 @@ a.request_button {
  }
  
  .container_wrapper {
-	padding: 200px 20px 15px;
+	padding: 220px 20px 15px;
  }
  
  .container {
