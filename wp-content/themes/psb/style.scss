@@ -3575,6 +3575,38 @@ svg#global_gradient {
  }
  
  
+ .sidebar_title_wrapper {
+			 position: relative;
+			 
+			 
+			 
+			 animation-name: sidebar_title;
+			 animation-duration: 1.5s;
+			 animation-fill-mode: forwards;
+			 animation-timing-function: cubic-bezier(0,.32,.1,.97);
+			 animation-delay: 2s;
+			 transform: translateX(600px);
+			 
+			 
+		 }
+ 
+ 
+ svg#air_sidebar {
+		width:112px;
+		margin-left:2%;
+		display: inline-block;
+		position: relative;
+		top:24px;
+		stroke-dasharray: 400;
+		stroke-dashoffset: 400;
+		animation-name:sidebar_air_svg;
+		animation-timing-function: linear;
+		animation-duration: 2.5s;
+		animation-fill-mode:both;
+		animation-delay: 2.5s;
+	}
+ 
+ 
  
  .sidebar_wrapper {
  		width:534px;
@@ -3589,20 +3621,7 @@ svg#global_gradient {
 		 h3 {
 			 display: none;
 		 }
-		 .sidebar_title_wrapper {
-			 position: relative;
-			 
-			 
-			 
-			 animation-name: sidebar_title;
-			 animation-duration: 1.5s;
-			 animation-fill-mode: forwards;
-			 animation-timing-function: cubic-bezier(0,.32,.1,.97);
-			 animation-delay: 2s;
-			 transform: translateX(600px);
-			 
-			 
-		 }
+		 
 		 span.sidebar_title {
 			 margin-top:55px;
 			 display: block;
@@ -3620,26 +3639,7 @@ svg#global_gradient {
 			 background: linear-gradient(to right, #ba19c9 0%,#193cc9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 			 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ba19c9', endColorstr='#193cc9',GradientType=1 ); /* IE6-9 */
 		 }
-		 svg#air_sidebar {
-			 width:112px;
-			 margin-left:2%;
-			 display: inline-block;
-			 position: relative;
-			 top:24px;
-			 
-			 
-			 stroke-dasharray: 400;
-			 stroke-dashoffset: 400;
-			 animation-name:sidebar_air_svg;
-			animation-timing-function: linear;
-
-				animation-duration: 2.5s;
-				animation-fill-mode:both;
-				animation-delay: 2.5s;
-			 
-			 
-			 
-			}
+		 
 			
 			.recent_posts_sidebar {
 				
@@ -8636,6 +8636,28 @@ margin-left: -320px;
 	 }
  }
  
+ 
+ 
+ 
+ 
+ .sidebar_title_wrapper {
+		animation-name: none;
+		transform: translateX(0px);
+	}
+	
+	
+	svg#air_sidebar {
+		stroke-dasharray: 0;
+		stroke-dashoffset: 0;
+		animation-name:none;
+	}
+
+ 
+ 
+ 
+ 
+ 
+ 
  .sidebar_wrapper {
  	width:100%;
  	float:none;
@@ -10832,8 +10854,8 @@ margin-top:25px;
 		 span.sidebar_title {
 			padding: 20px 22px;
 		 }
-		 svg {
-			 
+		 svg#air_sidebar {
+			 display: none;
 			}
 			ul {
 				max-width:550px;

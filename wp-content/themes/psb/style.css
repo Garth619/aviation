@@ -2415,6 +2415,29 @@ a.inner_request_wrapper {
   to {
     stroke-dashoffset: 0; } }
 
+.sidebar_title_wrapper {
+  position: relative;
+  animation-name: sidebar_title;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0, 0.32, 0.1, 0.97);
+  animation-delay: 2s;
+  transform: translateX(600px); }
+
+svg#air_sidebar {
+  width: 112px;
+  margin-left: 2%;
+  display: inline-block;
+  position: relative;
+  top: 24px;
+  stroke-dasharray: 400;
+  stroke-dashoffset: 400;
+  animation-name: sidebar_air_svg;
+  animation-timing-function: linear;
+  animation-duration: 2.5s;
+  animation-fill-mode: both;
+  animation-delay: 2.5s; }
+
 .sidebar_wrapper {
   width: 534px;
   float: right;
@@ -2427,14 +2450,6 @@ a.inner_request_wrapper {
     margin-bottom: 40px; }
     .sidebar_wrapper .sidebar_inner h3 {
       display: none; }
-    .sidebar_wrapper .sidebar_inner .sidebar_title_wrapper {
-      position: relative;
-      animation-name: sidebar_title;
-      animation-duration: 1.5s;
-      animation-fill-mode: forwards;
-      animation-timing-function: cubic-bezier(0, 0.32, 0.1, 0.97);
-      animation-delay: 2s;
-      transform: translateX(600px); }
     .sidebar_wrapper .sidebar_inner span.sidebar_title {
       margin-top: 55px;
       display: block;
@@ -2456,19 +2471,6 @@ a.inner_request_wrapper {
       /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ba19c9', endColorstr='#193cc9',GradientType=1 );
       /* IE6-9 */ }
-    .sidebar_wrapper .sidebar_inner svg#air_sidebar {
-      width: 112px;
-      margin-left: 2%;
-      display: inline-block;
-      position: relative;
-      top: 24px;
-      stroke-dasharray: 400;
-      stroke-dashoffset: 400;
-      animation-name: sidebar_air_svg;
-      animation-timing-function: linear;
-      animation-duration: 2.5s;
-      animation-fill-mode: both;
-      animation-delay: 2.5s; }
     .sidebar_wrapper .sidebar_inner ul {
       list-style: none;
       margin: 15px 0 0 0;
@@ -3951,6 +3953,13 @@ a.contact_get_directions:hover .contact_gradient .contact_inner_gradient {
     .container .purple_line_wrapper .purple_square {
       opacity: 1;
       animation-name: none; }
+  .sidebar_title_wrapper {
+    animation-name: none;
+    transform: translateX(0px); }
+  svg#air_sidebar {
+    stroke-dasharray: 0;
+    stroke-dashoffset: 0;
+    animation-name: none; }
   .sidebar_wrapper {
     width: 100%;
     float: none;
@@ -4597,6 +4606,8 @@ margin-top:25px;
     padding: 190px 30px 30px; }
   .sidebar_wrapper .sidebar_inner span.sidebar_title {
     padding: 20px 22px; }
+  .sidebar_wrapper .sidebar_inner svg#air_sidebar {
+    display: none; }
   .sidebar_wrapper .sidebar_inner ul {
     max-width: 550px;
     padding: 0 25px; }
