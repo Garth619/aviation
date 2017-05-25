@@ -2347,6 +2347,18 @@ a.inner_request_wrapper {
       margin-right: auto;
       margin-top: -3.25px; }
 
+@keyframes purple_line_grow {
+  from {
+    width: 0%; }
+  to {
+    width: 100%; } }
+
+@keyframes purple_square_fadein {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
 .container {
   width: calc(100% - 534px);
   float: left;
@@ -2368,15 +2380,28 @@ a.inner_request_wrapper {
     height: 5px;
     margin-bottom: 45px; }
     .container .purple_line_wrapper .purple_line {
-      width: 100%;
+      width: 0%;
       height: 1px;
-      background: #b51ac9; }
+      background: #b51ac9;
+      position: absolute;
+      right: 0;
+      animation-name: purple_line_grow;
+      animation-duration: 1.5s;
+      animation-fill-mode: forwards;
+      animation-timing-function: cubic-bezier(0, 0.32, 0.1, 0.97);
+      animation-delay: 1s; }
     .container .purple_line_wrapper .purple_square {
       width: 45px;
       height: 4px;
       background: #b51ac9;
       float: left;
-      margin-top: -5px; }
+      margin-top: -4px;
+      animation-name: purple_square_fadein;
+      animation-duration: 700ms;
+      animation-fill-mode: forwards;
+      animation-timing-function: ease;
+      animation-delay: 2.5s;
+      opacity: 0; }
 
 .sidebar_wrapper {
   width: 534px;
@@ -3893,6 +3918,12 @@ a.contact_get_directions:hover .contact_gradient .contact_inner_gradient {
     float: none;
     padding-right: 0;
     margin-bottom: 75px; }
+    .container .purple_line_wrapper .purple_line {
+      width: 100%;
+      animation-name: none; }
+    .container .purple_line_wrapper .purple_square {
+      opacity: 1;
+      animation-name: none; }
   .sidebar_wrapper {
     width: 100%;
     float: none;

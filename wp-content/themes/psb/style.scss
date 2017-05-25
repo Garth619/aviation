@@ -3420,6 +3420,12 @@ svg#global_gradient {
  }
  
  
+ 
+ 
+ 
+
+ 
+ 
  .container.nosidebar {
 	 padding-right:0;
 	 float:none;
@@ -3441,6 +3447,43 @@ svg#global_gradient {
 		 }
 	 }
  }
+ 
+ 
+ 
+ 
+ 
+ @keyframes purple_line_grow {
+   from {
+     width:0%
+  		
+   }
+ 
+   to {
+     
+     width:100%;
+   }
+ }
+ 
+ 
+ 
+ @keyframes purple_square_fadein {
+   0% {
+     opacity: 0;
+  		
+   }
+ 
+   100% {
+     
+    opacity: 1;
+   }
+ }
+ 
+ 
+ 
+
+ 
+ 
+ 
  
  
  .container {
@@ -3465,9 +3508,19 @@ svg#global_gradient {
 		 height:5px;
 		 margin-bottom: 45px;
 		 .purple_line {
-			 width:100%;
+			 width:0%;
 			 height:1px;
 			 background: $purple;
+			 position: absolute;
+			 right:0;
+			 
+			 animation-name: purple_line_grow;
+			 animation-duration: 1.5s;
+			 animation-fill-mode: forwards;
+			 animation-timing-function: cubic-bezier(0,.32,.1,.97);
+			 animation-delay: 1s;
+			 
+			 
 			 
 		 }
 		 .purple_square {
@@ -3475,7 +3528,15 @@ svg#global_gradient {
 				height:4px;
 				background: $purple;
 				float:left;
-				margin-top:-5px;
+				margin-top:-4px;
+				
+				
+				animation-name: purple_square_fadein;
+				animation-duration: 700ms;
+				animation-fill-mode: forwards;
+				animation-timing-function: ease;
+				animation-delay: 2.5s;
+				opacity: 0;
 			}
 	 }
  }
@@ -8503,11 +8564,12 @@ margin-left: -320px;
 	 .purple_line_wrapper {
 		 
 		 .purple_line {
-			
-			 
-		 }
+				width:100%;
+				animation-name: none;
+			}
 		 .purple_square {
-				
+				opacity: 1;
+				animation-name: none;
 			}
 	 }
  }
