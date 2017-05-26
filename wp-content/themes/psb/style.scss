@@ -4503,7 +4503,7 @@ a.contact_get_directions {
 			position: absolute;
 			top:0;
 			left:0;
-			width:29px;
+			
 			height:100%;
 			span.featured_cat_title {
 				display: block;
@@ -4511,14 +4511,16 @@ a.contact_get_directions {
 				text-transform: uppercase;
 				font-size: 18px;
 				font-family: $proximabold;
-				writing-mode: vertical-lr;
 				float:left;
 				margin-top:178px;
+				writing-mode: vertical-lr;
 				transform: rotate(180deg);
 				letter-spacing: 8.8px;
 				background: #fff;
 				margin-left:-13px;
 				padding:20px 0 10px;
+				min-height: 244px;
+				text-align: right;
 			}
 		}
 		
@@ -7263,7 +7265,7 @@ nav {
 	left:0;
 	background: #fff;
 	width:100%;
-	height:100%;
+// 	height:100%;
 	
 	padding:0;
 	.menu-header {
@@ -11339,6 +11341,15 @@ a.contact_get_directions {
  /* Success Records */
 
 
+body.page-template-page-caseresults {
+	.container_wrapper {
+    padding: 220px 15px 15px;
+	}
+}
+
+
+
+
 
 
 #success_width.nosidebar {
@@ -11360,7 +11371,7 @@ a.contact_get_directions {
 
 .featured_case {
 	margin-top:50px;
-	padding: 20px 20px 20px 23px;;
+	padding: 20px 20px 20px 24px;
 	.inner_case {
 		
 		padding: 58px 7% 45px 6%;

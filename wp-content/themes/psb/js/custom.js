@@ -192,7 +192,7 @@ jQuery('.reasons_grid').slick({
  
  
  
- function checkWidth() {
+ function checkWidthtwo() {
      
      if (jQuery(window).width() < 1180) {
          
@@ -212,7 +212,7 @@ jQuery('.reasons_grid').slick({
  };
  
  
- checkWidth();
+ checkWidthtwo();
  
  
  
@@ -476,7 +476,7 @@ jQuery(window).scroll(function () {
 
 
 
-function checkWidth() {
+function checkWidththree() {
     
     if (jQuery(window).width() < 760) {
         
@@ -525,7 +525,7 @@ function checkWidth() {
 };
 
 
-checkWidth();
+checkWidththree();
 
 
 
