@@ -46,7 +46,7 @@ jQuery(document).ready(function(){
 
 
 
- jQuery('nav .menu-header ul.menu').append( '<li class="current_tracker"></li>' );
+//  jQuery('nav .menu-header ul.menu').append( '<li class="current_tracker"></li>' );
 
 
 
@@ -55,6 +55,49 @@ jQuery(document).ready(function(){
 
 
 
+// Magic line 
+
+
+
+// DOM Ready
+jQuery( document ).ready(function() {
+
+    var $el, leftPos, newWidth;
+        $mainNav2 = jQuery("nav ul#menu-top-nav");
+    
+    /*
+        EXAMPLE ONE
+    */
+    
+    
+    jQuery("nav ul#menu-top-nav").append("<li id='current_tracker'></li>");
+    
+    /* Cache it */
+    var $magicLine = jQuery("#current_tracker");
+    
+    $magicLine
+        .width(jQuery("nav ul#menu-top-nav li.current-menu-item").width())
+        .css("left", jQuery("nav ul#menu-top-nav li.current-menu-item a").position().left)
+        .data("origLeft", $magicLine.position().left)
+        .data("origWidth", $magicLine.width());
+    
+        
+    jQuery("nav ul.menu > li").find("a").hover(function() {
+        $el = jQuery(this);
+        leftPos = $el.position().left;
+        newWidth = $el.width();
+        
+        $magicLine.stop().animate({
+            left: leftPos,
+            width: newWidth
+        });
+    }, function() {
+        $magicLine.stop().animate({
+            left: $magicLine.data("origLeft"),
+            width: $magicLine.data("origWidth")
+        });    
+    });
+});
 
 
 

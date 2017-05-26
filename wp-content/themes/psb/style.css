@@ -460,7 +460,7 @@ nav {
               background: #b51ac9;
               color: #fff; }
 
-.current_tracker {
+#current_tracker {
   width: 50px;
   height: 4px;
   background: #b51ac9;
@@ -4189,7 +4189,7 @@ a.contact_get_directions:hover .contact_gradient .contact_inner_gradient {
               display: block;
               width: 100%;
               background: #f0f0f0; }
-  .current_tracker {
+  #current_tracker {
     display: none; }
   /* Tel */
   .tel_tablet_wrapper {
