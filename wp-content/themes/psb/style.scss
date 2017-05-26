@@ -652,7 +652,7 @@ nav {
 
 
 
-.current_tracker {
+#current_tracker {
 	width:50px;
 	height:4px;
 	background: $purple;
@@ -7399,7 +7399,7 @@ nav {
 
 
 
-.current_tracker {
+#current_tracker {
 	display: none;
 	
 }
@@ -11341,12 +11341,10 @@ a.contact_get_directions {
  /* Success Records */
 
 
-body.page-template-page-caseresults {
-	.container_wrapper {
+body.page-template-page-caseresults 
+.container_wrapper {
     padding: 220px 15px 15px;
-	}
 }
-
 
 
 

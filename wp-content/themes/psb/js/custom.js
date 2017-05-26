@@ -76,13 +76,13 @@ jQuery( document ).ready(function() {
     var $magicLine = jQuery("#current_tracker");
     
     $magicLine
-        .width(jQuery("nav ul#menu-top-nav li.current-menu-item").width())
-        .css("left", jQuery("nav ul#menu-top-nav li.current-menu-item a").position().left)
+        .width(jQuery("nav ul li.current-menu-item").width())
+        .css("left", jQuery("nav ul li.current-menu-item a").position().left)
         .data("origLeft", $magicLine.position().left)
         .data("origWidth", $magicLine.width());
     
         
-    jQuery("nav ul.menu > li").find("a").hover(function() {
+    jQuery("nav ul#menu-top-nav li").find("a").hover(function() {
         $el = jQuery(this);
         leftPos = $el.position().left;
         newWidth = $el.width();

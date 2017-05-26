@@ -5284,7 +5284,8 @@ margin-top:25px;
       .location_map_wrapper .inner_map iframe {
         height: 250px; }
   /* Success Records */
-  body.page-template-page-caseresults .container_wrapper {
+  body.page-template-page-caseresults
+.container_wrapper {
     padding: 220px 15px 15px; }
   .success_intro {
     line-height: 28px; }

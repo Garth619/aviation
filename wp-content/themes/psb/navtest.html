@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<title></title>
+	<meta http-equiv="content-type"
+    	content="text/html;charset=utf-8" />
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen" charset="utf-8" />
+
+	<meta name="description" content=""/>
+	<meta name="keywords" content=""/>
+<style type="text/css">
+* {margin:0px;padding:0px;}
+
+
+body { font: 14px Arial, sans-serif; color: #eee; margin: 0px;}
+.nav-wrap { 
+	margin: 0px;
+	padding: 40px 0px 40px 40px; 
+	background-color: #fff;
+	width: 100%;
+	position: fixed;
+}
+
+/* Clearfix */
+
+*:first-child+html .group { zoom: 1; } /* IE7 */
+
+/* Example One */
+#example-one { 
+	margin: 0 auto; 
+	list-style: none; 
+	position: relative;
+	width: auto; 
+	display: flex;
+}
+#example-one li { 
+/* 	display: inline-block; */	
+	margin-right: 50px;
+}
+#example-one a { 
+	color: #bbb; 
+	font-size: 14px; 
+	float: left;
+	padding: 6px 0px 4px 0px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+#example-one a:hover { 
+	color:  #EE7474;
+}
+#magic-line { 
+	position: absolute;
+	bottom: -2px; 
+	left: 0; 
+	width: 100px; 
+	height: 2px; 
+	background: #EE7474;
+}
+.current_page_item a { 
+	color:  #EE7474 !important; 
+}
+.ie6 #example-one li, .ie7 #example-one li { 
+	display: inline; 
+}
+.ie6 #magic-line {
+	bottom: -3px;
+}
+
+
+
+
+
+
+</style>
+
+</head>
+<body>
+	
+	
+	
+<div class="nav-wrap">
+  <ul class="group" id="example-one">
+    <li class="current_page_item">
+      <a href="#">Home</a>
+    </li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Offerings</a></li>
+    <li><a href="#">News & Insights</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</div>
+	
+	     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+	     
+	     <script type="text/javascript">
+	     
+	     jQuery(document).ready(function(){
+	     
+	     // DOM Ready
+jQuery( document ).ready(function() {
+
+    var $el, leftPos, newWidth;
+        $mainNav2 = jQuery("#example-one");
+    
+    /*
+        EXAMPLE ONE
+    */
+    
+    /* Add Magic Line markup via JavaScript, because it ain't gonna work without */
+    jQuery("#example-one").append("<li id='magic-line'></li>");
+    
+    /* Cache it */
+    var $magicLine = jQuery("#magic-line");
+    
+    $magicLine
+        .width(jQuery(".current_page_item").width())
+        .css("left", jQuery(".current_page_item a").position().left)
+        .data("origLeft", $magicLine.position().left)
+        .data("origWidth", $magicLine.width());
+    
+        
+    jQuery("#example-one li").find("a").hover(function() {
+        $el = jQuery(this);
+        leftPos = $el.position().left;
+        newWidth = $el.width();
+        
+        $magicLine.stop().animate({
+            left: leftPos,
+            width: newWidth
+        });
+    }, function() {
+        $magicLine.stop().animate({
+            left: $magicLine.data("origLeft"),
+            width: $magicLine.data("origWidth")
+        });    
+    });
+});
+	     
+	     }); // Document Ready
+	     
+	     </script>
+	
+</body>
+</html>
