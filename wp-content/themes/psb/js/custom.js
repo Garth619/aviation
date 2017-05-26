@@ -225,6 +225,63 @@ jQuery('.reasons_grid').slick({
 
 
 
+jQuery('.small_single_case').mouseenter(function(){
+	
+	jQuery(this).addClass('myhover');
+	
+	jQuery('.small_single_case').not(this).removeClass('myhover');
+	
+	
+});
+
+
+
+jQuery('.small_single_case_one').mouseenter(function(){
+	
+	jQuery('.large_single_case_one').addClass('show');
+	
+	jQuery('.large_single_case_one').addClass('fixed_line');
+	
+	jQuery('.large_single_case').not('.large_single_case_one').removeClass('show');
+	
+	
+});
+
+
+jQuery('.small_single_case_two').mouseenter(function(){
+	
+	jQuery('.large_single_case_two').addClass('show');
+
+	jQuery('.large_single_case').not('.large_single_case_two').removeClass('show');
+	
+	
+});
+
+
+jQuery('.small_single_case_three').mouseenter(function(){
+	
+	jQuery('.large_single_case_three').addClass('show');
+
+	jQuery('.large_single_case').not('.large_single_case_three').removeClass('show');
+	
+	
+});
+
+
+jQuery('.small_single_case_four').mouseenter(function(){
+	
+	jQuery('.large_single_case_four').addClass('show');
+
+	jQuery('.large_single_case').not('.large_single_case_four').removeClass('show');
+	
+	
+});
+
+
+
+
+
+/*
 jQuery('.large_single_case').not('.large_single_case_one').hide();
 
 jQuery('.small_single_case').mouseenter(function(){
@@ -238,13 +295,11 @@ jQuery('.small_single_case').mouseenter(function(){
 
 
 
-
-
 jQuery('.small_single_case_one').mouseenter(function(){
 	
 	jQuery('.large_single_case_one').fadeIn(600);
 	
-	
+	jQuery('.large_single_case_one').addClass('fixed_line');
 	
 	jQuery('.large_single_case').not('.large_single_case_one').hide();
 	
@@ -280,6 +335,7 @@ jQuery('.small_single_case_four').mouseenter(function(){
 	
 	
 });
+*/
 
 
 

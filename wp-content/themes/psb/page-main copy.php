@@ -1193,7 +1193,7 @@ we get the best settlement outcome for our family.”
 					<div class="case_inner_content">
 						
 						
-						<div class="large_single_case large_single_case_one show">
+						<div class="large_single_case large_single_case_one">
 						
 						<span class="number_header">$17.8 M</span><!-- large_header -->
 						
@@ -1233,9 +1233,10 @@ we get the best settlement outcome for our family.”
 						
 						<div class="case_content">
 						
-						<p>Panish Shea & Boyle LLP represented Don Yoon against the United States government and Boeing for negligence after Yoons wife, two daughters and mother-in-law were tragically killed when a Navy/Marine Corps jet’s fuel tanks failed, causing it to crash into the Yoon San Diego, California home in 2008.</p>
-					
-						<p>Previously released recordings of conversations between federal air controllers and the pilot in question, who was in training and survived by parachute injection prior to the crash, show he was repeatedly offered a chance to land the plane at the a near by San Diego Navy base away from civilians avoiding the horror. The United States Government admitted liability for the crash and the family were awarded $17, 845,000 on December 28, 2011. The firm represented the mother-in-law’s husband, children and mother in their wrongful death claims - the highest wrongful death sentence against the United States and 20th highest verdict.</p>	
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						
+						
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt </p>
 						
 						
 							
@@ -1261,9 +1262,7 @@ we get the best settlement outcome for our family.”
 						
 						<div class="case_content">
 						
-						<p>Panish Shea & Boyle LLP represented Don Yoon against the United States government and Boeing for negligence after Yoons wife, two daughters and mother-in-law were tragically killed when a Navy/Marine Corps jet’s fuel tanks failed, causing it to crash into the Yoon San Diego, California home in 2008.</p>
-					
-						<p>Previously released recordings of conversations between federal air controllers and the pilot in question, who was in training and survived by parachute injection prior to the crash, show he was repeatedly offered a chance to land the plane at the a near by San Diego Navy base away from civilians avoiding the horror. The United States Government admitted liability for the crash and the family were awarded $17, 845,000 on December 28, 2011. The firm represented the mother-in-law’s husband, children and mother in their wrongful death claims - the highest wrongful death sentence against the United States and 20th highest verdict.</p>	
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 						
 						
 						
@@ -1290,9 +1289,10 @@ we get the best settlement outcome for our family.”
 						
 						<div class="case_content">
 						
-						<p>Panish Shea & Boyle LLP represented Don Yoon against the United States government and Boeing for negligence after Yoons wife, two daughters and mother-in-law were tragically killed when a Navy/Marine Corps jet’s fuel tanks failed, causing it to crash into the Yoon San Diego, California home in 2008.</p>
-					
-						<p>Previously released recordings of conversations between federal air controllers and the pilot in question, who was in training and survived by parachute injection prior to the crash, show he was repeatedly offered a chance to land the plane at the a near by San Diego Navy base away from civilians avoiding the horror. The United States Government admitted liability for the crash and the family were awarded $17, 845,000 on December 28, 2011. The firm represented the mother-in-law’s husband, children and mother in their wrongful death claims - the highest wrongful death sentence against the United States and 20th highest verdict.</p>	
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						
+						
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt </p>	
 							
 						</div><!-- case_content -->
 					
