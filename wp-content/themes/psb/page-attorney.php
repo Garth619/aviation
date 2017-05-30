@@ -38,8 +38,18 @@ get_header(); ?>
 		
 									<img class="profile_pic" src="<?php bloginfo('template_directory');?>/images/attorney-panish.png"/>
 		
-									<a class="" href="">
-		
+									
+									
+									<script src="https://fast.wistia.com/embed/medias/7y9zdxmy0q.jsonp" async></script>
+									<script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+									
+									
+									
+									<span class="wistia_embed wistia_async_7y9zdxmy0q popover=true popoverContent=link" style="display:inline">
+									
+										<a href="#">
+										
+										
 										<div class="video_wrapper">
 			
 											<div class="video_title">Partner/Founder</div><!-- video_title -->
@@ -51,14 +61,24 @@ get_header(); ?>
 											</div><!-- play_button -->
 			
 										</div><!-- video_wrapper -->
-		
-									</a>
-		
+										
+										
+										
+										
+										
+										</a>
+									
+									</span>
+									
+									
+									
+									
+											
 								</div><!-- sidebar_inner -->
 	
 								<div class="email_vcard_wrapper_tablet">
 			
-									<a class="email_profile profile_link" href="">Email</a><!-- email_profile -->
+									<a class="email_profile profile_link" href="mailto:panish@psblaw.com">Email</a><!-- email_profile -->
 			
 									<a class="vcard_profile profile_link" href="">Vcard</a>
 			

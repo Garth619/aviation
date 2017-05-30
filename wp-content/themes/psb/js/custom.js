@@ -45,76 +45,11 @@ jQuery(document).ready(function(){
 
 
 
-
-//  jQuery('nav .menu-header ul.menu').append( '<li class="current_tracker"></li>' );
-
-
-
-
-// https://codepen.io/drewhaas/pen/dGKQXp
-
-
-
-// Magic line 
-
-
-
-// DOM Ready
-jQuery( document ).ready(function() {
-
-    var $el, leftPos, newWidth;
-        $mainNav2 = jQuery("nav ul#menu-top-nav");
-    
-    /*
-        EXAMPLE ONE
-    */
-    
-    
-    jQuery("nav ul#menu-top-nav").append("<li id='current_tracker'></li>");
-    
-    /* Cache it */
-    var $magicLine = jQuery("#current_tracker");
-    
-    $magicLine
-        .width(jQuery("nav ul li.current-menu-item").width())
-        .css("left", jQuery("nav ul li.current-menu-item a").position().left)
-        .data("origLeft", $magicLine.position().left)
-        .data("origWidth", $magicLine.width());
-    
-        
-    jQuery("nav ul#menu-top-nav li").find("a").hover(function() {
-        $el = jQuery(this);
-        leftPos = $el.position().left;
-        newWidth = $el.width();
-        
-        $magicLine.stop().animate({
-            left: leftPos,
-            width: newWidth
-        });
-    }, function() {
-        $magicLine.stop().animate({
-            left: $magicLine.data("origLeft"),
-            width: $magicLine.data("origWidth")
-        });    
-    });
-});
-
-
-
-
-
 // Mobile Menu
 
 
 
 
-function checkWidth() {
-    
-    if (jQuery(window).width() < 1180) {
-        
-       
-     
-			
 			jQuery('.mobile_menu').click(function(){
 	
 				jQuery('nav').slideToggle();
@@ -123,14 +58,14 @@ function checkWidth() {
 			
 			});
 			
-			jQuery('ul.menu li.menu-item-has-children').click(function(){
+			jQuery('nav ul.menu li.menu-item-has-children').click(function(){
 	
 				jQuery(this).find('ul.sub-menu').toggleClass('open');
 				
 			});
 			
 			
-			jQuery('ul.menu li.menu-item-has-children a').click(function(){
+			jQuery('nav ul.menu li.menu-item-has-children a').click(function(){
 	
 				
 				
@@ -138,19 +73,9 @@ function checkWidth() {
 	
 	
 			});
-			
-			
-
-    		
-    	   		
-    		
-    } else {
-
-    }
-};
 
 
-checkWidth();
+
 
 
 

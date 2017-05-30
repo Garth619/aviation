@@ -5,25 +5,25 @@
 		
 		<img class="profile_pic" src="<?php bloginfo('template_directory');?>/images/attorney-panish.png"/>
 		
-		<a class="" href="">
+		<span class="wistia_embed wistia_async_7y9zdxmy0q popover=true popoverContent=link" style="display:inline">
+									
+			<a href="#">
+			
+				<div class="video_wrapper">
 		
-		<div class="video_wrapper">
-			
-			<div class="video_title">Partner/Founder</div><!-- video_title -->
-			
-			<div class="play_button">
-				
-				
-					
-					<span class="tri"></span>
-					
-				
-				
-			</div><!-- play_button -->
-			
-		</div><!-- video_wrapper -->
+					<div class="video_title">Partner/Founder</div><!-- video_title -->
 		
-		</a>
+					<div class="play_button">
+		
+						<span class="tri"></span>
+		
+					</div><!-- play_button -->
+		
+				</div><!-- video_wrapper -->
+			
+			</a>
+		
+		</span>
 		
 		
 	
@@ -31,7 +31,7 @@
 	
 	<div class="email_vcard_wrapper">
 			
-			<a class="email_profile profile_link" href="">
+			<a class="email_profile profile_link" href="mailto:panish@psblaw.com">
 				
 				Email
 				

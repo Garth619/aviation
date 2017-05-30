@@ -313,6 +313,9 @@ to our clients</span><!-- large_header -->
 				<li><a class="" href="">twitter</a></li>
 			</ul>
 			
+
+<a href="//ilawyermarketing.com" target="_blank">
+
 <svg id="ilawyer" x="0px" y="0px"
 	 viewBox="20.9 17.5 739.6 52.8" style="enable-background:new 20.9 17.5 739.6 52.8;" xml:space="preserve">
 <g>
@@ -406,6 +409,7 @@ to our clients</span><!-- large_header -->
 </g>
 </svg>
 
+</a>
 			
 			
 		</div><!-- social_wrapper -->

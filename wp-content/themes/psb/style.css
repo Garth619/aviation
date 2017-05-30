@@ -415,22 +415,56 @@ nav {
       background: url(images/header_nav_arrow.svg) top left no-repeat;
       position: relative;
       left: 3px; }
-    nav ul.menu > li:hover > ul.sub-menu {
+    nav ul.menu > li:hover:after {
+      content: "";
+      width: 100%;
+      height: 4px;
+      background: #b51ac9;
+      border: 1px solid #fff;
+      position: absolute !important;
+      top: 52px;
+      left: 0;
+      opacity: 1; }
+    nav ul.menu > li:hover > ul.sub-menu > li.menu-item-has-children > a:after {
+      background: transparent; }
+    nav ul.menu > li:hover > ul.sub-menu > li.menu-item-has-children > a:hover:after {
+      background: transparent !important; }
+    nav ul.menu > li.current-menu-item:after {
+      content: "";
+      width: 100%;
+      height: 4px;
+      background: #b51ac9;
+      border: 1px solid #fff;
+      position: absolute !important;
+      top: 52px;
+      left: 0;
       opacity: 1;
-      visibility: visible;
-      top: 50px; }
-      nav ul.menu > li:hover > ul.sub-menu > li.menu-item-has-children > a:after {
-        background: transparent; }
-      nav ul.menu > li:hover > ul.sub-menu > li.menu-item-has-children > a:hover:after {
-        background: transparent !important; }
+      -webkit-transition: all .3s ease-in-out;
+      transition: all .3s ease-in-out; }
     nav ul.menu > li {
       font-size: 14px;
       letter-spacing: 2px;
       position: relative; }
+      nav ul.menu > li:after {
+        content: "";
+        width: 100%;
+        height: 4px;
+        background: #b51ac9;
+        border: 1px solid #fff;
+        position: absolute !important;
+        top: 52px;
+        left: 0;
+        opacity: 0;
+        -webkit-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out; }
       nav ul.menu > li > a {
         color: #fff;
         padding-bottom: 33px;
         cursor: pointer; }
+      nav ul.menu > li > ul.sub-menu.open {
+        opacity: 1;
+        visibility: visible;
+        top: 50px; }
       nav ul.menu > li > ul.sub-menu {
         position: absolute;
         top: 30px;
@@ -440,11 +474,14 @@ nav {
         background: #fff;
         text-transform: capitalize;
         -webkit-transition: all 700ms cubic-bezier(0.23, 1, 0.32, 1);
-        transition: all 700ms cubic-bezier(0.23, 1, 0.32, 1); }
+        transition: all 700ms cubic-bezier(0.23, 1, 0.32, 1);
+        -webkit-transition-delay: 200ms;
+                transition-delay: 200ms;
+        z-index: 10; }
         nav ul.menu > li > ul.sub-menu > li:last-of-type > a {
           border: none; }
         nav ul.menu > li > ul.sub-menu > li {
-          font-size: 14px;
+          font-size: 15px;
           font-family: "PlayfairDisplay-Regular";
           text-transform: normal;
           width: 265px; }
@@ -452,7 +489,7 @@ nav {
             color: #0a0607;
             letter-spacing: 0.5px;
             display: block;
-            padding: 13px 30px;
+            padding: 13px 25px;
             border-bottom: 1px solid #d1d1d1;
             -webkit-transition: all .2s ease-in-out;
             transition: all .2s ease-in-out; }
@@ -2675,9 +2712,11 @@ footer {
           padding-left: 0; }
       .lower_footer ul.copyright li a {
         color: #7e7e7e;
-        text-decoration: none; }
+        text-decoration: none;
+        -webkit-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out; }
         .lower_footer ul.copyright li a:hover {
-          text-decoration: underline; }
+          color: #193cc9; }
   .lower_footer .social_wrapper {
     float: right;
     margin-top: 25px; }
@@ -3214,14 +3253,17 @@ body.page-template-page-attorney .email_vcard_wrapper {
     padding: 24px 0;
     text-align: center;
     display: block;
-    text-decoration: none; }
+    text-decoration: none;
+    color: #193cc9;
+    background: #fff;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out; }
+    body.page-template-page-attorney .email_vcard_wrapper .profile_link:hover {
+      background: #193cc9;
+      color: #fff; }
   body.page-template-page-attorney .email_vcard_wrapper .email_profile {
-    background: #193cc9;
-    color: #fff;
     float: left; }
   body.page-template-page-attorney .email_vcard_wrapper .vcard_profile {
-    background: #fff;
-    color: #193cc9;
     float: right; }
 
 body.page-template-page-attorney .tablet_profile_wrapper {
@@ -3313,14 +3355,17 @@ body.page-template-page-attorney .tablet_profile_wrapper {
       padding: 24px 0;
       text-align: center;
       display: block;
-      text-decoration: none; }
-    body.page-template-page-attorney .tablet_profile_wrapper .email_vcard_wrapper_tablet .email_profile {
-      background: #193cc9;
-      color: #fff;
-      float: left; }
-    body.page-template-page-attorney .tablet_profile_wrapper .email_vcard_wrapper_tablet .vcard_profile {
+      text-decoration: none;
       background: #fff;
       color: #193cc9;
+      -webkit-transition: all .2s ease-in-out;
+      transition: all .2s ease-in-out; }
+      body.page-template-page-attorney .tablet_profile_wrapper .email_vcard_wrapper_tablet .profile_link:hover {
+        background: #193cc9;
+        color: #fff; }
+    body.page-template-page-attorney .tablet_profile_wrapper .email_vcard_wrapper_tablet .email_profile {
+      float: left; }
+    body.page-template-page-attorney .tablet_profile_wrapper .email_vcard_wrapper_tablet .vcard_profile {
       float: right; }
 
 /* Practice Areas */
@@ -3888,7 +3933,9 @@ a.contact_get_directions:hover .contact_gradient .contact_inner_gradient {
             animation-name: none; }
   .about_image_wrapper.mobile {
     display: block;
-    margin: 67px auto 0; }
+    margin: 67px auto 0;
+    position: relative;
+    left: 27px; }
   .about_image_wrapper.desktop {
     display: none; }
   .about_image_wrapper {
@@ -4130,10 +4177,13 @@ a.contact_get_directions:hover .contact_gradient .contact_inner_gradient {
     nav ul.menu {
       display: block;
       text-align: center; }
-      nav ul.menu > li.menu-item-has-children > a.active {
+      nav ul.menu > li:after {
+        content: "";
+        display: none; }
+      nav ul.menu > li > a.active {
         background: #b51ac9;
         color: #fff; }
-        nav ul.menu > li.menu-item-has-children > a.active:after {
+        nav ul.menu > li > a.active:after {
           content: '';
           width: 10px;
           height: 8px;
@@ -4145,9 +4195,9 @@ a.contact_get_directions:hover .contact_gradient .contact_inner_gradient {
           left: 7px;
           -webkit-transition: all .3s ease-in-out;
           transition: all .3s ease-in-out; }
-      nav ul.menu > li.menu-item-has-children > a:hover:after {
+      nav ul.menu > li > a:hover:after {
         background: url(images/header_nav_arrow.svg) top left no-repeat; }
-      nav ul.menu > li.menu-item-has-children > a:after {
+      nav ul.menu > li > a:after {
         content: '';
         width: 10px;
         height: 8px;
@@ -4581,6 +4631,8 @@ a.contact_get_directions:hover .contact_gradient .contact_inner_gradient {
     margin-bottom: 0px; }
     .sidebar_wrapper .sidebar_inner {
       width: 97%; }
+      .sidebar_wrapper .sidebar_inner:first-of-type .recent_posts_sidebar ul li {
+        text-align: left; }
       .sidebar_wrapper .sidebar_inner span.sidebar_title {
         margin-left: -4%; }
       .sidebar_wrapper .sidebar_inner .recent_posts_sidebar ul li {
@@ -4805,7 +4857,8 @@ margin-top:25px;
   .about_image_wrapper span.caption {
     padding: 27px 30px 20px; }
   .about_image_wrapper.mobile {
-    margin-top: 31px; }
+    margin-top: 31px;
+    left: 0; }
   .about_image_wrapper {
     background: transparent;
     max-width: 619px;
