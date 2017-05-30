@@ -36,10 +36,11 @@ class acf_field_page_link extends acf_field {
 		$this->label = __("Page Link",'acf');
 		$this->category = 'relational';
 		$this->defaults = array(
-			'post_type'		=> array(),
-			'taxonomy'		=> array(),
-			'allow_null' 	=> 0,
-			'multiple'		=> 0,
+			'post_type'			=> array(),
+			'taxonomy'			=> array(),
+			'allow_null' 		=> 0,
+			'multiple'			=> 0,
+			'allow_archives'	=> 1
 		);
 		
 		
@@ -55,7 +56,7 @@ class acf_field_page_link extends acf_field {
 	
 	
 	/*
-	*  query_posts
+	*  ajax_query
 	*
 	*  description
 	*
@@ -69,59 +70,60 @@ class acf_field_page_link extends acf_field {
 	
 	function ajax_query() {
 		
-   		// options
-   		$options = acf_parse_args( $_GET, array(
+		// validate
+		if( !acf_verify_ajax() ) die();
+		
+		
+		// defaults
+   		$options = acf_parse_args($_POST, array(
 			'post_id'		=> 0,
 			's'				=> '',
-			'lang'			=> false,
 			'field_key'		=> '',
-			'nonce'			=> '',
+			'paged'			=> 1
 		));
 		
 		
-		// validate
-		if( ! wp_verify_nonce($options['nonce'], 'acf_nonce') ) {
+   		// vars
+   		$results = array();
+   		$args = array();
+   		$s = false;
+   		$is_search = false;
+   		
 		
-			die();
+		// paged
+   		$args['posts_per_page'] = 20;
+   		$args['paged'] = $options['paged'];
+   		
+   		
+   		// search
+		if( $options['s'] !== '' ) {
+			
+			// strip slashes (search may be integer)
+			$s = wp_unslash( strval($options['s']) );
+			
+			
+			// update vars
+			$args['s'] = $s;
+			$is_search = true;
 			
 		}
 		
-		
-   		// vars
-   		$r = array();
-   		$args = array();
-   		
 		
 		// load field
 		$field = acf_get_field( $options['field_key'] );
-		
-		if( !$field ) {
-		
-			die();
-			
-		}
-		
-		
-		// WPML
-		if( $options['lang'] ) {
-		
-			global $sitepress;
-			$sitepress->switch_lang( $options['lang'] );
-			
-		}
+		if( !$field ) die();
 		
 		
 		// update $args
 		if( !empty($field['post_type']) ) {
 		
-			$args['post_type'] = acf_force_type_array( $field['post_type'] );
+			$args['post_type'] = acf_get_array( $field['post_type'] );
 			
 		} else {
 			
 			$args['post_type'] = acf_get_post_types();
 			
 		}
-		
 		
 		// create tax queries
 		if( !empty($field['taxonomy']) ) {
@@ -146,14 +148,6 @@ class acf_field_page_link extends acf_field {
 			}
 		}
 		
-				
-		// search
-		if( $options['s'] ) {
-		
-			$args['s'] = $options['s'];
-			
-		}
-		
 		
 		// filters
 		$args = apply_filters('acf/fields/page_link/query', $args, $field, $options['post_id']);
@@ -161,19 +155,30 @@ class acf_field_page_link extends acf_field {
 		$args = apply_filters('acf/fields/page_link/query/key=' . $field['key'], $args, $field, $options['post_id'] );
 		
 		
-		// add archives to $r
-		$archives = array();
-		$archives[] = array(
-			'id'	=> home_url(),
-			'text'	=> home_url()
-		);
-		
-		foreach( $args['post_type'] as $post_type ) {
+		// add archives to $results
+		if( $field['allow_archives'] && $args['paged'] == 1 ) {
 			
-			$archive_link = get_post_type_archive_link( $post_type );
+			$archives = array();
+			$archives[] = array(
+				'id'	=> home_url(),
+				'text'	=> home_url()
+			);
 			
-			if( $archive_link ) {
-			
+			foreach( $args['post_type'] as $post_type ) {
+				
+				// vars
+				$archive_link = get_post_type_archive_link( $post_type );
+				
+				
+				// bail ealry if no link
+				if( !$archive_link ) continue;
+				
+				
+				// bail early if no search match
+				if( $is_search && stripos($archive_link, $s) === false ) continue;
+				
+				
+				// append
 				$archives[] = array(
 					'id'	=> $archive_link,
 					'text'	=> $archive_link
@@ -181,24 +186,27 @@ class acf_field_page_link extends acf_field {
 				
 			}
 			
+			
+			// append
+			$results[] = array(
+				'text'		=> __('Archives', 'acf'),
+				'children'	=> $archives
+			);
+			
 		}
-		
-		$r[] = array(
-			'text'		=> __('Archives', 'acf'),
-			'children'	=> $archives
-		);
 		
 		
 		// get posts grouped by post type
-		$groups = acf_get_posts( $args );
+		$groups = acf_get_grouped_posts( $args );
 		
+		
+		// loop
 		if( !empty($groups) ) {
 			
 			foreach( array_keys($groups) as $group_title ) {
 				
 				// vars
 				$posts = acf_extract_var( $groups, $group_title );
-				$titles = array();
 				
 				
 				// data
@@ -208,16 +216,16 @@ class acf_field_page_link extends acf_field {
 				);
 				
 				
+				// convert post objects to post titles
 				foreach( array_keys($posts) as $post_id ) {
 					
-					// override data
-					$posts[ $post_id ] = $this->get_post_title( $posts[ $post_id ], $field, $options['post_id'] );
+					$posts[ $post_id ] = $this->get_post_title( $posts[ $post_id ], $field, $options['post_id'], $is_search );
 					
-				};
+				}
 				
 				
-				// order by search
-				if( !empty($args['s']) ) {
+				// order posts by search
+				if( $is_search && empty($args['orderby']) ) {
 					
 					$posts = acf_order_by_search( $posts, $args['s'] );
 					
@@ -227,25 +235,65 @@ class acf_field_page_link extends acf_field {
 				// append to $data
 				foreach( array_keys($posts) as $post_id ) {
 					
-					$data['children'][] = array(
-						'id'	=> $post_id,
-						'text'	=> $posts[ $post_id ]
-					);
+					$data['children'][] = $this->get_post_result( $post_id, $posts[ $post_id ]);
 					
 				}
 				
 				
-				// append to $r
-				$r[] = $data;
+				// append to $results
+				$results[] = $data;
 				
 			}
 			
 		}
-				
 		
-		// return JSON
-		echo json_encode( $r );
-		die();
+		
+		// return
+		acf_send_ajax_results(array(
+			'results'	=> $results,
+			'limit'		=> $args['posts_per_page']
+		));
+		
+	}
+	
+	
+	/*
+	*  get_post_result
+	*
+	*  This function will return an array containing id, text and maybe description data
+	*
+	*  @type	function
+	*  @date	7/07/2016
+	*  @since	5.4.0
+	*
+	*  @param	$id (mixed)
+	*  @param	$text (string)
+	*  @return	(array)
+	*/
+	
+	function get_post_result( $id, $text ) {
+		
+		// vars
+		$result = array(
+			'id'	=> $id,
+			'text'	=> $text
+		);
+		
+		
+		// look for parent
+		$search = '| ' . __('Parent', 'acf') . ':';
+		$pos = strpos($text, $search);
+		
+		if( $pos !== false ) {
+			
+			$result['description'] = substr($text, $pos+2);
+			$result['text'] = substr($text, 0, $pos);
+			
+		}
+		
+		
+		// return
+		return $result;
 			
 	}
 	
@@ -265,28 +313,14 @@ class acf_field_page_link extends acf_field {
 	*  @return	(string)
 	*/
 	
-	function get_post_title( $post, $field, $post_id = 0 ) {
+	function get_post_title( $post, $field, $post_id = 0, $is_search = 0 ) {
 		
 		// get post_id
-		if( !$post_id ) {
-			
-			$form_data = acf_get_setting('form_data');
-			
-			if( !empty($form_data['post_id']) ) {
-				
-				$post_id = $form_data['post_id'];
-				
-			} else {
-				
-				$post_id = get_the_ID();
-				
-			}
-			
-		}
+		if( !$post_id ) $post_id = acf_get_form_data('post_id');
 		
 		
 		// vars
-		$title = acf_get_post_title( $post );
+		$title = acf_get_post_title( $post, $is_search );
 			
 		
 		// filters
@@ -297,6 +331,7 @@ class acf_field_page_link extends acf_field {
 		
 		// return
 		return $title;
+		
 	}
 	
 	
@@ -313,45 +348,65 @@ class acf_field_page_link extends acf_field {
 	*  @return	$value
 	*/
 	
-	function get_posts( $value ) {
+	function get_posts( $value, $field ) {
 		
 		// force value to array
-		$value = acf_force_type_array( $value );
+		$value = acf_get_array( $value );
 		
 		
 		// get selected post ID's
-		$post_ids = array();
+		$post__in = array();
 		
-		foreach( $value as $v ) {
+		foreach( $value as $k => $v ) {
 			
 			if( is_numeric($v) ) {
 				
-				$post_ids[] = intval($v);
+				// append to $post__in
+				$post__in[] = (int) $v;
 				
 			}
 			
 		}
 		
 		
-		// load posts in 1 query to save multiple DB calls from following code
-		if( count($post_ids) > 1 ) {
+		// bail early if no posts
+		if( empty($post__in) ) {
 			
-			$posts = get_posts(array(
-				'posts_per_page'	=> -1,
-				'post_type'			=> acf_get_post_types(),
-				'post_status'		=> 'any',
-				'post__in'			=> $post_ids,
-			));
+			return $value;
 			
 		}
 		
 		
-		// upate value to include $post
-		foreach( array_keys($value) as $i ) {
+		// get posts
+		$posts = acf_get_posts(array(
+			'post__in' => $post__in,
+			'post_type'	=> $field['post_type']
+		));
+		
+		
+		// override value with post
+		$return = array();
+		
+		
+		// append to $return
+		foreach( $value as $k => $v ) {
 			
-			if( is_numeric($value[ $i ]) ) {
+			if( is_numeric($v) ) {
 				
-				$value[ $i ] = get_post( $value[ $i ] );
+				// extract first post
+				$post = array_shift( $posts );
+				
+				
+				// append
+				if( $post ) {
+					
+					$return[] = $post;
+					
+				}
+				
+			} else {
+				
+				$return[] = $v;
 				
 			}
 			
@@ -359,7 +414,8 @@ class acf_field_page_link extends acf_field {
 		
 		
 		// return
-		return $value;
+		return $return;
+		
 	}
 	
 	
@@ -388,7 +444,7 @@ class acf_field_page_link extends acf_field {
 		if( !empty($field['value']) ) {
 			
 			// get posts
-			$posts = $this->get_posts( $field['value'] );
+			$posts = $this->get_posts( $field['value'], $field );
 			
 			
 			// set choices
@@ -463,7 +519,7 @@ class acf_field_page_link extends acf_field {
 			'multiple'		=> 1,
 			'ui'			=> 1,
 			'allow_null'	=> 1,
-			'placeholder'	=> __("No taxonomy filter",'acf'),
+			'placeholder'	=> __("All taxonomies",'acf'),
 		));
 		
 		
@@ -471,13 +527,19 @@ class acf_field_page_link extends acf_field {
 		acf_render_field_setting( $field, array(
 			'label'			=> __('Allow Null?','acf'),
 			'instructions'	=> '',
-			'type'			=> 'radio',
 			'name'			=> 'allow_null',
-			'choices'		=> array(
-				1				=> __("Yes",'acf'),
-				0				=> __("No",'acf'),
-			),
-			'layout'	=>	'horizontal',
+			'type'			=> 'true_false',
+			'ui'			=> 1,
+		));
+		
+		
+		// allow_archives
+		acf_render_field_setting( $field, array(
+			'label'			=> __('Allow Archives URLs','acf'),
+			'instructions'	=> '',
+			'name'			=> 'allow_archives',
+			'type'			=> 'true_false',
+			'ui'			=> 1,
 		));
 		
 		
@@ -485,13 +547,9 @@ class acf_field_page_link extends acf_field {
 		acf_render_field_setting( $field, array(
 			'label'			=> __('Select multiple values?','acf'),
 			'instructions'	=> '',
-			'type'			=> 'radio',
 			'name'			=> 'multiple',
-			'choices'		=> array(
-				1				=> __("Yes",'acf'),
-				0				=> __("No",'acf'),
-			),
-			'layout'	=>	'horizontal',
+			'type'			=> 'true_false',
+			'ui'			=> 1,
 		));
 				
 	}
@@ -532,7 +590,7 @@ class acf_field_page_link extends acf_field {
 		
 		
 		// get posts
-		$value = $this->get_posts( $value );
+		$value = $this->get_posts( $value, $field );
 		
 		
 		// set choices
@@ -628,8 +686,10 @@ class acf_field_page_link extends acf_field {
 	
 }
 
-new acf_field_page_link();
 
-endif;
+// initialize
+acf_register_field_type( new acf_field_page_link() );
+
+endif; // class_exists check
 
 ?>

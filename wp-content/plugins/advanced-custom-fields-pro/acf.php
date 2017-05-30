@@ -1,17 +1,15 @@
 <?php
 /*
-Plugin Name: Advanced Custom Fields Pro
-Plugin URI: http://www.advancedcustomfields.com/
-Description: Fully customise WordPress edit screens with powerful fields. Boasting a professional interface and a powerful API, it’s a must have for any web developer working with WordPress. Field types include: Wysiwyg, text, textarea, image, file, select, checkbox, page link, post object, date picker, color picker, repeater, flexible content, gallery and more!
-Version: 5.0.0
-Author: elliot condon
+Plugin Name: Advanced Custom Fields PRO
+Plugin URI: https://www.advancedcustomfields.com/
+Description: Customise WordPress with powerful, professional and intuitive fields
+Version: 5.5.14
+Author: Elliot Condon
 Author URI: http://www.elliotcondon.com/
 Copyright: Elliot Condon
 Text Domain: acf
 Domain Path: /lang
 */
-
-// Current with acf v4 as of 27th Feb 1dde13a0bb8af763ef086f2ca0be4553ac955346
 
 if( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
@@ -20,8 +18,8 @@ if( ! class_exists('acf') ) :
 class acf {
 	
 	// vars
-	var $settings;
-		
+	var $version = '5.5.14';
+	
 	
 	/*
 	*  __construct
@@ -62,30 +60,50 @@ class acf {
 		$this->settings = array(
 			
 			// basic
-			'name'			=> __('Advanced Custom Fields', 'acf'),
-			'version'		=> '5.0.0',
+			'name'				=> __('Advanced Custom Fields', 'acf'),
+			'version'			=> $this->version,
 						
 			// urls
-			'basename'		=> plugin_basename( __FILE__ ),
-			'path'			=> plugin_dir_path( __FILE__ ),
-			'dir'			=> plugin_dir_url( __FILE__ ),
+			'file'				=> __FILE__,
+			'basename'			=> plugin_basename( __FILE__ ),
+			'path'				=> plugin_dir_path( __FILE__ ),
+			'dir'				=> plugin_dir_url( __FILE__ ),
 			
 			// options
-			'show_admin'	=> true,
-			'stripslashes'	=> true,
-			'local'			=> true,
-			'json'			=> true,
-			'save_json'		=> '',
-			'load_json'		=> array()
+			'show_admin'				=> true,
+			'show_updates'				=> true,
+			'stripslashes'				=> false,
+			'local'						=> true,
+			'json'						=> true,
+			'save_json'					=> '',
+			'load_json'					=> array(),
+			'default_language'			=> '',
+			'current_language'			=> '',
+			'capability'				=> 'manage_options',
+			'uploader'					=> 'wp',
+			'autoload'					=> false,
+			'l10n'						=> true,
+			'l10n_textdomain'			=> '',
+			'google_api_key'			=> '',
+			'google_api_client'			=> '',
+			'enqueue_google_maps'		=> true,
+			'enqueue_select2'			=> true,
+			'enqueue_datepicker'		=> true,
+			'enqueue_datetimepicker'	=> true,
+			'select2_version'			=> 3,
+			'row_index_offset'			=> 1,
+			'remove_wp_meta_box'		=> false // todo: set to true in 5.6.0
 		);
 		
 		
+		// constants
+		$this->define( 'ACF', 			true );
+		$this->define( 'ACF_VERSION', 	$this->settings['version'] );
+		$this->define( 'ACF_PATH', 		$this->settings['path'] );
+		
+		
 		// include helpers
-		include_once('api/api-helpers.php');
-		
-		
-		// set text domain
-		load_textdomain( 'acf', acf_get_path( 'lang/acf-' . get_locale() . '.mo' ) );
+		include_once( ACF_PATH . 'api/api-helpers.php');
 		
 		
 		// api
@@ -96,14 +114,23 @@ class acf {
 		
 		
 		// core
+		acf_include('core/ajax.php');
+		acf_include('core/cache.php');
+		acf_include('core/compatibility.php');
+		acf_include('core/deprecated.php');
 		acf_include('core/field.php');
+		acf_include('core/fields.php');
+		acf_include('core/form.php');
 		acf_include('core/input.php');
+		acf_include('core/validation.php');
 		acf_include('core/json.php');
 		acf_include('core/local.php');
 		acf_include('core/location.php');
+		acf_include('core/loop.php');
+		acf_include('core/media.php');
 		acf_include('core/revisions.php');
-		acf_include('core/compatibility.php');
 		acf_include('core/third_party.php');
+		acf_include('core/updates.php');
 		
 		
 		// forms
@@ -121,19 +148,85 @@ class acf {
 			acf_include('admin/admin.php');
 			acf_include('admin/field-group.php');
 			acf_include('admin/field-groups.php');
-			acf_include('admin/update.php');
-			acf_include('admin/settings-export.php');
-			//acf_include('admin/settings-addons.php');
+			acf_include('admin/install.php');
+			acf_include('admin/settings-tools.php');
 			acf_include('admin/settings-info.php');
 			
+			
+			// network
+			if( is_network_admin() ) {
+				
+				acf_include('admin/install-network.php');
+				
+			}
 		}
 		
 		
-		// fields
+		// pro
+		acf_include('pro/acf-pro.php');
+		
+		
+		// actions
+		add_action('init',	array($this, 'init'), 5);
+		add_action('init',	array($this, 'register_post_types'), 5);
+		add_action('init',	array($this, 'register_post_status'), 5);
+		add_action('init',	array($this, 'register_assets'), 5);
+		
+		
+		// filters
+		add_filter('posts_where',		array($this, 'posts_where'), 10, 2 );
+		//add_filter('posts_request',	array($this, 'posts_request'), 10, 1 );
+		
+	}
+	
+	
+	/*
+	*  init
+	*
+	*  This function will run after all plugins and theme functions have been included
+	*
+	*  @type	action (init)
+	*  @date	28/09/13
+	*  @since	5.0.0
+	*
+	*  @param	N/A
+	*  @return	N/A
+	*/
+	
+	function init() {
+		
+		// bail early if too early
+		// ensures all plugins have a chance to add fields, etc
+		if( !did_action('plugins_loaded') ) return;
+		
+		
+		// bail early if already init
+		if( acf_has_done('init') ) return;
+		
+		
+		// vars
+		$major = intval( acf_get_setting('version') );
+		
+		
+		// redeclare dir
+		// - allow another plugin to modify dir (maybe force SSL)
+		acf_update_setting('dir', plugin_dir_url( __FILE__ ));
+		
+		
+		// textdomain
+		$this->load_plugin_textdomain();
+		
+		
+		// include wpml support
+		if( defined('ICL_SITEPRESS_VERSION') ) acf_include('core/wpml.php');
+		
+		
+		// field types
 		acf_include('fields/text.php');
 		acf_include('fields/textarea.php');
 		acf_include('fields/number.php');
 		acf_include('fields/email.php');
+		acf_include('fields/url.php');
 		acf_include('fields/password.php');
 		acf_include('fields/wysiwyg.php');
 		acf_include('fields/oembed.php');
@@ -150,95 +243,81 @@ class acf {
 		acf_include('fields/user.php');
 		acf_include('fields/google-map.php');
 		acf_include('fields/date_picker.php');
+		acf_include('fields/date_time_picker.php');
+		acf_include('fields/time_picker.php');
 		acf_include('fields/color_picker.php');
 		acf_include('fields/message.php');
 		acf_include('fields/tab.php');
 		
 		
-		// pro
-		acf_include('pro/acf-pro.php');
+		// 3rd party field types
+		do_action('acf/include_field_types', $major);
 		
+		
+		// local fields
+		do_action('acf/include_fields', $major);
+		
+		
+		// action for 3rd party
+		do_action('acf/init');
 			
-		// actions
-		add_action('init',			array($this, 'wp_init'), 5);
-		add_filter('posts_where',	array($this, 'wp_posts_where'), 10, 2 );
-		
 	}
 	
 	
 	/*
-	*  complete
+	*  load_plugin_textdomain
 	*
-	*  This function will ensure all files are included
+	*  This function will load the textdomain file
 	*
 	*  @type	function
-	*  @date	10/03/2014
-	*  @since	5.0.0
+	*  @date	3/5/17
+	*  @since	5.5.13
 	*
 	*  @param	n/a
 	*  @return	n/a
 	*/
 	
-	function complete() {
+	function load_plugin_textdomain() {
 		
-		// bail early if actions have not passed 'plugins_loaded'
-		if( ! did_action('plugins_loaded') ) {
-			
-			return;
-			
-		}
+		// vars
+		$domain = 'acf';
+		$locale = apply_filters( 'plugin_locale', acf_get_locale(), $domain );
+		$mofile = $domain . '-' . $locale . '.mo';
 		
 		
-		// once run once
-		if( acf_get_setting('complete') ) {
-		
-			return;
-			
-		}
+		// load from the languages directory first
+		load_textdomain( $domain, WP_LANG_DIR . '/plugins/' . $mofile );
 		
 		
-		// update setting
-		acf_update_setting('complete', true);
-		
-		
-		// wpml
-		if( defined('ICL_SITEPRESS_VERSION') ) {
-		
-			acf_include('core/wpml.php');
-			
-		}
-		
-		
-		// action for 3rd party customization
-		do_action('acf/include_field_types', 5);
-		do_action('acf/include_fields', 5);
+		// load from plugin lang folder
+		load_textdomain( $domain, acf_get_path( 'lang/' . $mofile ) );
 		
 	}
 	
 	
 	/*
-	*  wp_init
+	*  register_post_types
 	*
-	*  This function will run on the WP init action and setup many things
+	*  This function will register post types and statuses
 	*
-	*  @type	action (init)
-	*  @date	28/09/13
-	*  @since	5.0.0
+	*  @type	function
+	*  @date	22/10/2015
+	*  @since	5.3.2
 	*
-	*  @param	N/A
-	*  @return	N/A
+	*  @param	n/a
+	*  @return	n/a
 	*/
 	
-	function wp_init() {
+	function register_post_types() {
 		
-		// complete loading of ACF files
-		$this->complete();
+		// vars
+		$cap = acf_get_setting('capability');
 		
 		
-		// Create post type 'acf-field-group'
-		register_post_type( 'acf-field-group', array(
+		// register post type 'acf-field-group'
+		register_post_type('acf-field-group', array(
 			'labels'			=> array(
-			    'name'					=> __( 'Field&nbsp;Groups', 'acf' ),
+			    'name'					=> __( 'Field Groups', 'acf' ),
 				'singular_name'			=> __( 'Field Group', 'acf' ),
 			    'add_new'				=> __( 'Add New' , 'acf' ),
 			    'add_new_item'			=> __( 'Add New Field Group' , 'acf' ),
@@ -252,17 +331,23 @@ class acf {
 			'public'			=> false,
 			'show_ui'			=> true,
 			'_builtin'			=> false,
-			'capability_type'	=> 'page',
+			'capability_type'	=> 'post',
+			'capabilities'		=> array(
+				'edit_post'			=> $cap,
+				'delete_post'		=> $cap,
+				'edit_posts'		=> $cap,
+				'delete_posts'		=> $cap,
+			),
 			'hierarchical'		=> true,
 			'rewrite'			=> false,
 			'query_var'			=> false,
-			'supports' 			=> array( 'title' ),
+			'supports' 			=> array('title'),
 			'show_in_menu'		=> false,
 		));
 		
 		
-		// Create post type 'acf-field'
-		register_post_type( 'acf-field', array(
+		// register post type 'acf-field'
+		register_post_type('acf-field', array(
 			'labels'			=> array(
 			    'name'					=> __( 'Fields', 'acf' ),
 				'singular_name'			=> __( 'Field', 'acf' ),
@@ -278,96 +363,86 @@ class acf {
 			'public'			=> false,
 			'show_ui'			=> false,
 			'_builtin'			=> false,
-			'capability_type'	=> 'page',
+			'capability_type'	=> 'post',
+			'capabilities'		=> array(
+				'edit_post'			=> $cap,
+				'delete_post'		=> $cap,
+				'edit_posts'		=> $cap,
+				'delete_posts'		=> $cap,
+			),
 			'hierarchical'		=> true,
 			'rewrite'			=> false,
 			'query_var'			=> false,
-			'supports' 			=> array( 'title' ),
+			'supports' 			=> array('title'),
 			'show_in_menu'		=> false,
 		));
-		
-		
-		// min
-		//$min = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
-		$min = '';
-		
-		
-		// register scripts
-		$scripts = array(
-			
-			array(
-				'handle'	=> 'select2',
-				'src'		=> acf_get_dir( "inc/select2/select2{$min}.js" ),
-				'deps'		=> array('jquery'),
-			),
-			
-			array(
-				'handle'	=> 'acf-input',
-				'src'		=> acf_get_dir( "js/input{$min}.js" ),
-				'deps'		=> array('jquery', 'jquery-ui-core', 'jquery-ui-datepicker', 'underscore', 'select2'),
-			),
-			
-			array(
-				'handle'	=> 'acf-field-group',
-				'src'		=> acf_get_dir( "js/field-group{$min}.js"),
-				'deps'		=> array('acf-input'),
-			)
-			
-		);
-				
-		foreach( $scripts as $script ) {
-		
-			wp_register_script( $script['handle'], $script['src'], $script['deps'], acf_get_setting('version') );
-			
-		}
-		
-		
-		// register styles
-		$styles = array(
-			
-			array(
-				'handle'	=> 'select2',
-				'src'		=> acf_get_dir( 'inc/select2/select2.css' ),
-				'deps'		=> array(),
-			),
-			
-			array(
-				'handle'	=> 'acf-datepicker',
-				'src'		=> acf_get_dir( 'inc/datepicker/jquery-ui-1.10.4.custom.min.css' ),
-				'deps'		=> array(),
-			),
-			
-			array(
-				'handle'	=> 'acf-global',
-				'src'		=> acf_get_dir( 'css/global.css' ),
-				'deps'		=> array(),
-			),
-			
-			array(
-				'handle'	=> 'acf-field-group',
-				'src'		=> acf_get_dir( 'css/field-group.css' ),
-				'deps'		=> array(),
-			),
-			
-			array(
-				'handle'	=> 'acf-input',
-				'src'		=> acf_get_dir( 'css/input.css' ),
-				'deps'		=> array('acf-datepicker', 'select2'),
-			)
-			
-		);		
-		
-		foreach( $styles as $style ) {
-		
-			wp_register_style( $style['handle'], $style['src'], $style['deps'], acf_get_setting('version') ); 
-			
-		}
 		
 	}
 	
 	
 	/*
-	*  wp_posts_where
+	*  register_post_status
+	*
+	*  This function will register custom post statuses
+	*
+	*  @type	function
+	*  @date	22/10/2015
+	*  @since	5.3.2
+	*
+	*  @param	$post_id (int)
+	*  @return	$post_id (int)
+	*/
+	
+	function register_post_status() {
+		
+		// acf-disabled
+		register_post_status('acf-disabled', array(
+			'label'                     => __( 'Inactive', 'acf' ),
+			'public'                    => true,
+			'exclude_from_search'       => false,
+			'show_in_admin_all_list'    => true,
+			'show_in_admin_status_list' => true,
+			'label_count'               => _n_noop( 'Inactive <span class="count">(%s)</span>', 'Inactive <span class="count">(%s)</span>', 'acf' ),
+		));
+		
+	}
+	
+	
+	/*
+	*  register_assets
+	*
+	*  This function will register scripts and styles
+	*
+	*  @type	function
+	*  @date	22/10/2015
+	*  @since	5.3.2
+	*
+	*  @param	n/a
+	*  @return	n/a
+	*/
+	
+	function register_assets() {
+		
+		// vars
+		$version = acf_get_setting('version');
+		$min = defined('SCRIPT_DEBUG') && SCRIPT_DEBUG ? '' : '.min';
+		
+		
+		// scripts
+		wp_register_script('acf-input', acf_get_dir("assets/js/acf-input{$min}.js"), array('jquery', 'jquery-ui-core', 'jquery-ui-sortable', 'jquery-ui-resizable'), $version );
+		wp_register_script('acf-field-group', acf_get_dir("assets/js/acf-field-group{$min}.js"), array('acf-input'), $version );
+		
+		
+		// styles
+		wp_register_style('acf-global', acf_get_dir('assets/css/acf-global.css'), array(), $version );
+		wp_register_style('acf-input', acf_get_dir('assets/css/acf-input.css'), array('acf-global'), $version );
+		wp_register_style('acf-field-group', acf_get_dir('assets/css/acf-field-group.css'), array('acf-input'), $version );
+		
+	}
+	
+	
+	/*
+	*  posts_where
 	*
 	*  This function will add in some new parameters to the WP_Query args allowing fields to be found via key / name
 	*
@@ -380,7 +455,7 @@ class acf {
 	*  @return	$where (string)
 	*/
 	
-	function wp_posts_where( $where, $wp_query ) {
+	function posts_where( $where, $wp_query ) {
 		
 		// global
 		global $wpdb;
@@ -399,13 +474,6 @@ class acf {
 	    
 			$where .= $wpdb->prepare(" AND {$wpdb->posts}.post_excerpt = %s", $field_name );
 			
-			// acf_post_id
-		    if( $post_id = $wp_query->get('acf_post_id') ) {
-		    
-				$where .= $wpdb->prepare(" AND {$wpdb->postmeta}.post_id = %d", $post_id );
-				
-			}
-			
 	    }
 	    
 	    
@@ -417,51 +485,91 @@ class acf {
 	    }
 	    
 	    
+	    // return
 	    return $where;
 	    
 	}
 	
 	
 	/*
-	*  debug SQL
+	*  define
 	*
-	*  description
+	*  This function will safely define a constant
 	*
 	*  @type	function
-	*  @date	27/02/2014
-	*  @since	5.0.0
+	*  @date	3/5/17
+	*  @since	5.5.13
 	*
-	*  @param	$post_id (int)
-	*  @return	$post_id (int)
+	*  @param	$name (string)
+	*  @param	$value (mixed)
+	*  @return	n/a
 	*/
 	
-	function wp_posts_join( $join, $wp_query ) {
+	function define( $name, $value = true ) {
 		
-		/*
-// acf_field_name
-		if( $post_id = $wp_query->get('acf_post_id') )
-		{
-			$join = str_replace('.ID', '.post_name', $join);
-			$join = str_replace('.post_id', '.meta_value', $join);
-	   }
-*/
-	   
-	   return $join;
-	    
-	    
+		if( !defined($name) ) define( $name, $value );
+		
 	}
 	
 	
-	function posts_request( $thing ) {
-		/*
-
-		echo '<pre>';
-			print_r($thing );
-		echo '</pre>';
-		die;
-*/
+	/*
+	*  get_setting
+	*
+	*  This function will return a value from the settings array found in the acf object
+	*
+	*  @type	function
+	*  @date	28/09/13
+	*  @since	5.0.0
+	*
+	*  @param	$name (string) the setting name to return
+	*  @param	$value (mixed) default value
+	*  @return	$value
+	*/
+	
+	function get_setting( $name, $value = null ) {
 		
-		return $thing;
+		// check settings
+		if( isset($this->settings[ $name ]) ) {
+			
+			$value = $this->settings[ $name ];
+			
+		}
+		
+		
+		// filter for 3rd party customization
+		if( substr($name, 0, 1) !== '_' ) {
+			
+			$value = apply_filters( "acf/settings/{$name}", $value );
+			
+		}
+		
+		
+		// return
+		return $value;
+		
+	}
+	
+	
+	/*
+	*  update_setting
+	*
+	*  This function will update a value into the settings array found in the acf object
+	*
+	*  @type	function
+	*  @date	28/09/13
+	*  @since	5.0.0
+	*
+	*  @param	$name (string)
+	*  @param	$value (mixed)
+	*  @return	n/a
+	*/
+	
+	function update_setting( $name, $value ) {
+		
+		$this->settings[ $name ] = $value;
+		
+		return true;
+		
 	}
 	
 }
@@ -496,6 +604,7 @@ function acf() {
 	}
 	
 	return $acf;
+	
 }
 
 

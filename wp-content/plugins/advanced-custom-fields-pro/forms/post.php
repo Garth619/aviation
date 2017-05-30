@@ -39,7 +39,8 @@ class acf_form_post {
 		
 		
 		// save
-		add_action('save_post', 						array($this, 'save_post'), 10, 1);
+		add_filter('wp_insert_post_empty_content',		array($this, 'wp_insert_post_empty_content'), 10, 2);
+		add_action('save_post', 						array($this, 'save_post'), 10, 2);
 		
 		
 		// ajax
@@ -129,11 +130,7 @@ class acf_form_post {
 	function admin_enqueue_scripts() {
 		
 		// validate page
-		if( ! $this->validate_page() ) {
-			
-			return;
-			
-		}
+		if( !$this->validate_page() ) return;
 
 		
 		// load acf scripts
@@ -214,20 +211,29 @@ class acf_form_post {
 					$style_found = true;
 					
 					$this->style = acf_get_field_group_style( $field_group );
+					
 				}
 				
 			}
-			// foreach($acfs as $acf)
+			
 		}
-		// if($acfs)
-		
+				
 		
 		// Allow 'acf_after_title' metabox position
 		add_action('edit_form_after_title', array($this, 'edit_form_after_title'));
 		
 		
-		// remove ACF from meta postbox
+		// remove postcustom metabox (removes expensive SQL query)
+		if( acf_get_setting('remove_wp_meta_box') ) {
+			
+			remove_meta_box( 'postcustom', false, 'normal' ); 
+			
+		}
+		
+		
+		// remove ACF values from meta postbox ()
 		add_filter('is_protected_meta', array($this, 'is_protected_meta'), 10, 3);
+		
 	}
 	
 	
@@ -287,12 +293,27 @@ class acf_form_post {
 		extract( $args ); // all variables from the args argument
 		
 		
-		// classes
-		$class = 'acf-postbox ' . $field_group['style'];
-		$toggle_class = 'acf-postbox-toggle';
+		// vars
+		$o = array(
+			'id'			=> $id,
+			'key'			=> $field_group['key'],
+			'style'			=> $field_group['style'],
+			'label'			=> $field_group['label_placement'],
+			'edit_url'		=> '',
+			'edit_title'	=> __('Edit field group', 'acf'),
+			'visibility'	=> $visibility
+		);
 		
 		
-		// render fields, or render a replace-me div
+		// edit_url
+		if( $field_group['ID'] && acf_current_user_can_admin() ) {
+			
+			$o['edit_url'] = admin_url('post.php?post=' . $field_group['ID'] . '&action=edit');
+				
+		}
+		
+			
+		// load and render fields	
 		if( $visibility ) {
 			
 			// load fields
@@ -300,47 +321,24 @@ class acf_form_post {
 			
 			
 			// render
-			if( $field_group['label_placement'] == 'left' ) {
-				
-				?>
-				<table class="acf-table">
-					<tbody>
-						<?php acf_render_fields( $this->post_id, $fields, 'tr', $field_group['instruction_placement'] ); ?>
-					</tbody>
-				</table>
-				<?php
-				
-			} else {
-				
-				acf_render_fields( $this->post_id, $fields, 'div', $field_group['instruction_placement'] );
-				
-			}
-			
-			
+			acf_render_fields( $this->post_id, $fields, 'div', $field_group['instruction_placement'] );
+		
+		// render replace-me div
 		} else {
 			
-			// update classes
-			$class .= ' acf-hidden';
-			$toggle_class .= ' acf-hidden';
-			
 			echo '<div class="acf-replace-with-fields"><div class="acf-loading"></div></div>';
-			
+		
 		}
+	
+	?>
+<script type="text/javascript">
+if( typeof acf !== 'undefined' ) {
 		
-		
-		// inline script
-		echo '<div class="acf-hidden">';
-			?>
-			<script type="text/javascript">
-			(function($) {
-				
-				$('#<?php echo $id; ?>').addClass('<?php echo $class; ?>').removeClass('hide-if-js');
-				$('#adv-settings label[for="<?php echo $id; ?>-hide"]').addClass('<?php echo $toggle_class; ?>');
-				
-			})(jQuery);	
-			</script>
-			<?php
-		echo '</div>';
+	acf.postbox.render(<?php echo json_encode($o); ?>);	
+
+}
+</script>
+<?php
 		
 	}
 	
@@ -386,83 +384,144 @@ class acf_form_post {
 			'nonce'		=> '',
 			'post_id'	=> 0,
 			'ajax'		=> 1,
+			'exists'	=> array()
 		));
 		
 		
 		// vars
-		$r = array();
-		$nonce = acf_extract_var( $options, 'nonce' );
+		$json = array();
+		$exists = acf_extract_var( $options, 'exists' );
 		
 		
 		// verify nonce
-		if( ! wp_verify_nonce($nonce, 'acf_nonce') ) {
-		
-			die;
-			
-		}
+		if( !acf_verify_ajax() ) die();
 		
 		
 		// get field groups
 		$field_groups = acf_get_field_groups( $options );
 		
 		
-		// loop through field groups and build $r
-		if( !empty($field_groups) ) {
+		// bail early if no field groups
+		if( empty($field_groups) ) {
 			
-			foreach( $field_groups as $field_group ) {
+			wp_send_json_success( $json );
+			
+		}
+		
+		
+		// loop through field groups
+		foreach( $field_groups as $i => $field_group ) {
+			
+			// vars
+			$item = array(
+				//'ID'	=> $field_group['ID'], - JSON does not have ID (not used by JS anyway)
+				'key'	=> $field_group['key'],
+				'title'	=> $field_group['title'],
+				'html'	=> '',
+				'style' => ''
+			);
+			
+			
+			// style
+			if( $i == 0 ) {
 				
-				// vars
-				$class = 'acf-postbox ' . $field_group['style'];
+				$item['style'] = acf_get_field_group_style( $field_group );
 				
+			}
+			
+			
+			// html
+			if( !in_array($field_group['key'], $exists) ) {
 				
 				// load fields
 				$fields = acf_get_fields( $field_group );
 
-
+	
 				// get field HTML
 				ob_start();
 				
 				
 				// render
-				if( $field_group['label_placement'] == 'left' ) {
-					
-					?>
-					<table class="acf-table">
-						<tbody>
-							<?php acf_render_fields( $options['post_id'], $fields, 'tr', $field_group['instruction_placement'] ); ?>
-						</tbody>
-					</table>
-					<?php
-					
-				} else {
-					
-					acf_render_fields( $options['post_id'], $fields, 'div', $field_group['instruction_placement'] );
-				
-				}
+				acf_render_fields( $options['post_id'], $fields, 'div', $field_group['instruction_placement'] );
 				
 				
-				$html = ob_get_clean();
+				$item['html'] = ob_get_clean();
 				
 				
-				// get style
-				$style = acf_get_field_group_style( $field_group );
-				
-				
-				// append to $r
-				$r[] = array(
-					//'ID'	=> $field_group['ID'], - JSON does not have ID (not used by JS anyway)
-					'key'	=> $field_group['key'],
-					'title'	=> $field_group['title'],
-					'html'	=> $html,
-					'style' => $style,
-					'class'	=> $class
-				);
 			}
+			
+			
+			// append
+			$json[] = $item;
+			
 		}
 		
 		
 		// return
-		wp_send_json_success( $r );
+		wp_send_json_success( $json );
+		
+	}
+	
+	
+	/*
+	*  wp_insert_post_empty_content
+	*
+	*  This function will allow WP to insert a new post without title / content if ACF data exists
+	*
+	*  @type	function
+	*  @date	16/07/2014
+	*  @since	5.0.1
+	*
+	*  @param	$maybe_empty (bool) whether the post should be considered "empty"
+	*  @param	$postarr (array) Array of post data
+	*  @return	$maybe_empty
+	*/
+	
+	function wp_insert_post_empty_content( $maybe_empty, $postarr ) {
+		
+		if( $maybe_empty && !empty($_POST['_acfchanged']) ) {
+			
+			$maybe_empty = false;
+			
+		}
+
+		
+		// return
+		return $maybe_empty;
+	}
+	
+	
+	/*
+	*  allow_save_post
+	*
+	*  This function will return true if the post is allowed to be saved
+	*
+	*  @type	function
+	*  @date	26/06/2016
+	*  @since	5.3.8
+	*
+	*  @param	$post_id (int)
+	*  @return	$post_id (int)
+	*/
+	
+	function allow_save_post( $post ) {
+		
+		// vars
+		$allow = true;
+		$reject = array( 'auto-draft', 'revision', 'acf-field', 'acf-field-group' );
+		$wp_preview = acf_maybe_get($_POST, 'wp-preview');
+		
+		
+		// check post type
+		if( in_array($post->post_type, $reject) ) $allow = false;
+		
+		
+		// allow preview
+		if( $post->post_type == 'revision' && $wp_preview == 'dopreview' ) $allow = true;
+		
+		
+		// return
+		return $allow;
 		
 	}
 	
@@ -480,44 +539,40 @@ class acf_form_post {
 	*  @return	$post_id (int)
 	*/
 	
-	function save_post( $post_id ) {
+	function save_post( $post_id, $post ) {
 		
-		// do not save if this is an auto save routine
-		if( defined('DOING_AUTOSAVE') && DOING_AUTOSAVE ) {
-			
-			return $post_id;
-			
-		}
+		// bail ealry if no allowed to save this post type
+		if( !$this->allow_save_post($post) ) return $post_id;
 		
 		
-		// verify and remove nonce
-		if( !acf_verify_nonce('post', $post_id) ) {
-			
-			return $post_id;
-			
-		}
+		// ensure saving to the correct post
+		if( !acf_verify_nonce('post', $post_id) ) return $post_id;
 		
 		
-		// validate and save
-		if( get_post_status($post_id) == 'publish' ) {
+		// validate for published post (allow draft to save without validation)
+		if( $post->post_status == 'publish' ) {
 			
-			if( acf_validate_save_post(true) ) {
+			// show errors
+			acf_validate_save_post( true );
 				
-				acf_save_post( $post_id );
-				
-			}
-			
-		} else {
-			
-			acf_save_post( $post_id );
-			
 		}
 		
+		
+		// save
+		acf_save_post( $post_id );
+		
+		
+		// save revision
+		if( post_type_supports($post->post_type, 'revisions') ) {
+			
+			acf_save_post_revision( $post_id );
+			
+		}
+				
 		
 		// return
 		return $post_id;
 		
-        
 	}
 	
 	
