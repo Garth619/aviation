@@ -25,7 +25,7 @@
 			
 			<span class="mypost_content">
 			
-				<?php the_content();?>
+				<?php echo wp_trim_words( get_the_content(), 30, '...' );?>
 			
 			</span><!-- mypost_content -->
 			

@@ -3113,6 +3113,49 @@ svg#air_sidebar {
     padding: 0 0 0 35px;
     margin-bottom: 9px; }
 
+.alignleft,
+img.alignleft {
+  display: inline;
+  float: left;
+  margin-right: 24px;
+  margin-top: 4px; }
+
+.alignright,
+img.alignright {
+  display: inline;
+  float: right;
+  margin-left: 24px;
+  margin-top: 4px; }
+
+.aligncenter,
+img.aligncenter {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+img.alignleft,
+img.alignright,
+img.aligncenter {
+  margin-bottom: 12px;
+  max-width: 100%;
+  height: auto; }
+
+.wp-caption {
+  line-height: 18px;
+  margin-bottom: 20px;
+  width: auto !important;
+  text-align: center; }
+
+.wp-caption img {
+  max-width: 100%;
+  height: auto; }
+
+.wp-caption p.wp-caption-text {
+  font-size: 14px;
+  margin: 5px;
+  text-align: center; }
+
 /* Blog */
 .news_wrapper {
   margin-top: 5px; }
@@ -3405,23 +3448,21 @@ body.page-template-page-contact .container {
 
 .contact_wrapper {
   text-align: center; }
-
-#tablet_black_line {
-  display: none; }
-
-span.contact_info {
-  display: inline-block;
-  font-size: 25px;
-  font-family: "PlayfairDisplay-Bold";
-  letter-spacing: 0.75px;
-  margin-top: 48px; }
-  span.contact_info a.contact_tel {
-    color: #193cc9;
-    text-decoration: none;
-    -webkit-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out; }
-    span.contact_info a.contact_tel:hover {
-      color: #b51ac9; }
+  .contact_wrapper p {
+    display: inline-block;
+    font-size: 25px;
+    font-family: "PlayfairDisplay-Bold";
+    letter-spacing: 0.75px;
+    margin-top: 48px; }
+    .contact_wrapper p a {
+      color: #193cc9;
+      text-decoration: none;
+      -webkit-transition: all .2s ease-in-out;
+      transition: all .2s ease-in-out; }
+      .contact_wrapper p a:hover {
+        color: #b51ac9; }
+  .contact_wrapper #tablet_black_line {
+    display: none; }
 
 .contact_location_wrapper {
   margin-top: 84px; }
@@ -4070,7 +4111,22 @@ a.contact_get_directions:hover .contact_gradient .contact_inner_gradient {
     margin-top: 273px; }
   /* Case Results */
   .case_results .case_results_inner span.large_header {
-    font-size: 200px; } }
+    font-size: 200px; }
+  .alignleft,
+  img.alignleft {
+    display: block;
+    float: none;
+    margin: 4px auto 27px; }
+  .alignright,
+  img.alignright {
+    display: block;
+    float: none;
+    margin: 4px auto 27px; }
+  .aligncenter,
+  img.aligncenter {
+    clear: both;
+    display: block;
+    margin: 4px auto 27px; } }
 
 /* Media Query */
 @media screen and (max-width: 1285px) {
@@ -5325,6 +5381,10 @@ margin-top:25px;
   /* Contact */
   body.page-template-page-contact .container {
     margin-bottom: 65px; }
+  .contact_wrapper p {
+    line-height: 28px; }
+  .contact_location_wrapper {
+    margin-top: 10px; }
   a.contact_get_directions {
     margin-top: 29px; }
   #tablet_black_line.black_line_wrapper {

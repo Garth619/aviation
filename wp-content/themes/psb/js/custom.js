@@ -70,6 +70,8 @@ jQuery(document).ready(function(){
 				
 				
 				jQuery(this).toggleClass('active');
+				
+				
 	
 	
 			});
