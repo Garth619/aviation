@@ -4248,27 +4248,7 @@ a.contact_get_directions:hover .contact_gradient .contact_inner_gradient {
     nav ul.menu {
       display: block;
       text-align: center; }
-      nav ul.menu > li:after {
-        content: "";
-        display: none; }
-      nav ul.menu > li > a.active {
-        background: #b51ac9;
-        color: #fff; }
-        nav ul.menu > li > a.active:after {
-          content: '';
-          width: 10px;
-          height: 8px;
-          display: inline-block;
-          background: url(images/header_nav_arrow.svg) top left no-repeat;
-          position: relative;
-          background-size: 10px;
-          top: 1px;
-          left: 7px;
-          -webkit-transition: all .3s ease-in-out;
-          transition: all .3s ease-in-out; }
-      nav ul.menu > li > a:hover:after {
-        background: url(images/header_nav_arrow.svg) top left no-repeat; }
-      nav ul.menu > li > a:after {
+      nav ul.menu > li.menu-item-has-children > a:after {
         content: '';
         width: 10px;
         height: 8px;
@@ -4284,22 +4264,33 @@ a.contact_get_directions:hover .contact_gradient .contact_inner_gradient {
         font-family: "PlayfairDisplay-Regular";
         text-transform: capitalize;
         letter-spacing: 1.3px; }
+        nav ul.menu > li:after {
+          content: "";
+          display: none; }
+        nav ul.menu > li > a.active {
+          background: #b51ac9;
+          color: #fff; }
+          nav ul.menu > li > a.active:after {
+            background: url(images/header_nav_arrow.svg) top left no-repeat; }
+        nav ul.menu > li > a:hover:after {
+          background: url(images/header_nav_arrow.svg) top left no-repeat; }
         nav ul.menu > li > a {
           color: #000;
           padding: 15px 5px; }
           nav ul.menu > li > a:hover {
             color: #fff; }
         nav ul.menu > li > ul.sub-menu.open {
-          max-height: 3000px; }
+          max-height: 3000px;
+          opacity: 1; }
         nav ul.menu > li > ul.sub-menu {
           position: static;
           margin-top: -1px;
-          opacity: 1;
+          opacity: 0;
           visibility: visible;
           border-bottom: 1px solid #d1d1d1;
           max-height: 0px;
-          -webkit-transition: all 1s ease-in-out;
-          transition: all 1s ease-in-out; }
+          -webkit-transition: all 500ms ease-in-out;
+          transition: all 500ms ease-in-out; }
           nav ul.menu > li > ul.sub-menu > li > a:after {
             background: transparent; }
           nav ul.menu > li > ul.sub-menu > li > a:hover:after {

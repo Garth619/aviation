@@ -7421,7 +7421,7 @@ nav {
 	left:0;
 	background: #fff;
 	width:100%;
-// 	height:100%;
+
 	
 	padding:0;
 	.menu-header {
@@ -7450,8 +7450,28 @@ nav {
 	ul.menu {
 		display: block;
 		text-align: center;
+		> li.menu-item-has-children {
+			> a:after {
+					content:'';
+					width:10px;
+					height: 8px;
+					display: inline-block;
+					background: url(images/header_nav_arrow_purple.svg) top left no-repeat;
+					position: relative;
+					background-size: 10px;
+					top:1px;
+					left:7px;
+					transition: all .3s ease-in-out;
+				}
+		}
+				
+		
+		
 		> li {
-				&:after {
+			font-family: $playfairregular;
+			text-transform: capitalize;
+			letter-spacing: 1.3px;
+			&:after {
 					content:"";
 					display: none;
 				}
@@ -7460,48 +7480,13 @@ nav {
 					background:$purple;
 					color:#fff;
 					&:after {
-						content:'';
-						width:10px;
-						height: 8px;
-						display: inline-block;
 						background: url(images/header_nav_arrow.svg) top left no-repeat;
-						position: relative;
-						background-size: 10px;
-						top:1px;
-						left:7px;
-						transition: all .3s ease-in-out;
 					}
 				}
 				
 				> a:hover:after {
 						background: url(images/header_nav_arrow.svg) top left no-repeat;
 					}
-				
-				> a:after {
-						content:'';
-						width:10px;
-						height: 8px;
-						display: inline-block;
-						background: url(images/header_nav_arrow_purple.svg) top left no-repeat;
-						position: relative;
-						background-size: 10px;
-						top:1px;
-						left:7px;
-						transition: all .3s ease-in-out;
-					}
-		
-		}
-		
-		> li:hover {
-			> ul.sub-menu {
-					
-			}
-		}
-		
-		> li {
-			font-family: $playfairregular;
-			text-transform: capitalize;
-			letter-spacing: 1.3px;
 			> a {
 				color:#000;
 				padding:15px 5px;
@@ -7512,15 +7497,16 @@ nav {
 			}
 			> ul.sub-menu.open {
 				max-height:3000px;
+				opacity: 1;
 			}
 			> ul.sub-menu {
 				position: static;
 				margin-top:-1px;
-				opacity: 1;
+				opacity: 0;
 				visibility: visible;
 				border-bottom: 1px solid #d1d1d1;
 				max-height:0px;
-				transition: all 1s ease-in-out;
+				transition: all 500ms ease-in-out;
 				
 				> li {
 					> a:after {
