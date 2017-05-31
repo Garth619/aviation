@@ -407,6 +407,16 @@ nav {
     float: right;
     position: relative;
     z-index: 10; }
+    nav ul.menu > li.current-menu-ancestor:after {
+      content: "";
+      width: 100%;
+      height: 4px;
+      background: #b51ac9;
+      border: 1px solid #fff;
+      position: absolute !important;
+      top: 52px;
+      left: 0;
+      opacity: 1; }
     nav ul.menu > li.menu-item-has-children > a:after {
       content: '';
       width: 15px;
@@ -480,6 +490,9 @@ nav {
         z-index: 10; }
         nav ul.menu > li > ul.sub-menu > li:last-of-type > a {
           border: none; }
+        nav ul.menu > li > ul.sub-menu > li.current-menu-item > a {
+          background: #b51ac9;
+          color: #fff; }
         nav ul.menu > li > ul.sub-menu > li {
           font-size: 15px;
           font-family: "PlayfairDisplay-Regular";
@@ -3056,6 +3069,8 @@ svg#air_sidebar {
       margin: 15px 0 0 0;
       padding-left: 10%;
       padding-bottom: 45px; }
+      .sidebar_wrapper .sidebar_inner ul li.current_page_item a {
+        color: #193cc9; }
       .sidebar_wrapper .sidebar_inner ul li {
         font-size: 18px;
         text-transform: uppercase;
@@ -4829,6 +4844,8 @@ a.contact_get_directions:hover .contact_gradient .contact_inner_gradient {
       display: block; }
     .logo_wrapper a svg#logo {
       display: none; }
+  nav {
+    top: 104px; }
   .mobile_menu {
     height: 103px; }
   /* Tel */
