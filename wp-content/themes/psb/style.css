@@ -2841,8 +2841,10 @@ footer {
 
 /* Internal */
 .inner_banner {
-  background: url(images/header-intimage.jpg) center top no-repeat;
-  background-size: cover;
+  /*
+	 background: url(images/header-intimage.jpg) center top no-repeat;
+	 background-size: cover;
+*/
   width: 100%;
   height: 500px; }
   .inner_banner .inner_content {

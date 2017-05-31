@@ -35,24 +35,32 @@ get_header(); ?>
 	
 								<div class="tablet_profile_inner">
 		
-		
-									<img class="profile_pic" src="<?php bloginfo('template_directory');?>/images/attorney-panish.png"/>
-		
+									
+									<?php global $profilepic;?>
+									
+									<?php $profilepic = get_field( 'profile_pic' ); ?>
 									
 									
-									<script src="https://fast.wistia.com/embed/medias/7y9zdxmy0q.jsonp" async></script>
+									<?php if ( $profilepic ) { ?>
+	
+										<img class="profile_pic" src="<?php echo $profilepic['url']; ?>" alt="<?php echo $profilepic['alt']; ?>" />
+
+									<?php } ?>
+									
+									
+									<script src="https://fast.wistia.com/embed/medias/<?php the_field( 'profile_video' ); ?>.jsonp" async></script>
 									<script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
 									
 									
 									
-									<span class="wistia_embed wistia_async_7y9zdxmy0q popover=true popoverContent=link" style="display:inline">
+									<span class="wistia_embed wistia_async_<?php the_field( 'profile_video' ); ?> popover=true popoverContent=link" style="display:inline">
 									
 										<a href="#">
 										
 										
 										<div class="video_wrapper">
 			
-											<div class="video_title">Partner/Founder</div><!-- video_title -->
+											<div class="video_title"><?php the_field( 'profile_title' ); ?></div><!-- video_title -->
 			
 											<div class="play_button">
 				
@@ -78,9 +86,28 @@ get_header(); ?>
 	
 								<div class="email_vcard_wrapper_tablet">
 			
-									<a class="email_profile profile_link" href="mailto:panish@psblaw.com">Email</a><!-- email_profile -->
+									<a class="email_profile profile_link" href="mailto:<?php the_field( 'profile_email' ); ?>"><?php the_field( 'email_button' ); ?></a><!-- email_profile -->
 			
-									<a class="vcard_profile profile_link" href="">Vcard</a>
+									<?php if(get_field('download_vcard')):?>
+			
+										<a class="vcard_profile profile_link" href="<?php the_field( 'download_vcard' ); ?>" target="_blank">
+				
+											<?php the_field( 'vcard_button' ); ?>
+				
+										</a>
+				
+										<?php else:?>
+				
+				
+										<a class="vcard_profile profile_link" href="tel:<?php the_field( 'telephone','option'); ?>">
+				
+										Call
+				
+									</a>
+				
+				
+			
+									<?php endif;?>
 			
 								</div><!-- email_vcard_wrapper -->
 	
@@ -90,27 +117,9 @@ get_header(); ?>
 							
 
 							
-							<?php // get_template_part( 'loop', 'page' ); ?>
+							<?php get_template_part( 'loop', 'page' ); ?>
 							
-							<h2>One of the country’s leading trial attorneys, Los Angeles personal injury lawyer Brian Panish has obtained some of the most significant jury verdicts in United States history on behalf of plaintiffs</h2>
-							
-							<p>His courtroom victories include a $4.9 billion record verdict in the landmark products liability case Anderson v. General Motors, and over thirty verdicts and settlements in excess of $10 million in personal injury, car accident, wrongful death and business litigation cases. He also has obtained more than 250 verdicts and settlements over $1 million dollars. Mr. Panish has obtained three jury verdicts in excess of $50 million in personal injury cases – more than any other attorney in California.  No other attorney in California has more 8-figure verdicts than Brian Panish.</p>
-
-							<p>Since 2011 alone, Brian Panish has obtained more than $250 million in verdicts, including, among others, a $36.5 million jury verdict against Schneider National for a big-rig crash that left a woman with severe spinal cord injuries, a $34.5 million verdict for a man who suffered a below the knee amputation after being hit by a tractor trailer, a $17.4 million verdict for a Ph.D. student who suffered brain and jaw injuries during a rear end chain collision accident, a $17 million jury verdict against the Los Angeles MTA in the wrongful death of a visually impaired passenger, a $17.845 million award in a wrongful death case involving four family members killed when a Marine jet crashed into their home, a $20 million jury verdict for a woman who suffered a brain injury in a hit-and-run accident involving a J.B. Hunt tractor trailer, a $17 million jury verdict for a 84-year old man hit by a bus resulting in a leg amputation, a $15.3 million jury verdict for a woman and her daughter after the woman was severely injured on a negligently driven Alameda Contra-Costa Transit District bus, a $10.45 million jury verdict for the family of a security guard killed on the CBS studio lot and a $8.3 million jury verdict in the first DePuy ASR Hip Implant case to go to trial.</p>
-							
-							<ul>
-								<li>National Law Journal’s Elite Trial Lawyers Hall of Fame – 2015</li>
-								<li>2016 Best Lawyers® Lawyer of the Year – Plaintiff’s Personal Injury Litigation – Los Angeles</li>
-								<li>2015 Best Lawyers® Lawyer of the Year – Product Liability Litigation – Los Angeles</li>
-							</ul>
-
-							<h3>VERDICTS AND SETTLEMENTS</h3>
-							
-							<ul>
-								<li>$4.9 Billion – Anderson v. General Motors Corp.</li>
-								<li>$3.3 Billion – LA County v. Tobacco Industry</li>
-								<li>$58 Million – Griggs v. Caterpillar, et al.</li>		
-							</ul>					
+								
 							
 							
 						</div><!-- content -->

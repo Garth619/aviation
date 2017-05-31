@@ -128,7 +128,7 @@ add_filter('excerpt_more', 'new_excerpt_more');
 if (function_exists('acf_add_options_page')) {
     acf_add_options_page(array(
         'page_title' => 'Theme General Settings',
-        'menu_title' => 'Theme Settings',
+        'menu_title' => 'Header and Footer',
         'menu_slug' => 'theme-general-settings',
         'capability' => 'edit_posts',
         'redirect' => false
@@ -144,4 +144,16 @@ function cc_mime_types($mimes)
 }
 
 add_filter('upload_mimes', 'cc_mime_types');
+
+
+
+
+add_filter('upload_mimes', 'custom_upload_mimes');
+function custom_upload_mimes ( $existing_mimes=array() ) {
+	// add your extension to the array
+	$existing_mimes['vcf'] = 'text/x-vcard';
+	return $existing_mimes;
+}
+
+
 
