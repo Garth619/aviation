@@ -283,8 +283,7 @@ get_header(); ?>
 				
 				<span class="large_header"><?php the_field( 'eight_reasons_header' ); ?></span><!-- large_header -->
 				
-				<span class="sub_header">Our success rate is over 99% and we have obtained over 
-$800 million in verdicts and settlements in the past 5&nbsp;years.</span>
+				<span class="sub_header"><?php the_field( 'eight_reasons_subheader' ); ?></span><!-- sub_header -->
 				
 				
 			</div><!-- inner_bg -->
@@ -397,83 +396,52 @@ $800 million in verdicts and settlements in the past 5&nbsp;years.</span>
 	
 	<div class="testi_slider_wrapper testi_desktop">
 		
+
 		
 		<div class="test_slider_one">
 			
 			
-			
-			
-			
-			
-			<div class="test_single_slide">
+		<?php if(get_field('testimonial_slider')): ?>
+		 
+			<?php while(has_sub_field('testimonial_slider')): ?>
+		 
+				<div class="test_single_slide">
 				
-				<span class="slide_content">“PSB really worked tirelessly to insure 
-we get the best settlement outcome for our family.”
+					<span class="slide_content"><?php the_sub_field( 'single_testimonial_content' ); ?>
 
-				<span class="slider_one_name">Jennifer K.</span><!-- slider_one_name -->
+						<span class="slider_one_name"><?php the_sub_field( 'single_testimonial_name' ); ?></span><!-- slider_one_name -->
 				
-				</span><!-- slide_content -->
+					</span><!-- slide_content -->
 
+				</div><!-- test_single_slide -->
+		    
+			<?php endwhile; ?>
+		 
+		<?php endif; ?>
 			
-				
-			</div><!-- test_single_slide -->
-			
-			
-			
-			<div class="test_single_slide">
-				
-				<span class="slide_content">“Test Test Test Test Test Test Test”
-				
-				<span class="slider_one_name">Name 2</span><!-- slider_one_name -->
-				
-				</span><!-- slide_content -->
-				
-			</div><!-- test_single_slide -->
-			
-			
-			
-			
-			<div class="test_single_slide">
-				
-				<span class="slide_content">“Test Test Test Test Test Test Test Test Test Test Test TTest Test Test Test T”
-				
-				<span class="slider_one_name">Name 3</span><!-- slider_one_name -->
-				
-				</span><!-- slide_content -->
-				
-			</div><!-- test_single_slide -->
-			
-			
-			
-			
-					
-			
-			
-			
+
 			
 		</div><!-- test_slider_one -->
 		
 		<div class="test_slider_two">
 			
-			<div class="test_single_slide_name">
-				
-				Jennifer K.
-				
-			</div><!-- test_single_slide_name -->
 			
-			<div class="test_single_slide_name">
-				
-				Name 2
-				
-			</div><!-- test_single_slide_name -->
 			
-			<div class="test_single_slide_name">
+			<?php if(get_field('testimonial_slider')): ?>
+		 
+			<?php while(has_sub_field('testimonial_slider')): ?>
+		 
+				<div class="test_single_slide_name">
 				
-				Name 3
+				<?php the_sub_field( 'single_testimonial_name' ); ?>
 				
-			</div><!-- test_single_slide_name -->
+				</div><!-- test_single_slide_name -->
+		    
+			<?php endwhile; ?>
+		 
+		<?php endif; ?>
 			
-		
+
 			
 		</div><!-- test_slider_two -->
 		
@@ -484,13 +452,7 @@ we get the best settlement outcome for our family.”
 	
 	<div class="test_content">
 		
-		<p>Depending on where and under what circumstances the accident occurred, very different laws can apply. Various commanding agencies, airline personnel and even passengers can be charged with partial or full responsibility for air disasters. Maintenance crews, air-traffic controllers, airplane owners, and parts manufactures can  also be implicated some way or another in aviation disaster accidents.</p>
-
-<p>Another factor to consider is that airplane crashes often involve injuries to more than one party. Thus, sometimes it may behoove a plaintiff to connect with other injured parties to launch a class-action suit. That said, if, for instance, other plaintiffs make ill-advised choices about their representation, you may want to seek independent private counsel. </p>
-
-<p>Given the massive publicity and money involved in aviation accident cases, the resulting legal battles can drag on for years in the public spotlight — sometimes even for decades. To parse the ultimate causes and long-term effects of airline accidents can prove to be a confounding and frustrating business.</p>
-
-<p>Fortunately, injured parties can turn to the tested and aggressive law firm of Panish Shea & Boyle LLP. For decades, we have represented accident victims against powerful corporations and generated unparalleled results for our clients. We are accessible 24/7 for our clients, and our reputation speaks for itself. We have won multiple seven-figure verdicts for air crash victims, including a $15 million verdict won on behalf of clients who lost relatives aboard Singapore Airlines Flight 006 and an $11 million verdict for the parents of a young woman who died aboard a Gulf Stream 3 plane.</p>
+		<?php the_field( 'testimonial_content' ); ?>
 		
 	</div><!-- test_content -->
 	
@@ -589,57 +551,25 @@ we get the best settlement outcome for our family.”
 		
 		
 		<div class="test_slider_one">
-			
-			
-			
-			
-			
-			
-			<div class="test_single_slide">
-				
-				<span class="slide_content">“PSB really worked tirelessly to insure 
-we get the best settlement outcome for our family.”
 
-				<span class="slider_one_name">Jennifer K.</span><!-- slider_one_name -->
+			<?php if(get_field('testimonial_slider')): ?>
+		 
+			<?php while(has_sub_field('testimonial_slider')): ?>
+		 
+				<div class="test_single_slide">
 				
-				</span><!-- slide_content -->
+					<span class="slide_content"><?php the_sub_field( 'single_testimonial_content' ); ?>
 
-			
+						<span class="slider_one_name"><?php the_sub_field( 'single_testimonial_name' ); ?></span><!-- slider_one_name -->
 				
-			</div><!-- test_single_slide -->
-			
-			
-			
-			<div class="test_single_slide">
-				
-				<span class="slide_content">“Test Test Test Test Test Test Test”
-				
-				<span class="slider_one_name">Name 2</span><!-- slider_one_name -->
-				
-				</span><!-- slide_content -->
-				
-			</div><!-- test_single_slide -->
-			
-			
-			
-			
-			<div class="test_single_slide">
-				
-				<span class="slide_content">“Test Test Test Test Test Test Test Test Test Test Test TTest Test Test Test T”
-				
-				<span class="slider_one_name">Name 3</span><!-- slider_one_name -->
-				
-				</span><!-- slide_content -->
-				
-			</div><!-- test_single_slide -->
-			
-			
-			
-			
-					
-			
-			
-			
+					</span><!-- slide_content -->
+
+				</div><!-- test_single_slide -->
+		    
+			<?php endwhile; ?>
+		 
+		<?php endif; ?>
+
 			
 		</div><!-- test_slider_one -->
 		
@@ -653,7 +583,7 @@ we get the best settlement outcome for our family.”
 	
 	
 	
-		<span id="case_results_animate_two" class="large_header">We Win</span><!-- large_header -->
+		<span id="case_results_animate_two" class="large_header"><?php the_field( 'case_results_title' ); ?></span><!-- large_header -->
 		
 		<div class="sub_header_wrapper">
 			
@@ -666,7 +596,7 @@ we get the best settlement outcome for our family.”
 			
 			</svg> 
 			
-			<span class="sub_header">  aviation accident case results</span><!-- sub_header -->
+			<span class="sub_header">  <?php the_field( 'case_results_subheader' ); ?></span><!-- sub_header -->
 			
 		</div><!-- sub_header_wrapper -->
 		
@@ -682,7 +612,7 @@ we get the best settlement outcome for our family.”
 					<div class="case_inner_content">
 						
 						
-						<div class="large_single_case large_single_case_one show">
+						<div class="large_single_case large_single_case_one">
 						
 						<span class="number_header">$17.8 M</span><!-- large_header -->
 						
@@ -823,7 +753,7 @@ we get the best settlement outcome for our family.”
 			
 			<div class="small_case_thumbnails">
 				
-				<div class="small_single_case small_single_case_one myhover">
+				<div class="small_single_case small_single_case_one">
 					
 					<div class="inner_single_case">
 					

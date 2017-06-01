@@ -193,7 +193,8 @@ jQuery('.reasons_grid').slick({
 // Case Results
 
 
-
+jQuery('.small_single_case_one').addClass('myhover');
+jQuery('.large_single_case_one').addClass('show');
 
 jQuery('.small_single_case').mouseenter(function(){
 	
