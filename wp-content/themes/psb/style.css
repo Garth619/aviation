@@ -1716,7 +1716,8 @@ svg#global_gradient {
       padding: 27px 60px 20px 83px;
       font-size: 20px;
       position: relative;
-      z-index: 10; }
+      z-index: 10;
+      max-width: 713px; }
       .large_case_slider .case_inner_content span.case_sub_header .case_purple_line {
         width: 0%;
         height: 1px;
