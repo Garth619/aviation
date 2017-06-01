@@ -765,8 +765,10 @@ a.tel {
 .main_banner {
 	width:100%;
 	height:1109px;
+/*
 	background: url(images/header_mainimage.jpg) top left no-repeat;
 	background-size: cover;
+*/
 	.inner_content {
 		max-width:1855px;
 		margin:0 auto;
@@ -1287,7 +1289,7 @@ a.request_button {
 			height:455px;
 			margin-top: 58px;
 			
-			span.caption {
+			p {
 				font-size:13px;
 				font-family: $playfairbold;
 				letter-spacing:0.75px;
@@ -1295,8 +1297,10 @@ a.request_button {
 				margin:30px 0 30px 30px;
 				display: block;
 				padding-right:20px;
-				span.purple {
+				strong {
 					color:#7716dc;
+					font-weight: 300;
+					font-style: normal;
 				}
 			}
 			img {
@@ -4861,12 +4865,7 @@ a.contact_get_directions {
 			width:38%;
 // 			width: calc(100% - 890px);
 			
-			span.caption {
-				
-				span.purple {
-					
-				}
-			}
+			
 			img {
 				
 			}
@@ -4983,8 +4982,11 @@ a.tel {
 /* Main Banner */
 
 .main_banner {
+/*
 	background: url(images/header_mainimage.jpg) top center no-repeat;
 	background-size: cover;
+*/
+	background-position: top center;
 	.inner_content {
 		
 		
@@ -6019,13 +6021,11 @@ a.tel {
 			margin:64px auto 0;
 			width:100%;
 			height: 448px;
-			span.caption {
+			p {
 				margin-top:0;
 				padding-top:27px;
 				margin-bottom: 23px;
-				span.purple {
-					
-				}
+				
 			}
 			img {
 				 margin-left: -55px;
@@ -7676,8 +7676,10 @@ a.tel {
 
 
 .main_banner {
+/*
 	background: url(images/header-mainimage-tab.jpg) top center no-repeat;
 	background-size: cover;
+*/
 	.inner_content {
 		text-align: center;
 		 padding: 209px 3% 0;
@@ -7818,12 +7820,7 @@ margin-left: -320px;
 		
 		.about_image_wrapper {
 			
-			span.caption {
-				
-				span.purple {
-					
-				}
-			}
+			
 			img {
 				 
 			}
@@ -9888,7 +9885,7 @@ margin-top:25px;
 		
 			.about_image_wrapper {
 				
-				span.caption {
+			p {
 					padding: 27px 30px 20px;
 				}
 			}	
@@ -9939,14 +9936,12 @@ margin-top:25px;
 			background: transparent;
 			max-width:619px;
 			height: auto;
-			span.caption {
+			p {
 				background: #fff;
 				// padding:27px 30px 15px 30px;
 				margin:0 auto;
 				width: 90%;
-				span.purple {
-					
-				}
+				
 			}
 			img {
 				max-width:none;
@@ -11677,11 +11672,9 @@ body.page-template-page-caseresults
 
 	 .about_image_wrapper {
 			
-			span.caption {
+			p {
 				width:100%;
-				span.purple {
-					
-				}
+				
 			}
 			img {
 				
@@ -12158,8 +12151,10 @@ body.page-template-page-attorney {
 	 
 	 
 	.main_banner {
-		background:url(images/header-mainimage-mob.jpg) top center;
+		/*
+background:url(images/header-mainimage-mob.jpg) top center;
 		background-size:cover;
+*/
 	.inner_content {
 		max-width:350px;
 		span.large_header {

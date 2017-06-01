@@ -14,9 +14,9 @@ get_header(); ?>
 	
 	<div class="inner_content">
 		
+		<span class="large_header"><?php the_field( 'main_banner_header' ); ?></span><!-- large_header -->
 		
-		
-		<span class="large_header">Helping you with<br class="desktop_break"/> a <span class="extra">f</span>light to recovery</span><!-- large_header -->
+<!-- 		<span class="large_header">Helping you with<br class="desktop_break"/> a <span class="extra">f</span>light to recovery</span> -->
 		
 		<div class="sub_header_wrapper">
 			
@@ -33,7 +33,7 @@ get_header(); ?>
 				
 			</div><!-- cloud1 -->
 			
-			<span class="subheader">The aviation disaster attorneys at Panish, Shea & Boyle can help you and loved ones move closer to&nbsp;healing.</span><!-- subheader -->
+			<span class="subheader"><?php the_field( 'main_banner_sub_header' ); ?></span><!-- subheader -->
 			
 		</div><!-- sub_header_wrapper -->
 		
@@ -43,7 +43,7 @@ get_header(); ?>
 				
 				<div class="inner_button">
 					
-					<span>Request Free Consultation</span>
+					<span><?php the_field( 'request_button_verbiage' ); ?></span>
 				
 				</div><!-- inner_button -->
 				
@@ -139,7 +139,7 @@ get_header(); ?>
 			
 			<div class="large_header_wrapper">
 			
-			<span class="large_header">Air</span><!-- large_header --> 
+			<span class="large_header"><?php the_field( 'about_title' ); ?></span><!-- large_header --> 
 			
 			
 			
@@ -167,7 +167,7 @@ get_header(); ?>
 				
 				<div class="tablet_line"></div><!-- tablet_line -->
 				
-				<h1>aviation disaster attorneys</h1>
+				<h1><?php the_field( 'about_subtitle' ); ?></h1>
 				
 			</div><!-- h1_wrapper -->
 			
@@ -177,12 +177,21 @@ get_header(); ?>
 			<div class="about_image_wrapper mobile">
 			
 			
-			<span class="caption">From Left: <span class="purple">Kevin Boyle, Brian Panish, Adam Shea and Honorable Peter J. Polos (Ret.)</span></span><!-- caption -->
+			<?php the_field( 'about_image_caption' ); ?>
 			
-			<img src="<?php bloginfo('template_directory');?>/images/content_image_attorneys.jpg"/>
+				
+									
+					<?php $about_image = get_field( 'about_image' ); ?>
+
+					<?php if ( $about_image ) { ?>
+	
+						<img src="<?php echo $about_image['url']; ?>" alt="<?php echo $about_image['alt']; ?>" />
+
+					<?php } ?>
 			
 			
-			<a class="button_wrapper meet_attorneys" href="">
+		
+		<a class="button_wrapper meet_attorneys" href="">
 			
 			<div class="gradient_bg">
 				
@@ -214,7 +223,9 @@ get_header(); ?>
 			</svg> 
 					
 					
-					 Air travel is statistically safer than automotive travel, when you 	measure on a "per mile traveled" basis. However, when airplane accidents do occur, they tend to involve more people, cause more fatalities and injuries, and lead to wide scale wrangling over insurance issues. Moreover, assigning liability in aviation accidents cases can often be far more complicated than it may appear upon first inspection of the facts.</p>
+					 <?php the_field( 'about_content' ); ?>
+					 
+					</p>
 				
 				
 			</div>
@@ -225,9 +236,15 @@ get_header(); ?>
 		<div class="about_image_wrapper desktop">
 			
 			
-			<span class="caption">From Left: <span class="purple">Kevin Boyle, Brian Panish, Adam Shea and Honorable Peter J. Polos (Ret.)</span></span><!-- caption -->
+			<?php the_field( 'about_image_caption' ); ?>
 			
-			<img src="<?php bloginfo('template_directory');?>/images/content_image_attorneys.jpg"/>
+			<?php $about_image = get_field( 'about_image' ); ?>
+
+				<?php if ( $about_image ) { ?>
+	
+					<img src="<?php echo $about_image['url']; ?>" alt="<?php echo $about_image['alt']; ?>" />
+
+				<?php } ?>
 			
 			
 			<a class="button_wrapper meet_attorneys" href="">
