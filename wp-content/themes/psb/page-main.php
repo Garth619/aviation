@@ -191,13 +191,13 @@ get_header(); ?>
 			
 			
 		
-		<a class="button_wrapper meet_attorneys" href="">
+		<a class="button_wrapper meet_attorneys" href="<?php the_field( 'meet_our_attorney_page_link' ); ?>">
 			
 			<div class="gradient_bg">
 				
 				<div class="inner_button">
 					
-					<span>Meet Our Attorneys</span>
+					<span><?php the_field( 'meet_our_attorneys_button_main_page' ); ?></span>
 				
 				</div><!-- inner_button -->
 				
@@ -247,13 +247,13 @@ get_header(); ?>
 				<?php } ?>
 			
 			
-			<a class="button_wrapper meet_attorneys" href="">
+			<a class="button_wrapper meet_attorneys" href="<?php the_field( 'meet_our_attorney_page_link' ); ?>">
 			
 			<div class="gradient_bg">
 				
 				<div class="inner_button">
 					
-					<span>Meet Our Attorneys</span>
+					<span><?php the_field( 'meet_our_attorneys_button_main_page' ); ?></span>
 				
 				</div><!-- inner_button -->
 				
@@ -279,9 +279,9 @@ get_header(); ?>
 			
 			<div class="inner_bg">
 				
-				<span class="number">8</span>
+				<span class="number"><?php the_field( 'eight_reasons_number' ); ?></span>
 				
-				<span class="large_header">Reasons to Choose Us</span><!-- large_header -->
+				<span class="large_header"><?php the_field( 'eight_reasons_header' ); ?></span><!-- large_header -->
 				
 				<span class="sub_header">Our success rate is over 99% and we have obtained over 
 $800 million in verdicts and settlements in the past 5&nbsp;years.</span>
@@ -299,602 +299,74 @@ $800 million in verdicts and settlements in the past 5&nbsp;years.</span>
 		
 		
 		
-		
-		
-		
-		
-		
-		
-		<div class="single_reason single_reason_01">
+	<?php if(get_field('eight_resons_grid')): ?>
+		 
+		<?php while(has_sub_field('eight_resons_grid')): ?>
+		 
+				
+				
+		<div class="single_reason single_reason_<?php the_sub_field( 'single_reason_number_class' ); ?>">
 			
 			<div class="single_reason_reg">
 				
 				
 				<div class="reasons_icon_wrapper">
 					
-					<svg id="reason1" data-name="reason1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 95.9 48.2">
+					<?php the_sub_field( 'single_reason_svg' ); ?>	
+				
+				</div><!-- reasons_icon_wrapper -->
+				
+				
+				<span class="reason_number"><?php the_sub_field( 'single_reason_number_class' ); ?></span>
+				
+				<span class="reason_tile"><?php the_sub_field( 'single_reason_title' ); ?></span><!-- reason_tile -->
+				
+				
+				
+				<div class="grey_line_right_wrapper">
 					
-			<path d="M78.4,39l17.5-3.3-.2-1.3L58,41.5l.9-1.4a18.18,18.18,0,0,0,2.7-9.2,13.58,13.58,0,0,0-.3-2.9l-.2-.9H74.3V25.8H60.6l-.2-.5a14.22,14.22,0,0,0-2.8-4.1,13.62,13.62,0,0,0-8.4-3.8l-.7-.1V0H47.2V17.3l-.7.1a14.19,14.19,0,0,0-8.4,3.8,13,13,0,0,0-2.8,4.1l-.2.5H21.7v1.3H34.9l-.3.9a13.58,13.58,0,0,0-.3,2.9A18.18,18.18,0,0,0,37,40.1l.9,1.4L.2,34.4,0,35.7,17.5,39l-1,1a4.6,4.6,0,0,0-1.3,3.3,4.79,4.79,0,0,0,1.6,3.5,5.86,5.86,0,0,0,7.6,0A4.79,4.79,0,0,0,26,43.3a4.53,4.53,0,0,0-.3-1.6l-.4-1.2,14.2,2.7.2.2A11.92,11.92,0,0,0,48,47.1a11.74,11.74,0,0,0,8.3-3.7l.2-.2,14.2-2.7-.4,1.2a4.15,4.15,0,0,0-.3,1.6,4.79,4.79,0,0,0,1.6,3.5,5.86,5.86,0,0,0,7.6,0,4.79,4.79,0,0,0,1.6-3.5A5.07,5.07,0,0,0,79.5,40ZM23.5,45.8a4.37,4.37,0,0,1-5.8,0,3.32,3.32,0,0,1-1.2-2.5,3.17,3.17,0,0,1,1.2-2.5,4.53,4.53,0,0,1,5.8,0h0a3.32,3.32,0,0,1,1.2,2.5A3.7,3.7,0,0,1,23.5,45.8Zm32.9-4.5C54,44.1,51,45.7,48,45.7a11.18,11.18,0,0,1-8.4-4.4,16.63,16.63,0,0,1-3.8-10.4,11.83,11.83,0,0,1,3.5-8.7,12.3,12.3,0,0,1,21.1,8.7A18.12,18.12,0,0,1,56.4,41.3Zm21.8,4.5a4.37,4.37,0,0,1-5.8,0,3.2,3.2,0,0,1,0-5,4.53,4.53,0,0,1,5.8,0h0a3.2,3.2,0,0,1,0,5Z"/>
-			<path d="M41,26v5.8l6.9-.5,7,.5V26L48,23.9Zm12.5,4.4L47.9,30l-5.5.4V27L48,25.3,53.6,27v3.4Z"/>
+					<div class="grey_line_right"></div><!-- grey_line_bottom -->
+				
+				</div><!-- grey_line_right_wrapper -->
+				
+				
+				<div class="grey_line_bottom_wrapper">
 					
+					<div class="grey_line_bottom"></div><!-- grey_line_bottom -->
+				
+				</div><!-- grey_line_bottom_wrapper -->
+				
+			</div><!-- single_reason_reg -->
+			
+			<div class="single_reason_hov">
+				
+				<div class="single_reason_hov_gradient">
+					
+					<div class="single_reason_hov_inner">
+						
+						<div class="reason_content">
+							
+							<?php the_sub_field( 'single_reason_content' ); ?>
+							
+						</div><!-- reason_content -->
+						
+					</div><!-- single_reason_hov_inner -->
+					
+				</div><!-- single_reason_hov_gradient -->
+				
+			</div><!-- single_reason_hov -->
+			
+			
+		</div><!-- single_reason -->
+				
+				
+				
+		    
+		<?php endwhile; ?>
+		 
+	<?php endif; ?>
+		
 
-				
-				</svg>	
-				
-				</div><!-- reasons_icon_wrapper -->
-				
-				
-				<span class="reason_number">01</span>
-				
-				<span class="reason_tile">Record Jury<br/>Verdicts</span><!-- reason_tile -->
-				
-				
-				
-				<div class="grey_line_right_wrapper">
-					
-					<div class="grey_line_right"></div><!-- grey_line_bottom -->
-				
-				</div><!-- grey_line_right_wrapper -->
-				
-				
-				<div class="grey_line_bottom_wrapper">
-					
-					<div class="grey_line_bottom"></div><!-- grey_line_bottom -->
-				
-				</div><!-- grey_line_bottom_wrapper -->
-				
-			</div><!-- single_reason_reg -->
-			
-			<div class="single_reason_hov">
-				
-				<div class="single_reason_hov_gradient">
-					
-					<div class="single_reason_hov_inner">
-						
-						<div class="reason_content">
-							
-							<p>A number of personal injury cases do not go to trial.</p>
-							
-							<p>However, our attorneys have remarkable trial experience and have consistently shown their ability to win significant jury verdicts. As a result of our extensive trial experience, corporations, insurance companies, and their attorneys, know that when Panish Shea & Boyle is representing the plaintiffs, then that case has to be taken seriously.</p>
-							
-						</div><!-- reason_content -->
-						
-					</div><!-- single_reason_hov_inner -->
-					
-				</div><!-- single_reason_hov_gradient -->
-				
-			</div><!-- single_reason_hov -->
-			
-			
-		</div><!-- single_reason -->
-		
-		
-		
-		
-		
-		
-		<div class="single_reason single_reason_02">
-			
-			<div class="single_reason_reg">
-				
-				
-				<div class="reasons_icon_wrapper">
-					
-					<svg id="reason2" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61.5 70.8"><title>sp_icon2</title><path d="M61.5,31.3v-.8A30,30,0,0,0,52.7,9.2,30.6,30.6,0,0,0,31.4,0H30A30.88,30.88,0,0,0,8.8,9.1,30,30,0,0,0,0,30.5v.9l.1.2L30.7,70.8Zm-1.4-.4-.2.3L31.6,67.4,46.3,31.1a6.79,6.79,0,0,1,11.6-4.8,7.17,7.17,0,0,1,2.2,4.3ZM36,1.8a29.3,29.3,0,0,1,15.8,8.3,28.86,28.86,0,0,1,7.7,14.1l.5,2.1-1.7-1.4A8.38,8.38,0,0,0,53,23a8.56,8.56,0,0,0-5.5,2.1l-1.1,1-.2-1.5a33.22,33.22,0,0,0-11-21.5L33.3,1.3Zm-5.7-.3.4-.3.4.3A32.56,32.56,0,0,1,41.2,12.9a31.9,31.9,0,0,1,3.6,11.7l.2,2-1.5-1.4A8.15,8.15,0,0,0,38,23a7.63,7.63,0,0,0-5.7,2.4,12.67,12.67,0,0,0-1.1,1.3l-.6,1-.6-1a6.89,6.89,0,0,0-1.1-1.3A8.2,8.2,0,0,0,23.2,23a8,8,0,0,0-5.5,2.2l-1.5,1.4.2-2A34.59,34.59,0,0,1,20,12.9,34.25,34.25,0,0,1,30.3,1.5ZM2,24.1a29.37,29.37,0,0,1,7.7-14A30,30,0,0,1,25.5,1.8l2.6-.5L26.2,3.1A35.29,35.29,0,0,0,19,12.2a32.5,32.5,0,0,0-3.8,12.4L15,26.1l-1.1-1A7.88,7.88,0,0,0,8.4,23a8.32,8.32,0,0,0-5.2,1.9L1.5,26.3Zm-.6,6.8.1-.3a8.45,8.45,0,0,1,2.2-4.3,6.8,6.8,0,0,1,11.6,4.8v.1L30,67.4Zm15.2.1v-.2a6.92,6.92,0,0,1,2-4.5,6.76,6.76,0,0,1,9.6,0,6.28,6.28,0,0,1,1.9,4h1.4a6.82,6.82,0,0,1,1.9-4,6.76,6.76,0,0,1,9.6,0,6.92,6.92,0,0,1,2,4.5V31L30.8,66Z"/>
-
-
-					</svg>
-				
-				</div><!-- reasons_icon_wrapper -->
-				
-				
-				<span class="reason_number">02</span>
-				
-				<span class="reason_tile">Stellar<br/> Reputation</span><!-- reason_tile -->
-				
-				
-				<div class="grey_line_right_wrapper">
-					
-					<div class="grey_line_right"></div><!-- grey_line_bottom -->
-				
-				</div><!-- grey_line_right_wrapper -->
-				
-				<div class="grey_line_bottom_wrapper">
-					
-					<div class="grey_line_bottom"></div><!-- grey_line_bottom -->
-				
-				</div><!-- grey_line_bottom_wrapper -->
-				
-			</div><!-- single_reason_reg -->
-			
-			<div class="single_reason_hov">
-				
-				<div class="single_reason_hov_gradient">
-					
-					<div class="single_reason_hov_inner">
-						
-						<div class="reason_content">
-							
-							<p>A number of personal injury cases do not go to trial.</p>
-							
-							<p>However, our attorneys have remarkable trial experience and have consistently shown their ability to win significant jury verdicts. As a result of our extensive trial experience, corporations, insurance companies, and their attorneys, know that when Panish Shea & Boyle is representing the plaintiffs, then that case has to be taken seriously.</p>
-							
-						</div><!-- reason_content -->
-						
-					</div><!-- single_reason_hov_inner -->
-					
-				</div><!-- single_reason_hov_gradient -->
-				
-			</div><!-- single_reason_hov -->
-			
-			
-		</div><!-- single_reason -->
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		<div class="single_reason single_reason_03">
-			
-			<div class="single_reason_reg">
-				
-				
-				<div class="reasons_icon_wrapper">
-					
-					<svg id="reason3" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80.6 40.5"><title>sp_icon3</title><path d="M62.3,10.4H42.9l-3-7.8h3V1.3H25.1V2.6h1.7v7.8H14l-3.8,5.4v3.9h-5V7.1H3.9V19.7H0V21H3.9V33.6H5.2V21h4.9v4.1l9.1,4.7,7.4-.8v4.1l-.5.2a3.66,3.66,0,0,0-2.5,3.5,3.76,3.76,0,0,0,3.7,3.7A3.69,3.69,0,0,0,31,36.8v-.3l8.9-8.8,5.6-.6,35.1-7.7V0H69.4Zm-20.8,0H32.1L39,3.7ZM28.1,2.6H38.2l-7.9,7.8H28.1Zm-.7,36.5a2.4,2.4,0,0,1,0-4.8,2.4,2.4,0,0,1,0,4.8ZM30.7,35l-.5-.6a3.55,3.55,0,0,0-1.6-1.1l-.5-.2V28.9l9.9-1ZM79.4,1.3v17L45.5,25.8l-26,2.7-8.1-4.1V16.2l3.2-4.4H63L70.1,1.4h9.3Z"/></svg>
-				
-				</div><!-- reasons_icon_wrapper -->
-				
-				
-				<span class="reason_number">03</span>
-				
-				<span class="reason_tile">Trial<br/> Attorneys</span><!-- reason_tile -->
-				
-				
-				<div class="grey_line_right_wrapper">
-					
-					<div class="grey_line_right"></div><!-- grey_line_bottom -->
-				
-				</div><!-- grey_line_right_wrapper -->
-				
-				
-				<div class="grey_line_bottom_wrapper">
-					
-					<div class="grey_line_bottom"></div><!-- grey_line_bottom -->
-				
-				</div><!-- grey_line_bottom_wrapper -->
-				
-			</div><!-- single_reason_reg -->
-			
-			<div class="single_reason_hov">
-				
-				<div class="single_reason_hov_gradient">
-					
-					<div class="single_reason_hov_inner">
-						
-						<div class="reason_content">
-							
-							<p>A number of personal injury<br/> cases do not go to trial.</p>
-							
-							<p>However, our attorneys have remarkable trial experience and have consistently shown their ability to win significant jury verdicts. As a result of our extensive trial experience, corporations, insurance companies, and their attorneys, know that when Panish Shea & Boyle is representing the plaintiffs, then that case has to be taken seriously.</p>
-							
-						</div><!-- reason_content -->
-						
-					</div><!-- single_reason_hov_inner -->
-					
-				</div><!-- single_reason_hov_gradient -->
-				
-			</div><!-- single_reason_hov -->
-			
-			
-		</div><!-- single_reason -->
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		<div class="single_reason single_reason_04">
-			
-			<div class="single_reason_reg">
-				
-				
-				<div class="reasons_icon_wrapper">
-					
-					<svg id="reason4" x="0px" y="0px"
-	 viewBox="0 0 94.1 33.2" style="enable-background:new 0 0 94.1 33.2;" xml:space="preserve">
-<path d="M59,5.1l-0.3-0.3C55.6,1.7,51.4,0,47,0c-4.4,0-8.6,1.7-11.7,4.8l-0.3,0.3L0.2,0.8L0,2.1l33.9,4.2l-0.7,1
-	c-1.2,1.8-2.1,3.8-2.5,5.9l-0.1,0.7L7.1,11l-0.2,1.3l23.5,2.9l0,0.7c0,0.2,0,0.5,0,0.7c0,2,0.3,3.9,1,5.7l0.4,1.2L14,21.3l-0.2,1.3
-	l18.8,2.3l0.2,0.3c0.7,1.1,1.5,2.2,2.5,3.2c3.1,3.1,7.3,4.9,11.8,4.9s8.6-1.7,11.8-4.9c1-1,1.8-2,2.5-3.2l0.2-0.3l18.8-2.3l-0.2-1.3
-	l-17.9,2.2l0.4-1.2c0.7-1.8,1-3.7,1-5.7c0-0.2,0-0.5,0-0.7l0-0.7l23.5-2.9L87,11l-23.5,2.9l-0.1-0.7c-0.4-2.1-1.3-4.1-2.5-5.9
-	l-0.7-1l34-4.2l-0.2-1.3L59,5.1z M62.3,16.6c0,4.1-1.6,7.9-4.5,10.8c-2.9,2.9-6.7,4.5-10.8,4.5s-7.9-1.6-10.8-4.5
-	c-2.9-2.9-4.5-6.7-4.5-10.8s1.6-7.9,4.5-10.8c2.9-2.9,6.7-4.5,10.8-4.5S55,2.9,57.8,5.8C60.7,8.7,62.3,12.5,62.3,16.6z"/>
-<path d="M47,6.9l-3.5,5.1l-5.9,1.8l3.7,4.9l-0.1,6.2l5.9-2l5.9,2l-0.1-6.2l3.7-4.9l-5.9-1.8L47,6.9z M51.4,18.3l0.1,4.8L47,21.5
-	L42.5,23l0.1-4.8l-2.9-3.8l4.5-1.4L47,9.2l2.7,3.9l4.5,1.4L51.4,18.3z"/>
-</svg>
-				
-				</div><!-- reasons_icon_wrapper -->
-				
-				
-				<span class="reason_number">04</span>
-				
-				<span class="reason_tile">Skilled with<br/> Settlements</span><!-- reason_tile -->
-				
-				
-				<div class="grey_line_right_wrapper">
-					
-					<div class="grey_line_right"></div><!-- grey_line_bottom -->
-				
-				</div><!-- grey_line_right_wrapper -->
-							
-				
-				<div class="grey_line_bottom_wrapper">
-					
-					<div class="grey_line_bottom"></div><!-- grey_line_bottom -->
-				
-				</div><!-- grey_line_bottom_wrapper -->
-				
-			</div><!-- single_reason_reg -->
-			
-			<div class="single_reason_hov">
-				
-				<div class="single_reason_hov_gradient">
-					
-					<div class="single_reason_hov_inner">
-						
-						<div class="reason_content">
-							
-							<p>A number of personal injury<br/> cases do not go to trial.</p>
-							
-							<p>However, our attorneys have remarkable trial experience and have consistently shown their ability to win significant jury verdicts. As a result of our extensive trial experience, corporations, insurance companies, and their attorneys, know that when Panish Shea & Boyle is representing the plaintiffs, then that case has to be taken seriously.</p>
-							
-						</div><!-- reason_content -->
-						
-					</div><!-- single_reason_hov_inner -->
-					
-				</div><!-- single_reason_hov_gradient -->
-				
-			</div><!-- single_reason_hov -->
-			
-			
-		</div><!-- single_reason -->
-		
-		
-		
-		
-		
-		
-		
-		
-		<div class="single_reason single_reason_05">
-			
-			<div class="single_reason_reg">
-				
-				
-				<div class="reasons_icon_wrapper">
-					
-					
-<svg id="reason5" x="0px" y="0px"
-	 viewBox="0 0 69.6 69.6" style="enable-background:new 0 0 69.6 69.6;" xml:space="preserve">
-<path d="M34.8,0c-9.3,0-18,3.6-24.6,10.2C3.6,16.8,0,25.5,0,34.8s3.6,18,10.2,24.6c6.6,6.6,15.3,10.2,24.6,10.2
-	c9.3,0,18-3.6,24.6-10.2c6.6-6.6,10.2-15.3,10.2-24.6s-3.6-18-10.2-24.6C52.9,3.6,44.1,0,34.8,0z M58.5,58.5
-	c-6.3,6.3-14.7,9.8-23.7,9.8s-17.3-3.5-23.7-9.8c-6.3-6.3-9.8-14.7-9.8-23.7c0-8.9,3.5-17.3,9.8-23.7s14.7-9.8,23.7-9.8
-	s17.3,3.5,23.7,9.8c6.3,6.3,9.8,14.7,9.8,23.7C68.3,43.8,64.8,52.2,58.5,58.5z"/>
-<path d="M34.8,11.3c-6.3,0-12.2,2.4-16.6,6.9c-4.4,4.4-6.9,10.3-6.9,16.6s2.4,12.2,6.9,16.6c4.4,4.4,10.3,6.9,16.6,6.9
-	c6.3,0,12.2-2.4,16.6-6.9c4.4-4.4,6.9-10.3,6.9-16.6s-2.4-12.2-6.9-16.6C47,13.8,41.1,11.3,34.8,11.3z M16.2,22.7
-	c0.8-1.3,1.8-2.5,2.9-3.6c3.7-3.7,8.7-6,13.9-6.4l0.9-0.1l-0.1,0.9c-0.3,2.2-0.4,4.4-0.4,6.9c0,2.4,0.1,4.9,0.2,7.9l0,0.6l-0.6,0.2
-	c-1.2,0.4-2.2,1.1-3,2l-0.4,0.5l-0.5-0.3c-2.7-1.3-4.8-2.5-6.8-3.7c-2.2-1.3-4.2-2.6-6-4l-0.6-0.4L16.2,22.7z M34.8,30.2
-	c1.2,0,2.4,0.5,3.3,1.3c0.9,0.9,1.3,2,1.3,3.3c0,2.5-2.1,4.6-4.6,4.6c-1.2,0-2.4-0.5-3.3-1.3c-0.9-0.9-1.3-2-1.3-3.3
-	C30.2,32.3,32.3,30.2,34.8,30.2z M15.4,45.5L15,44.9c-1.6-3.1-2.4-6.5-2.4-10c0-3.3,0.7-6.5,2.1-9.5l0.4-0.8l0.7,0.5
-	c1.8,1.3,3.7,2.6,5.8,3.8c2,1.2,4.2,2.4,6.9,3.7l0.5,0.3L29,33.4c-0.1,0.5-0.2,0.9-0.2,1.4c0,0.8,0.1,1.5,0.4,2.2l0.2,0.6L29,37.9
-	c-2.5,1.7-4.6,3-6.6,4.1c-2.2,1.3-4.3,2.3-6.4,3.2L15.4,45.5z M34.4,56.3L34.3,57l-0.7,0c-5.5-0.3-10.6-2.6-14.5-6.5
-	c-0.9-0.9-1.8-2-2.6-3.1L16,46.6l0.8-0.4c2-0.9,4-1.9,6.2-3.1c2.1-1.2,4.2-2.5,6.7-4.1l0.5-0.3l0.4,0.4c0.9,0.9,2,1.4,3.3,1.6
-	l0.6,0.1l0,0.6c0.2,3,0.3,5.5,0.2,7.8C34.8,51.7,34.7,54,34.4,56.3z M53.4,46.9c-0.8,1.3-1.8,2.5-2.9,3.6c-3.7,3.7-8.7,6-13.9,6.4
-	L35.7,57l0.1-0.9c0.3-2.2,0.4-4.4,0.4-6.9c0-2.4-0.1-4.9-0.2-7.9l0-0.6l0.6-0.2c1.2-0.3,2.2-1.1,3-2l0.4-0.5l0.5,0.3
-	c2.6,1.3,4.8,2.5,6.8,3.7c2.2,1.3,4.2,2.6,6,4l0.6,0.4L53.4,46.9z M54.3,24.1l0.3,0.6c1.6,3.1,2.4,6.5,2.4,10c0,3.3-0.7,6.5-2.1,9.5
-	l-0.4,0.8l-0.7-0.5c-1.8-1.3-3.7-2.6-5.8-3.8c-2-1.2-4.2-2.4-6.9-3.7l-0.5-0.3l0.1-0.6c0.1-0.5,0.2-0.9,0.2-1.4
-	c0-0.8-0.1-1.5-0.4-2.2L40.1,32l0.5-0.3c2.5-1.7,4.6-3,6.6-4.1c2.2-1.3,4.3-2.3,6.4-3.2L54.3,24.1z M53.6,23l-0.8,0.4
-	c-2,0.9-4,1.9-6.2,3.1c-2.1,1.2-4.2,2.5-6.7,4.1l-0.5,0.3l-0.4-0.4c-0.9-0.9-2-1.4-3.3-1.6L35,28.8l0-0.6c-0.2-3-0.3-5.5-0.2-7.8
-	c0-2.6,0.2-4.9,0.5-7.2l0.1-0.7l0.7,0c5.5,0.3,10.6,2.6,14.5,6.5c0.9,0.9,1.8,2,2.6,3.1L53.6,23z"/>
-</svg>
-				
-				</div><!-- reasons_icon_wrapper -->
-				
-				
-				<span class="reason_number">05</span>
-				
-				<span class="reason_tile">Working with<br/> All Parties</span><!-- reason_tile -->
-				
-				
-				<div class="grey_line_right_wrapper">
-					
-					<div class="grey_line_right"></div><!-- grey_line_bottom -->
-				
-				</div><!-- grey_line_right_wrapper -->
-				
-				
-				<div class="grey_line_bottom_wrapper">
-					
-					<div class="grey_line_bottom"></div><!-- grey_line_bottom -->
-				
-				</div><!-- grey_line_bottom_wrapper -->
-				
-				
-			</div><!-- single_reason_reg -->
-			
-			<div class="single_reason_hov">
-				
-				<div class="single_reason_hov_gradient">
-					
-					<div class="single_reason_hov_inner">
-						
-						<div class="reason_content">
-							
-							<p>A number of personal injury<br/> cases do not go to trial.</p>
-							
-							<p>However, our attorneys have remarkable trial experience and have consistently shown their ability to win significant jury verdicts. As a result of our extensive trial experience, corporations, insurance companies, and their attorneys, know that when Panish Shea & Boyle is representing the plaintiffs, then that case has to be taken seriously.</p>
-							
-						</div><!-- reason_content -->
-						
-					</div><!-- single_reason_hov_inner -->
-					
-				</div><!-- single_reason_hov_gradient -->
-				
-			</div><!-- single_reason_hov -->
-			
-			
-		</div><!-- single_reason -->
-		
-		
-		
-		
-		
-		
-		
-		
-		<div class="single_reason single_reason_06">
-			
-			<div class="single_reason_reg">
-				
-				
-				<div class="reasons_icon_wrapper">
-					
-				<svg id="reason6" x="0px" y="0px"
-	 viewBox="0 0 79 66.3" style="enable-background:new 0 0 79 66.3;" xml:space="preserve">
-<path d="M74.4,31.4l3.5-13.5h-6.1l-6.6,10.3L64.6,28c-2.1-0.4-4.2-0.4-6.3-0.4l-0.8,0H41L48,0h-5.7l-9.6,16.4h-5.4v1.3H32l-5.7,9.8
-	H11c-3,0-5.6,0.5-7.6,1.4C1.2,30,0,31.5,0,33.2s1.2,3.1,3.4,4.1c2,0.9,4.6,1.4,7.6,1.4h15.2l5.7,9.8h-4.6v1.3h5.4l9.6,16.4H48
-	l-7-27.6l17.4,0c2.1,0,4.2-0.1,6.3-0.4l0.5-0.1l6.6,10.3h6.1l-3.5-13.5l4.6-1.8L74.4,31.4z M72.5,19.2h3.7l-3,11.7l-4.6-1.8
-	c-0.4-0.1-0.7-0.3-1.1-0.4l-0.9-0.3L72.5,19.2z M43.1,1.3h3.2l-6.7,26.2H27.8L43.1,1.3z M46.3,65h-3.2L27.8,38.7h11.8L46.3,65z
-	 M76.2,47.1h-3.7l-6-9.2l0.9-0.3c0.4-0.1,0.7-0.2,1.1-0.4l4.7-1.8L76.2,47.1z M68,36c-2.9,1.2-6.7,1.4-10.5,1.4H11
-	c-2.8,0-5.3-0.5-7.1-1.3c-1.7-0.8-2.6-1.9-2.6-2.9S2.3,31,4,30.2c1.8-0.9,4.2-1.3,7.1-1.3h46.5c3.4,0,7.1,0.1,10.5,1.4l7.3,2.8
-	L68,36z"/>
-</svg>
-				
-				</div><!-- reasons_icon_wrapper -->
-				
-				
-				<span class="reason_number">06</span>
-				
-				<span class="reason_tile">Navigating a<br/> Complex System</span><!-- reason_tile -->
-				
-				
-				<div class="grey_line_right_wrapper">
-					
-					<div class="grey_line_right"></div><!-- grey_line_bottom -->
-				
-				</div><!-- grey_line_right_wrapper -->
-				
-				<div class="grey_line_bottom_wrapper">
-					
-					<div class="grey_line_bottom"></div><!-- grey_line_bottom -->
-				
-				</div><!-- grey_line_bottom_wrapper -->
-				
-				
-			</div><!-- single_reason_reg -->
-			
-			<div class="single_reason_hov">
-				
-				<div class="single_reason_hov_gradient">
-					
-					<div class="single_reason_hov_inner">
-						
-						<div class="reason_content">
-							
-							<p>A number of personal injury<br/> cases do not go to trial.</p>
-							
-							<p>However, our attorneys have remarkable trial experience and have consistently shown their ability to win significant jury verdicts. As a result of our extensive trial experience, corporations, insurance companies, and their attorneys, know that when Panish Shea & Boyle is representing the plaintiffs, then that case has to be taken seriously.</p>
-							
-						</div><!-- reason_content -->
-						
-					</div><!-- single_reason_hov_inner -->
-					
-				</div><!-- single_reason_hov_gradient -->
-				
-			</div><!-- single_reason_hov -->
-			
-			
-		</div><!-- single_reason -->
-		
-		
-		
-		
-		
-		
-		
-		
-		<div class="single_reason single_reason_07">
-			
-			<div class="single_reason_reg">
-				
-				
-				<div class="reasons_icon_wrapper">
-					
-					<svg id="reason7" x="0px" y="0px"
-	 viewBox="0 0 70.3 71.9" style="enable-background:new 0 0 70.3 71.9;" xml:space="preserve">
-<g>
-	<path d="M5.5,51.5L6.8,51c-0.6-1.6-1.1-3.2-1.4-4.9c-0.4-1.9-0.6-3.9-0.6-5.8c0-7.3,2.6-14.4,7.5-19.9c4.7-5.4,11-8.9,18-10
-		l-0.2-1.3c-7.3,1.2-13.9,4.9-18.8,10.5c-5,5.8-7.8,13.2-7.8,20.8c0,2,0.2,4.1,0.6,6.1C4.4,48.1,4.9,49.8,5.5,51.5z"/>
-	<path d="M58,20.3c4.8,5.5,7.5,12.6,7.5,19.9c0,2-0.2,3.9-0.6,5.8c-0.3,1.7-0.8,3.3-1.4,4.9l1.2,0.5c0.6-1.7,1.1-3.4,1.5-5.2
-		c0.4-2,0.6-4.1,0.6-6.1c0-7.7-2.8-15-7.8-20.8c-4.9-5.6-11.5-9.3-18.8-10.5l-0.2,1.3C47,11.4,53.4,14.9,58,20.3z"/>
-	<path d="M35.1,70.6c-4.7,0-9.2-1-13.3-3.1c-3.9-1.9-7.4-4.7-10.2-8.1l-1.1,0.8c2.9,3.5,6.6,6.4,10.6,8.4c4.4,2.1,9,3.2,13.9,3.2
-		c4.9,0,9.5-1.1,13.9-3.2c4.1-2,7.8-4.9,10.6-8.4l-1.1-0.8c-2.8,3.4-6.3,6.2-10.2,8.1C44.3,69.5,39.8,70.6,35.1,70.6z"/>
-	<path d="M54.1,49.6c1.5-2.9,2.2-6.1,2.2-9.4c0-5.7-2.2-11-6.2-15c-3.6-3.6-8.5-5.8-13.6-6.2l-0.7,0V0h-1.3v19l-0.7,0
-		c-5.1,0.3-10,2.5-13.6,6.2c-4,4-6.2,9.3-6.2,15c0,3.3,0.7,6.5,2.2,9.4l0.3,0.6L0,59.7l0.7,1.1l16.5-9.5l0.4,0.6
-		c0.8,1.2,1.7,2.2,2.6,3.2c4,4,9.3,6.2,15,6.2c5.7,0,11-2.2,15-6.2c1-1,1.9-2.1,2.6-3.2l0.4-0.6l16.5,9.5l0.7-1.1l-16.5-9.5
-		L54.1,49.6z M35.1,35c2.9,0,5.2,2.3,5.2,5.2s-2.3,5.2-5.2,5.2c-2.9,0-5.2-2.3-5.2-5.2S32.3,35,35.1,35z M17.3,48.8
-		c-1.3-2.7-2-5.6-2-8.6c0-5.3,2.1-10.3,5.8-14c3.4-3.4,7.8-5.4,12.6-5.8l0.8-0.1v13.3l-0.6,0.1c-3.1,0.6-5.3,3.3-5.3,6.4
-		c0,0.7,0.1,1.4,0.4,2.1l0.2,0.6l-11.5,6.7L17.3,48.8z M51.6,51.4c-0.7,1-1.5,2-2.4,2.9c-3.7,3.7-8.7,5.8-14,5.8
-		c-5.3,0-10.3-2.1-14-5.8c-0.9-0.9-1.7-1.8-2.4-2.9l-0.5-0.7l11.5-6.7l0.4,0.5c1.2,1.4,3,2.2,4.9,2.2c1.9,0,3.7-0.8,4.9-2.2l0.4-0.5
-		L52,50.7L51.6,51.4z M53,48.8l-0.4,0.7l-11.5-6.7l0.2-0.6c0.2-0.7,0.4-1.4,0.4-2.1c0-3.1-2.2-5.8-5.3-6.4l-0.6-0.1V20.3l0.8,0.1
-		c4.7,0.3,9.2,2.4,12.6,5.8c3.7,3.7,5.8,8.7,5.8,14C55,43.2,54.3,46.1,53,48.8z"/>
-</g>
-</svg>
-
-				
-				</div><!-- reasons_icon_wrapper -->
-				
-				
-				<span class="reason_number">07</span>
-				
-				<span class="reason_tile">Contingency<br/> Fees</span><!-- reason_tile -->
-				
-				
-				
-				<div class="grey_line_right_wrapper">
-					
-					<div class="grey_line_right"></div><!-- grey_line_bottom -->
-				
-				</div><!-- grey_line_right_wrapper -->
-				
-				<div class="grey_line_bottom_wrapper">
-					
-					<div class="grey_line_bottom"></div><!-- grey_line_bottom -->
-				
-				</div><!-- grey_line_bottom_wrapper -->
-				
-				
-				
-			</div><!-- single_reason_reg -->
-			
-			<div class="single_reason_hov">
-				
-				<div class="single_reason_hov_gradient">
-					
-					<div class="single_reason_hov_inner">
-						
-						<div class="reason_content">
-							
-							<p>A number of personal injury<br/> cases do not go to trial.</p>
-							
-							<p>However, our attorneys have remarkable trial experience and have consistently shown their ability to win significant jury verdicts. As a result of our extensive trial experience, corporations, insurance companies, and their attorneys, know that when Panish Shea & Boyle is representing the plaintiffs, then that case has to be taken seriously.</p>
-							
-						</div><!-- reason_content -->
-						
-					</div><!-- single_reason_hov_inner -->
-					
-				</div><!-- single_reason_hov_gradient -->
-				
-			</div><!-- single_reason_hov -->
-			
-			
-		</div><!-- single_reason -->
-		
-		
-		
-		
-		
-		
-		
-		
-		<div class="single_reason single_reason_08">
-			
-			<div class="single_reason_reg">
-				
-				
-				<div class="reasons_icon_wrapper">
-					
-					<svg id="reason8" x="0px" y="0px"
-	 viewBox="0 0 94.2 50.3" style="enable-background:new 0 0 94.2 50.3;" xml:space="preserve">
-<path d="M47.1,33.2c-1.5,0-2.9,0.6-3.9,1.6c-1,1-1.6,2.4-1.6,3.9c0,1.5,0.6,2.9,1.6,3.9c1,1,2.4,1.6,3.9,1.6s2.9-0.6,3.9-1.6
-	c1-1,1.6-2.4,1.6-3.9s-0.6-2.9-1.6-3.9C50,33.8,48.6,33.2,47.1,33.2z M50.1,41.7c-0.8,0.8-1.8,1.2-3,1.2s-2.2-0.4-3-1.2
-	c-0.8-0.8-1.2-1.8-1.2-3s0.4-2.2,1.2-3c0.8-0.8,1.8-1.2,3-1.2h0c1.1,0,2.2,0.4,3,1.2c0.8,0.8,1.2,1.8,1.2,3S50.9,40.9,50.1,41.7z"/>
-<path d="M81.9,29.6c0.2-0.4,0.4-0.9,0.5-1.4l0.1-0.6l0.2,0l11.5-1.2l-0.1-1.3l-11.6,1.2l-0.2-0.5c-0.1-0.2-0.2-0.4-0.3-0.7l-0.3-0.5
-	l6.2-6.2l-0.9-0.9l-6.2,6.2l-0.5-0.3c-1.4-0.8-3.1-0.8-4.5,0l-0.5,0.3l-6.2-6.2l-0.9,0.9l6.1,6.2L74,25.1c-0.3,0.5-0.5,1-0.5,1.5
-	l-0.1,0.6l-13.8,1.4l-0.2-0.4c-1.1-2.1-2.3-3.7-3.7-5c-2-1.9-4.4-2.9-7.2-3.1L47.8,20V0h-1.3v20l-0.7,0.1c-2.8,0.2-5.2,1.3-7.2,3.1
-	c-1.4,1.3-2.6,2.9-3.7,5l-0.2,0.4l-0.2,0l-13.6-1.4l-0.1-0.6c-0.1-0.5-0.3-1.1-0.5-1.5l-0.3-0.5l6.2-6.2l-0.9-0.9L19,23.7l-0.5-0.3
-	c-1.4-0.8-3.1-0.8-4.5,0l-0.5,0.3l-6.2-6.2l-0.9,0.9l6.2,6.2l-0.3,0.5c-0.1,0.2-0.2,0.4-0.3,0.7l-0.2,0.5L0.1,25.1L0,26.5l11.6,1.2
-	l0.1,0.6c0.1,0.5,0.3,1,0.5,1.4l0.3,0.5l-6.2,6.2l0.9,0.9l6.2-6.2l0.5,0.3c1.4,0.8,3.1,0.8,4.5,0L19,31l6.2,6.2l0.9-0.9l-6.2-6.2
-	l0.3-0.5c0.1-0.2,0.2-0.3,0.3-0.5l0.2-0.5L34,29.9l-0.4,0.9c-0.6,1.5-1.2,3.2-1.7,5c-0.3,1.2-0.5,2.6-0.5,3.8c0,2.6,0.8,4.8,2.5,6.6
-	c1.5,1.6,3.7,2.7,6.4,3.4c2,0.5,4.3,0.8,6.8,0.8c2.5,0,4.8-0.3,6.8-0.8c2.7-0.7,4.9-1.8,6.4-3.4c1.7-1.7,2.5-3.9,2.5-6.6
-	c0-1.2-0.2-2.5-0.5-3.8c-0.5-1.8-1.1-3.5-1.7-5l-0.4-0.9l13.3-1.3l0.2,0.5c0.1,0.2,0.2,0.4,0.3,0.5l0.3,0.5l-6.2,6.2l0.9,0.9
-	l6.2-6.2l0.5,0.3c1.4,0.8,3.1,0.8,4.5,0l0.5-0.3l6.2,6.2l0.9-0.9l-6.2-6.2L81.9,29.6z M16.2,30.6c-1.8,0-3.2-1.4-3.2-3.2
-	s1.4-3.2,3.2-3.2c1.8,0,3.2,1.4,3.2,3.2S18,30.6,16.2,30.6z M61,36.1L61,36.1c0.3,1.2,0.5,2.4,0.5,3.4c0,2.3-0.7,4.2-2.1,5.6
-	c-1.3,1.4-3.3,2.4-5.8,3c-1.9,0.5-4,0.7-6.4,0.7c-2.4,0-4.6-0.2-6.4-0.7c-2.5-0.6-4.4-1.6-5.8-3c-1.4-1.5-2.1-3.4-2.1-5.6
-	c0-1.1,0.2-2.3,0.5-3.4c1.6-5.7,3.6-9.6,6.2-12c2.1-1.9,4.6-2.8,7.7-2.8s5.6,0.9,7.7,2.8C57.4,26.5,59.4,30.5,61,36.1z M78,30.6
-	c-1.8,0-3.2-1.4-3.2-3.2s1.4-3.2,3.2-3.2c1.8,0,3.2,1.4,3.2,3.2S79.8,30.6,78,30.6z"/>
-</svg>
-				
-				</div><!-- reasons_icon_wrapper -->
-				
-				
-				<span class="reason_number">08</span>
-				
-				<span class="reason_tile">Dealing with<br/> Insurance Companies</span><!-- reason_tile -->
-				
-				
-				
-				<div class="grey_line_right_wrapper">
-					
-					<div class="grey_line_right"></div><!-- grey_line_bottom -->
-				
-				</div><!-- grey_line_right_wrapper -->
-				
-				<div class="grey_line_bottom_wrapper">
-					
-					<div class="grey_line_bottom"></div><!-- grey_line_bottom -->
-				
-				</div><!-- grey_line_bottom_wrapper -->
-				
-				
-			</div><!-- single_reason_reg -->
-			
-			<div class="single_reason_hov">
-				
-				<div class="single_reason_hov_gradient">
-					
-					<div class="single_reason_hov_inner">
-						
-						<div class="reason_content">
-							
-							<p>A number of personal injury<br/> cases do not go to trial.</p>
-							
-							<p>However, our attorneys have remarkable trial experience and have consistently shown their ability to win significant jury verdicts. As a result of our extensive trial experience, corporations, insurance companies, and their attorneys, know that when Panish Shea & Boyle is representing the plaintiffs, then that case has to be taken seriously.</p>
-							
-						</div><!-- reason_content -->
-						
-					</div><!-- single_reason_hov_inner -->
-					
-				</div><!-- single_reason_hov_gradient -->
-				
-			</div><!-- single_reason_hov -->
-			
-			
-		</div><!-- single_reason -->
-		
-		
-		
-		
-		
 		
 	</div><!-- reasons_grid -->
 	
