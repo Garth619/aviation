@@ -3,9 +3,9 @@
 	
 	<div class="inner_request">
 		
-		<span class="large_header">Request <br class="mobile"/>Your Free Consultation</span><!-- large_header -->
+		<span class="large_header"><?php the_field( 'form_request_title','option'); ?></span><!-- large_header -->
 		
-		<span class="fields_required">All Fields Are Required <span>*</span></span><!-- fields_required -->
+		<span class="fields_required"><?php the_field( 'all_fields_required','option'); ?></span><!-- fields_required -->
 		
 		<div class="form_wrapper">
 			
@@ -99,7 +99,7 @@
 			
 			<div class="single_location_wrapper">
 				
-				<span class="large_header">Panish Shea & Boyle LLP <br class="mobile">- Strength By Your Side <sup>TM</sup></span>
+				<span class="large_header"><?php the_field( 'footer_tagline','option'); ?></span>
 				
 				<div class="tablet_squares">
 					
@@ -107,7 +107,7 @@
 					
 					<div class="tablet_single_square la">
 						
-						<span class="">LA</span>
+						<span class=""><?php the_field( 'region1','option'); ?></span>
 						
 						<div class="tri_wrapper tri_wrapper_one">
 							
@@ -119,7 +119,7 @@
 					
 					<div class="tablet_single_square oc">
 						
-						<span class="">OC</span>
+						<span class=""><?php the_field( 'region2','option' ); ?></span>
 						
 						<div class="tri_wrapper tri_wrapper_two">
 							
@@ -138,7 +138,7 @@
 					
 						<div class="white_square">
 						
-							<span class="city_abbr">LA</span><!-- city_abbr -->
+							<span class="city_abbr"><?php the_field( 'region1','option' ); ?></span><!-- city_abbr -->
 						
 						</div><!-- white_square -->
 					
@@ -146,16 +146,13 @@
 					
 					
 					
-							<a class="address address_one" href="" target="_blank">
-								11111 Santa Monica Blvd.<br class="desktop" />
-								#700<br class="desktop" />
-								Los Angeles, California<br class="desktop" />
-								90025
+							<a class="address address_one" href="<?php the_field( 'location_1_address_link','option' ); ?>" target="_blank">
+								<?php the_field( 'location_1_address' ,'option'); ?>
 							</a>
 					
 					
 					
-							<a class="get_directions" href="" target="_blank">Get Directions</a><!-- get_directions -->
+							<a class="get_directions" href="<?php the_field( 'location_1_address_link','option' ); ?>" target="_blank"><?php the_field( 'location_get_directions_verbiage','option' ); ?></a><!-- get_directions -->
 					
 					</div><!-- single_location -->
 				
@@ -167,7 +164,7 @@
 					
 						<div class="white_square">
 						
-							<span class="city_abbr">OC</span><!-- city_abbr -->
+							<span class="city_abbr"><?php the_field( 'region2','option' ); ?></span><!-- city_abbr -->
 						
 						</div><!-- white_square -->
 					
@@ -175,16 +172,13 @@
 					
 					
 					
-						<a class="address address_two" href="" target="_blank">
-							17500 Red Hill Ave.<br/>
-							#100<br/>
-							Irvine, California<br/>
-							92614
+						<a class="address address_two" href="<?php the_field( 'location_2_address_link','options' ); ?>" target="_blank">
+							<?php the_field( 'location_2_address','option' ); ?>
 						</a>
 					
 					
 					
-						<a class="get_directions" href="" target="_blank">Get Directions</a><!-- get_directions -->
+						<a class="get_directions" href="<?php the_field( 'location_2_address_link','options' ); ?>" target="_blank"><?php the_field( 'location_get_directions_verbiage2','option' ); ?></a><!-- get_directions -->
 					
 				</div><!-- single_location -->
 				
@@ -200,10 +194,9 @@
 					
 					<div class="call_us_inner_gradient">
 						
-						<span class="large_header"><span class="twenty_four">24/7</span>  accessibility<br/> 
-to our clients</span><!-- large_header -->
+						<span class="large_header"><?php the_field( 'white_box_footer_header','option'); ?></span><!-- large_header -->
 
-						<span class="call_us_content">Our firm's track record for prosecuting airline accident cases is unmatched. Phone us toll-free at <a href="tel:1-877-800-1700"> 1-877-800-1700</a> to set up a free consultation&nbsp;now.</span><!-- call_us_content -->
+						<?php the_field( 'white_box_footer_content','option'); ?><!-- call_us_content -->
 						
 					</div><!-- call_us_inner_gradient -->
 					
@@ -220,7 +213,7 @@ to our clients</span><!-- large_header -->
 			<div class="latest_news_inner">
 			
 			
-			<span class="large_header">Latest Firm News</span><!-- large_header -->
+			<span class="large_header"><?php the_field( 'latest_news_header','option'); ?></span><!-- large_header -->
 			
 			<div class="white_line_wrapper">
 				
@@ -232,51 +225,30 @@ to our clients</span><!-- large_header -->
 			
 			
 			<div class="post_wrapper">
-			
-			
-			<div class="single_news_post">
 				
-				<a href="">
-					
-					<span class="post_title">Civil Trial for 2006 Robinson Helicopter Accident Begins </span><!-- large_header -->
-					
-					<span class="news_content">Since the introduction of the R-44 more than a decade ago, Robinson Helicopter Co. was allegedly aware of the vibrations present in the main rotor mast.</span><!-- news_content -->
-					
-					<span class="read_more">Read More</span>
-					
-				</a>
 				
-			</div><!-- single_news_post -->
-			
-			
-			<div class="single_news_post">
 				
-				<a href="">
-					
-					<span class="post_title">Yoon v. Boeing Don Yoon</span><!-- large_header -->
-					
-					<span class="news_content">A University City man whose wife, two baby daughters, and mother-in-law were killed Dec. 8, 2008, when a Marine Corps jet crashed onto their home, has sued the government and Boeing for negligence.</span><!-- news_content -->
-					
-					<span class="read_more">Read More</span>
-					
-				</a>
+				<?php $mymain_query = new WP_Query( array( 'post_type' => 'post','posts_per_page' => '3', 'order' => 'DSC' ) ); while($mymain_query->have_posts()) : $mymain_query->the_post(); ?>
+          
+          <div class="single_news_post">
 				
-			</div><!-- single_news_post -->
-			
-			
-			<div class="single_news_post">
+						<a href="<?php the_permalink();?>">
+					
+							<span class="post_title"><?php echo wp_trim_words( get_the_title(), 16, '...' );?></span><!-- large_header -->
+					
+							<span class="news_content"><?php echo wp_trim_words( get_the_content(), 27, '...' );?></span><!-- news_content -->
+					
+							<span class="read_more">Read More</span>
+					
+						</a>
 				
-				<a href="">
-					
-					<span class="post_title">Litwack v. Sierra Tucson</span><!-- large_header -->
-					
-					<span class="news_content">Sierra Tucson treatment center must make improvements in its care or lose its state license. The firm represents the family of a doctor who died during a stay at Sierra Tucson.</span><!-- news_content -->
-					
-					<span class="read_more">Read More</span>
-					
-				</a>
+					</div><!-- single_news_post -->
+          
+          
+    
+				<?php endwhile; ?>
+        <?php wp_reset_postdata(); // reset the query ?>
 				
-			</div><!-- single_news_post -->
 			
 			
 		</div><!-- post_wrapper -->
@@ -297,10 +269,36 @@ to our clients</span><!-- large_header -->
 		
 		<ul class="copyright">
 			
-			<li><span>Copyright &copy;2017</span>  Panish Shea & Boyle LLP</li>
-			<li>All Rights Reserved</li>
-			<li><a class="" href="">Disclaimer</a></li>
-			<li><a class="" href="">Blog</a></li>
+			<li><span><?php the_field( 'copyright_verbiage','option' ); ?></span>  <?php the_field( 'panish_shea_&_boyle_llp','option'); ?></li>
+			<li><?php the_field( 'all_rights_reserved','option'); ?></li>
+			
+			
+			
+			
+			<?php $post_object = get_field( 'footer_link_1','option'); ?>
+
+			<?php $post = $post_object; ?>
+			
+				<?php setup_postdata( $post ); ?> 
+			
+					<li><a href="<?php the_permalink();?>"><?php the_title();?></a></li>
+			
+				<?php wp_reset_postdata(); ?>
+
+			<?php $post_object = get_field( 'footer_link_2','option'); ?>
+
+			<?php $post = $post_object; ?>
+			
+				<?php setup_postdata( $post ); ?> 
+		
+					<li><a href="<?php the_permalink();?>"><?php the_title();?></a></li>
+	
+			<?php wp_reset_postdata(); ?>
+
+			
+			
+			
+	
 		
 		</ul>
 		
@@ -308,9 +306,9 @@ to our clients</span><!-- large_header -->
 		<div class="social_wrapper">
 			
 			<ul>
-				<li><a class="" href="">Facebook</a></li>
-				<li><a class="" href="">google+</a></li>
-				<li><a class="" href="">twitter</a></li>
+				<li><a href="<?php the_field( 'social_media_1_link','option'); ?>" target="_blank"><?php the_field( 'social_media_1','option'); ?></a></li>
+				<li><a href="<?php the_field( 'social_media_2_link','option'); ?>" target="_blank"><?php the_field( 'social_media_2','option'); ?></a></li>
+				<li><a href="<?php the_field( 'social_media_3_link','option'); ?>" target="_blank"><?php the_field( 'social_media_3','option'); ?></a></li>
 			</ul>
 			
 

@@ -755,14 +755,26 @@ get_header(); ?>
 	
 		<div class="accidents_grid">
 			
-			<ul>
-				<li><a href=""><span>Airline Accidents</span></a></li>
-				<li><a href="">Air Ambulance Accidents</a></li>
-				<li><a href="">Helicopter Crashes</a></li>
-				<li><a href="">Int'l Airline Accidents</a></li>
-				<li><a href="">Charter Plane Accidents</a></li>
-				<li><a href="">Private Plane Crashes</a></li>
-			</ul>
+			
+			<?php if(get_field('types_of_aviation_list')): ?>
+			 
+				<ul>
+				
+				<?php while(has_sub_field('types_of_aviation_list')): ?>
+			 
+					
+					<li><a href="<?php the_sub_field( 'link' ); ?>"><?php the_sub_field( 'name' ); ?></a></li>
+					
+					
+			    
+				<?php endwhile; ?>
+				
+				</ul>
+			 
+			<?php endif; ?>
+			
+		
+						
 			
 		</div><!-- accidents_grid -->
 		
@@ -770,7 +782,7 @@ get_header(); ?>
 		<div class="accidents_right_content">
 			
 			
-		<a href="" style="text-decoration: none;color:#060606">
+		<a href="<?php the_field( 'types_of_aviation_pa_directory_link' ); ?>" style="text-decoration: none;color:#060606">
 			
 			<div class="types_of_accidents_wrapper">
 				
@@ -782,9 +794,9 @@ get_header(); ?>
 							
 							
 							
-								<span class="accident_title_reg">Types of</span>
-								<span class="accident_title_gradient">Aviation</span>
-								<span class="accident_title_reg">Accidents</span>
+								<span class="accident_title_reg"><?php the_field( 'types_of_aviation_content' ); ?></span>
+								<span class="accident_title_gradient"><?php the_field( 'types_of_aviation_content_2' ); ?></span>
+								<span class="accident_title_reg"><?php the_field( 'types_of_aviation_content_3' ); ?></span>
 							
 						
 							
@@ -817,7 +829,7 @@ get_header(); ?>
 	<div class="awards_wrapper">
 		
 		
-		<span class="large_header">Awards & Memberships</span><!-- large_header -->
+		<span class="large_header"><?php the_field( 'awards_title' ); ?></span><!-- large_header -->
 		
 		<div class="greyline_wrapper">
 			
@@ -840,44 +852,29 @@ get_header(); ?>
 	
 		<div class="awards_slider">
 			
-			<div class="awards_single_slide">
-				
-				<img src="<?php bloginfo('template_directory');?>/images/award1.png"/>
-				
-			</div><!-- awards_single_slider -->
 			
-			<div class="awards_single_slide">
+			<?php if(get_field('awards_slider')): ?>
+			 
+				<?php while(has_sub_field('awards_slider')): ?>
+			 
 				
-				<img src="<?php bloginfo('template_directory');?>/images/award2.png"/>
+			    <div class="awards_single_slide">
 				
-			</div><!-- awards_single_slider -->
+						<?php $image = get_sub_field( 'image' ); ?>
+		
+						<?php if ( $image ) { ?>
 			
-			<div class="awards_single_slide">
+							<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+		
+						<?php } ?>
 				
-				<img src="<?php bloginfo('template_directory');?>/images/award3.png"/>
+					</div><!-- awards_single_slider -->
 				
-			</div><!-- awards_single_slider -->
-			
-			<div class="awards_single_slide">
 				
-				<img src="<?php bloginfo('template_directory');?>/images/award4.png"/>
-				
-			</div><!-- awards_single_slider -->
-			
-			<div class="awards_single_slide">
-				
-				<img src="<?php bloginfo('template_directory');?>/images/award5.png"/>
-				
-			</div><!-- awards_single_slider -->
-			
-			<div class="awards_single_slide">
-				
-				<img src="<?php bloginfo('template_directory');?>/images/award6.png"/>
-				
-			</div><!-- awards_single_slider -->
-			
-						
-			
+				<?php endwhile; ?>
+			 
+			<?php endif; ?>
+
 			
 		</div><!-- awards_slider -->
 		
