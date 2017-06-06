@@ -15599,6 +15599,18 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/wp-content\/plugins\/simple-301-redirects\/readme.txt": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/simple-301-redirects\/readme.txt",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/simple-301-redirects\/wp-simple-301-redirects.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/simple-301-redirects\/wp-simple-301-redirects.php",
+		"oF": 0
+		},
 	"\/wp-content\/plugins\/simple-history\/bin\/install-wp-tests.sh": {
 		"ft": 8192,
 		"oA": 2,
