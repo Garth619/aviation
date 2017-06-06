@@ -766,7 +766,7 @@ jQuery(document).ready(function(){
 
 
 </svg>
-
+<?php the_field( 'body_text_area','option'); ?>
 
 </body>
 </html>
