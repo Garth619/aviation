@@ -2109,8 +2109,11 @@ svg#global_gradient {
 		li:nth-of-type(4) {
 			margin-right:0;
 		}
-		li:last-of-type {
+		li#field_1_5 {
 			width:100%;
+		}
+		li#field_1_6, li#field_1_7 {
+			display: none;
 		}
 		li {
 			width:100%;
