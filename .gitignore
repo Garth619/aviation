@@ -17,4 +17,5 @@ node_modules
 /sitemap.xml
 /sitemap.xml.gz
 /package.json
+/Gruntfile.js
 

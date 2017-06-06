@@ -31,50 +31,9 @@
 <style type="text/css">
 
 
-/* Main Page Banner */
+<?php include('css/header-styles.php');?>
 
 
-.main_banner {
-	background: url(<?php the_field( 'main_banner_image_desktop' ); ?>) top left no-repeat;
-	background-size: cover;
-}
-
-
-@media screen and (max-width: 1180px) {
-	
-	
-	.main_banner {
-		background: url(<?php the_field( 'main_banner_image_tablet' ); ?>) top center no-repeat;
-		background-size: cover;
-	}
-	
-	
-} /* Media Query */
-
-
-@media screen and (max-width: 430px) {
-	 
-	 
-	 
-	.main_banner {
-		background:url(<?php the_field( 'main_banner_image_mobile' ); ?>) top center;
-		background-size:cover;
-	}
-		
-
-
-} /* Media Query *
-	
-
-/* Critical CSS Laid  Out by Various Pages */
-
-<?php if(is_front_page()):?>
-
-
-
-
-
-<?php endif;?>
 
 
 </style>
