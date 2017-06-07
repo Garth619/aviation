@@ -32,11 +32,21 @@
 
 <?php the_field( 'reviews_page_css_text_area','option'); ?>
 
-
 <?php include('css/header-styles.php');?>
 
+/* Edge Hacks */
 
-
+@supports (-ms-ime-align:auto) {
+    
+.about_content.myanimate .large_header_wrapper svg#air {
+	
+}
+    
+    
+    
+    
+    
+}
 
 </style>
 
