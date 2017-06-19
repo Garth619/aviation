@@ -21,6 +21,12 @@
 		"oAP": "\/.htaccess",
 		"oF": 0
 		},
+	"\/favicon.ico": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/favicon.ico",
+		"oF": 0
+		},
 	"\/Gruntfile.js": {
 		"ft": 64,
 		"mi": 1,
@@ -23196,6 +23202,12 @@
 		"oAP": "\/wp-content\/themes\/psb\/editor-style-min.css",
 		"oF": 0,
 		"oS": 0
+		},
+	"\/wp-content\/themes\/psb\/favicon.ico": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/psb\/favicon.ico",
+		"oF": 0
 		},
 	"\/wp-content\/themes\/psb\/fonts\/playfair\/demo.html": {
 		"ft": 8192,
