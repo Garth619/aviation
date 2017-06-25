@@ -907,17 +907,20 @@ a.button_wrapper {
 			span {
 				transition: all .2s ease-in-out;
 				letter-spacing: 3.5px;
-				
-				background-image: -moz-linear-gradient( 360deg, $blue 0%, $purple 100%) !important;
-				background-image: -webkit-linear-gradient( 360deg, $blue 0%, $purple 100%) !important;
-				background-image: -ms-linear-gradient( 360deg, $blue 0%, $purple 100%) !important;
-				-webkit-background-clip: text !important;
-				-webkit-text-fill-color: transparent !important;
+				// Below Needed Important but not any more.. double check 
+				background-image: -moz-linear-gradient( 360deg, $blue 0%, $purple 100%);
+				background-image: -webkit-linear-gradient( 360deg, $blue 0%, $purple 100%);
+				background-image: -ms-linear-gradient( 360deg, $blue 0%, $purple 100%);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
 			}
 			
 		}
 	}
 }
+
+
+
 
 a.button_wrapper:hover {
 	color:#fff;
@@ -925,9 +928,9 @@ a.button_wrapper:hover {
 		.inner_button {
 			background: transparent;
 			span {
-				background-image: -moz-linear-gradient( 360deg, #fff 0%, #fff 100%) !important;
-				background-image: -webkit-linear-gradient( 360deg, #fff 0%, #fff 100%) !important;
-				background-image: -ms-linear-gradient( 360deg, #fff 0%, #fff 100%) !important;
+				background-image: -moz-linear-gradient( 360deg, #fff 0%, #fff 100%);
+				background-image: -webkit-linear-gradient( 360deg, #fff 0%, #fff 100%);
+				background-image: -ms-linear-gradient( 360deg, #fff 0%, #fff 100%);
 			}
 		}
 	}
@@ -939,6 +942,56 @@ a.request_button {
 	position: relative;
 	z-index:10;
 }
+
+
+
+
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    
+
+
+a.button_wrapper {
+
+	.gradient_bg {
+
+		.inner_button {
+			span {
+				background-image:none;
+				color:$purple;
+			}
+		}
+	}
+}
+
+
+
+a.button_wrapper:hover {
+
+	.gradient_bg {
+
+		.inner_button {
+			span {
+				background-image:none;
+				color:#fff;
+			}
+		}
+	}
+}
+
+
+
+} /* IE Hack */
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1467,12 +1520,7 @@ svg#global_gradient {
 		width:100%;
 		padding-bottom:100px;
 		position: relative;
-		
-		
-		
-		
-		
-		
+
 		
 		.reasons_title_wrapper {
 			background:#fff;
@@ -1504,11 +1552,11 @@ svg#global_gradient {
 						margin:0 auto;
 						font-size:150px;
 						font-family: $playfairbold;
-						background-image: -moz-linear-gradient( 90deg, $purple 0%, $blue 100%) !important;
-						background-image: -webkit-linear-gradient( 90deg, $purple 0%, $blue 100%) !important;
-						background-image: -ms-linear-gradient( 90deg, $purple 0%, $blue 100%) !important;
-						-webkit-background-clip: text !important;
-						-webkit-text-fill-color: transparent !important;
+						background-image: -moz-linear-gradient( 90deg, $purple 0%, $blue 100%);
+						background-image: -webkit-linear-gradient( 90deg, $purple 0%, $blue 100%);
+						background-image: -ms-linear-gradient( 90deg, $purple 0%, $blue 100%);
+						-webkit-background-clip: text;
+						-webkit-text-fill-color: transparent;
 						color:$purple;
 					}
 					span.large_header {
@@ -1533,6 +1581,47 @@ svg#global_gradient {
 			}
 		}
 	}
+	
+	
+	
+	
+	@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	    
+	    
+	  .eight_reasons {
+	    
+	    .reasons_title_wrapper {
+		    
+		   	.gradient_bg {
+			   	.inner_bg {
+				   	span.number {
+					   	background-image: none !important;
+				   	}
+			   	}
+		   	}
+	    }
+	   }
+	   
+	   
+	   
+	   .waves_wrapper_1 {
+		   svg#wave_bg_one {
+		 			height: 1565px !important;
+		 	}
+    }
+    
+    
+    .clouds {
+	    animation-name: none !important;
+    }
+	    
+	    
+	
+	} /* IE Hack */
+	
+	
+	
+	
 	
 	
 	

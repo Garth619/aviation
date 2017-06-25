@@ -660,24 +660,33 @@ a.button_wrapper {
         -webkit-transition: all .2s ease-in-out;
         transition: all .2s ease-in-out;
         letter-spacing: 3.5px;
-        background-image: -webkit-linear-gradient(360deg, #193cc9 0%, #b51ac9 100%) !important;
-        background-image: -ms-linear-gradient(360deg, #193cc9 0%, #b51ac9 100%) !important;
-        -webkit-background-clip: text !important;
-        -webkit-text-fill-color: transparent !important; }
+        background-image: -webkit-linear-gradient(360deg, #193cc9 0%, #b51ac9 100%);
+        background-image: -ms-linear-gradient(360deg, #193cc9 0%, #b51ac9 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; }
 
 a.button_wrapper:hover {
   color: #fff; }
   a.button_wrapper:hover .gradient_bg .inner_button {
     background: transparent; }
     a.button_wrapper:hover .gradient_bg .inner_button span {
-      background-image: -webkit-linear-gradient(360deg, #fff 0%, #fff 100%) !important;
-      background-image: -ms-linear-gradient(360deg, #fff 0%, #fff 100%) !important; }
+      background-image: -webkit-linear-gradient(360deg, #fff 0%, #fff 100%);
+      background-image: -ms-linear-gradient(360deg, #fff 0%, #fff 100%); }
 
 a.request_button {
   margin: 40px 87px 0;
   position: relative;
   z-index: 10; }
 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  a.button_wrapper .gradient_bg .inner_button span {
+    background-image: none;
+    color: #b51ac9; }
+  a.button_wrapper:hover .gradient_bg .inner_button span {
+    background-image: none;
+    color: #fff; } }
+
+/* IE Hack */
 /* About */
 .about {
   width: 100%;
@@ -1131,10 +1140,10 @@ svg#global_gradient {
           margin: 0 auto;
           font-size: 150px;
           font-family: "PlayfairDisplay-Bold";
-          background-image: -webkit-linear-gradient(90deg, #b51ac9 0%, #193cc9 100%) !important;
-          background-image: -ms-linear-gradient(90deg, #b51ac9 0%, #193cc9 100%) !important;
-          -webkit-background-clip: text !important;
-          -webkit-text-fill-color: transparent !important;
+          background-image: -webkit-linear-gradient(90deg, #b51ac9 0%, #193cc9 100%);
+          background-image: -ms-linear-gradient(90deg, #b51ac9 0%, #193cc9 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
           color: #b51ac9; }
         .eight_reasons .reasons_title_wrapper .gradient_bg .inner_bg span.large_header {
           display: block;
@@ -1153,6 +1162,16 @@ svg#global_gradient {
           margin-top: 8px;
           line-height: 30px; }
 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .eight_reasons .reasons_title_wrapper .gradient_bg .inner_bg span.number {
+    background-image: none !important; }
+  .waves_wrapper_1 svg#wave_bg_one {
+    height: 1565px !important; }
+  .clouds {
+    -webkit-animation-name: none !important;
+            animation-name: none !important; } }
+
+/* IE Hack */
 .reasons_grid {
   overflow: hidden;
   max-width: 1540px;
