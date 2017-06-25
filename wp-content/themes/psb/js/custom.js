@@ -50,7 +50,12 @@ jQuery(document).ready(function(){
 
 
 
-			jQuery('.mobile_menu').click(function(){
+
+function checkWidth() {
+    
+    if (jQuery(window).width() < 1180) {
+        
+      jQuery('.mobile_menu').click(function(){
 	
 				jQuery('nav').slideToggle();
 				
@@ -75,6 +80,24 @@ jQuery(document).ready(function(){
 	
 	
 			});
+    	   		
+    		
+    } else {
+
+    }
+};
+
+
+checkWidth();
+
+
+
+
+
+
+
+
+			
 
 
 

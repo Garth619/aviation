@@ -580,7 +580,21 @@ nav {
 				opacity: 1;
 			}
 		}
+		
+		> li.menu-item-has-children:hover {
+			> ul.sub-menu {
+				opacity: 1;
+				visibility: visible;
+				top:50px;
+			}
+		}
+		
+		
+		
+		
 		> li.menu-item-has-children {
+
+			
 				> a {
 					&:after {
 					content:'';
