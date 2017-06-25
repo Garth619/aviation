@@ -1710,6 +1710,10 @@ svg#global_gradient {
 					font-family: $proximamedium;
 					line-height: 23px;
 					color:#434460;
+					position: relative;
+					top: 50%;
+					transform: translateY(-50%);
+					
 					p {
 						margin-bottom:24px;
 					}

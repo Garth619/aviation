@@ -1276,7 +1276,11 @@ svg#global_gradient {
         font-size: 15px;
         font-family: "Proxima Nova W01 Medium";
         line-height: 23px;
-        color: #434460; }
+        color: #434460;
+        position: relative;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%); }
         .single_reason_hov .single_reason_hov_gradient .single_reason_hov_inner .reason_content p {
           margin-bottom: 24px; }
 
