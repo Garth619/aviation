@@ -4290,11 +4290,31 @@ svg#global_gradient {
 	
 	
 	@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-	    
+	  
+	  
+	  
+	 .sidebar_title_wrapper {
+		 transform: translateX(0px) !important;
+		 animation-name: none !important;
+		 
+		 
+	 }
+	 
+	 .sidebar_title {
+		 float:left !important;
+	 }
+	  
+	    .sidebar_inner {
+		    .menu-header {
+					float:left !important;
+					width:100% !important;
+		 		}
+	    }
 	
 	svg#air_sidebar {
 		stroke-dasharray: 1 !important;
 		stroke-dashoffset: 1 !important;
+		float:right !important;
 	}
 	
 	

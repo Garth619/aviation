@@ -3155,9 +3155,20 @@ svg#air_sidebar {
           animation-delay: 2.5s; }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .sidebar_title_wrapper {
+    -webkit-transform: translateX(0px) !important;
+            transform: translateX(0px) !important;
+    -webkit-animation-name: none !important;
+            animation-name: none !important; }
+  .sidebar_title {
+    float: left !important; }
+  .sidebar_inner .menu-header {
+    float: left !important;
+    width: 100% !important; }
   svg#air_sidebar {
     stroke-dasharray: 1 !important;
-    stroke-dashoffset: 1 !important; } }
+    stroke-dashoffset: 1 !important;
+    float: right !important; } }
 
 /* IE Hack */
 .sidebar_wrapper {
