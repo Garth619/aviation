@@ -534,6 +534,21 @@ header {
 
 
 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    
+    
+    
+    header {
+	    background:$blue;
+    }
+    
+    
+    
+
+} /* IE Hack */
+
+
+
 
 /* Nav */
 
@@ -1156,6 +1171,28 @@ a.button_wrapper:hover {
 
 
 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    
+    
+   .about_content {
+		.large_header_wrapper {
+			svg#air {
+				opacity: 1 !important;
+			}
+		}
+   }
+   
+   
+       
+
+} /* IE Hack */
+
+
+
+
+
+
+
 
 .about_content.myanimate {
 	.about_inner_content {
@@ -1192,6 +1229,31 @@ a.button_wrapper:hover {
     stroke-dashoffset: 1000;
   }
 }
+
+
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    
+
+   
+   .about_content {
+	 	.about_inner_content {
+			svg#air3 {
+				opacity: 1 !important;
+				display: inline !important;
+					stroke-dasharray: 1 !important;
+					stroke-dashoffset: 1 !important;
+					top:49px !important;
+				
+			}
+		}
+	}
+    
+    
+    
+
+} /* IE Hack */
+
 
 
 
@@ -1425,6 +1487,32 @@ a.button_wrapper:hover {
 		   	transform: translateY(0px);
 		  }
 		}
+		
+		
+		
+		
+		@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+		    
+		
+		
+		.about_image_wrapper, a.meet_attorneys {
+			opacity: 1 !important;
+		}
+		
+		
+		
+		
+		
+		
+		
+		} /* IE Hack */
+		
+		
+		
+		
+		
+		
+		
 		
 		
 		
@@ -2041,6 +2129,27 @@ svg#global_gradient {
 	
 	
 	
+	
+	
+	@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	    
+	    
+	    
+	    .testimonials {
+		    ul.slick-dots {
+			    opacity: 1;
+		    }
+	    }
+	    
+	    
+	
+	} /* IE Hack */
+	
+	
+	
+	
+	
+	
 	.test_slider_two {
 		
 		margin-left:150px;
@@ -2165,6 +2274,40 @@ svg#global_gradient {
     stroke-dashoffset: 1000;
   }
 }
+
+
+
+
+
+
+
+
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	
+	
+	
+	.case_results {
+		.case_results_inner {
+			.sub_header_wrapper {
+				span.sub_header {
+					position: relative !important;
+					top:50px !important
+				}
+				svg#air4 {
+					opacity: 1 !important;
+					stroke-dasharray: 1 !important;
+				stroke-dashoffset: 1 !important;
+				}
+			}
+		}
+	}
+    
+
+} /* IE Hack */
+
+
+
 
 
 
@@ -2341,6 +2484,54 @@ svg#global_gradient {
     width:100%;
   }
 }
+
+
+
+
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    
+    
+    .large_case_slider {
+			.case_inner_content {
+				svg#mysquare {
+					stroke-dashoffset: 1 !important;
+					opacity: 1 !important;
+				}
+				.case_category_wrapper {
+								
+				.case_category_title {
+					transform:none !important;
+				}
+				}
+			}
+		}
+		
+		
+		
+		
+		.large_case_slider {
+			
+			.large_single_case {
+				span.case_sub_header {
+					.case_purple_line {
+						width:100% !important;
+					}
+				}
+			}
+		}
+		
+		
+		
+					
+		 
+    
+    
+    
+
+} /* IE Hack */
+
+
 
 
 	.large_case_slider {
@@ -2820,6 +3011,34 @@ svg#global_gradient {
 		}
 	}
 	
+	
+	
+	@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	    
+	
+	
+	.accidents_grid {
+		ul {
+			li {
+				&:hover {
+					a {
+						color:#fff !important;
+					}
+				}
+			}
+		}
+	}
+	
+	
+	
+	
+	
+	
+	} /* IE Hack */
+	
+	
+	
+	
 	.accidents_right_content {
 		width:45%;
 		float:right;
@@ -2875,6 +3094,27 @@ svg#global_gradient {
 			}
 		}
 	}
+	
+	
+	
+	
+	
+	@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	    
+	    
+	    
+	    span.accident_title_gradient {
+		    background-image: none !important;
+		    color:$blue !important;
+	    }
+	    
+	    
+	    
+	
+	} /* IE Hack */
+	
+	
+	
 
 
 
@@ -3328,6 +3568,31 @@ svg#global_gradient {
 	 }
  }
 }
+
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    
+    .white_square {
+	    span {
+		    background-image:none !important;
+		    color:$purple !important;
+	    }
+    }
+    
+    
+    
+    .call_us_inner_gradient {
+	    span.large_header {
+		    background-image:none !important;
+	    }
+    }
+    
+    
+    
+    
+
+} /* IE Hack */
+
  
  
  .call_us_wrapper {
@@ -3648,6 +3913,33 @@ svg#global_gradient {
  
  
  
+ @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+     
+     .lower_footer {
+	     height:50px !important;
+     }
+     
+     .social_wrapper {
+	     ul {
+		     float:left !important;
+	     }
+	     a.ilawyer_logo {
+		     float:right !important;
+		     display: block !important;
+		     position: relative !important;
+		     top:-41px !important;
+		     svg {
+			     height:100px !important;
+		     }
+	     }
+     }
+     
+     
+     
+ 
+ } /* IE Hack */
+ 
+ 
  
  
  .wave_footer_wrapper.myanimate {
@@ -3741,7 +4033,11 @@ svg#global_gradient {
 }
 
  
- 
+ .wave_footer_wrapper {
+	 rect.runway_blink {
+		 display: none !important;
+	 }
+ }
  
  
  
@@ -3989,6 +4285,23 @@ svg#global_gradient {
 		animation-fill-mode:both;
 		animation-delay: 2.5s;
 	}
+	
+	
+	
+	
+	@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	    
+	
+	svg#air_sidebar {
+		stroke-dasharray: 1 !important;
+		stroke-dashoffset: 1 !important;
+	}
+	
+	
+	
+	
+	} /* IE Hack */
+	
  
  
  
@@ -11082,6 +11395,9 @@ margin-top:25px;
 		 }
 	 }
  }
+ 
+ 
+
  
  
  

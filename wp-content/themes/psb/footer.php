@@ -312,7 +312,7 @@
 			</ul>
 			
 
-<a href="//ilawyermarketing.com" target="_blank">
+<a class="ilawyer_logo" href="//ilawyermarketing.com" target="_blank">
 
 <svg id="ilawyer" x="0px" y="0px"
 	 viewBox="20.9 17.5 739.6 52.8" style="enable-background:new 20.9 17.5 739.6 52.8;" xml:space="preserve">

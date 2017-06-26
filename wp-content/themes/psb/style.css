@@ -378,6 +378,11 @@ header {
     max-width: 100%;
     height: auto; }
 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  header {
+    background: #193cc9; } }
+
+/* IE Hack */
 /* Nav */
 nav {
   -webkit-box-flex: 1;
@@ -818,6 +823,11 @@ a.request_button {
   to {
     stroke-dashoffset: 0; } }
 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .about_content .large_header_wrapper svg#air {
+    opacity: 1 !important; } }
+
+/* IE Hack */
 .about_content.myanimate .about_inner_content svg#air3 .cloud1_animate_1 {
   -webkit-animation-name: air_3_cloud1_animate_1;
           animation-name: air_3_cloud1_animate_1;
@@ -852,6 +862,15 @@ a.request_button {
   to {
     stroke-dashoffset: 1000; } }
 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .about_content .about_inner_content svg#air3 {
+    opacity: 1 !important;
+    display: inline !important;
+    stroke-dasharray: 1 !important;
+    stroke-dashoffset: 1 !important;
+    top: 49px !important; } }
+
+/* IE Hack */
 .about_content {
   width: 55%;
   float: left; }
@@ -1034,6 +1053,11 @@ a.meet_attorneys.myanimate {
     -webkit-transform: translateY(0px);
             transform: translateY(0px); } }
 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .about_image_wrapper, a.meet_attorneys {
+    opacity: 1 !important; } }
+
+/* IE Hack */
 .video_fade {
   position: relative;
   -webkit-animation-name: video_fade;
@@ -1478,6 +1502,11 @@ svg#global_gradient {
         opacity: 0;
         visibility: hidden; }
 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .testimonials ul.slick-dots {
+    opacity: 1; } }
+
+/* IE Hack */
 .test_slider_two {
   margin-left: 150px;
   margin-top: 92px; }
@@ -1585,6 +1614,16 @@ svg#global_gradient {
   to {
     stroke-dashoffset: 1000; } }
 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .case_results .case_results_inner .sub_header_wrapper span.sub_header {
+    position: relative !important;
+    top: 50px !important; }
+  .case_results .case_results_inner .sub_header_wrapper svg#air4 {
+    opacity: 1 !important;
+    stroke-dasharray: 1 !important;
+    stroke-dashoffset: 1 !important; } }
+
+/* IE Hack */
 .case_results_wave_wrapper.myanimate svg#wave_bg_case_results line.runways {
   fill: none;
   stroke: #fff;
@@ -1717,6 +1756,17 @@ svg#global_gradient {
   to {
     width: 100%; } }
 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .large_case_slider .case_inner_content svg#mysquare {
+    stroke-dashoffset: 1 !important;
+    opacity: 1 !important; }
+  .large_case_slider .case_inner_content .case_category_wrapper .case_category_title {
+    -webkit-transform: none !important;
+            transform: none !important; }
+  .large_case_slider .large_single_case span.case_sub_header .case_purple_line {
+    width: 100% !important; } }
+
+/* IE Hack */
 .large_case_slider {
   background: #fff;
   width: 68.5%;
@@ -2117,6 +2167,11 @@ svg#global_gradient {
         text-decoration: none;
         padding: 53px 0; }
 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .accidents_grid ul li:hover a {
+    color: #fff !important; } }
+
+/* IE Hack */
 .accidents_right_content {
   width: 45%;
   float: right;
@@ -2168,6 +2223,12 @@ svg#global_gradient {
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent; }
 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  span.accident_title_gradient {
+    background-image: none !important;
+    color: #193cc9 !important; } }
+
+/* IE Hack */
 .awards_wrapper {
   padding: 0 0 0 4%;
   margin: 148px auto 0;
@@ -2537,6 +2598,14 @@ footer {
           top: 26px;
           left: -37px; }
 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .white_square span {
+    background-image: none !important;
+    color: #b51ac9 !important; }
+  .call_us_inner_gradient span.large_header {
+    background-image: none !important; } }
+
+/* IE Hack */
 .call_us_wrapper {
   background: #fff;
   padding: 43px;
@@ -2802,6 +2871,20 @@ footer {
       position: relative;
       top: 3px; }
 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .lower_footer {
+    height: 50px !important; }
+  .social_wrapper ul {
+    float: left !important; }
+  .social_wrapper a.ilawyer_logo {
+    float: right !important;
+    display: block !important;
+    position: relative !important;
+    top: -41px !important; }
+    .social_wrapper a.ilawyer_logo svg {
+      height: 100px !important; } }
+
+/* IE Hack */
 .wave_footer_wrapper.myanimate svg#wave_bg_footer line.runways {
   fill: none;
   stroke: #fff;
@@ -2872,6 +2955,9 @@ footer {
 @keyframes linegrow_footer {
   to {
     stroke-dashoffset: 0; } }
+
+.wave_footer_wrapper rect.runway_blink {
+  display: none !important; }
 
 /* Internal */
 .inner_banner {
@@ -3068,6 +3154,12 @@ svg#air_sidebar {
   -webkit-animation-delay: 2.5s;
           animation-delay: 2.5s; }
 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  svg#air_sidebar {
+    stroke-dasharray: 1 !important;
+    stroke-dashoffset: 1 !important; } }
+
+/* IE Hack */
 .sidebar_wrapper {
   width: 534px;
   float: right;
