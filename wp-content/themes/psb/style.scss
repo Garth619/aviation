@@ -802,6 +802,7 @@ a.tel {
 		max-width:1855px;
 		margin:0 auto;
 		padding:260px 3% 0;
+		position: relative;
 		span.large_header {
 			font-family: $playfairbold;
 			color:#fff;
@@ -840,7 +841,7 @@ a.tel {
 				float:left;
 				margin-left:14px;
 				letter-spacing: 4.2px;
-				max-width: 850px;
+				max-width: 871px;
 				line-height: 27px;
 				text-align: left;
 			}
@@ -957,6 +958,32 @@ a.request_button {
 	position: relative;
 	z-index:10;
 }
+
+
+.scroll_wrapper {
+	
+	margin-top:-80px;
+	animation: 2.5s ease 0s normal none infinite running myscroll;
+	img {
+		display: block;
+		margin:0 auto;
+	}
+}
+
+@keyframes myscroll {
+  0% {opacity: 0;}
+	50% {opacity: 1;}
+	100% {opacity: 0;transform: translateY(40px);}
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -8150,6 +8177,11 @@ a.tel {
 a.request_button {
 	margin-right:0;
 	margin-top:69px;
+}
+
+
+.scroll_wrapper {
+	display: none;
 }
 
 

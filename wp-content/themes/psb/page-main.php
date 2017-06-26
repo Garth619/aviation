@@ -51,6 +51,16 @@ get_header(); ?>
 			
 		</a><!-- request_wrapper -->
 		
+		
+		<div class="scroll_wrapper">
+			
+			
+			<img src="<?php bloginfo('template_directory');?>/images/scrolldown-ar.png"/>
+			
+		
+		</div><!-- scroll_wrapper -->
+		
+		
 	</div><!-- inner_content -->
 	
 	

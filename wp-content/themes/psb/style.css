@@ -557,7 +557,8 @@ a.tel {
   .main_banner .inner_content {
     max-width: 1855px;
     margin: 0 auto;
-    padding: 260px 3% 0; }
+    padding: 260px 3% 0;
+    position: relative; }
     .main_banner .inner_content span.large_header {
       font-family: "PlayfairDisplay-Bold";
       color: #fff;
@@ -592,7 +593,7 @@ a.tel {
         float: left;
         margin-left: 14px;
         letter-spacing: 4.2px;
-        max-width: 850px;
+        max-width: 871px;
         line-height: 27px;
         text-align: left; }
 
@@ -682,6 +683,34 @@ a.request_button {
   margin: 40px 87px 0;
   position: relative;
   z-index: 10; }
+
+.scroll_wrapper {
+  margin-top: -80px;
+  -webkit-animation: 2.5s ease 0s normal none infinite running myscroll;
+          animation: 2.5s ease 0s normal none infinite running myscroll; }
+  .scroll_wrapper img {
+    display: block;
+    margin: 0 auto; }
+
+@-webkit-keyframes myscroll {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(40px);
+            transform: translateY(40px); } }
+
+@keyframes myscroll {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(40px);
+            transform: translateY(40px); } }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   a.button_wrapper .gradient_bg .inner_button span {
@@ -4545,6 +4574,8 @@ a.contact_get_directions:hover .contact_gradient .contact_inner_gradient {
   a.request_button {
     margin-right: 0;
     margin-top: 69px; }
+  .scroll_wrapper {
+    display: none; }
   /* About */
   .about .about_inner {
     padding: 530px 20px 215px; }
